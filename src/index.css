@@ -94,3 +94,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.transition {
+  transition: opacity 1s;
+}

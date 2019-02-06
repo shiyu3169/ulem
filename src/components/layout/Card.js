@@ -1,19 +1,41 @@
 import React, { Component } from "react";
 
 export default class Card extends Component {
+  state = {
+    show: false
+  };
+
+  mouseOver = () => {
+    this.setState({
+      show: true
+    });
+  };
+
+  mouseOut = () => {
+    this.setState({
+      show: false
+    });
+  };
   render() {
+    const { title, text } = this.props;
     return (
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Train for Employment</h5>
-          <p class="card-text">
-            Need job skills? Interested in learning a new skill? Let us help
-            you!
+      <div
+        className="card"
+        onMouseOver={this.mouseOver}
+        onMouseOut={this.mouseOut}>
+        <div className="card-body">
+          <h5 className="card-title text-center">{title}</h5>
+          <p
+            className="card-text transition text-center"
+            style={{ opacity: this.state.show ? 1 : 0 }}>
+            {text}
           </p>
-          <a href="#" class="btn btn-dark">
+        </div>
+        <footer class="container mb-2">
+          <a href="#" className="btn btn-outline-danger center">
             Read More
           </a>
-        </div>
+        </footer>
       </div>
     );
   }

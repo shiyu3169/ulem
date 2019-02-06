@@ -53,10 +53,9 @@ export default class Home extends Component {
               class="img-fluid cursor center"
             />
           </div>
-
           <div className="row">
             <div className="col-md-8">
-              <h3 className="btn-outline-danger rounded p-2">
+              <h3 className="btn-outline-danger rounded p-2 cursor">
                 Upcoming Events
                 <i class="fas fa-calendar-alt float-right" />
               </h3>
@@ -125,85 +124,36 @@ export default class Home extends Component {
         </div>
         <br />
         <div className="fixed-bg">
+          <br />
           <div className="container">
-            <div className="row">
-              <div className="col-md-4">
-                <Card />
-              </div>
-              <div className="col-md-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Sponsors</h5>
-                    <p class="card-text">They can never be thanked enough!</p>
-                    <br />
-                    <a href="#" class="btn btn-dark">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Our Impact</h5>
-                    <p class="card-text">
-                      ULEM strives to empower communities and change lives every
-                      day.
-                    </p>
-                    <a href="#" class="btn btn-dark">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="card-deck">
+              <Card
+                title="Train for Employment"
+                text="Need job skills? Interested in learning a new skill? Let us help you!"
+              />
+              <Card title="Sponsors" text="They can never be thanked enough!" />
+              <Card
+                title="Our Impact"
+                text="ULEM strives to empower communities and change lives every day."
+              />
             </div>
-
             <br />
-            <div className="row">
-              <div className="col-md-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Our Auxiliaries</h5>
-                    <p class="card-text">
-                      Interested in directly making an impact at the Urban
-                      League?
-                    </p>
-                    <a href="#" class="btn btn-dark">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Become a Member</h5>
-                    <p class="card-text">
-                      Interested in joining the Urban League of Eastern
-                      Massachusetts?
-                    </p>
-                    <a href="#" class="btn btn-dark">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Stay in Touch</h5>
-                    <p class="card-text">
-                      Socialize and stay updated on what we are doing through
-                      social media!
-                    </p>
-                    <a href="#" class="btn btn-dark">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="card-deck">
+              <Card
+                title="Our Auxiliaries"
+                text="Interested in directly making an impact at the Urban League?"
+              />
+              <Card
+                title="Become a Member"
+                text="Interested in joining the Urban League of Eastern Massachusetts?"
+              />
+              <Card
+                title="Stay in Touch"
+                text="Socialize and stay updated on what we are doing through social media!"
+              />
             </div>
           </div>
+          <br />
         </div>
         <main className="container">
           <div className="row">
