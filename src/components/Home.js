@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import ulem from "../ulem.png";
+import centennial from "../logo.PNG";
 import { Link } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Navbar from "./layout/Navbar";
+import Card from "./layout/Card";
 export default class Home extends Component {
   componentDidMount() {
     window.$(".carousel").carousel({
@@ -36,7 +38,7 @@ export default class Home extends Component {
             <div className="row flex-nowrap justify-content-between align-items-center">
               <div className="col-4 pt-1" />
               <div className="col-4 text-center">
-                <img src={ulem} alt="ulem" width="100%" />
+                <img src={ulem} alt="ulem" class="img-fluid" />
               </div>
               <div className="col-4 d-flex justify-content-end align-items-center">
                 <i className="fas fa-search" />
@@ -44,12 +46,20 @@ export default class Home extends Component {
             </div>
           </header>
           <Navbar />
-          <div className="jumbotron p-3 p-md-5 text-white rounded bg-centennial cursor" />
+          <div className="full-width">
+            <img
+              src={centennial}
+              alt="centennial"
+              class="img-fluid cursor center"
+            />
+          </div>
+
           <div className="row">
             <div className="col-md-8">
-              <h2 className="bg-danger rounded p-2 nav-link-white">
+              <h3 className="btn-outline-danger rounded p-2">
                 Upcoming Events
-              </h2>
+                <i class="fas fa-calendar-alt float-right" />
+              </h3>
               <div
                 id="carouselExampleIndicators"
                 class="carousel slide"
@@ -99,108 +109,110 @@ export default class Home extends Component {
               </button>
             </div>
             <div className="col-md-4">
+              <h3 className="btn-outline-danger rounded p-2 nav-link-white">
+                Recent Tweets
+                <i class="fab fa-twitter float-right" />
+              </h3>
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="theULEM"
+                noHeader
+                noFooter
                 options={{ height: 500 }}
               />
             </div>
           </div>
         </div>
         <br />
-        <main role="main" className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Train for Employment</h5>
-                  <p class="card-text">
-                    Need job skills? Interested in learning a new skill? Let us
-                    help you!
-                  </p>
-                  <a href="#" class="btn btn-dark">
-                    Read More
-                  </a>
+        <div className="fixed-bg">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4">
+                <Card />
+              </div>
+              <div className="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Sponsors</h5>
+                    <p class="card-text">They can never be thanked enough!</p>
+                    <br />
+                    <a href="#" class="btn btn-dark">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Our Impact</h5>
+                    <p class="card-text">
+                      ULEM strives to empower communities and change lives every
+                      day.
+                    </p>
+                    <a href="#" class="btn btn-dark">
+                      Read More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Sponsors</h5>
-                  <p class="card-text">They can never be thanked enough!</p>
-                  <br />
-                  <a href="#" class="btn btn-dark">
-                    Read More
-                  </a>
+
+            <br />
+            <div className="row">
+              <div className="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Our Auxiliaries</h5>
+                    <p class="card-text">
+                      Interested in directly making an impact at the Urban
+                      League?
+                    </p>
+                    <a href="#" class="btn btn-dark">
+                      Read More
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Our Impact</h5>
-                  <p class="card-text">
-                    ULEM strives to empower communities and change lives every
-                    day.
-                  </p>
-                  <a href="#" class="btn btn-dark">
-                    Read More
-                  </a>
+              <div className="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Become a Member</h5>
+                    <p class="card-text">
+                      Interested in joining the Urban League of Eastern
+                      Massachusetts?
+                    </p>
+                    <a href="#" class="btn btn-dark">
+                      Read More
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <br />
-          <div className="row">
-            <div className="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Our Auxiliaries</h5>
-                  <p class="card-text">
-                    Interested in directly making an impact at the Urban League?
-                  </p>
-                  <a href="#" class="btn btn-dark">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Become a Member</h5>
-                  <p class="card-text">
-                    Interested in joining the Urban League of Eastern
-                    Massachusetts?
-                  </p>
-                  <a href="#" class="btn btn-dark">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Stay in Touch</h5>
-                  <p class="card-text">
-                    Socialize and stay updated on what we are doing through
-                    social media!
-                  </p>
-                  <a href="#" class="btn btn-dark">
-                    Read More
-                  </a>
+              <div className="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Stay in Touch</h5>
+                    <p class="card-text">
+                      Socialize and stay updated on what we are doing through
+                      social media!
+                    </p>
+                    <a href="#" class="btn btn-dark">
+                      Read More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <main className="container">
           <div className="row">
             <div className="col-md-8">
               <h1>News</h1>
               <img
                 src="http://www.ypnulem.org/uploads/I%20AM%20Empowered%20Scholarship.png"
                 alt=""
+                className="img-fluid"
               />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
