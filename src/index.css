@@ -6,6 +6,7 @@ body {
   background: url("./logo.PNG");
   background-repeat: no-repeat, repeat;
   background-position: center;
+  min-height: 300px;
 }
 
 .font-dark {
@@ -40,9 +41,36 @@ body {
 }
 
 .nav-link:hover {
-  color: red;
+  color: #c40000;
+  cursor: pointer;
 }
 
 .nav-link {
   color: black;
+}
+
+.jumbotron-p {
+  font-weight: 700;
+}
+
+.font-red {
+  color: #c40000;
+}
+
+.font-white {
+  color: white;
+}
+
+.nav-link-white:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-link-dark:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
 }

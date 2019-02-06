@@ -13,19 +13,19 @@ export default class Home extends Component {
   slide1 = {
     background: `url("http://www.ypnulem.org/uploads/photos/o/1546923553_Join%20Week%202019-5.jpg")`,
     backgroundRepeat: "no-repeat, repeat",
-    backgroundPosition: "center"
+    backgroundPosition: "top center"
   };
 
   slide2 = {
     background: `url("http://www.ypnulem.org/uploads/photos/o/1546923693_ULEM%202019%20Annual%20Meeting.png")`,
     backgroundRepeat: "no-repeat, repeat",
-    backgroundPosition: "center"
+    backgroundPosition: "top center"
   };
 
   slide3 = {
     background: `url("http://www.ypnulem.org/uploads/photos/o/1546923608_Taking%20It%20To%20The%20Streets%202019.jpeg")`,
     backgroundRepeat: "no-repeat, repeat",
-    backgroundPosition: "center"
+    backgroundPosition: "top center"
   };
 
   render() {
@@ -44,24 +44,12 @@ export default class Home extends Component {
             </div>
           </header>
           <Navbar />
-          <div className="jumbotron p-3 p-md-5 text-white rounded bg-centennial">
-            <div className="col-md-6 px-0 font-dark">
-              <h1 className="display-4 font-italic">Centennial</h1>
-              <p className="lead my-3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nostrum inventore dolore veritatis esse quia explicabo minus
-                quasi facere iste distinctio mollitia sed voluptate delectus,
-                corrupti sapiente magni ab quae nobis.
-              </p>
-              <p className="lead mb-0">
-                <Link to="#" className="text-white font-weight-bold">
-                  Continue reading...
-                </Link>
-              </p>
-            </div>
-          </div>
+          <div className="jumbotron p-3 p-md-5 text-white rounded bg-centennial cursor" />
           <div className="row">
             <div className="col-md-8">
+              <h2 className="bg-danger rounded p-2 nav-link-white">
+                Upcoming Events
+              </h2>
               <div
                 id="carouselExampleIndicators"
                 class="carousel slide"
