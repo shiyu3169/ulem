@@ -6,6 +6,7 @@ import Navbar from "./components/layout/Navbar";
 import Program from "./components/program.js/Program";
 import Events from "./components/Events";
 import Donate from "./components/Donate";
+import Sponsor from "./components/Sponsor";
 class App extends Component {
   render() {
     return (
@@ -17,6 +18,7 @@ class App extends Component {
           <Route exact path="/program" component={Program} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/donate" component={Donate} />
+          <Route exact path="/sponsor" component={Sponsor} />
         </div>
       </Router>
     );

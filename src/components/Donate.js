@@ -28,11 +28,13 @@ export default class Donate extends Component {
           />
         </div>
         <p>
-          After watching it, you may be inclined to make a donation by clicking
-          the image below:​
+          <strong>
+            After watching it, you may be inclined to make a donation by
+            clicking the image below:​
+          </strong>
         </p>
         <a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=ulem&id=1">
-          <img className="center" src={Donating} alt="donate" />
+          <img className="center img-fluid" src={Donating} alt="donate" />
         </a>
         <p>
           <strong>
@@ -47,7 +49,7 @@ export default class Donate extends Component {
           <strong>Thank you in advance! ​</strong>
         </p>
         <a href="https://smile.amazon.com/ch/23-7349132">
-          <img className="center" src={Amazon} alt="amazon" />
+          <img className="center img-fluid" src={Amazon} alt="amazon" />
         </a>
       </div>
     );

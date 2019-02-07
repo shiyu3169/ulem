@@ -17,7 +17,7 @@ export default class Card extends Component {
     });
   };
   render() {
-    const { title, text } = this.props;
+    const { title, text, link } = this.props;
     return (
       <div
         className="card"
@@ -32,7 +32,7 @@ export default class Card extends Component {
           </p>
         </div>
         <footer class="container mb-2">
-          <a href="#" className="btn btn-outline-danger center">
+          <a href={link} className="btn btn-outline-danger center">
             Read More
           </a>
         </footer>

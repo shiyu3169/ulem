@@ -118,8 +118,13 @@ export default class Home extends Component {
               <Card
                 title="Train for Employment"
                 text="Need job skills? Interested in learning a new skill? Let us help you!"
+                link="/program"
               />
-              <Card title="Sponsors" text="They can never be thanked enough!" />
+              <Card
+                title="Sponsors"
+                text="They can never be thanked enough!"
+                link="/sponsor"
+              />
               <Card
                 title="Our Impact"
                 text="ULEM strives to empower communities and change lives every day."
