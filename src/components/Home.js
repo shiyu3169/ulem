@@ -34,18 +34,6 @@ export default class Home extends Component {
     return (
       <div>
         <div className="container">
-          <header className="blog-header py-3">
-            <div className="row flex-nowrap justify-content-between align-items-center">
-              <div className="col-4 pt-1" />
-              <div className="col-4 text-center">
-                <img src={ulem} alt="ulem" class="img-fluid" />
-              </div>
-              <div className="col-4 d-flex justify-content-end align-items-center">
-                <i className="fas fa-search" />
-              </div>
-            </div>
-          </header>
-          <Navbar />
           <div className="full-width">
             <img
               src={centennial}
@@ -155,25 +143,6 @@ export default class Home extends Component {
           </div>
           <br />
         </div>
-        <main className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <h1>News</h1>
-              <img
-                src="http://www.ypnulem.org/uploads/I%20AM%20Empowered%20Scholarship.png"
-                alt=""
-                className="img-fluid"
-              />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-                consequatur facilis ullam sapiente tempore alias accusamus
-                incidunt maiores. Mollitia sunt nemo esse consequuntur ipsum
-                adipisci aspernatur excepturi alias. Dolores, libero.
-              </p>
-            </div>
-            <div className="col-md-4" />
-          </div>
-        </main>
       </div>
     );
   }
