@@ -149,6 +149,7 @@ export default class Home extends Component {
               />
             </div>
           </div>
+          <br />
         </div>
         <br />
         <div className="container">
