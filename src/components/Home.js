@@ -128,6 +128,7 @@ export default class Home extends Component {
               <Card
                 title="Our Impact"
                 text="ULEM strives to empower communities and change lives every day."
+                link="/impact"
               />
             </div>
             <br />
@@ -135,14 +136,17 @@ export default class Home extends Component {
               <Card
                 title="Our Auxiliaries"
                 text="Interested in directly making an impact at the Urban League?"
+                link="/auxiliaries"
               />
               <Card
                 title="Become a Member"
                 text="Interested in joining the Urban League of Eastern Massachusetts?"
+                link="/member"
               />
               <Card
                 title="Stay in Touch"
                 text="Socialize and stay updated on what we are doing through social media!"
+                link="/contact"
               />
             </div>
           </div>
