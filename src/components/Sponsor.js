@@ -20,25 +20,13 @@ export default class Sponsor extends Component {
           to development@ulem.org.
         </p>
         <h4>2018 Equal Opportunity & Diversity Breakfast</h4>
-        <img
-          src={sponsorPng}
-          className="center img-fluid"
-          alt="Responsive image"
-        />
-        <img
-          src={sponsorPng2}
-          className="center img-fluid"
-          alt="Responsive image"
-        />
-        <img
-          src={sponsorPng3}
-          className="center img-fluid"
-          alt="Responsive image"
-        />
+        <img src={sponsorPng} className="center img-fluid" alt="sponsor1" />
+        <img src={sponsorPng2} className="center img-fluid" alt="sponsor2" />
+        <img src={sponsorPng3} className="center img-fluid" alt="sponsor3" />
         <h4>Major Donors 2016-2017</h4>
-        <img src={donor} className="center img-fluid" alt="Responsive image" />
+        <img src={donor} className="center img-fluid" alt="donor1" />
         <h4>Gala Donors 2017</h4>
-        <img src={gala} className="center img-fluid" alt="Responsive image" />
+        <img src={gala} className="center img-fluid" alt="donor2" />
         <div className="text-center mt-4 mb-4">
           <h4>SUPPORTERS</h4>
           <ul className="list-no-style list-group">
@@ -69,7 +57,7 @@ export default class Sponsor extends Component {
           </ul>
         </div>
         <h4>2016 Career Fair Major Sponsors</h4>
-        <img src={career} className="center img-fluid" alt="Responsive image" />
+        <img src={career} className="center img-fluid" alt="career1" />
       </div>
     );
   }

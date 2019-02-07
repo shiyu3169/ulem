@@ -22,6 +22,7 @@ export default class Donate extends Component {
         </p>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe
+            title="donate"
             class="embed-responsive-item"
             src="https://www.youtube.com/embed/6kxMIPWEKF8"
             allowfullscreen

@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import ulem from "../ulem.png";
 import centennial from "../logo.PNG";
 import { Link } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import Navbar from "./layout/Navbar";
 import Card from "./layout/Card";
+import Youtube from "./layout/Youtube";
 export default class Home extends Component {
   componentDidMount() {
     window.$(".carousel").carousel({
@@ -150,7 +149,36 @@ export default class Home extends Component {
               />
             </div>
           </div>
-          <br />
+        </div>
+        <br />
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <h3 className="btn-outline-danger rounded p-2 cursor">
+                News
+                <i class="far fa-newspaper float-right" />
+              </h3>
+              <small className="float-right mb-1">Feb. 7, 2019</small>
+              <img
+                className="img-fluid"
+                src="http://www.ypnulem.org/uploads/I%20AM%20Empowered%20Scholarship.png"
+                alt="news"
+              />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+                repellendus adipisci amet expedita temporibus libero pariatur
+                totam error impedit. Quod cum totam ut reiciendis velit sapiente
+                expedita blanditiis fugiat ducimus.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <h3 className="btn-outline-danger rounded p-2 cursor">
+                ULEM Youtube
+                <i class="fab fa-youtube fa-lg float-right" />
+              </h3>
+              <Youtube />
+            </div>
+          </div>
         </div>
       </div>
     );
