@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  /* padding-top: 50px; */
+  padding-bottom: 20px;
 }
 
 .bg-centennial {
@@ -272,4 +272,12 @@ html {
   position: sticky;
   top: 8%;
   z-index: 1;
+}
+
+.inline {
+  display: inline;
+}
+
+.list-no-style {
+  list-style-type: none;
 }

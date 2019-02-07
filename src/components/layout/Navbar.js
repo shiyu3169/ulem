@@ -46,40 +46,18 @@ export default class Navbar extends Component {
                   About
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <span
-                  className="nav-link dropdown-toggle nav-link"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false">
+              <li class="nav-item" onClick={this.collapse}>
+                <Link className="nav-link" to="/program">
                   Programs & Services
-                </span>
-                <div
-                  className="dropdown-menu"
-                  aria-labelledby="navbarDropdown"
-                  onClick={this.collapse}>
-                  <Link className="dropdown-item " to="#">
-                    Workforce Development Training Programs
-                  </Link>
-                  <div className="dropdown-divider" />
-                  <Link className="dropdown-item   " to="#">
-                    Support Services
-                  </Link>
-                  <div className="dropdown-divider" />
-                  <Link className="dropdown-item" to="#">
-                    Certifications
-                  </Link>
-                </div>
+                </Link>
               </li>
               <li class="nav-item" onClick={this.collapse}>
-                <Link className="nav-link nav-link" to="/">
+                <Link className="nav-link nav-link" to="/events">
                   Events
                 </Link>
               </li>
               <li class="nav-item" onClick={this.collapse}>
-                <Link className="nav-link nav-link" to="/">
+                <Link className="nav-link nav-link" to="/donate">
                   Donate
                 </Link>
               </li>
