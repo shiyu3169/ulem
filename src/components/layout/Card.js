@@ -31,7 +31,7 @@ export default class Card extends Component {
             {text}
           </p>
         </div>
-        <footer class="container mb-2">
+        <footer className="container mb-2">
           <a href={link} className="btn btn-outline-danger center">
             Read More
           </a>

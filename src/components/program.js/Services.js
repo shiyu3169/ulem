@@ -16,15 +16,15 @@ export default class Services extends Component {
         </p>
         <ul className="list-no-style">
           <li>
-            <i class="fas fa-headset mr-2 font-red" />
+            <i className="fas fa-headset mr-2 font-red" />
             Assistance with basic online job searching
           </li>
           <li>
-            <i class="fas fa-headset mr-2 font-red" />
+            <i className="fas fa-headset mr-2 font-red" />
             Support for additional cover letter and resume changes
           </li>
           <li>
-            <i class="fas fa-headset mr-2 font-red" />
+            <i className="fas fa-headset mr-2 font-red" />
             Information on any newly listed positions by posting them on the job
             board
           </li>
@@ -76,13 +76,13 @@ export default class Services extends Component {
         </p>
         <ul className="list-no-style">
           <li>
-            <i class="fas fa-info-circle  mr-2 font-red" />
+            <i className="fas fa-info-circle  mr-2 font-red" />
             Getting a job boosts self-esteem, while also elevating someone's
             financial status. Poverty and a lack of income are major
             contributors towards violence.
           </li>
           <li>
-            <i class="fas fa-info-circle mr-2 font-red" />
+            <i className="fas fa-info-circle mr-2 font-red" />
             Those who seek to remove themselves from violent
             environments/situations by way of getting a job are getting the
             necessary pre-employment skills and certifications at ULEM.
@@ -90,22 +90,22 @@ export default class Services extends Component {
             assisting in breaking the cycle of violence.
           </li>
           <li>
-            <i class="fas fa-info-circle  mr-2 font-red" />
+            <i className="fas fa-info-circle  mr-2 font-red" />
             ULEM will soon become a vital access point for information, support,
             and referrals.​
           </li>
           <li>
-            <i class="fas fa-info-circle  mr-2 font-red" />
+            <i className="fas fa-info-circle  mr-2 font-red" />
             Victims will see ULEM, a trusted, culturally specific institution
             take a leadership role in speaking out against violence.
           </li>
           <li>
-            <i class="fas fa-info-circle  mr-2 font-red" />
+            <i className="fas fa-info-circle  mr-2 font-red" />
             Victims will know more about violence and prevention, will recognize
             red flags and warning signs, and will seek help earlier.
           </li>
           <li>
-            <i class="fas fa-info-circle  mr-2 font-red" />
+            <i className="fas fa-info-circle  mr-2 font-red" />
             Victims will experience a more coherent and coordinated community
             response to violence as stronger relationships among ULEM and our
             partners

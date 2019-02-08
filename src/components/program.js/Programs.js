@@ -26,15 +26,15 @@ export default class Programs extends Component {
         <p>The targeted population must: </p>
         <ul className="pl-2">
           <li className="inline mr-2">
-            <i class="fas fa-check font-red" />
+            <i className="fas fa-check font-red" />
             Be at least 18 years of age
           </li>
           <li className="inline mr-2">
-            <i class="fas fa-check font-red" />
+            <i className="fas fa-check font-red" />
             Have a high school diploma or GED
           </li>
           <li className="inline">
-            <i class="fas fa-check font-red" />
+            <i className="fas fa-check font-red" />
             Be committed to completing the program
           </li>
         </ul>
@@ -44,20 +44,20 @@ export default class Programs extends Component {
         </p>
         <ul className="list-no-style">
           <li>
-            <i class="fas fa-book mr-2 font-red" />
+            <i className="fas fa-book mr-2 font-red" />
             Web Development - Learning to make Web Applications (HTML, CSS,
             JavaScript, MEAN Stack)
           </li>
           <li>
-            <i class="fas fa-book mr-2 font-red" />
+            <i className="fas fa-book mr-2 font-red" />
             Financial Literacy – Our Dollars & Sense Training
           </li>
           <li>
-            <i class="fas fa-book mr-2 font-red" />
+            <i className="fas fa-book mr-2 font-red" />
             National Career Readiness testing and certification
           </li>
           <li>
-            <i class="fas fa-book mr-2 font-red" />
+            <i className="fas fa-book mr-2 font-red" />
             Resume, Cover Letter & Linkedin Profile Building
           </li>
         </ul>

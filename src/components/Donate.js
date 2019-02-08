@@ -16,10 +16,10 @@ export default class Donate extends Component {
           under- and unemployed at no cost to them.
         </p>
         <p>lease take a moment to view our impact video:​</p>
-        <div class="embed-responsive embed-responsive-16by9">
+        <div className="embed-responsive embed-responsive-16by9">
           <iframe
             title="donate"
-            class="embed-responsive-item"
+            className="embed-responsive-item"
             src="https://www.youtube.com/embed/6kxMIPWEKF8"
             allowfullscreen
           />

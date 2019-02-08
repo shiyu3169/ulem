@@ -47,8 +47,8 @@ export default class Milestone extends Component {
     return (
       <section id="milestone">
         <h1 className="font-red">Our Milestones</h1>
-        <div class="container-fluid">
-          <div class="row">
+        <div className="container-fluid">
+          <div className="row">
             <div id="timeline">
               <Stone
                 src={beyond}

@@ -11,6 +11,7 @@ import Impact from "./components/Impact";
 import Auxiliaries from "./components/Auxiliaries";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import Footer from "./components/layout/Footer";
+import Centennial from "./components/Centennial";
 class App extends Component {
   render() {
     return (
@@ -25,6 +26,7 @@ class App extends Component {
           <Route exact path="/sponsor" component={Sponsor} />
           <Route exact path="/impact" component={Impact} />
           <Route exact path="/auxiliaries" component={Auxiliaries} />
+          <Route exact path="/centennial" component={Centennial} />
           <Footer />
         </ScrollToTop>
       </Router>

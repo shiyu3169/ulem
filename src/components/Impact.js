@@ -14,7 +14,7 @@ export default class Impact extends Component {
         <div className="row mt-4">
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               3,619
             </h1>
             <p className="ml-5 mr-5">
@@ -24,7 +24,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               500+
             </h1>
             <p className="ml-5 mr-5">
@@ -34,7 +34,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               136
             </h1>
             <p className="ml-5 mr-5">
@@ -46,7 +46,7 @@ export default class Impact extends Component {
         <div className="row mt-4">
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               1,156
             </h1>
             <p className="ml-5 mr-5">
@@ -56,7 +56,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               84%
             </h1>
             <p className="ml-5 mr-5">
@@ -66,7 +66,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               72%
             </h1>
             <p className="ml-5 mr-5">
@@ -78,7 +78,7 @@ export default class Impact extends Component {
         <div className="row mt-4">
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               239
             </h1>
             <p className="ml-5 mr-5">
@@ -89,7 +89,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               85%
             </h1>
             <p className="ml-5 mr-5">
@@ -99,7 +99,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               85%
             </h1>
             <p className="ml-5 mr-5">
@@ -111,7 +111,7 @@ export default class Impact extends Component {
         <div className="row mt-4">
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               80%
             </h1>
             <p className="ml-5 mr-5">
@@ -122,7 +122,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />1
+              <i className="fas fa-circle font-red mr-2" />1
             </h1>
             <p className="ml-5 mr-5">
               THE ONLY URBAN LEAGUE AFFILIATE OUT OF 95 IN THE USA THAT PROVIDES
@@ -132,7 +132,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               15
             </h1>
             <p className="ml-5 mr-5">
@@ -145,7 +145,7 @@ export default class Impact extends Component {
         <div className="row mt-4">
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               10,000+
             </h1>
             <p className="ml-5 mr-5">
@@ -155,7 +155,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               100+
             </h1>
             <p className="ml-5 mr-5">
@@ -166,7 +166,7 @@ export default class Impact extends Component {
           </div>
           <div className="col-md-4">
             <h1>
-              <i class="fas fa-circle font-red mr-2" />
+              <i className="fas fa-circle font-red mr-2" />
               1,000+
             </h1>
             <p className="ml-5 mr-5">

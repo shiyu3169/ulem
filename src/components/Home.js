@@ -34,27 +34,29 @@ export default class Home extends Component {
       <div>
         <div className="container">
           <div className="full-width">
-            <img
-              src={centennial}
-              alt="centennial"
-              class="img-fluid cursor center"
-            />
+            <Link to="/centennial">
+              <img
+                src={centennial}
+                alt="centennial"
+                className="img-fluid cursor center"
+              />
+            </Link>
           </div>
           <div className="row">
             <div className="col-md-8">
               <h3 className="btn-outline-danger rounded p-2 cursor">
                 Upcoming Events
-                <i class="fas fa-calendar-alt float-right" />
+                <i className="fas fa-calendar-alt float-right" />
               </h3>
               <div
                 id="carouselExampleIndicators"
-                class="carousel slide"
+                className="carousel slide"
                 data-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol className="carousel-indicators">
                   <li
                     data-target="#carouselExampleIndicators"
                     data-slide-to="0"
-                    class="active"
+                    className="active"
                   />
                   <li
                     data-target="#carouselExampleIndicators"
@@ -65,26 +67,35 @@ export default class Home extends Component {
                     data-slide-to="2"
                   />
                 </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active crop" style={this.slide1} />
-                  <div class="carousel-item crop" style={this.slide2} />
-                  <div class="carousel-item crop" style={this.slide3} />
+                <div className="carousel-inner">
+                  <div
+                    className="carousel-item active crop"
+                    style={this.slide1}
+                  />
+                  <div className="carousel-item crop" style={this.slide2} />
+                  <div className="carousel-item crop" style={this.slide3} />
                 </div>
                 <a
-                  class="carousel-control-prev"
+                  className="carousel-control-prev"
                   href="#carouselExampleIndicators"
                   role="button"
                   data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true" />
-                  <span class="sr-only">Previous</span>
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  />
+                  <span className="sr-only">Previous</span>
                 </a>
                 <a
-                  class="carousel-control-next"
+                  className="carousel-control-next"
                   href="#carouselExampleIndicators"
                   role="button"
                   data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true" />
-                  <span class="sr-only">Next</span>
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  />
+                  <span className="sr-only">Next</span>
                 </a>
               </div>
               <br />
@@ -102,7 +113,7 @@ export default class Home extends Component {
                 target="_blank">
                 <h3 className="btn-outline-danger rounded p-2 nav-link-white">
                   Recent Tweets
-                  <i class="fab fa-twitter float-right" />
+                  <i className="fab fa-twitter float-right" />
                 </h3>
               </a>
               <TwitterTimelineEmbed
@@ -119,7 +130,7 @@ export default class Home extends Component {
         <div className="fixed-bg">
           <br />
           <div className="container">
-            <div class="card-deck">
+            <div className="card-deck">
               <Card
                 title="Train for Employment"
                 text="Need job skills? Interested in learning a new skill? Let us help you!"
@@ -137,7 +148,7 @@ export default class Home extends Component {
               />
             </div>
             <br />
-            <div class="card-deck">
+            <div className="card-deck">
               <Card
                 title="Our Auxiliaries"
                 text="Interested in directly making an impact at the Urban League?"
@@ -163,7 +174,7 @@ export default class Home extends Component {
             <div className="col-md-6">
               <h3 className="btn-outline-danger rounded p-2 cursor">
                 News
-                <i class="far fa-newspaper float-right" />
+                <i className="far fa-newspaper float-right" />
               </h3>
               <small className="float-right mb-1">Feb. 7, 2019</small>
               <img
@@ -181,7 +192,7 @@ export default class Home extends Component {
             <div className="col-md-6">
               <h3 className="btn-outline-danger rounded p-2 cursor">
                 ULEM Youtube
-                <i class="fab fa-youtube fa-lg float-right" />
+                <i className="fab fa-youtube fa-lg float-right" />
               </h3>
               <Youtube />
             </div>
