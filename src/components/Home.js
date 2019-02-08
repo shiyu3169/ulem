@@ -95,10 +95,16 @@ export default class Home extends Component {
               </button>
             </div>
             <div className="col-md-4">
-              <h3 className="btn-outline-danger rounded p-2 nav-link-white">
-                Recent Tweets
-                <i class="fab fa-twitter float-right" />
-              </h3>
+              <a
+                href="https://twitter.com/theULEM"
+                className="link"
+                rel="noopener noreferrer"
+                target="_blank">
+                <h3 className="btn-outline-danger rounded p-2 nav-link-white">
+                  Recent Tweets
+                  <i class="fab fa-twitter float-right" />
+                </h3>
+              </a>
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="theULEM"

@@ -12,17 +12,17 @@ export default class Program extends Component {
             <div className="sticky-side">
               <h4>Programs & Services</h4>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item  list-group-item-action">
+                <li className="list-group-item">
                   <a href="#program" className="nav-link-red">
                     Workforce Development Training Programs
                   </a>
                 </li>
-                <li className="list-group-item  list-group-item-action">
+                <li className="list-group-item">
                   <a href="#service" className="nav-link-red">
                     Support Services
                   </a>
                 </li>
-                <li className="list-group-item  list-group-item-action">
+                <li className="list-group-item">
                   <a href="#certification" className="nav-link-red">
                     Certifications
                   </a>

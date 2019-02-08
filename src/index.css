@@ -2,15 +2,15 @@
   box-sizing: border-box;
 }
 
-body {
-  padding-bottom: 20px;
-}
-
 .bg-centennial {
   background: url("./logo.PNG");
   background-repeat: no-repeat, repeat;
   background-position: center;
   min-height: 300px;
+}
+
+#footer-img-height {
+  max-height: 30vh;
 }
 
 .font-dark {
@@ -33,6 +33,10 @@ body {
 .link:hover {
   text-decoration: none;
   color: white;
+}
+
+.text-decoration {
+  text-decoration: none;
 }
 
 .nav-margin {
@@ -330,4 +334,10 @@ html {
   color: #e2001a;
   font-size: 1.3em;
   font-weight: 600;
+}
+
+footer a:hover,
+footer link:hover {
+  text-decoration: none;
+  color: black;
 }
