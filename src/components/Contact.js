@@ -20,7 +20,7 @@ export default class Contact extends Component {
     const { name, email, subject, content, error, success } = this.state;
     return (
       <div className="container mt-5">
-        <h1>Contact us</h1>
+        <h1 className="font-red mt-4">Contact Us</h1>
         {error && (
           <div className="alert alert-danger">
             Something goes wrong, please check your input and try it again.

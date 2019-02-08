@@ -9,6 +9,7 @@ const InputGroup = ({
   rows,
   onChange,
   error,
+  required,
   value,
   id
 }) => {
@@ -24,6 +25,7 @@ const InputGroup = ({
           type={type}
           name={name}
           id={id}
+          required={required}
           placeholder={placeholder}
           className="form-control"
           rows={rows}
@@ -35,6 +37,7 @@ const InputGroup = ({
           type={type}
           name={name}
           id={id}
+          required={required}
           placeholder={placeholder}
           className="form-control"
           onChange={onChange}
