@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 * {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+}
 .bg-centennial {
   background: url("./logo.PNG");
   background-repeat: no-repeat, repeat;

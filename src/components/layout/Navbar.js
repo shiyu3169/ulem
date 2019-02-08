@@ -15,9 +15,7 @@ export default class Navbar extends Component {
               <div className="col-4 text-center">
                 <img src={ulem} alt="ulem" class="img-fluid" />
               </div>
-              <div className="col-4 d-flex justify-content-end align-items-center">
-                <i className="fas fa-search" />
-              </div>
+              <div className="col-4 d-flex justify-content-end align-items-center" />
             </div>
           </header>
         </div>
