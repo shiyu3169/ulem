@@ -14,21 +14,15 @@ export default class Stone extends Component {
                     <ul class="timeline-panel-ul">
                       <div class="lefting-wrap">
                         <li class="img-wraping">
-                          <a href="#">
-                            <img
-                              src={this.props.src}
-                              class="img-responsive"
-                              alt="user-image"
-                            />
-                          </a>
+                          <img
+                            src={this.props.src}
+                            class="img-responsive"
+                            alt="history"
+                          />
                         </li>
                       </div>
                       <div class="righting-wrap">
-                        <li>
-                          <a href="#" class="importo">
-                            {this.props.text}
-                          </a>
-                        </li>
+                        <li>{this.props.text}</li>
                       </div>
                       <div class="clear" />
                     </ul>
@@ -47,21 +41,15 @@ export default class Stone extends Component {
                     <ul class="timeline-panel-ul">
                       <div class="lefting-wrap">
                         <li class="img-wraping">
-                          <a href="#">
-                            <img
-                              src={this.props.src}
-                              class="img-responsive"
-                              alt="user-image"
-                            />
-                          </a>
+                          <img
+                            src={this.props.src}
+                            class="img-responsive"
+                            alt="history"
+                          />
                         </li>
                       </div>
                       <div class="righting-wrap">
-                        <li>
-                          <a href="#" class="importo">
-                            {this.props.text}
-                          </a>
-                        </li>
+                        <li>{this.props.text}</li>
                       </div>
                       <div class="clear" />
                     </ul>
