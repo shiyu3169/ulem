@@ -12,6 +12,7 @@ import Auxiliaries from "./components/Auxiliaries";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import Footer from "./components/layout/Footer";
 import Centennial from "./components/Centennial";
+import Contact from "./components/Contact";
 class App extends Component {
   render() {
     return (
@@ -27,6 +28,7 @@ class App extends Component {
           <Route exact path="/impact" component={Impact} />
           <Route exact path="/auxiliaries" component={Auxiliaries} />
           <Route exact path="/centennial" component={Centennial} />
+          <Route exact path="/contact" component={Contact} />
           <Footer />
         </ScrollToTop>
       </Router>

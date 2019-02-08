@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Card extends Component {
   state = {
@@ -32,9 +33,9 @@ export default class Card extends Component {
           </p>
         </div>
         <footer className="container mb-2">
-          <a href={link} className="btn btn-outline-danger center">
+          <Link to={link} className="btn btn-outline-danger center">
             Read More
-          </a>
+          </Link>
         </footer>
       </div>
     );
