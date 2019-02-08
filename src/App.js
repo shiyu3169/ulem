@@ -9,11 +9,12 @@ import Donate from "./components/Donate";
 import Sponsor from "./components/Sponsor";
 import Impact from "./components/Impact";
 import Auxiliaries from "./components/Auxiliaries";
+import ScrollToTop from "./components/layout/ScrollToTop";
 class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <ScrollToTop>
           <Navbar />
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
@@ -23,7 +24,7 @@ class App extends Component {
           <Route exact path="/sponsor" component={Sponsor} />
           <Route exact path="/impact" component={Impact} />
           <Route exact path="/auxiliaries" component={Auxiliaries} />
-        </div>
+        </ScrollToTop>
       </Router>
     );
   }
