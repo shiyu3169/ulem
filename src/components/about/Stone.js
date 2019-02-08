@@ -14,15 +14,21 @@ export default class Stone extends Component {
                     <ul class="timeline-panel-ul">
                       <div class="lefting-wrap">
                         <li class="img-wraping">
-                          <img
-                            src={this.props.src}
-                            class="img-responsive"
-                            alt="history"
-                          />
+                          <span>
+                            <img
+                              data-toggle="modal"
+                              data-target={`#${this.props.title}`}
+                              src={this.props.src}
+                              class="img-responsive cursor"
+                              alt="history"
+                            />
+                          </span>
                         </li>
                       </div>
                       <div class="righting-wrap">
-                        <li>{this.props.text}</li>
+                        <li>
+                          <p class="importo">{this.props.text}</p>
+                        </li>
                       </div>
                       <div class="clear" />
                     </ul>
@@ -41,15 +47,21 @@ export default class Stone extends Component {
                     <ul class="timeline-panel-ul">
                       <div class="lefting-wrap">
                         <li class="img-wraping">
-                          <img
-                            src={this.props.src}
-                            class="img-responsive"
-                            alt="history"
-                          />
+                          <span>
+                            <img
+                              data-toggle="modal"
+                              data-target={`#${this.props.title}`}
+                              src={this.props.src}
+                              class="img-responsive cursor"
+                              alt="history"
+                            />
+                          </span>
                         </li>
                       </div>
                       <div class="righting-wrap">
-                        <li>{this.props.text}</li>
+                        <li>
+                          <p class="importo">{this.props.text}</p>
+                        </li>
                       </div>
                       <div class="clear" />
                     </ul>
@@ -59,6 +71,19 @@ export default class Stone extends Component {
             </div>
           </div>
         )}
+        <div
+          class="modal fade bd-example-modal-lg"
+          tabindex="-1"
+          id={this.props.title}
+          role="dialog"
+          aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img className="img-fluid" src={this.props.src} alt="big" />
+            </div>
+          </div>
+        </div>
       </React.Fragment>
     );
   }
