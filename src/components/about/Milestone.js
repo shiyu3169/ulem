@@ -1,83 +1,73 @@
-import React from "react";
+import React, { Component } from "react";
 import Stone from "./Stone";
+import digiul from "../../img/DigiUL.png";
+import t2009 from "../../img/2009.png";
+import t1999 from "../../img/1999.png";
+import t1979 from "../../img/1979.png";
+import t1959 from "../../img/1959.png";
+import t1949 from "../../img/1949.PNG";
+import t1939 from "../../img/1939.png";
+import t1929 from "../../img/1929.png";
 import t1919 from "../../img/1919.png";
+export default class Milestone extends Component {
+  componentDidMount() {
+    var $animation_elements = window.$(".anim");
+    var $window = window.$(window);
 
-export default function Milestone() {
-  return (
-    <section id="milestone">
-      <h1 className="font-red">Our Milestones</h1>
-      <ul class="timeline">
-        <Stone
-          date="21st Century & Beyond"
-          text="Carl Dreyfus Jr. Elected President of Urban League"
-          img={t1919}
-          inverted="timeline-inverted"
-        />
-        <Stone
-          date="Today"
-          text="Department Stores In Boston Hiring Negro Saleswomen"
-          img={t1919}
-        />
-        <Stone
-          date="2009"
-          text="Carl Dreyfus Jr. Elected President of Urban League"
-          img={t1919}
-          inverted="timeline-inverted"
-        />
-        <Stone
-          date="1999"
-          text="Department Stores In Boston Hiring Negro Saleswomen"
-          img={t1919}
-        />
-        <Stone
-          date="1989"
-          text="Carl Dreyfus Jr. Elected President of Urban League"
-          img={t1919}
-          inverted="timeline-inverted"
-        />
-        <Stone
-          date="1979"
-          text="Department Stores In Boston Hiring Negro Saleswomen"
-          img={t1919}
-        />
-        <Stone
-          date="1969"
-          text="Carl Dreyfus Jr. Elected President of Urban League"
-          img={t1919}
-          inverted="timeline-inverted"
-        />
-        <Stone
-          date="1959"
-          text="Department Stores In Boston Hiring Negro Saleswomen"
-          img={t1919}
-        />
-        <Stone
-          date="1949"
-          text="Carl Dreyfus Jr. Elected President of Urban League"
-          img={t1919}
-          inverted="timeline-inverted"
-        />
-        <Stone
-          date="1939"
-          text="Department Stores In Boston Hiring Negro Saleswomen"
-          img={t1919}
-        />
-        <Stone
-          date="1929"
-          text="George Goodman, President of the Boston Urban League, lobbies
-          with the Works Progress Administration (WPA) and National Youth
-          Administration to place workers in jobs as a result of protests
-          regarding unemployment rates during the Depression rising from
-          15 to 18% in the South End and Roxbury."
-          img={t1919}
-          inverted="timeline-inverted"
-        />
-        <Stone
-          date="May 16, 1919"
-          text="The Boston Urban League becomes an affiliate of the National Urban League."
-          img={t1919}
-        />
-      </ul>
-    </section>
-  );
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = window_top_position + window_height;
+
+      window.$.each($animation_elements, function() {
+        var $element = window.$(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = element_top_position + element_height;
+
+        //check to see if this current container is within viewport
+        if (
+          element_bottom_position >= window_top_position &&
+          element_top_position <= window_bottom_position
+        ) {
+          $element.addClass("animated");
+        } else {
+          $element.removeClass("animated");
+        }
+      });
+    }
+
+    $window.on("scroll resize", check_if_in_view);
+    $window.trigger("scroll");
+  }
+  render() {
+    return (
+      <section id="milestone">
+        <h1 className="font-red">Our Milestones</h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div id="timeline">
+              <Stone
+                src={t1919}
+                direction="left"
+                text="21st Century & Beyond"
+              />
+              <Stone src={digiul} direction="right" text="Today" />
+              <Stone src={t2009} direction="left" text="2009" />
+              <Stone src={t1999} direction="right" text="1999" />
+              <Stone src={t1919} direction="left" text="1989" />
+              <Stone src={t1979} direction="right" text="1979" />
+              <Stone src={t1919} direction="left" text="1969" />
+              <Stone src={t1959} direction="right" text="1959" />
+              <Stone src={t1949} direction="left" text="1949" />
+              <Stone src={t1939} direction="right" text="1939" />
+              <Stone src={t1929} direction="left" text="1929" />
+              <Stone src={t1919} direction="right" text="May 16, 1919" />
+              {/* end */}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 }

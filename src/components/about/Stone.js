@@ -1,26 +1,77 @@
 import React, { Component } from "react";
 
 export default class Stone extends Component {
-  style = {
-    background: `url(${this.props.img})`,
-    backgroundRepeat: "no-repeat, repeat",
-    backgroundPosition: "top center"
-  };
   render() {
     return (
-      <li className={this.props.inverted}>
-        <div class="timeline-badge danger">
-          <i class="glyphicon glyphicon-floppy-disk" />
-        </div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">{this.props.date}</h4>
+      <React.Fragment>
+        {this.props.direction === "left" ? (
+          <div class="row timeline-movement">
+            <div class="timeline-badge" />
+            <div class="col-sm-6 timeline-item">
+              <div class="row">
+                <div class="col-sm-11">
+                  <div class="timeline-panel credits anim animate fadeInLeft">
+                    <ul class="timeline-panel-ul">
+                      <div class="lefting-wrap">
+                        <li class="img-wraping">
+                          <a href="#">
+                            <img
+                              src={this.props.src}
+                              class="img-responsive"
+                              alt="user-image"
+                            />
+                          </a>
+                        </li>
+                      </div>
+                      <div class="righting-wrap">
+                        <li>
+                          <a href="#" class="importo">
+                            {this.props.text}
+                          </a>
+                        </li>
+                      </div>
+                      <div class="clear" />
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="timeline-body">
-            <div className="crop" style={this.style} />
+        ) : (
+          <div class="row timeline-movement">
+            <div class="timeline-badge center-right" />
+            <div class="offset-sm-6 col-sm-6  timeline-item">
+              <div class="row">
+                <div class="offset-sm-1 col-sm-11">
+                  <div class="timeline-panel debits  anim animate  fadeInRight">
+                    <ul class="timeline-panel-ul">
+                      <div class="lefting-wrap">
+                        <li class="img-wraping">
+                          <a href="#">
+                            <img
+                              src={this.props.src}
+                              class="img-responsive"
+                              alt="user-image"
+                            />
+                          </a>
+                        </li>
+                      </div>
+                      <div class="righting-wrap">
+                        <li>
+                          <a href="#" class="importo">
+                            {this.props.text}
+                          </a>
+                        </li>
+                      </div>
+                      <div class="clear" />
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </li>
+        )}
+      </React.Fragment>
     );
   }
 }
