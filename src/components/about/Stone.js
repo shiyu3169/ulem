@@ -78,9 +78,11 @@ export default class Stone extends Component {
           role="dialog"
           aria-labelledby="myLargeModalLabel"
           aria-hidden="true">
-          <div class="modal-dialog modal-lg">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <img className="img-fluid" src={this.props.src} alt="big" />
+              <div className="container-fluid">
+                <img className="img-fluid" src={this.props.src} alt="big" />
+              </div>
             </div>
           </div>
         </div>
