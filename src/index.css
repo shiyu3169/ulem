@@ -7,12 +7,6 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
 }
-.bg-centennial {
-  background: url("./logo.PNG");
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  min-height: 300px;
-}
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
@@ -21,7 +15,7 @@ body {
 }
 
 #footer-img-height {
-  max-height: 30vh;
+  max-height: 25vh;
 }
 .carousel-indicators li {
   background-color: black;

@@ -7,14 +7,16 @@ export default class Footer extends Component {
       <footer className="container-fluid bg-danger mt-5 pt-4">
         <div className="row">
           <div className="col-md-2 text-center">
-            <img
-              src={ulem100}
-              className="img-fluid"
-              id="footer-img-height"
-              alt=""
-            />
+            <Link to="/centennial">
+              <img
+                src={ulem100}
+                className="img-fluid"
+                id="footer-img-height"
+                alt=""
+              />
+            </Link>
           </div>
-          <div className="col-md-2" />
+          <div className="col-md-1" />
           <div className="col-md-3">
             <h5 className="font-weight-bold text-uppercase mb-4 font-white">
               About
@@ -79,6 +81,7 @@ export default class Footer extends Component {
               </li>
             </ul>
           </div>
+          <div className="col-md-1" />
           <div className="col-md-2 text-center">
             <h5 className="font-weight-bold text-uppercase mb-4 font-white">
               Follow Us

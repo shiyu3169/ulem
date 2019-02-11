@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import centennial from "../logo.PNG";
+import centennial from "../img/logo.PNG";
 import { Link } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Card from "./layout/Card";
@@ -105,7 +105,7 @@ export default class Home extends Component {
                 </Link>
               </button>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-11">
               <a
                 href="https://twitter.com/theULEM"
                 className="link"
