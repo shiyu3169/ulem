@@ -114,6 +114,11 @@ html {
   margin-right: auto;
 }
 
+.strong {
+  font-weight: 700;
+  background-color: red;
+}
+
 .fixed-bg {
   background: url("https://pbs.twimg.com/profile_banners/187067666/1532102626/1500x500");
   /* Create the parallax scrolling effect */

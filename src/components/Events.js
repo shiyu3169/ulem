@@ -9,6 +9,10 @@ export default class Events extends Component {
   onChange = date => {
     this.setState({ date });
   };
+
+  tileClassName = ({ date, view }) =>
+    view === "month" && date.getDay() === 3 ? "strong" : null;
+
   render() {
     return (
       <div className="container-fluid">
@@ -18,6 +22,7 @@ export default class Events extends Component {
               className="fixed-pos"
               onChange={this.onChange}
               value={this.state.date}
+              tileClassName={this.tileClassName}
             />
           </div>
           <div className="col-lg-4">
