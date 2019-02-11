@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ulem from "../../ulem.png";
+import ulem from "../../img/ulem.png";
 export default class Navbar extends Component {
   collapse() {
     window.$(".collapse").collapse("hide");
@@ -11,11 +11,13 @@ export default class Navbar extends Component {
         <div className="container">
           <header className="blog-header py-3">
             <div className="row flex-nowrap justify-content-between align-items-center">
-              <div className="col-4 pt-1" />
-              <div className="col-4 text-center">
-                <img src={ulem} alt="ulem" className="img-fluid" />
+              <div className="col-md-4" />
+              <div className="col-md-4 text-center">
+                <Link to="/">
+                  <img src={ulem} alt="ulem" className="img-fluid" />
+                </Link>
               </div>
-              <div className="col-4 d-flex justify-content-end align-items-center" />
+              <div className="col-md-4" />
             </div>
           </header>
         </div>

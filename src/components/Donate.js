@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Donating from "../ulem2.jpg";
-import Amazon from "../amazon.jpg";
+import Donating from "../img/ulem2.jpg";
+import Amazon from "../img/amazon.jpg";
 
 export default class Donate extends Component {
   render() {

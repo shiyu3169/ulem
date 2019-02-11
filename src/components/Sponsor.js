@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import sponsorPng from "../sponsor.png";
-import sponsorPng2 from "../sponsor2.png";
-import sponsorPng3 from "../sponsor3.png";
-import donor from "../major-donors.png";
-import gala from "../gala.png";
-import career from "../career.png";
+import sponsorPng from "../img/sponsor.png";
+import sponsorPng2 from "../img/sponsor2.png";
+import sponsorPng3 from "../img/sponsor3.png";
+import donor from "../img/major-donors.png";
+import gala from "../img/gala.png";
+import career from "../img/career.png";
 export default class Sponsor extends Component {
   render() {
     return (
