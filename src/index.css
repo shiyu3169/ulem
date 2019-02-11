@@ -126,7 +126,6 @@ html {
 .transition {
   transition: opacity 1s;
 }
-
 .dropdown-item:active {
   background: white;
 }

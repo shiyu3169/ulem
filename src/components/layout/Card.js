@@ -18,14 +18,23 @@ export default class Card extends Component {
     });
   };
   render() {
-    const { title, text, link } = this.props;
+    const { title, text, link, icon } = this.props;
     return (
       <div
         className="card"
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOut}>
         <div className="card-body">
-          <h5 className="card-title text-center">{title}</h5>
+          <div className="text-center">
+            <i className={icon} />
+          </div>
+          <h5
+            className="card-title text-center text-center transition"
+            style={{
+              opacity: this.state.show ? 0 : 1
+            }}>
+            <strong>{title}</strong>
+          </h5>
           <p
             className="card-text transition text-center"
             style={{ opacity: this.state.show ? 1 : 0 }}>

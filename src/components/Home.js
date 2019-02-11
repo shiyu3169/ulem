@@ -135,16 +135,19 @@ export default class Home extends Component {
                 title="Train for Employment"
                 text="Need job skills? Interested in learning a new skill? Let us help you!"
                 link="/program"
+                icon="fas fa-graduation-cap fa-2x"
               />
               <Card
                 title="Sponsors"
                 text="They can never be thanked enough!"
                 link="/sponsor"
+                icon="fas fa-money-bill fa-2x"
               />
               <Card
                 title="Our Impact"
                 text="ULEM strives to empower communities and change lives every day."
                 link="/impact"
+                icon="fas fa-thumbs-up fa-2x"
               />
             </div>
             <br />
@@ -153,16 +156,19 @@ export default class Home extends Component {
                 title="Our Auxiliaries"
                 text="Interested in directly making an impact at the Urban League?"
                 link="/auxiliaries"
+                icon="fas fa-building fa-2x"
               />
               <Card
                 title="Become a Member"
                 text="Interested in joining the Urban League of Eastern Massachusetts?"
                 link="/member"
+                icon="fas fa-users fa-2x"
               />
               <Card
                 title="Stay in Touch"
                 text="Socialize and stay updated on what we are doing through social media!"
                 link="/contact"
+                icon="fas fa-envelope fa-2x"
               />
             </div>
           </div>

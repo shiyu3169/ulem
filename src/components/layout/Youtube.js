@@ -7,7 +7,7 @@ export default function Youtube() {
         className="embed-responsive-item"
         title="youtube"
         src="https://www.youtube.com/embed?listType=user_uploads&list=theULEMRoxbury&rel=0"
-        allowfullscreen
+        allowFullScreen
       />
     </div>
   );
