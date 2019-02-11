@@ -14,10 +14,18 @@ body {
   min-height: 300px;
 }
 
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: grey;
+  opacity: 0.3;
+}
+
 #footer-img-height {
   max-height: 30vh;
 }
-
+.carousel-indicators li {
+  background-color: black;
+}
 .font-dark {
   color: grey;
 }
