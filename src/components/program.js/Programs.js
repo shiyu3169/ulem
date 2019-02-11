@@ -77,6 +77,7 @@ export default class Programs extends Component {
             http://www.msimbo.com
           </a>
         </p>
+        <hr />
         <h4>DiGiUL Program</h4>
         <p>
           The DiGiUL program is at full time Monday through Friday 10am – 4pm
@@ -96,6 +97,7 @@ export default class Programs extends Component {
           the application and give yourself 20-30 min for the interview process.
           Stipend based program . <strong>SECTION 30 APPROVED.</strong>
         </p>
+        <hr />
         <h3>Computer Literacy and Internet Knowledge Program</h3>
         <p>
           Powered by the Timothy Smith Network, Computer Literacy and Internet
@@ -109,6 +111,7 @@ export default class Programs extends Component {
           that complete the CLIK program are eligible to receive a Google
           Chromebook.
         </p>
+        <hr />
         <h3>Mature Worker Skills Program (MWSP)</h3>
         <p>
           In partnership with the Brigham & Women Hospital, the MWSP program is
@@ -119,6 +122,7 @@ export default class Programs extends Component {
           (PCA), or Home Health Aide. Learn about healthy living and a stress
           free life. Enroll Today!
         </p>
+        <hr />
         <h3>Customer Service Sales Training (CSST)</h3>
         <p>
           This training prepares participants for work through classroom

@@ -21,6 +21,7 @@ export default class Certification extends Component {
           are Word, Excel, PowerPoint, Outlook, Access, SharePoint, and OneNote.
           ULEM is an authorized testing center.
         </p>
+        <hr />
         <h4>Act National Career Readiness Certification (NCRC)</h4>
         <p>
           NCRC, issued by ACT, is a portable, evidence-based credential that

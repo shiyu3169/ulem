@@ -123,6 +123,10 @@ html {
   background-size: cover;
 }
 
+.fixed-pos {
+  position: fixed;
+}
+
 .transition {
   transition: opacity 1s;
 }

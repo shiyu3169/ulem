@@ -30,6 +30,7 @@ export default class Services extends Component {
           </li>
         </ul>
         <p>In general, the ERC serves 600+ people annually.</p>
+        <hr />
         <h4>Job Placement</h4>
         <p>
           Job Placement assistance is available to all participants enrolled in
@@ -41,6 +42,7 @@ export default class Services extends Component {
           one-on-one meetings, in addition to their classroom training in job
           readiness. Participants are offered ongoing support up to 12 months.
         </p>
+        <hr />
         <h4>Case Management</h4>
         <p>
           Case Management Services are available to all participants enrolled in
@@ -57,6 +59,7 @@ export default class Services extends Component {
           of poverty through employment. We provide post-job placement support
           for up to 24 months.
         </p>
+        <hr />
         <h4>Domestic/Sexual Violence Support</h4>
         <p>
           Domestic/Sexual Abuse and Violence support is available to anyone
