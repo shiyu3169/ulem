@@ -26,7 +26,7 @@ export default class Card extends Component {
         onMouseOut={this.mouseOut}>
         <div className="card-body">
           <div className="text-center">
-            <i className={icon} />
+            <i className={`text-danger ${icon}`} />
           </div>
           <h5
             className="card-title text-center text-center transition"

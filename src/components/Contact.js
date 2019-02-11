@@ -10,6 +10,17 @@ export default class Contact extends Component {
     success: false
   };
 
+  componentDidMount() {
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      content: "",
+      error: false,
+      success: false
+    });
+  }
+
   onChange = e => {
     this.setState({
       [e.target.name]: e.target.value
@@ -60,9 +71,6 @@ export default class Contact extends Component {
             value={content}
             onChange={this.onChange}
           />
-          <button type="type" className="btn btn-outline-danger btn-lg">
-            Cancel
-          </button>
           <button
             type="submit"
             className="btn btn-outline-success btn-lg float-right">

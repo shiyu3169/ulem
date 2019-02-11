@@ -135,7 +135,7 @@ export default class Home extends Component {
                 title="Train for Employment"
                 text="Need job skills? Interested in learning a new skill? Let us help you!"
                 link="/program"
-                icon="fas fa-graduation-cap fa-2x"
+                icon="fas fa-graduation-cap fa-2x "
               />
               <Card
                 title="Sponsors"
