@@ -11,7 +11,9 @@ const InputGroup = ({
   error,
   required,
   value,
-  id
+  id,
+  date,
+  autoComplete
 }) => {
   return (
     <div className="form-group">
@@ -39,9 +41,10 @@ const InputGroup = ({
           id={id}
           required={required}
           placeholder={placeholder}
-          className="form-control"
+          className={`form-control ${date ? "datePicker" : ""}`}
           onChange={onChange}
           value={value}
+          autoComplete={autoComplete}
         />
       )}
       {error && <div className="alert alert-danger">{error}</div>}

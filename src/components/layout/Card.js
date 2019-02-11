@@ -20,14 +20,16 @@ export default class Card extends Component {
   render() {
     const { title, text, link, icon } = this.props;
     return (
-      <div
-        className="card"
+      <Link
+        to={link}
+        className="card link-no-style"
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOut}>
         <div className="card-body">
           <div className="text-center">
             <i className={`text-danger ${icon}`} />
           </div>
+          <br />
           <h5
             className="card-title text-center text-center transition"
             style={{
@@ -41,12 +43,8 @@ export default class Card extends Component {
             {text}
           </p>
         </div>
-        <footer className="container mb-2">
-          <Link to={link} className="btn btn-outline-danger center">
-            Read More
-          </Link>
-        </footer>
-      </div>
+        <footer className="container mb-2" />
+      </Link>
     );
   }
 }

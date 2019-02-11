@@ -8,6 +8,14 @@ body {
   line-height: 1.6;
 }
 
+:required {
+  border: 1px solid #c40000;
+}
+
+.select-red {
+  border: 1px solid #c40000;
+}
+
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background-color: grey;
@@ -40,6 +48,12 @@ body {
 .link:hover {
   text-decoration: none;
   color: white;
+}
+
+.link-no-style,
+.link-no-style:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .text-decoration {
