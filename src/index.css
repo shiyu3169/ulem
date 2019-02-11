@@ -122,9 +122,10 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.fixed-pos {
-  position: fixed;
+@media (min-width: 992px) {
+  .fixed-pos {
+    position: fixed;
+  }
 }
 
 .transition {

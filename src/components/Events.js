@@ -6,21 +6,27 @@ export default class Events extends Component {
     date: new Date()
   };
 
-  onChange = date => this.setState({ date });
+  onChange = date => {
+    this.setState({ date });
+  };
   render() {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-4 mt-5">
+          <div className="col-lg-4 mt-5">
             <Calendar
               className="fixed-pos"
               onChange={this.onChange}
               value={this.state.date}
             />
           </div>
-          <div className="col-md-4" />
-          <div className="col-md-4">
-            <h1 className="font-red mt-4">Events</h1>
+          <div className="col-lg-4">
+            <h2 className="font-red mt-4">
+              Events on {this.state.date.toDateString()}
+            </h2>
+          </div>
+          <div className="col-lg-4 ">
+            <h2 className="font-red mt-4">Events</h2>
             <p>
               Annually, ULEM honors its mission by hosting 3 signature events,
               our Annual Meeting, Gala, and Jobs Rebuild Boston Community
