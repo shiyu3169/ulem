@@ -65,8 +65,11 @@ export default class Member extends Component {
           action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
           method="POST">
           <input type="hidden" name="oid" value="00D50000000cxiS" />
-          <input type="hidden" name="retURL" value="http://" />
-          <input type="hidden" name="debug" value="1" />
+          <input
+            type="hidden"
+            name="retURL"
+            value="https://www.ulem.org/thank"
+          />
           <InputGroup
             label="First Name"
             id="first_name"
