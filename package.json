@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "postinstall": "react-scripts build"
   },
   "proxy": "http://localhost:3100",
   "eslintConfig": {
