@@ -15,6 +15,9 @@ import Centennial from "./components/Centennial";
 import Contact from "./components/Contact";
 import Member from "./components/Member";
 import Thank from "./components/Thank";
+import Login from "./components/auth/Login";
+import Admin from "./components/auth/Admin";
+
 class App extends Component {
   render() {
     return (
@@ -33,6 +36,8 @@ class App extends Component {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/member" component={Member} />
           <Route exact path="/thank" component={Thank} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/admin" component={Admin} />
           <Footer />
         </ScrollToTop>
       </Router>
