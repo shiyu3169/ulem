@@ -73,7 +73,7 @@ export default class Contact extends Component {
           />
           <button
             type="submit"
-            className="btn btn-outline-success btn-lg float-right">
+            className="btn btn-outline-danger btn-lg float-right">
             Send
           </button>
         </form>
