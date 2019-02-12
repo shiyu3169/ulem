@@ -10,11 +10,31 @@ export default class Member extends Component {
     supplements: false,
     childCare: false,
     marital: false,
-    transportation: false
+    transportation: false,
+    houseHold: false,
+    children: false
+  };
+
+  showOther = (state, e) => {
+    if (
+      e.target.value === "Other" ||
+      e.target.value === "BHA Resident" ||
+      e.target.value === "Urban League Employee" ||
+      e.target.value === "One Stop Career Center Location"
+    ) {
+      this.setState({
+        [state]: true
+      });
+    } else {
+      this.setState({
+        [state]: false
+      });
+    }
   };
 
   showTransportation = e => {
-    if (e.target.value === "Other") {
+    var values = window.$("#00N5000000AZDL3").val();
+    if (values.includes("Other")) {
       this.setState({
         transportation: true
       });
@@ -25,102 +45,14 @@ export default class Member extends Component {
     }
   };
 
-  showMarital = e => {
-    if (e.target.value === "Other") {
-      this.setState({
-        marital: true
-      });
-    } else {
-      this.setState({
-        marital: false
-      });
-    }
-  };
-
-  showChildCare = e => {
-    if (e.target.value === "Other") {
-      this.setState({
-        childCare: true
-      });
-    } else {
-      this.setState({
-        childCare: false
-      });
-    }
-  };
-
-  showSupplements = e => {
-    if (e.target.value === "Other") {
-      this.setState({
-        supplements: true
-      });
-    } else {
-      this.setState({
-        supplements: false
-      });
-    }
-  };
-
-  showLanguage = e => {
-    if (e.target.value === "Other") {
-      this.setState({
-        language: true
-      });
-    } else {
-      this.setState({
-        language: false
-      });
-    }
-  };
-
-  showEthnicity = e => {
-    if (e.target.value === "Other") {
-      this.setState({
-        ethnicity: true
-      });
-    } else {
-      this.setState({
-        ethnicity: false
-      });
-    }
-  };
-
-  showHousing = e => {
-    if (e.target.value === "BHA Resident") {
-      this.setState({
-        housing: true
-      });
-    } else {
-      this.setState({
-        housing: false
-      });
-    }
-  };
-
-  showHear = e => {
-    if (
-      e.target.value === "Urban League Employee" ||
-      e.target.value === "One Stop Career Center Location" ||
-      e.target.value === "Urban League Newspaper" ||
-      e.target.value === "Other"
-    ) {
-      this.setState({
-        hear: true
-      });
-    } else {
-      this.setState({
-        hear: false
-      });
-    }
-  };
-
   componentDidMount() {
     window.$("select[multiple]").selectpicker();
     window.$(function() {
       window.$(".datePicker").datepicker({
         showButtonPanel: true,
         changeMonth: true,
-        changeYear: true
+        changeYear: true,
+        yearRange: "-100:+0"
       });
     });
   }
@@ -237,6 +169,11 @@ export default class Member extends Component {
             name="00N5000000AZDId"
             required
           />
+          <InputGroup
+            label="Emergency Contact Information (If applicable)"
+            id="00N5000000AZDIi"
+            name="00N5000000AZDIi"
+          />
           <div className="form-group">
             <label htmlFor="00N5000000AZDIn">
               <strong>Gender</strong>
@@ -274,7 +211,7 @@ export default class Member extends Component {
               name="00N5000000AZDJ2"
               required
               className="form-control"
-              onChange={this.showHear}>
+              onChange={this.showOther.bind(this, "hear")}>
               <option />
               <option value="Walk-in">Walk-in</option>
               <option value="Massachusetts Rehabilitation Commission (MRC)">
@@ -344,7 +281,7 @@ export default class Member extends Component {
 
             <select
               required
-              onChange={this.showEthnicity}
+              onChange={this.showOther.bind(this, "ethnicity")}
               id="00N5000000AZDJH"
               name="00N5000000AZDJH"
               className="form-control">
@@ -381,7 +318,7 @@ export default class Member extends Component {
             </label>
 
             <select
-              onChange={this.showLanguage}
+              onChange={this.showOther.bind(this, "language")}
               required
               id="00N5000000AZDJR"
               name="00N5000000AZDJR"
@@ -436,7 +373,7 @@ export default class Member extends Component {
             </label>
             <select
               id="00N5000000AZDJq"
-              onChange={this.showHousing}
+              onChange={this.showOther.bind(this, "housing")}
               name="00N5000000AZDJq"
               className="form-control"
               required>
@@ -461,192 +398,245 @@ export default class Member extends Component {
               />
             )}
           </div>
-          {/*
-        HouseHold Size:
-        <select
-          id="00N5000000AZDK0"
-          name="00N5000000AZDK0"
-          title="HouseHold Size">
-          <option value="">--None--</option>
-          <option value="1 Person">1 Person</option>
-          <option value="2 Persons">2 Persons</option>
-          <option value="3 Persons">3 Persons</option>
-          <option value="4 Persons">4 Persons</option>
-          <option value="5 Persons">5 Persons</option>
-          <option value="Other">Other</option>
-        </select>
-        <br />
-        Other_Household_Size:
-        <input
-          id="00N5000000AZDK5"
-          maxlength="50"
-          name="00N5000000AZDK5"
-          size="20"
-          type="text"
-        />
-        <br />
-        Annual Income:
-        <select
-          id="00N5000000AZDKA"
-          name="00N5000000AZDKA"
-          title="Annual Income">
-          <option value="">--None--</option>
-          <option value="Below $5,000">Below $5,000</option>
-          <option value="$5,001 - $20,000">$5,001 - $20,000</option>
-          <option value="$20,001 - $35,000">$20,001 - $35,000</option>
-          <option value="$35,001 - $50,000">$35,001 - $50,000</option>
-          <option value="$50,000+">$50,000+</option>
-        </select>
-        <br />
-        Income Supplements:
-        <select
-          id="00N5000000AZDKF"
-          name="00N5000000AZDKF"
-          title="Income Supplements">
-          <option value="">--None--</option>
-          <option value="TAFDC/EAEDC">TAFDC/EAEDC</option>
-          <option value="TANF/Food Stamps">TANF/Food Stamps</option>
-          <option value="Workers Compensation">Workers Compensation</option>
-          <option value="SSI/SSDI">SSI/SSDI</option>
-          <option value="Medicaid">Medicaid</option>
-          <option value="Pension/Retirement">Pension/Retirement</option>
-          <option value="Unemployment">Unemployment</option>
-          <option value="Alimony/Palimony">Alimony/Palimony</option>
-          <option value="Survivor Benefits">Survivor Benefits</option>
-          <option value="Child Support">Child Support</option>
-          <option value="Veteran Benefits">Veteran Benefits</option>
-          <option value="Other">Other</option>
-        </select>
-        <br />
-        Other_Income_Supplements:
-        <input
-          id="00N5000000AZDKK"
-          maxlength="100"
-          name="00N5000000AZDKK"
-          size="20"
-          type="text"
-        />
-        <br />
-        Do you have a CORI:
-        <select
-          id="00N5000000AZDKP"
-          name="00N5000000AZDKP"
-          title="Do you have a CORI">
-          <option value="">--None--</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-          <option value="Decline to answer">Decline to answer</option>
-        </select>
-        <br />
-        Employment Status:
-        <select
-          id="00N5000000AZDKU"
-          name="00N5000000AZDKU"
-          title="Employment Status">
-          <option value="">--None--</option>
-          <option value="Unemployed">Unemployed</option>
-          <option value="Work Part Time">Work Part Time</option>
-          <option value="Work Full Time">Work Full Time</option>
-          <option value="Student">Student</option>
-          <option value="Unemployed due to disability">
-            Unemployed due to disability
-          </option>
-          <option value="Retired">Retired</option>
-        </select>
-        <br />
-        Dependent Children:
-        <select
-          id="00N5000000AZDKZ"
-          name="00N5000000AZDKZ"
-          title="Dependent Children">
-          <option value="">--None--</option>
-          <option value="No Children">No Children</option>
-          <option value="1 Child">1 Child</option>
-          <option value="2 Children">2 Children</option>
-          <option value="3 Children">3 Children</option>
-          <option value="4 Children">4 Children</option>
-          <option value="5 Children">5 Children</option>
-          <option value="Other">Other</option>
-        </select>
-        <br />
-        Other_Dependent_Children:
-        <input
-          id="00N5000000AZDKe"
-          maxlength="50"
-          name="00N5000000AZDKe"
-          size="20"
-          type="text"
-        />
-        <br />
-        Childcare:
-        <select id="00N5000000AZDKj" name="00N5000000AZDKj" title="Childcare">
-          <option value="">--None--</option>
-          <option value="Child Care Voucher (Child Care Choices)">
-            Child Care Voucher (Child Care Choices)
-          </option>
-          <option value="DCF Slot">DCF Slot</option>
-          <option value="Family Member">Family Member</option>
-          <option value="None">None</option>
-          <option value="Paying out of Pocket">Paying out of Pocket</option>
-          <option value="DTA Slot">DTA Slot</option>
-          <option value="Friend/Neighbor">Friend/Neighbor</option>
-          <option value="Other">Other</option>
-        </select>
-        <br />
-        Other_Childcare:
-        <input
-          id="00N5000000AZDKo"
-          maxlength="100"
-          name="00N5000000AZDKo"
-          size="20"
-          type="text"
-        />
-        <br />
-        Marital Status:
-        <select
-          id="00N5000000AZDKt"
-          name="00N5000000AZDKt"
-          title="Marital Status">
-          <option value="">--None--</option>
-          <option value="Single">Single</option>
-          <option value="Divorced">Divorced</option>
-          <option value="Married">Married</option>
-          <option value="Separated">Separated</option>
-          <option value="Widowed">Widowed</option>
-          <option value="Other">Other</option>
-        </select>
-        <br />
-        Other_Marital_Status:
-        <input
-          id="00N5000000AZDKy"
-          maxlength="100"
-          name="00N5000000AZDKy"
-          size="20"
-          type="text"
-        />
-        <br />
-        What form(s) of transportation do you ut:
-        <select
-          id="00N5000000AZDL3"
-          multiple="multiple"
-          name="00N5000000AZDL3"
-          title="What form(s) of transportation do you ut">
-          <option value="Own Vehicle">Own Vehicle</option>
-          <option value="The Ride">The Ride</option>
-          <option value="Public Transportation">Public Transportation</option>
-          <option value="More than One">More than One</option>
-          <option value="Other">Other</option>
-        </select>
-        <br />
-        Other_Transporation:
-        <input
-          id="00N5000000AZDL8"
-          maxlength="100"
-          name="00N5000000AZDL8"
-          size="20"
-          type="text"
-        />
-        <br /> */}
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDK0">
+              <strong> HouseHold Size</strong>
+            </label>
+            <select
+              id="00N5000000AZDK0"
+              name="00N5000000AZDK0"
+              className="form-control"
+              onChange={this.showOther.bind(this, "houseHold")}
+              required>
+              <option />
+              <option value="1 Person">1 Person</option>
+              <option value="2 Persons">2 Persons</option>
+              <option value="3 Persons">3 Persons</option>
+              <option value="4 Persons">4 Persons</option>
+              <option value="5 Persons">5 Persons</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div className="ml-2">
+            {this.state.houseHold && (
+              <InputGroup
+                label="Other Household Size"
+                required
+                name="00N5000000AZDK5"
+                id="00N5000000AZDK5"
+              />
+            )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDKA">
+              <strong>Annual Income</strong>
+            </label>
+            <select
+              id="00N5000000AZDKA"
+              name="00N5000000AZDKA"
+              className="form-control"
+              required>
+              <option />
+              <option value="Below $5,000">Below $5,000</option>
+              <option value="$5,001 - $20,000">$5,001 - $20,000</option>
+              <option value="$20,001 - $35,000">$20,001 - $35,000</option>
+              <option value="$35,001 - $50,000">$35,001 - $50,000</option>
+              <option value="$50,000+">$50,000+</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDKF">
+              <strong>Income Supplements</strong>
+            </label>
+            <select
+              id="00N5000000AZDKF"
+              name="00N5000000AZDKF"
+              className="form-control"
+              onChange={this.showOther.bind(this, "supplements")}
+              required>
+              <option />
+              <option value="TAFDC/EAEDC">TAFDC/EAEDC</option>
+              <option value="TANF/Food Stamps">TANF/Food Stamps</option>
+              <option value="Workers Compensation">Workers Compensation</option>
+              <option value="SSI/SSDI">SSI/SSDI</option>
+              <option value="Medicaid">Medicaid</option>
+              <option value="Pension/Retirement">Pension/Retirement</option>
+              <option value="Unemployment">Unemployment</option>
+              <option value="Alimony/Palimony">Alimony/Palimony</option>
+              <option value="Survivor Benefits">Survivor Benefits</option>
+              <option value="Child Support">Child Support</option>
+              <option value="Veteran Benefits">Veteran Benefits</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div className="ml-2">
+            {this.state.supplements && (
+              <InputGroup
+                label="Other Income Supplements"
+                required
+                name="00N5000000AZDKK"
+                id="00N5000000AZDKK"
+              />
+            )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDKP">
+              <strong>Do you have a CORI?</strong>
+            </label>
+            <select
+              id="00N5000000AZDKP"
+              name="00N5000000AZDKP"
+              className="form-control"
+              required>
+              <option />
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Decline to answer">Decline to answer</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDKU">
+              <strong>Employment Status?</strong>
+            </label>
+            <select
+              id="00N5000000AZDKU"
+              name="00N5000000AZDKU"
+              className="form-control"
+              required>
+              <option />
+              <option value="Unemployed">Unemployed</option>
+              <option value="Work Part Time">Work Part Time</option>
+              <option value="Work Full Time">Work Full Time</option>
+              <option value="Student">Student</option>
+              <option value="Unemployed due to disability">
+                Unemployed due to disability
+              </option>
+              <option value="Retired">Retired</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDKZ">
+              <strong>Dependent Children</strong>
+            </label>
+            <select
+              id="00N5000000AZDKZ"
+              name="00N5000000AZDKZ"
+              className="form-control"
+              required
+              onChange={this.showOther.bind(this, "children")}>
+              <option />
+              <option value="No Children">No Children</option>
+              <option value="1 Child">1 Child</option>
+              <option value="2 Children">2 Children</option>
+              <option value="3 Children">3 Children</option>
+              <option value="4 Children">4 Children</option>
+              <option value="5 Children">5 Children</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div className="ml-2">
+            {this.state.children && (
+              <InputGroup
+                label="Other Dependent Children"
+                required
+                name="00N5000000AZDKe"
+                id="00N5000000AZDKe"
+              />
+            )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDKj">
+              <strong>Childcare</strong>
+            </label>
+            <select
+              id="00N5000000AZDKj"
+              name="00N5000000AZDKj"
+              className="form-control"
+              required
+              onChange={this.showOther.bind(this, "childCare")}>
+              <option />
+              <option value="Child Care Voucher (Child Care Choices)">
+                Child Care Voucher (Child Care Choices)
+              </option>
+              <option value="DCF Slot">DCF Slot</option>
+              <option value="Family Member">Family Member</option>
+              <option value="None">None</option>
+              <option value="Paying out of Pocket">Paying out of Pocket</option>
+              <option value="DTA Slot">DTA Slot</option>
+              <option value="Friend/Neighbor">Friend/Neighbor</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div className="ml-2">
+            {this.state.childCare && (
+              <InputGroup
+                label="Other Childcare"
+                required
+                name="00N5000000AZDKo"
+                id="00N5000000AZDKo"
+              />
+            )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDKt">
+              <strong>Marital Status</strong>
+            </label>
+            <select
+              id="00N5000000AZDKt"
+              name="00N5000000AZDKt"
+              className="form-control"
+              required
+              onChange={this.showOther.bind(this, "marital")}>
+              <option />
+              <option value="Single">Single</option>
+              <option value="Divorced">Divorced</option>
+              <option value="Married">Married</option>
+              <option value="Separated">Separated</option>
+              <option value="Widowed">Widowed</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div className="ml-2">
+            {this.state.marital && (
+              <InputGroup
+                label="Other Marital Status"
+                required
+                name="00N5000000AZDKy"
+                id="00N5000000AZDKy"
+              />
+            )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDL3">
+              <strong>What form(s) of transportation do you use?</strong>
+            </label>
+            <div className="select-red rounded">
+              <select
+                id="00N5000000AZDL3"
+                multiple
+                name="00N5000000AZDL3"
+                className="form-control"
+                required
+                onChange={this.showTransportation}>
+                <option value="Own Vehicle">Own Vehicle</option>
+                <option value="The Ride">The Ride</option>
+                <option value="Public Transportation">
+                  Public Transportation
+                </option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div className="ml-2">
+            {this.state.transportation && (
+              <InputGroup
+                label=" Other Transporation"
+                required
+                name="00N5000000AZDL8"
+                id="00N5000000AZDL8"
+              />
+            )}
+          </div>
           <input
             type="submit"
             className="btn btn-lg btn-outline-danger"
