@@ -86,7 +86,7 @@ export default class Member extends Component {
   };
 
   showHousing = e => {
-    if (e.target.value === "Other") {
+    if (e.target.value === "BHA Resident") {
       this.setState({
         housing: true
       });
@@ -412,7 +412,6 @@ export default class Member extends Component {
             <label htmlFor="00N5000000AZDJl">
               <strong>Educational Attainment</strong>
             </label>
-
             <select
               id="00N5000000AZDJl"
               name="00N5000000AZDJl"
@@ -431,34 +430,38 @@ export default class Member extends Component {
               <option value="Trade School">Trade School</option>
             </select>
           </div>
-
+          <div className="form-group">
+            <label htmlFor="00N5000000AZDJq">
+              <strong> Housing Situation</strong>
+            </label>
+            <select
+              id="00N5000000AZDJq"
+              onChange={this.showHousing}
+              name="00N5000000AZDJq"
+              className="form-control"
+              required>
+              <option />
+              <option value="Rent">Rent</option>
+              <option value="Own">Own</option>
+              <option value="Homeless">Homeless</option>
+              <option value="Live with Family or Friends">
+                Live with Family or Friends
+              </option>
+              <option value="Live Alone">Live Alone</option>
+              <option value="BHA Resident">BHA Resident</option>
+            </select>
+          </div>
+          <div className="ml-2">
+            {this.state.housing && (
+              <InputGroup
+                label="BHA Resident"
+                required
+                name="00N5000000AZDJv"
+                id="00N5000000AZDJv"
+              />
+            )}
+          </div>
           {/*
-        
-        Housing Situation:
-        <select
-          id="00N5000000AZDJq"
-          name="00N5000000AZDJq"
-          title="Housing Situation">
-          <option value="">--None--</option>
-          <option value="Rent">Rent</option>
-          <option value="Own">Own</option>
-          <option value="Homeless">Homeless</option>
-          <option value="Live with Family or Friends">
-            Live with Family or Friends
-          </option>
-          <option value="Live Alone">Live Alone</option>
-          <option value="BHA Resident">BHA Resident</option>
-        </select>
-        <br />
-        BHA Resident:
-        <input
-          id="00N5000000AZDJv"
-          maxlength="100"
-          name="00N5000000AZDJv"
-          size="20"
-          type="text"
-        />
-        <br />
         HouseHold Size:
         <select
           id="00N5000000AZDK0"
