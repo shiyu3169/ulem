@@ -6,7 +6,8 @@ var EventSchema = mongoose.Schema(
     start: String,
     end: String,
     venue: String,
-    address: String
+    address: String,
+    noEndTime: Boolean
   },
   { collection: "event" }
 );

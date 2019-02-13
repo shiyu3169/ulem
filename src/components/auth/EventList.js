@@ -16,6 +16,10 @@ export default class EventList extends Component {
     });
   };
 
+  checkEvent = id => {
+    this.props.showEditing(id);
+  };
+
   getEvents = page => {
     Axios.get(`/api/events/${page}`).then(res => {
       this.setState({
@@ -48,7 +52,7 @@ export default class EventList extends Component {
           </button>
         </h4>
         <div className="container">
-          <table className="table">
+          <table className="table table-hover">
             <thead>
               <tr>
                 <th>Title</th>
@@ -58,7 +62,10 @@ export default class EventList extends Component {
             </thead>
             <tbody>
               {this.state.events.map(event => (
-                <tr key={event._id}>
+                <tr
+                  onClick={this.checkEvent.bind(this, event._id)}
+                  className="cursor"
+                  key={event._id}>
                   <td>{event.title}</td>
                   <td>{event.start}</td>
                   <td>{event.end}</td>

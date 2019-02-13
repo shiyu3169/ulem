@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import InputGroup from "../layout/InputGroup";
 import Axios from "axios";
 
-export default class EventNew extends Component {
+export default class EventUpdate extends Component {
   state = {
     noEndTime: false,
     title: "",
@@ -12,12 +12,27 @@ export default class EventNew extends Component {
     address: ""
   };
 
+  // Get info of event
+  getEvent = id => {
+    Axios.get(`/api/event/${id}`).then(res => {
+      const { noEndTime, title, start, end, venue, address } = res.data;
+      this.setState({ noEndTime, title, start, end, venue, address });
+    });
+  };
+
+  componentDidMount() {
+    // Init data
+    this.getEvent(this.props.id);
+  }
+
+  // handle input change event
   onChange = e => {
     this.setState({
       [e.target.name]: e.target.value
     });
   };
 
+  // handle form submit event
   onSubmit = e => {
     e.preventDefault();
     const { title, start, end, venue, address, noEndTime } = this.state;
@@ -25,39 +40,25 @@ export default class EventNew extends Component {
     if (event.noEndTime) {
       event.end = "";
     }
-    this.createEvent(event);
-    this.setState({
-      noEndTime: false,
-      title: "",
-      start: "",
-      end: "",
-      venue: "",
-      address: ""
-    });
+    this.updateEvent(event);
     this.props.showList();
   };
 
+  // cancel the update
   onCancel = () => {
-    this.setState({
-      noEndTime: false,
-      title: "",
-      start: "",
-      end: "",
-      venue: "",
-      address: ""
-    });
     this.props.showList();
   };
 
+  // handle checkbox change event
   onCheckBox = e => {
     this.setState({
       [e.target.name]: e.target.checked
     });
   };
 
-  // Create new event
-  createEvent = event => {
-    Axios.post("/api/event", event);
+  // Update event by id
+  updateEvent = event => {
+    Axios.post(`/api/event/${this.props.id}`, event);
   };
 
   render() {
@@ -81,6 +82,7 @@ export default class EventNew extends Component {
                 name="noEndTime"
                 type="checkbox"
                 onChange={this.onCheckBox}
+                checked={this.state.noEndTime}
               />
               <label htmlFor="noEndTime">No End Time</label>
             </div>

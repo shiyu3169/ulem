@@ -1,34 +1,54 @@
 import React, { Component } from "react";
 import EventNew from "./EventNew";
 import EventList from "./EventList";
+import EventUpdate from "./EventUpdate";
 
 export default class Event extends Component {
   state = {
     showAdding: false,
-    showList: true
+    showList: true,
+    showEditing: false,
+    id: ""
   };
 
   showAdding = () => {
-    this.changeBol("showAdding", true);
-    this.changeBol("showList", false);
+    this.setState({
+      showAdding: true,
+      showList: false,
+      showEditing: false
+    });
   };
 
   showList = () => {
-    this.changeBol("showAdding", false);
-    this.changeBol("showList", true);
+    this.setState({
+      showAdding: false,
+      showList: true,
+      showEditing: false
+    });
   };
 
-  changeBol = (state, bol) => {
+  showEditing = id => {
     this.setState({
-      [state]: bol
+      showAdding: false,
+      showList: false,
+      showEditing: true,
+      id
     });
   };
 
   render() {
     return (
       <div>
-        {this.state.showList && <EventList showAdding={this.showAdding} />}
+        {this.state.showList && (
+          <EventList
+            showAdding={this.showAdding}
+            showEditing={this.showEditing}
+          />
+        )}
         {this.state.showAdding && <EventNew showList={this.showList} />}
+        {this.state.showEditing && (
+          <EventUpdate showList={this.showList} id={this.state.id} />
+        )}
       </div>
     );
   }
