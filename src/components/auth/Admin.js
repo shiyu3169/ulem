@@ -1,24 +1,25 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import { Redirect } from "react-router-dom";
+import AdminMenu from "./AdminMenu";
+import Event from "./Event";
 
 export default class Admin extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: ""
-    };
-  }
+  state = {
+    user: "",
+    showEvents: false,
+    showNews: false
+  };
+
+  changeBol = (state, bol) => {
+    this.setState({
+      [state]: bol
+    });
+  };
 
   componentDidMount() {
     this.loggedIn();
   }
-
-  logout = () => {
-    Axios.post("/api/logout").then(() => {
-      this.props.history.push("/");
-    });
-  };
 
   loggedIn = async () => {
     const res = await Axios.post("/api/loggedIn");
@@ -34,13 +35,16 @@ export default class Admin extends Component {
           <Redirect to="/login" />
         )}
         {this.state.user.admin === true && (
-          <div>
-            <h1 className="font-red mt-4 mb-4">Admin Panel</h1>
-            <button
-              onClick={this.logout}
-              className="btn btn-lg btn-outline-danger">
-              Logout
-            </button>
+          <div className="container-fluid">
+            <h1 className="font-red mt-4 text-center">Admin Panel</h1>
+            <div className="row">
+              <div className="col-md-2">
+                <AdminMenu changeBol={this.changeBol} />
+              </div>
+              <div className="col-md-10">
+                {this.state.showEvents && <Event />}
+              </div>
+            </div>
           </div>
         )}
       </React.Fragment>

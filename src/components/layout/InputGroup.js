@@ -19,7 +19,7 @@ const InputGroup = ({
     <div className="form-group">
       {label && (
         <label htmlFor={name}>
-          <b>{label}</b>
+          <strong>{label}</strong>
         </label>
       )}
       {rows > 1 ? (
