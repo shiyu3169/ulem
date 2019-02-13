@@ -28,6 +28,7 @@ export default class EventList extends Component {
     this.setState({
       page
     });
+    this.getEvents(page);
   };
 
   componentDidMount() {
