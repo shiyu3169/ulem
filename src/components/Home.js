@@ -99,11 +99,11 @@ export default class Home extends Component {
                 </a>
               </div>
               <br />
-              <button className="btn btn-block btn-lg btn-outline-danger">
-                <Link className="link" to="/">
-                  Event Calendar
-                </Link>
-              </button>
+              <Link
+                className="btn btn-block btn-lg btn-outline-danger link"
+                to="/events">
+                Event Calendar
+              </Link>
             </div>
             <div className="col-md-4 col-11">
               <a

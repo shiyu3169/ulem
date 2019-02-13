@@ -73,7 +73,7 @@ export default class Stone extends Component {
         )}
         <div
           className="modal fade bd-example-modal-lg"
-          tabindex="-1"
+          tabIndex="-1"
           id={this.props.title}
           role="dialog"
           aria-labelledby="myLargeModalLabel"
