@@ -44,10 +44,12 @@ export default class Home extends Component {
           </div>
           <div className="row">
             <div className="col-md-8">
-              <h3 className="btn-outline-danger rounded p-2 cursor">
-                Upcoming Events
-                <i className="fas fa-calendar-alt float-right" />
-              </h3>
+              <Link to="/events" className="text-decoration">
+                <h3 className="btn-outline-danger rounded p-2 cursor">
+                  Upcoming Events
+                  <i className="fas fa-calendar-alt float-right" />
+                </h3>
+              </Link>
               <div
                 id="carouselExampleIndicators"
                 className="carousel slide"
