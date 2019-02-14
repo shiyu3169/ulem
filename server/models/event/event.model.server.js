@@ -19,9 +19,12 @@ EventModel.updateEvent = (id, event) =>
   EventModel.updateOne({ _id: id }, event);
 
 // Find event by id
-EventModel.findEventById = id => EventModel.findById(id);
+EventModel.findEventById = id =>
+  EventModel.findById(id)
+    .populate("img")
+    .exec();
 
 // Count events
-EventModel.countEvents = () => EventModel.count();
+EventModel.countEvents = () => EventModel.countDocuments();
 
 module.exports = EventModel;

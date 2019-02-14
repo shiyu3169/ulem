@@ -9,7 +9,8 @@ export default class EventUpdate extends Component {
     start: "",
     end: "",
     venue: "",
-    address: ""
+    address: "",
+    b64: ""
   };
 
   // Get info of event
@@ -65,6 +66,12 @@ export default class EventUpdate extends Component {
     return (
       <React.Fragment>
         <h4>Adding New Event</h4>
+        <img
+          src={`data:${this.state.img.mimeType};base64,${new Buffer(
+            this.state.img.data
+          ).toString("base64")}`}
+          alt="123"
+        />
         <div className="container mt-4">
           <form onSubmit={this.onSubmit} id="primary">
             <InputGroup

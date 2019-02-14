@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import Pages from "../layout/Pages";
+import DeleteModal from "../layout/DeleteModal";
+import UploadModal from "../layout/UploadModal";
 
 export default class EventList extends Component {
   state = {
@@ -58,17 +60,40 @@ export default class EventList extends Component {
                 <th>Title</th>
                 <th>Start Time</th>
                 <th>End Time</th>
+                <th>Image</th>
               </tr>
             </thead>
             <tbody>
               {this.state.events.map(event => (
-                <tr
-                  onClick={this.checkEvent.bind(this, event._id)}
-                  className="cursor"
-                  key={event._id}>
-                  <td>{event.title}</td>
+                <tr key={event._id}>
+                  <td
+                    className="cursor"
+                    onClick={this.checkEvent.bind(this, event._id)}>
+                    {event.title}
+                  </td>
                   <td>{event.start}</td>
                   <td>{event.end}</td>
+                  <td>
+                    {event.img ? (
+                      <button
+                        type="button"
+                        className="btn btn-outline-danger"
+                        data-toggle="modal"
+                        data-target={`#delete${event._id}`}>
+                        Delete
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        className="btn btn-outline-success"
+                        data-toggle="modal"
+                        data-target={`#upload${event._id}`}>
+                        Upload
+                      </button>
+                    )}
+                    <DeleteModal _id={event._id} title={event.title} />
+                    <UploadModal _id={event._id} title={event.title} />
+                  </td>
                 </tr>
               ))}
             </tbody>

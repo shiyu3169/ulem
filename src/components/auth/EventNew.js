@@ -9,7 +9,8 @@ export default class EventNew extends Component {
     start: "",
     end: "",
     venue: "",
-    address: ""
+    address: "",
+    img: ""
   };
 
   onChange = e => {
@@ -60,12 +61,15 @@ export default class EventNew extends Component {
     Axios.post("/api/event", event);
   };
 
+  // upload new image
+  onUpload = () => {};
+
   render() {
     return (
       <React.Fragment>
         <h4>Adding New Event</h4>
         <div className="container mt-4">
-          <form onSubmit={this.onSubmit} id="primary">
+          <form onSubmit={this.onSubmit}>
             <InputGroup
               label="Title"
               placeholder="Enter title here"
@@ -105,53 +109,31 @@ export default class EventNew extends Component {
               />
             )}
             <InputGroup
-              label="
-                Venue name"
+              label="Venue name"
               id="venue"
               name="venue"
               onChange={this.onChange}
               value={this.state.venue}
             />
             <InputGroup
-              label="
-                Address"
+              label="Address"
               id="address"
               name="address"
               value={this.state.address}
               onChange={this.onChange}
             />
+            <button
+              type="button"
+              onClick={this.onCancel}
+              className="btn btn-lg btn-outline-danger">
+              Cancel
+            </button>
+            <button
+              type="submit"
+              className="btn btn-lg btn-outline-success float-right">
+              Submit
+            </button>
           </form>
-          <form
-            action="api/img/upload"
-            method="post"
-            encType="multipart/form-data"
-            accept=".png, .jpg, .jpeg">
-            <div className="form-group">
-              <label>
-                <strong>Image</strong>
-              </label>
-              <div className="input-group">
-                <input type="file" className="form-control" />
-                <div className="input-group-append">
-                  <button type="submit" className="btn btn-outline-secondary">
-                    Upload
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-          <button
-            type="button"
-            onClick={this.onCancel}
-            className="btn btn-lg btn-outline-danger">
-            Cancel
-          </button>
-          <button
-            type="submit"
-            form="primary"
-            className="btn btn-lg btn-outline-success float-right">
-            Submit
-          </button>
         </div>
       </React.Fragment>
     );

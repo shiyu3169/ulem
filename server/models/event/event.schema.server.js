@@ -7,7 +7,8 @@ var EventSchema = mongoose.Schema(
     end: String,
     venue: String,
     address: String,
-    noEndTime: Boolean
+    noEndTime: Boolean,
+    img: { type: mongoose.Schema.Types.ObjectId, ref: "ImgModel" }
   },
   { collection: "event" }
 );

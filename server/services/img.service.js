@@ -1,97 +1,29 @@
 module.exports = function(app) {
-  const userModel = require("../models/user/user.model.server");
+  var fs = require("fs");
+  const multer = require("multer");
+  const upload = multer({ dest: "./build/static/media/upload" });
 
-  app.post("/api/user", createUser);
-  app.get("/api/user", findUsers);
-  app.get("/api/user/:uid", findUserById);
+  const imgModel = require("../models/img/img.model.server");
+  const eventModel = require("../models/event/event.model.server");
 
-  app.post("/api/logout", logout);
-  app.post("/api/loggedIn", loggedIn);
-  app.put("/api/user/:uid", updateUser);
-  app.delete("/api/user/:uid", deleteUser);
+  // Upload image
+  app.post("/api/img/upload", upload.single("image"), (req, res) => {
+    const event = req.query["event"];
+    const news = req.query["news"];
 
-  function loggedIn(req, res) {
-    if (req.isAuthenticated()) {
-      res.json(req.user);
-    } else {
-      res.send("0");
-    }
-  }
-
-  function login(req, res) {
-    res.json(req.user);
-  }
-
-  function logout(req, res) {
-    req.logOut();
-    res.sendStatus(200);
-  }
-
-  function serializeUser(user, done) {
-    done(null, user);
-  }
-
-  function deserializeUser(user, done) {
-    userModel.findUserById(user._id).then(
-      user => {
-        done(null, user);
-      },
-      err => {
-        done(err, null);
-      }
-    );
-  }
-
-  function createUser(req, res) {
-    const newUser = req.body;
-    userModel
-      .createUser(newUser)
-      .then(user => {
-        res.json(user);
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }
-
-  function findUsers(req, res) {
-    const username = req.query["username"];
-    const password = req.query["password"];
-    if (username && password) {
-      userModel.findUserByCredentials(username, password).then(user => {
-        res.json(user);
-      });
-      return;
-    } else if (username) {
-      userModel.findUserByUsername(username).then(user => {
-        res.json(user);
-      });
-      return;
-    }
-    userModel.findUsers().then(users => {
-      res.json(users);
+    const image = req.file;
+    const callbackUrl = req.headers.origin + "admin";
+    console.log(callbackUrl);
+    const img = {
+      name: image.path,
+      data: "",
+      mimetype: image.mimetype
+    };
+    fs.readFile(img.name, async (err, data) => {
+      img.data = data;
+      const newImg = await imgModel.createImg(img);
+      await eventModel.updateOne({ _id: event }, { $set: { img: newImg._id } });
+      res.redirect(callbackUrl);
     });
-  }
-
-  function findUserById(req, res) {
-    const uid = req.params["uid"];
-    userModel.findUserById(uid).then(user => {
-      res.json(user);
-    });
-  }
-
-  function updateUser(req, res) {
-    const uid = req.params["uid"];
-    const user = req.body;
-    userModel.updateUser(uid, user).then(data => {
-      res.json(user);
-    });
-  }
-
-  function deleteUser(req, res) {
-    const uid = req.params["uid"];
-    userModel.deleteUser(uid).then(data => {
-      res.send(data);
-    });
-  }
+  });
 };
