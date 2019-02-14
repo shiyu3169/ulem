@@ -23,7 +23,9 @@ module.exports = function(app) {
       img.data = data;
       const newImg = await imgModel.createImg(img);
       await eventModel.updateOne({ _id: event }, { $set: { img: newImg._id } });
-      res.redirect(callbackUrl);
+      fs.unlink(img.name, () => {
+        res.redirect(callbackUrl);
+      });
     });
   });
 };
