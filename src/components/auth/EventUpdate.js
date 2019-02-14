@@ -118,29 +118,11 @@ export default class EventUpdate extends Component {
               label="
                 Address"
               id="address"
+              required
               name="address"
               value={this.state.address}
               onChange={this.onChange}
             />
-          </form>
-          <form
-            action="api/img/upload"
-            method="post"
-            encType="multipart/form-data"
-            accept=".png, .jpg, .jpeg">
-            <div className="form-group">
-              <label>
-                <strong>Image</strong>
-              </label>
-              <div className="input-group">
-                <input type="file" className="form-control" />
-                <div className="input-group-append">
-                  <button type="submit" className="btn btn-outline-secondary">
-                    Upload
-                  </button>
-                </div>
-              </div>
-            </div>
           </form>
           <button
             type="button"

@@ -119,6 +119,7 @@ export default class EventNew extends Component {
               label="Address"
               id="address"
               name="address"
+              required
               value={this.state.address}
               onChange={this.onChange}
             />

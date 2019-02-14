@@ -13,9 +13,11 @@ EventModel.findAllEvents = () =>
 
 // Find upcoming 3 events
 EventModel.findTopEvents = () =>
-  EventModel.find()
+  EventModel.find({ img: { $exists: true } })
     .sort({ start: -1 })
-    .limit(3);
+    .limit(3)
+    .populate("img")
+    .exec();
 
 // Find events in this page
 EventModel.findEvents = page => {

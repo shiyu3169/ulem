@@ -3,12 +3,27 @@ import Calendar from "react-calendar";
 import EventDes from "./EventDes";
 import Axios from "axios";
 import EventToday from "./EventToday";
+import loading from "../../img/loading.gif";
 
 export default class Events extends Component {
-  state = {
-    date: new Date(),
-    events: [],
-    dates: []
+  constructor(props) {
+    super(props);
+    this.state = {
+      date: this.props.location.state
+        ? this.makeDate(this.props.location.state.date)
+        : new Date(),
+      events: [],
+      dates: []
+    };
+  }
+
+  makeDate = dateStr => {
+    const date = dateStr.split("T")[0];
+    const dateArray = date.split("-");
+    const year = dateArray[0];
+    const month = parseInt(dateArray[1]) - 1;
+    const day = dateArray[2];
+    return new Date(year, month, day);
   };
 
   onChange = date => {
@@ -81,13 +96,15 @@ export default class Events extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-4 mt-5">
-            {this.state.dates.length && (
+            {this.state.dates.length ? (
               <Calendar
                 className="fixed-pos"
                 onChange={this.onChange}
                 value={this.state.date}
                 tileClassName={this.tileClassName}
               />
+            ) : (
+              <img className="center" src={loading} alt="loading" />
             )}
           </div>
           <div className="col-lg-4">

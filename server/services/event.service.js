@@ -9,10 +9,9 @@ module.exports = function(app) {
     });
   });
 
-  // Get Events
-  app.get("/api/events/:page", (req, res) => {
-    const page = parseInt(req.params["page"]);
-    eventModel.findEvents(page).then(data => {
+  // Get All Events
+  app.get("/api/events", (req, res) => {
+    eventModel.findAllEvents().then(data => {
       res.json(data);
     });
   });
@@ -24,16 +23,17 @@ module.exports = function(app) {
     });
   });
 
-  // Get All Events
-  app.get("/api/events", (req, res) => {
-    eventModel.findAllEvents().then(data => {
+  // Count Number of Events
+  app.get("/api/event/length", (req, res) => {
+    eventModel.countEvents().then(data => {
       res.json(data);
     });
   });
 
-  // Count Number of Events
-  app.get("/api/event/length", (req, res) => {
-    eventModel.countEvents().then(data => {
+  // Get Events
+  app.get("/api/events/:page", (req, res) => {
+    const page = parseInt(req.params["page"]);
+    eventModel.findEvents(page).then(data => {
       res.json(data);
     });
   });

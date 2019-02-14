@@ -4,32 +4,30 @@ import { Link } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Card from "./layout/Card";
 import Youtube from "./layout/Youtube";
+import Axios from "axios";
+import loading from "../img/loading.gif";
+
 export default class Home extends Component {
+  state = {
+    events: []
+  };
+
   componentDidMount() {
+    this.getTopEvents();
     window.$(".carousel").carousel({
       interval: 1800
     });
   }
 
-  slide1 = {
-    background: `url("http://www.ypnulem.org/uploads/photos/o/1546923553_Join%20Week%202019-5.jpg")`,
-    backgroundRepeat: "no-repeat, repeat",
-    backgroundPosition: "top center"
-  };
-
-  slide2 = {
-    background: `url("http://www.ypnulem.org/uploads/photos/o/1546923693_ULEM%202019%20Annual%20Meeting.png")`,
-    backgroundRepeat: "no-repeat, repeat",
-    backgroundPosition: "top center"
-  };
-
-  slide3 = {
-    background: `url("http://www.ypnulem.org/uploads/photos/o/1546923608_Taking%20It%20To%20The%20Streets%202019.jpeg")`,
-    backgroundRepeat: "no-repeat, repeat",
-    backgroundPosition: "top center"
+  getTopEvents = async () => {
+    const res = await Axios.get("/api/events/top");
+    this.setState({
+      events: res.data
+    });
   };
 
   render() {
+    const { events } = this.state;
     return (
       <div>
         <div className="container">
@@ -50,56 +48,105 @@ export default class Home extends Component {
                   <i className="fas fa-calendar-alt float-right" />
                 </h3>
               </Link>
-              <div
-                id="carouselExampleIndicators"
-                className="carousel slide"
-                data-ride="carousel">
-                <ol className="carousel-indicators">
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="0"
-                    className="active"
-                  />
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="1"
-                  />
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="2"
-                  />
-                </ol>
-                <div className="carousel-inner">
-                  <div
-                    className="carousel-item active crop"
-                    style={this.slide1}
-                  />
-                  <div className="carousel-item crop" style={this.slide2} />
-                  <div className="carousel-item crop" style={this.slide3} />
+              {events.length ? (
+                <div
+                  id="carouselExampleIndicators"
+                  className="carousel slide"
+                  data-ride="carousel">
+                  <ol className="carousel-indicators">
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="0"
+                      className="active"
+                    />
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="1"
+                    />
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="2"
+                    />
+                  </ol>
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <Link
+                        to={{
+                          pathname: "/events",
+                          state: { date: events[0].start }
+                        }}>
+                        <img
+                          className="crop"
+                          alt="slide 1"
+                          src={`data:${
+                            events[0].img.mimeType
+                          };base64,${new Buffer(events[0].img.data).toString(
+                            "base64"
+                          )}`}
+                        />
+                      </Link>
+                    </div>
+                    <div className="carousel-item ">
+                      <Link
+                        to={{
+                          pathname: "/events",
+                          state: { date: events[1].start }
+                        }}>
+                        <img
+                          className="crop"
+                          alt="slide 1"
+                          src={`data:${
+                            events[1].img.mimeType
+                          };base64,${new Buffer(events[1].img.data).toString(
+                            "base64"
+                          )}`}
+                        />
+                      </Link>
+                    </div>
+                    <div className="carousel-item ">
+                      <Link
+                        to={{
+                          pathname: "/events",
+                          state: { date: events[2].start }
+                        }}>
+                        <img
+                          className="crop"
+                          alt="slide 1"
+                          src={`data:${
+                            events[2].img.mimeType
+                          };base64,${new Buffer(events[2].img.data).toString(
+                            "base64"
+                          )}`}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                  <a
+                    className="carousel-control-prev"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="prev">
+                    <span
+                      className="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    />
+                    <span className="sr-only">Previous</span>
+                  </a>
+                  <a
+                    className="carousel-control-next"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="next">
+                    <span
+                      className="carousel-control-next-icon"
+                      aria-hidden="true"
+                    />
+                    <span className="sr-only">Next</span>
+                  </a>
                 </div>
-                <a
-                  className="carousel-control-prev"
-                  href="#carouselExampleIndicators"
-                  role="button"
-                  data-slide="prev">
-                  <span
-                    className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  />
-                  <span className="sr-only">Previous</span>
-                </a>
-                <a
-                  className="carousel-control-next"
-                  href="#carouselExampleIndicators"
-                  role="button"
-                  data-slide="next">
-                  <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                  />
-                  <span className="sr-only">Next</span>
-                </a>
-              </div>
+              ) : (
+                <img className="center" src={loading} alt="loading" />
+              )}
               <br />
               <Link
                 className="btn btn-block btn-lg btn-outline-danger link"
@@ -123,7 +170,7 @@ export default class Home extends Component {
                 screenName="theULEM"
                 noHeader
                 noFooter
-                options={{ height: 500 }}
+                options={{ height: 700 }}
               />
             </div>
           </div>

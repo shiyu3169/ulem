@@ -33,7 +33,8 @@ body {
 }
 
 .crop {
-  min-height: 400px;
+  height: 600px;
+  min-width: 100%;
 }
 
 .link-white {
