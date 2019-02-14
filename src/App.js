@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/about/About";
 import Navbar from "./components/layout/Navbar";
 import Program from "./components/program.js/Program";
-import Events from "./components/Events";
+import Events from "./components/event/Events";
 import Donate from "./components/Donate";
 import Sponsor from "./components/Sponsor";
 import Impact from "./components/Impact";

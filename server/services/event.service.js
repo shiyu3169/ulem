@@ -17,6 +17,20 @@ module.exports = function(app) {
     });
   });
 
+  // Get Top Events
+  app.get("/api/events/top", (req, res) => {
+    eventModel.findTopEvents().then(data => {
+      res.json(data);
+    });
+  });
+
+  // Get All Events
+  app.get("/api/events", (req, res) => {
+    eventModel.findAllEvents().then(data => {
+      res.json(data);
+    });
+  });
+
   // Count Number of Events
   app.get("/api/event/length", (req, res) => {
     eventModel.countEvents().then(data => {

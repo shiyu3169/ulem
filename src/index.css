@@ -130,8 +130,8 @@ html {
 }
 
 .strong {
-  font-weight: 700;
-  background-color: red;
+  font-weight: 800;
+  border: 1px solid !important;
 }
 
 .fixed-bg {

@@ -12,8 +12,7 @@ module.exports = function(app) {
     const news = req.query["news"];
 
     const image = req.file;
-    const callbackUrl = req.headers.origin + "admin";
-    console.log(callbackUrl);
+    const callbackUrl = req.headers.origin + "/admin";
     const img = {
       name: image.path,
       data: "",
