@@ -26,6 +26,10 @@ export default class Home extends Component {
     });
   };
 
+  // background = {
+  //   backgroundImage: "url(" + 5` data:${this.state.events[0].img.mimeType};base64, ${this.state.events[0].img.data}`+ ")"
+  // }
+
   render() {
     const { events } = this.state;
     return (
@@ -75,15 +79,15 @@ export default class Home extends Component {
                           pathname: "/events",
                           state: { date: events[0].start }
                         }}>
-                        <img
-                          className="crop"
-                          alt="slide 1"
-                          src={`data:${
-                            events[0].img.mimeType
-                          };base64,${new Buffer(events[0].img.data).toString(
-                            "base64"
-                          )}`}
-                        />
+                          <div style={{
+                             background: "url(" + `data:${
+                              events[0].img.mimeType
+                            };base64,${new Buffer(events[0].img.data).toString(
+                              "base64"
+                            )}`+ ")" + "no-repeat top center/cover",
+                             height: "600px"
+                          }}>
+                          </div>
                       </Link>
                     </div>
                     <div className="carousel-item ">
@@ -92,15 +96,15 @@ export default class Home extends Component {
                           pathname: "/events",
                           state: { date: events[1].start }
                         }}>
-                        <img
-                          className="crop"
-                          alt="slide 1"
-                          src={`data:${
-                            events[1].img.mimeType
-                          };base64,${new Buffer(events[1].img.data).toString(
-                            "base64"
-                          )}`}
-                        />
+                        <div style={{
+                             background: "url(" + `data:${
+                              events[1].img.mimeType
+                            };base64,${new Buffer(events[1].img.data).toString(
+                              "base64"
+                            )}`+ ")" + "no-repeat top center/cover",
+                             height: "600px"
+                          }}>
+                          </div>
                       </Link>
                     </div>
                     <div className="carousel-item ">
@@ -109,15 +113,15 @@ export default class Home extends Component {
                           pathname: "/events",
                           state: { date: events[2].start }
                         }}>
-                        <img
-                          className="crop"
-                          alt="slide 1"
-                          src={`data:${
-                            events[2].img.mimeType
-                          };base64,${new Buffer(events[2].img.data).toString(
-                            "base64"
-                          )}`}
-                        />
+                        <div style={{
+                             background: "url(" + `data:${
+                              events[2].img.mimeType
+                            };base64,${new Buffer(events[2].img.data).toString(
+                              "base64"
+                            )}`+ ")" + "no-repeat top center/cover",
+                             height: "600px"
+                          }}>
+                          </div>
                       </Link>
                     </div>
                   </div>
