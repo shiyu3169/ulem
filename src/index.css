@@ -22,6 +22,10 @@ body {
   opacity: 0.3;
 }
 
+.carousel-item {
+  transition: transform 2s ease, opacity 0.5s ease-out;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   color: grey;

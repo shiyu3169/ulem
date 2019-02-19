@@ -1,14 +1,11 @@
 import React, { Component } from "react";
-import centennial from "../img/logo.PNG";
 import { Link } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import Card from "./layout/Card";
-import Youtube from "./layout/Youtube";
+import Card from "../layout/Card";
+import Youtube from "../layout/Youtube";
 import Axios from "axios";
-import loading from "../img/loading.gif";
-import msimbo from "../img/MSIMBOFlyer.png";
-import digiul from "../img/DigiUL.png";
-import ulemBuilding from "../img/ulemBuilding.JPG";
+import loading from "../../img/loading.gif";
+import TopSlides from "./TopSlides";
 
 export default class Home extends Component {
   state = {
@@ -17,11 +14,9 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.getTopEvents();
-    window.$(".event-carousel").carousel({
-      interval: 2400
-    });
-    window.$(".top-carousel").carousel({
-      interval: 3000
+    window.$("#carousel-2").carousel({
+      interval: 180,
+      pause: "false"
     });
   }
 
@@ -36,85 +31,7 @@ export default class Home extends Component {
     const { events } = this.state;
     return (
       <div>
-        <div
-          id="carouselExampleControls"
-          className="carousel slide top-carousel mb-3"
-          data-ride="carousel"
-          data-interval="3000"
-        >
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <Link to="/about" className="link-white">
-                <div
-                  style={{
-                    background: `url(${ulemBuilding}) no-repeat top center/cover`,
-                    height: "700px",
-                    backgroundPosition: "center TOP",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover"
-                  }}
-                >
-                  <div className="text-center">
-                    <h1
-                      className="link-white"
-                      style={{ paddingTop: "23%", color: "white" }}
-                    >
-                      <strong>Empowering Communities. Changing Lives.</strong>
-                    </h1>
-                    <h3 className="font-white">
-                      From Experiment. To Experience. To Exposure.
-                    </h3>
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="carousel-item">
-              <Link to="/program">
-                <div
-                  style={{
-                    backgroundImage: `url(${digiul})`,
-                    height: "700px",
-                    backgroundPosition: "center TOP",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover"
-                  }}
-                />
-              </Link>
-            </div>
-            <div className="carousel-item">
-              <Link to="/program">
-                <div
-                  style={{
-                    background: `url(${msimbo}) no-repeat top center/cover`,
-                    height: "700px",
-                    backgroundPosition: "center TOP",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover"
-                  }}
-                />
-              </Link>
-            </div>
-          </div>
-          <a
-            className="carousel-control-prev"
-            href="#carouselExampleControls"
-            role="button"
-            data-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
-            <span className="sr-only">Previous</span>
-          </a>
-          <a
-            className="carousel-control-next"
-            href="#carouselExampleControls"
-            role="button"
-            data-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true" />
-            <span className="sr-only">Next</span>
-          </a>
-        </div>
-
+        <TopSlides />
         <div className="container">
           <div className="row">
             <div className="col-md-8">
@@ -126,25 +43,18 @@ export default class Home extends Component {
               </Link>
               {events.length ? (
                 <div
-                  id="carouselExampleIndicators"
+                  id="carousel-2"
                   className="carousel slide event-carousel"
                   data-ride="carousel"
-                  data-interval="2400"
                 >
                   <ol className="carousel-indicators">
                     <li
-                      data-target="#carouselExampleIndicators"
+                      data-target="#carousel-2"
                       data-slide-to="0"
                       className="active"
                     />
-                    <li
-                      data-target="#carouselExampleIndicators"
-                      data-slide-to="1"
-                    />
-                    <li
-                      data-target="#carouselExampleIndicators"
-                      data-slide-to="2"
-                    />
+                    <li data-target="#carousel-2" data-slide-to="1" />
+                    <li data-target="#ccarousel-2" data-slide-to="2" />
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -207,7 +117,7 @@ export default class Home extends Component {
                   </div>
                   <a
                     className="carousel-control-prev"
-                    href="#carouselExampleIndicators"
+                    href="#carousel-2"
                     role="button"
                     data-slide="prev"
                   >
@@ -219,7 +129,7 @@ export default class Home extends Component {
                   </a>
                   <a
                     className="carousel-control-next"
-                    href="#carouselExampleIndicators"
+                    href="#carousel-2"
                     role="button"
                     data-slide="next"
                   >
