@@ -25,7 +25,6 @@ body {
 .carousel-control-prev,
 .carousel-control-next {
   color: grey;
- 
 }
 
 #footer-img-height {
@@ -47,6 +46,12 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.link-white:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .link {
   text-decoration: none;
   color: black;
@@ -141,10 +146,8 @@ html {
   border: 1px solid !important;
 }
 
-
-
 .fixed-bg {
-  background: url("https://pbs.twimg.com/profile_banners/187067666/1532102626/1500x500");
+  background: url("./img/ulemBuilding2.JPG");
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -168,7 +171,7 @@ html {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 .sticky-side {

@@ -6,6 +6,9 @@ import Card from "./layout/Card";
 import Youtube from "./layout/Youtube";
 import Axios from "axios";
 import loading from "../img/loading.gif";
+import msimbo from "../img/MSIMBOFlyer.png";
+import digiul from "../img/DigiUL.png";
+import ulemBuilding from "../img/ulemBuilding.JPG";
 
 export default class Home extends Component {
   state = {
@@ -14,8 +17,11 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.getTopEvents();
-    window.$(".carousel").carousel({
-      interval: 1800
+    window.$(".event-carousel").carousel({
+      interval: 2400
+    });
+    window.$(".top-carousel").carousel({
+      interval: 3000
     });
   }
 
@@ -26,22 +32,90 @@ export default class Home extends Component {
     });
   };
 
-
-
   render() {
     const { events } = this.state;
     return (
       <div>
-        <div className="container">
-          <div className="full-width">
-            <Link to="/centennial">
-              <img
-                src={centennial}
-                alt="centennial"
-                className="img-fluid cursor center"
-              />
-            </Link>
+        <div
+          id="carouselExampleControls"
+          className="carousel slide top-carousel mb-3"
+          data-ride="carousel"
+          data-interval="3000"
+        >
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <Link to="/about" className="link-white">
+                <div
+                  style={{
+                    background: `url(${ulemBuilding}) no-repeat top center/cover`,
+                    height: "700px",
+                    backgroundPosition: "center TOP",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                  }}
+                >
+                  <div className="text-center">
+                    <h1
+                      className="link-white"
+                      style={{ paddingTop: "23%", color: "white" }}
+                    >
+                      <strong>Empowering Communities. Changing Lives.</strong>
+                    </h1>
+                    <h3 className="font-white">
+                      From Experiment. To Experience. To Exposure.
+                    </h3>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="carousel-item">
+              <Link to="/program">
+                <div
+                  style={{
+                    backgroundImage: `url(${digiul})`,
+                    height: "700px",
+                    backgroundPosition: "center TOP",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                  }}
+                />
+              </Link>
+            </div>
+            <div className="carousel-item">
+              <Link to="/program">
+                <div
+                  style={{
+                    background: `url(${msimbo}) no-repeat top center/cover`,
+                    height: "700px",
+                    backgroundPosition: "center TOP",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                  }}
+                />
+              </Link>
+            </div>
           </div>
+          <a
+            className="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span className="carousel-control-prev-icon" aria-hidden="true" />
+            <span className="sr-only">Previous</span>
+          </a>
+          <a
+            className="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span className="carousel-control-next-icon" aria-hidden="true" />
+            <span className="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div className="container">
           <div className="row">
             <div className="col-md-8">
               <Link to="/events" className="text-decoration">
@@ -53,9 +127,10 @@ export default class Home extends Component {
               {events.length ? (
                 <div
                   id="carouselExampleIndicators"
-                  className="carousel slide"
+                  className="carousel slide event-carousel"
                   data-ride="carousel"
-                  data-interval="1800">
+                  data-interval="2400"
+                >
                   <ol className="carousel-indicators">
                     <li
                       data-target="#carouselExampleIndicators"
@@ -77,16 +152,18 @@ export default class Home extends Component {
                         to={{
                           pathname: "/events",
                           state: { date: events[0].start }
-                        }}>
-                          <div style={{
-                             background: `url(data:${
+                        }}
+                      >
+                        <div
+                          style={{
+                            background: `url(data:${
                               events[0].img.mimeType
                             };base64,${new Buffer(events[0].img.data).toString(
                               "base64"
                             )}) no-repeat top center/cover`,
-                             height: "600px"
-                          }}>
-                          </div>
+                            height: "600px"
+                          }}
+                        />
                       </Link>
                     </div>
                     <div className="carousel-item ">
@@ -94,16 +171,18 @@ export default class Home extends Component {
                         to={{
                           pathname: "/events",
                           state: { date: events[1].start }
-                        }}>
-                        <div style={{
-                             background: `url(data:${
+                        }}
+                      >
+                        <div
+                          style={{
+                            background: `url(data:${
                               events[1].img.mimeType
                             };base64,${new Buffer(events[1].img.data).toString(
                               "base64"
                             )}) no-repeat top center/cover`,
-                             height: "600px"
-                          }}>
-                          </div>
+                            height: "600px"
+                          }}
+                        />
                       </Link>
                     </div>
                     <div className="carousel-item ">
@@ -111,16 +190,18 @@ export default class Home extends Component {
                         to={{
                           pathname: "/events",
                           state: { date: events[2].start }
-                        }}>
-                         <div style={{
-                             background: `url(data:${
+                        }}
+                      >
+                        <div
+                          style={{
+                            background: `url(data:${
                               events[2].img.mimeType
                             };base64,${new Buffer(events[2].img.data).toString(
                               "base64"
                             )}) no-repeat top center/cover`,
-                             height: "600px"
-                          }}>
-                          </div>
+                            height: "600px"
+                          }}
+                        />
                       </Link>
                     </div>
                   </div>
@@ -128,20 +209,20 @@ export default class Home extends Component {
                     className="carousel-control-prev"
                     href="#carouselExampleIndicators"
                     role="button"
-                    data-slide="prev">
+                    data-slide="prev"
+                  >
                     <span
                       className="carousel-control-prev-icon"
                       aria-hidden="true"
                     />
                     <span className="sr-only">Previous</span>
-                    
                   </a>
                   <a
                     className="carousel-control-next"
                     href="#carouselExampleIndicators"
                     role="button"
-                    data-slide="next">
-                    
+                    data-slide="next"
+                  >
                     <span
                       className="carousel-control-next-icon"
                       aria-hidden="true"
@@ -155,7 +236,8 @@ export default class Home extends Component {
               <br />
               <Link
                 className="btn btn-block btn-lg btn-outline-danger link"
-                to="/events">
+                to="/events"
+              >
                 Event Calendar
               </Link>
             </div>
@@ -164,7 +246,8 @@ export default class Home extends Component {
                 href="https://twitter.com/theULEM"
                 className="link"
                 rel="noopener noreferrer"
-                target="_blank">
+                target="_blank"
+              >
                 <h3 className="btn-outline-danger rounded p-2 nav-link-white">
                   Recent Tweets
                   <i className="fab fa-twitter float-right" />
