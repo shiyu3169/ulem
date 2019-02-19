@@ -26,9 +26,7 @@ export default class Home extends Component {
     });
   };
 
-  // background = {
-  //   backgroundImage: "url(" + 5` data:${this.state.events[0].img.mimeType};base64, ${this.state.events[0].img.data}`+ ")"
-  // }
+
 
   render() {
     const { events } = this.state;
@@ -56,7 +54,8 @@ export default class Home extends Component {
                 <div
                   id="carouselExampleIndicators"
                   className="carousel slide"
-                  data-ride="carousel">
+                  data-ride="carousel"
+                  data-interval="1800">
                   <ol className="carousel-indicators">
                     <li
                       data-target="#carouselExampleIndicators"
@@ -80,11 +79,11 @@ export default class Home extends Component {
                           state: { date: events[0].start }
                         }}>
                           <div style={{
-                             background: "url(" + `data:${
+                             background: `url(data:${
                               events[0].img.mimeType
                             };base64,${new Buffer(events[0].img.data).toString(
                               "base64"
-                            )}`+ ")" + "no-repeat top center/cover",
+                            )}) no-repeat top center/cover`,
                              height: "600px"
                           }}>
                           </div>
@@ -97,11 +96,11 @@ export default class Home extends Component {
                           state: { date: events[1].start }
                         }}>
                         <div style={{
-                             background: "url(" + `data:${
+                             background: `url(data:${
                               events[1].img.mimeType
                             };base64,${new Buffer(events[1].img.data).toString(
                               "base64"
-                            )}`+ ")" + "no-repeat top center/cover",
+                            )}) no-repeat top center/cover`,
                              height: "600px"
                           }}>
                           </div>
@@ -113,12 +112,12 @@ export default class Home extends Component {
                           pathname: "/events",
                           state: { date: events[2].start }
                         }}>
-                        <div style={{
-                             background: "url(" + `data:${
+                         <div style={{
+                             background: `url(data:${
                               events[2].img.mimeType
                             };base64,${new Buffer(events[2].img.data).toString(
                               "base64"
-                            )}`+ ")" + "no-repeat top center/cover",
+                            )}) no-repeat top center/cover`,
                              height: "600px"
                           }}>
                           </div>
@@ -135,12 +134,14 @@ export default class Home extends Component {
                       aria-hidden="true"
                     />
                     <span className="sr-only">Previous</span>
+                    
                   </a>
                   <a
                     className="carousel-control-next"
                     href="#carouselExampleIndicators"
                     role="button"
                     data-slide="next">
+                    
                     <span
                       className="carousel-control-next-icon"
                       aria-hidden="true"

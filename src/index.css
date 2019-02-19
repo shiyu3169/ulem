@@ -22,6 +22,12 @@ body {
   opacity: 0.3;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  color: grey;
+ 
+}
+
 #footer-img-height {
   max-height: 25vh;
 }
@@ -134,6 +140,8 @@ html {
   font-weight: 800;
   border: 1px solid !important;
 }
+
+
 
 .fixed-bg {
   background: url("https://pbs.twimg.com/profile_banners/187067666/1532102626/1500x500");
