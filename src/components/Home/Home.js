@@ -5,6 +5,7 @@ import Youtube from "../layout/Youtube";
 import Axios from "axios";
 import TopSlides from "./TopSlides";
 import EventSlides from "./EventSlides";
+import Instagram from "./Instagram";
 
 export default class Home extends Component {
   state = {
@@ -107,28 +108,21 @@ export default class Home extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h3 className="btn-outline-danger rounded p-2 cursor">
-                News
-                <i className="far fa-newspaper float-right" />
-              </h3>
-              <small className="float-right mb-1">Feb. 7, 2019</small>
-              <img
-                className="img-fluid"
-                src="http://www.ypnulem.org/uploads/I%20AM%20Empowered%20Scholarship.png"
-                alt="news"
-              />
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-                repellendus adipisci amet expedita temporibus libero pariatur
-                totam error impedit. Quod cum totam ut reiciendis velit sapiente
-                expedita blanditiis fugiat ducimus.
-              </p>
+              <Instagram />
             </div>
             <div className="col-md-6">
-              <h3 className="btn-outline-danger rounded p-2 cursor">
-                ULEM Youtube
-                <i className="fab fa-youtube fa-lg float-right" />
-              </h3>
+              <a
+                href="https://www.youtube.com/user/theULEMRoxbury"
+                target="_blank"
+                className="link"
+                rel="noopener noreferrer"
+              >
+                <h3 className="btn-outline-danger rounded p-2 cursor">
+                  ULEM Youtube
+                  <i className="fab fa-youtube fa-lg float-right" />
+                </h3>
+              </a>
+
               <Youtube />
             </div>
           </div>
