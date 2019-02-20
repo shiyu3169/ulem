@@ -7,7 +7,7 @@ import ulemBuilding from "../../img/ulemBuilding.JPG";
 export default class TopSlides extends Component {
   componentDidMount() {
     window.$(".top-carousel").carousel({
-      interval: 3000,
+      interval: 4200,
       pause: "false"
     });
   }
@@ -25,7 +25,7 @@ export default class TopSlides extends Component {
               <div
                 style={{
                   background: `url(${ulemBuilding}) no-repeat top center/cover`,
-                  height: "700px",
+                  height: "70vh",
                   backgroundPosition: "center TOP",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover"
@@ -34,11 +34,18 @@ export default class TopSlides extends Component {
                 <div className="text-center">
                   <h1
                     className="link-white"
-                    style={{ paddingTop: "23%", color: "white" }}
+                    style={{
+                      paddingTop: "23%",
+                      color: "white",
+                      textShadow: "2px 2px #ff0000"
+                    }}
                   >
                     <strong>Empowering Communities. Changing Lives.</strong>
                   </h1>
-                  <h3 className="font-white">
+                  <h3
+                    className="font-white"
+                    style={{ textShadow: "2px 2px #ff0000" }}
+                  >
                     From Experiment. To Experience. To Exposure.
                   </h3>
                 </div>
@@ -50,7 +57,7 @@ export default class TopSlides extends Component {
               <div
                 style={{
                   backgroundImage: `url(${digiul})`,
-                  height: "700px",
+                  height: "70vh",
                   backgroundPosition: "center TOP",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover"
@@ -63,10 +70,10 @@ export default class TopSlides extends Component {
               <div
                 style={{
                   background: `url(${msimbo}) no-repeat top center/cover`,
-                  height: "700px",
+                  height: "70vh",
                   backgroundPosition: "center TOP",
                   backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover"
+                  backgroundSize: "100% 100%"
                 }}
               />
             </Link>

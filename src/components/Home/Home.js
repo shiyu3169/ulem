@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Card from "../layout/Card";
 import Youtube from "../layout/Youtube";
 import Axios from "axios";
-import loading from "../../img/loading.gif";
 import TopSlides from "./TopSlides";
+import EventSlides from "./EventSlides";
 
 export default class Home extends Component {
   state = {
@@ -14,10 +13,6 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.getTopEvents();
-    window.$("#carousel-2").carousel({
-      interval: 180,
-      pause: "false"
-    });
   }
 
   getTopEvents = async () => {
@@ -35,123 +30,10 @@ export default class Home extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <Link to="/events" className="text-decoration">
-                <h3 className="btn-outline-danger rounded p-2 cursor">
-                  Upcoming Events
-                  <i className="fas fa-calendar-alt float-right" />
-                </h3>
-              </Link>
-              {events.length ? (
-                <div
-                  id="carousel-2"
-                  className="carousel slide event-carousel"
-                  data-ride="carousel"
-                >
-                  <ol className="carousel-indicators">
-                    <li
-                      data-target="#carousel-2"
-                      data-slide-to="0"
-                      className="active"
-                    />
-                    <li data-target="#carousel-2" data-slide-to="1" />
-                    <li data-target="#ccarousel-2" data-slide-to="2" />
-                  </ol>
-                  <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <Link
-                        to={{
-                          pathname: "/events",
-                          state: { date: events[0].start }
-                        }}
-                      >
-                        <div
-                          style={{
-                            background: `url(data:${
-                              events[0].img.mimeType
-                            };base64,${new Buffer(events[0].img.data).toString(
-                              "base64"
-                            )}) no-repeat top center/cover`,
-                            height: "600px"
-                          }}
-                        />
-                      </Link>
-                    </div>
-                    <div className="carousel-item ">
-                      <Link
-                        to={{
-                          pathname: "/events",
-                          state: { date: events[1].start }
-                        }}
-                      >
-                        <div
-                          style={{
-                            background: `url(data:${
-                              events[1].img.mimeType
-                            };base64,${new Buffer(events[1].img.data).toString(
-                              "base64"
-                            )}) no-repeat top center/cover`,
-                            height: "600px"
-                          }}
-                        />
-                      </Link>
-                    </div>
-                    <div className="carousel-item ">
-                      <Link
-                        to={{
-                          pathname: "/events",
-                          state: { date: events[2].start }
-                        }}
-                      >
-                        <div
-                          style={{
-                            background: `url(data:${
-                              events[2].img.mimeType
-                            };base64,${new Buffer(events[2].img.data).toString(
-                              "base64"
-                            )}) no-repeat top center/cover`,
-                            height: "600px"
-                          }}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <a
-                    className="carousel-control-prev"
-                    href="#carousel-2"
-                    role="button"
-                    data-slide="prev"
-                  >
-                    <span
-                      className="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    />
-                    <span className="sr-only">Previous</span>
-                  </a>
-                  <a
-                    className="carousel-control-next"
-                    href="#carousel-2"
-                    role="button"
-                    data-slide="next"
-                  >
-                    <span
-                      className="carousel-control-next-icon"
-                      aria-hidden="true"
-                    />
-                    <span className="sr-only">Next</span>
-                  </a>
-                </div>
-              ) : (
-                <img className="center" src={loading} alt="loading" />
-              )}
-              <br />
-              <Link
-                className="btn btn-block btn-lg btn-outline-danger link"
-                to="/events"
-              >
-                Event Calendar
-              </Link>
+              <EventSlides events={events} />
             </div>
-            <div className="col-md-4 col-11">
+            <div className="col-1 d-block d-sm-none" />
+            <div className="col-md-4 col-10">
               <a
                 href="https://twitter.com/theULEM"
                 className="link"
