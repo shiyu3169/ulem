@@ -49,7 +49,8 @@ export default class EventList extends Component {
           Events
           <button
             onClick={this.props.showAdding}
-            className="btn btn-outline-danger ml-4">
+            className="btn btn-outline-danger ml-4"
+          >
             New Event
           </button>
         </h4>
@@ -61,6 +62,7 @@ export default class EventList extends Component {
                 <th>Start Time</th>
                 <th>End Time</th>
                 <th>Image</th>
+                <th>Last Update</th>
               </tr>
             </thead>
             <tbody>
@@ -68,18 +70,21 @@ export default class EventList extends Component {
                 <tr key={event._id}>
                   <td
                     className="cursor"
-                    onClick={this.checkEvent.bind(this, event._id)}>
+                    onClick={this.checkEvent.bind(this, event._id)}
+                  >
                     {event.title}
                   </td>
                   <td>{event.start}</td>
                   <td>{event.end}</td>
+
                   <td>
                     {event.img ? (
                       <button
                         type="button"
                         className="btn btn-outline-danger"
                         data-toggle="modal"
-                        data-target={`#delete${event._id}`}>
+                        data-target={`#delete${event._id}`}
+                      >
                         Delete
                       </button>
                     ) : (
@@ -87,12 +92,17 @@ export default class EventList extends Component {
                         type="button"
                         className="btn btn-outline-success"
                         data-toggle="modal"
-                        data-target={`#upload${event._id}`}>
+                        data-target={`#upload${event._id}`}
+                      >
                         Upload
                       </button>
                     )}
                     <DeleteModal _id={event._id} title={event.title} />
                     <UploadModal _id={event._id} title={event.title} />
+                  </td>
+                  <td>
+                    Last updated by {event.updatedBy.username} @{" "}
+                    {new Date(event.dateModified).toLocaleString()}
                   </td>
                 </tr>
               ))}

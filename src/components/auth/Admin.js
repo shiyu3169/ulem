@@ -7,7 +7,7 @@ import Event from "./Event";
 export default class Admin extends Component {
   state = {
     user: "",
-    showEvents: false,
+    showEvents: true,
     showNews: false
   };
 

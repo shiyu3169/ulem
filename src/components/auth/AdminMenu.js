@@ -26,11 +26,11 @@ export default function AdminMenu({ changeBol }) {
             Events
           </span>
         </li>
-        <li className="list-group-item">
+        {/* <li className="list-group-item">
           <span onClick={onNews} className="nav-link-red cursor">
             News
           </span>
-        </li>
+        </li> */}
       </ul>
       <button onClick={logout} className="btn btn-lg btn-outline-danger">
         Logout

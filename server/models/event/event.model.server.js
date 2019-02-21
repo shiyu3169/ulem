@@ -25,7 +25,9 @@ EventModel.findEvents = page => {
   return EventModel.find()
     .sort({ start: -1 })
     .skip(skip)
-    .limit(20);
+    .limit(20)
+    .populate("updatedBy", "username")
+    .exec();
 };
 
 // Update event by id
