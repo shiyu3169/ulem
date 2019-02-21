@@ -54,4 +54,12 @@ module.exports = function(app) {
       res.json(data);
     });
   });
+
+  // Delete event by id
+  app.delete("/api/event/:id", (req, res) => {
+    const id = req.params["id"];
+    eventModel.deleteEvent(id).then(data => {
+      res.json(data);
+    });
+  });
 };

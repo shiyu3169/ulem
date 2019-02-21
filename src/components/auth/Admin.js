@@ -42,7 +42,7 @@ export default class Admin extends Component {
                 <AdminMenu changeBol={this.changeBol} />
               </div>
               <div className="col-md-10">
-                {this.state.showEvents && <Event />}
+                {this.state.showEvents && <Event user={this.state.user} />}
               </div>
             </div>
           </div>

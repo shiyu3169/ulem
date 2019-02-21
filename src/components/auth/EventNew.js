@@ -22,20 +22,33 @@ export default class EventNew extends Component {
   onSubmit = e => {
     e.preventDefault();
     const { title, start, end, venue, address, noEndTime } = this.state;
-    const event = { title, start, end, venue, address, noEndTime };
+    const updatedBy = this.props.user._id;
+    const event = {
+      title,
+      start,
+      end,
+      venue,
+      address,
+      noEndTime,
+      updatedBy
+    };
     if (event.noEndTime) {
       event.end = "";
     }
-    this.createEvent(event);
-    this.setState({
-      noEndTime: false,
-      title: "",
-      start: "",
-      end: "",
-      venue: "",
-      address: ""
-    });
-    this.props.showList();
+    this.createEvent(event)
+      .then(() => {
+        this.setState({
+          noEndTime: false,
+          title: "",
+          start: "",
+          end: "",
+          venue: "",
+          address: ""
+        });
+      })
+      .then(() => {
+        this.props.showList();
+      });
   };
 
   onCancel = () => {
@@ -126,12 +139,14 @@ export default class EventNew extends Component {
             <button
               type="button"
               onClick={this.onCancel}
-              className="btn btn-lg btn-outline-danger">
+              className="btn btn-lg btn-outline-danger"
+            >
               Cancel
             </button>
             <button
               type="submit"
-              className="btn btn-lg btn-outline-success float-right">
+              className="btn btn-lg btn-outline-success float-right"
+            >
               Submit
             </button>
           </form>

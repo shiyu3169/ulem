@@ -45,9 +45,15 @@ export default class Event extends Component {
             showEditing={this.showEditing}
           />
         )}
-        {this.state.showAdding && <EventNew showList={this.showList} />}
+        {this.state.showAdding && (
+          <EventNew showList={this.showList} user={this.props.user} />
+        )}
         {this.state.showEditing && (
-          <EventUpdate showList={this.showList} id={this.state.id} />
+          <EventUpdate
+            showList={this.showList}
+            id={this.state.id}
+            user={this.props.user}
+          />
         )}
       </div>
     );

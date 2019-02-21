@@ -12,6 +12,13 @@ export default class EventUpdate extends Component {
     address: ""
   };
 
+  // delete event
+  onDelete = id => {
+    Axios.delete(`/api/event/${id}`).then(() => {
+      this.props.showList();
+    });
+  };
+
   // Get info of event
   getEvent = id => {
     Axios.get(`/api/event/${id}`).then(res => {
@@ -36,7 +43,18 @@ export default class EventUpdate extends Component {
   onSubmit = e => {
     e.preventDefault();
     const { title, start, end, venue, address, noEndTime } = this.state;
-    const event = { title, start, end, venue, address, noEndTime };
+    const dateModified = new Date();
+    const updatedBy = this.props.user._id;
+    const event = {
+      title,
+      start,
+      end,
+      venue,
+      address,
+      noEndTime,
+      dateModified,
+      updatedBy
+    };
     if (event.noEndTime) {
       event.end = "";
     }
@@ -127,13 +145,22 @@ export default class EventUpdate extends Component {
           <button
             type="button"
             onClick={this.onCancel}
-            className="btn btn-lg btn-outline-danger">
+            className="btn btn-lg btn-outline-danger"
+          >
             Cancel
+          </button>
+          <button
+            type="button"
+            onClick={this.onDelete.bind(this, this.props.id)}
+            className="btn btn-lg btn-outline-danger"
+          >
+            Delete
           </button>
           <button
             type="submit"
             form="primary"
-            className="btn btn-lg btn-outline-success float-right">
+            className="btn btn-lg btn-outline-success float-right"
+          >
             Submit
           </button>
         </div>

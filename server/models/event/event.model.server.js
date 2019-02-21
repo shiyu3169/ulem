@@ -41,4 +41,7 @@ EventModel.findEventById = id =>
 // Count events
 EventModel.countEvents = () => EventModel.countDocuments();
 
+// Delete events
+EventModel.deleteEvent = id => EventModel.deleteOne({ _id: id });
+
 module.exports = EventModel;

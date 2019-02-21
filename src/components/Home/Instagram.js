@@ -18,9 +18,9 @@ export default class Instagram extends Component {
 
         <iframe
           src="https://snapwidget.com/embed/663214"
-          class="snapwidget-widget"
+          className="snapwidget-widget"
           allowtransparency="true"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           title="instagram"
           style={{ border: "none", overflow: "hidden", width: "100%" }}
