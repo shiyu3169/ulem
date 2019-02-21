@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import InputGroup from "./layout/InputGroup";
+import Axios from "axios";
 export default class Contact extends Component {
   state = {
     name: "",
@@ -27,6 +28,22 @@ export default class Contact extends Component {
     });
   };
 
+  onSubmit = e => {
+    e.preventDefault();
+    const { name, email, subject, content } = this.state;
+    const contact = { name, email, subject, content };
+    Axios.post("/api/contact", contact).then(
+      this.setState({
+        name: "",
+        email: "",
+        subject: "",
+        content: "",
+        error: false,
+        success: true
+      })
+    );
+  };
+
   render() {
     const { name, email, subject, content, error, success } = this.state;
     return (
@@ -47,6 +64,7 @@ export default class Contact extends Component {
             label="Name"
             name="name"
             onChange={this.onChange}
+            required
             placeholder="enter your name..."
             value={name}
           />
@@ -56,12 +74,14 @@ export default class Contact extends Component {
             name="email"
             placeholder="email that you want to be reached..."
             value={email}
+            required
             onChange={this.onChange}
           />
           <InputGroup
             label="Subject"
             name="subject"
             value={subject}
+            required
             onChange={this.onChange}
           />
           <InputGroup
@@ -69,11 +89,13 @@ export default class Contact extends Component {
             rows="5"
             name="content"
             value={content}
+            required
             onChange={this.onChange}
           />
           <button
             type="submit"
-            className="btn btn-outline-danger btn-lg float-right">
+            className="btn btn-outline-danger btn-lg float-right"
+          >
             Send
           </button>
         </form>
