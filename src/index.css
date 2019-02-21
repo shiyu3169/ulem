@@ -65,6 +65,17 @@ body {
   color: black;
 }
 
+.sub-nav {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sub-nav:hover {
+  color: #c40000;
+  text-decoration: none;
+}
+
 .link:hover {
   text-decoration: none;
   color: white;
@@ -179,6 +190,13 @@ html {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 20;
+}
+
+.sub-sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 5%;
   z-index: 20;
 }
 

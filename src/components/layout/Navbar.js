@@ -30,7 +30,8 @@ export default class Navbar extends Component {
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <i className="fas fa-bars" />
           </button>
 
@@ -38,7 +39,7 @@ export default class Navbar extends Component {
             <ul className="navbar-nav nav-margin">
               <li className="nav-item" onClick={this.collapse}>
                 <Link className="nav-link" to="/">
-                  Home
+                  About
                 </Link>
               </li>
               <li className="nav-item" onClick={this.collapse}>
@@ -52,13 +53,18 @@ export default class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item" onClick={this.collapse}>
-                <Link className="nav-link nav-link" to="/events">
+                <Link className="nav-link" to="/events">
                   Events
                 </Link>
               </li>
               <li className="nav-item" onClick={this.collapse}>
-                <Link className="nav-link nav-link" to="/donate">
+                <Link className="nav-link" to="/donate">
                   Donate
+                </Link>
+              </li>
+              <li className="nav-item" onClick={this.collapse}>
+                <Link className="nav-link" to="/marathon">
+                  ULEM Marathon Team
                 </Link>
               </li>
             </ul>
