@@ -95,14 +95,19 @@ export default class Events extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-4 mt-5">
+          <div className="col-lg-4">
             {this.state.dates.length ? (
-              <Calendar
-                className="fixed-pos"
-                onChange={this.onChange}
-                value={this.state.date}
-                tileClassName={this.tileClassName}
-              />
+              <div className="fixed-pos">
+                <h2 className="font-red mt-4">Events Calendar</h2>
+                <Calendar
+                  onChange={this.onChange}
+                  value={this.state.date}
+                  tileClassName={this.tileClassName}
+                />
+                <p className="mt-2">
+                  <i class="far fa-square" /> = Date with Event
+                </p>
+              </div>
             ) : (
               <img className="center" src={loading} alt="loading" />
             )}

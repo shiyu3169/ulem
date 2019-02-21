@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import loading from "../../img/loading.gif";
 
 export default class EventSlides extends Component {
@@ -121,7 +121,7 @@ export default class EventSlides extends Component {
         )}
         <br />
         <Link
-          className="btn btn-block btn-lg btn-outline-danger link"
+          className="btn btn-block btn-lg btn-danger link-white"
           to="/events"
         >
           Event Calendar

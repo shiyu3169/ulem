@@ -22,6 +22,7 @@ export default class Instagram extends Component {
           allowtransparency="true"
           frameborder="0"
           scrolling="no"
+          title="instagram"
           style={{ border: "none", overflow: "hidden", width: "100%" }}
         />
         <div

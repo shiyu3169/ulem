@@ -34,7 +34,7 @@ export default class Home extends Component {
               <EventSlides events={events} />
             </div>
             <div className="col-1 d-block d-sm-none" />
-            <div className="col-md-4 col-10">
+            <div className="col-md-4 col-10 border">
               <a
                 href="https://twitter.com/theULEM"
                 className="link"

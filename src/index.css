@@ -51,6 +51,10 @@ body {
   text-decoration: none;
 }
 
+.border {
+  border: solid 1px;
+}
+
 .link-white:hover {
   color: white;
   text-decoration: none;
