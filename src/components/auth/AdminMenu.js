@@ -13,10 +13,10 @@ export default function AdminMenu({ changeBol }) {
     changeBol("showNews", false);
   };
 
-  const onNews = () => {
-    changeBol("showEvents", false);
-    changeBol("showNews", true);
-  };
+  // const onNews = () => {
+  //   changeBol("showEvents", false);
+  //   changeBol("showNews", true);
+  // };
 
   return (
     <div className="sticky-side">
