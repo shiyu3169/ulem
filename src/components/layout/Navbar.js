@@ -39,7 +39,7 @@ export default class Navbar extends Component {
             <ul className="navbar-nav nav-margin">
               <li className="nav-item" onClick={this.collapse}>
                 <Link className="nav-link" to="/">
-                  About
+                  Home
                 </Link>
               </li>
               <li className="nav-item" onClick={this.collapse}>
