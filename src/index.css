@@ -411,7 +411,8 @@ footer link:hover {
   color: black;
 }
 
-*[id]:before {
+section[id]:before,
+div[id]:before {
   display: block;
   content: " ";
   margin-top: -75px;
