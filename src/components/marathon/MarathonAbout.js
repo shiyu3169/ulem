@@ -27,7 +27,7 @@ export default function MarathonAbout() {
           className="img-fluid  mx-auto d-block"
         />
       </section>
-
+      <h1 className="font-red mt-4">Become a runner</h1>
       <p>Some of the advantages of being a part of the team include:</p>
       <ul className="list-no-style">
         <li>
