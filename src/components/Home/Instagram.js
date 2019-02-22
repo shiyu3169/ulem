@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Instagram extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="mr-5">
         <a
           className="link"
           href="https://www.instagram.com/theulem/"
@@ -15,26 +15,8 @@ export default class Instagram extends Component {
             <i className="fab fa-instagram fa-lg float-right" />
           </h3>
         </a>
-
-        <iframe
-          src="https://snapwidget.com/embed/663214"
-          className="snapwidget-widget"
-          allowtransparency="true"
-          frameBorder="0"
-          scrolling="no"
-          title="instagram"
-          style={{ border: "none", overflow: "hidden", width: "100%" }}
-        />
-        <div
-          style={{
-            font:
-              "10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif",
-            fontWeight: 400,
-            width: "100%",
-            textAlign: "right"
-          }}
-        />
-      </React.Fragment>
+        <div id="curator-feed" />
+      </div>
     );
   }
 }
