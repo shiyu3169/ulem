@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { HashLink as Link } from "react-router-hash-link";
 
 export default class MarathonNav extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg sub-sticky bg-light">
+      <nav className="navbar navbar-expand-lg sub-sticky bg-dark">
         <button
           className="navbar-toggler"
           type="button"
@@ -20,24 +19,24 @@ export default class MarathonNav extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav nav-margin">
             <li className="nav-item" onClick={this.collapse}>
-              <Link className="sub-nav" to="/marathon">
+              <a className="sub-nav" href="#about">
                 About Us
-              </Link>
+              </a>
             </li>
             <li className="nav-item" onClick={this.collapse}>
-              <Link className="sub-nav" to="/marathon">
-                Runners
-              </Link>
+              <a
+                className="sub-nav"
+                href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Application for Runners
+              </a>
             </li>
             <li className="nav-item" onClick={this.collapse}>
-              <Link className="sub-nav" to="/marathon">
+              <a className="sub-nav" href="#sponsors">
                 Sponsors
-              </Link>
-            </li>
-            <li className="nav-item" onClick={this.collapse}>
-              <Link className="sub-nav" to="/marathon">
-                Volunteers
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

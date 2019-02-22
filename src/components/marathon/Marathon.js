@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MarathonNav from "./MarathonNav";
-
+import MarathonAbout from "./MarathonAbout";
 export default class Marathon extends Component {
   render() {
     return (
@@ -12,6 +12,9 @@ export default class Marathon extends Component {
           className="img-fluid"
           width="100%"
         />
+        <div className="container">
+          <MarathonAbout />
+        </div>
       </div>
     );
   }
