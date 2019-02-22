@@ -8,10 +8,11 @@ EventModel.createEvent = event => EventModel.create(event);
 // Find all events
 EventModel.findAllEvents = () =>
   EventModel.find()
+    .sort({ start: -1 })
     .populate("img")
     .exec();
 
-// Find upcoming 3 events
+// Find latest 3 events
 EventModel.findTopEvents = () =>
   EventModel.find({ img: { $exists: true } })
     .sort({ start: -1 })
