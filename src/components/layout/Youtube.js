@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Youtube() {
   return (
-    <div className="embed-responsive embed-responsive-1by1">
+    <div className="embed-responsive embed-responsive-1by1 border">
       <iframe
         className="embed-responsive-item"
         title="youtube"
