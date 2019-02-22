@@ -7,8 +7,7 @@ export default class EventSlides extends Component {
     // Typical usage (don't forget to compare props):
     if (this.props.events !== prevProps.events) {
       window.$("#carousel-2").carousel({
-        interval: 2400,
-        pause: "false"
+        interval: 2400
       });
     }
   }

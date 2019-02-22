@@ -7,8 +7,7 @@ import ulemBuilding from "../../img/ulemBuilding.JPG";
 export default class TopSlides extends Component {
   componentDidMount() {
     window.$(".top-carousel").carousel({
-      interval: 4200,
-      pause: "false"
+      interval: 2400
     });
   }
 
