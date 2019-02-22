@@ -11,12 +11,7 @@ export default class MarathonNav extends Component {
             </a>
           </li>
           <li className="list-inline-item mr-4" onClick={this.collapse}>
-            <a
-              className="sub-nav"
-              href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="sub-nav" href="#application">
               Application for Runners
             </a>
           </li>

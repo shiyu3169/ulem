@@ -27,75 +27,77 @@ export default function MarathonAbout() {
           className="img-fluid  mx-auto d-block"
         />
       </section>
-      <h1 className="font-red mt-4">Become a runner</h1>
-      <p>Some of the advantages of being a part of the team include:</p>
-      <ul className="list-no-style">
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          An official bib into the 2019 Boston Marathon(r)
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />A team singlet and
-          running swag
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          Access to team meetings
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          Coaching and guidance from CharityTeams.com
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />A full and
-          personalized 20-week training plan for every level of running by RRCA
-          certified coaches
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          The opportunity to participate in organized weekly group runs on the
-          Boston Marathon(r) course complete with aid station support
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          The opportunity to participate in Tuesday night hill workouts and
-          speed workouts
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          CharityTeams weekly communications and monthly meetings with guest
-          speakers
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          Fundraising support
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          An opportunity to participate in the CharityTeams Superhero 17 and the
-          CharityTeams Hop21 themed runs
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          Access to incentive prizes for fundraising
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />
-          Discounts on running gear
-        </li>
-        <li>
-          <i className="fas fa-angle-right mr-2 font-red" />A private team bus
-          to the starting line on Marathon Monday and much more!
-        </li>
-      </ul>
-      <a
-        href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-block btn-danger btn-lg border"
-      >
-        Fill out the application here
-      </a>
+      <section id="application">
+        <h1 className="font-red mt-4">Become a runner</h1>
+        <p>Some of the advantages of being a part of the team include:</p>
+        <ul className="list-no-style">
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            An official bib into the 2019 Boston Marathon(r)
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />A team singlet and
+            running swag
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            Access to team meetings
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            Coaching and guidance from CharityTeams.com
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />A full and
+            personalized 20-week training plan for every level of running by
+            RRCA certified coaches
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            The opportunity to participate in organized weekly group runs on the
+            Boston Marathon(r) course complete with aid station support
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            The opportunity to participate in Tuesday night hill workouts and
+            speed workouts
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            CharityTeams weekly communications and monthly meetings with guest
+            speakers
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            Fundraising support
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            An opportunity to participate in the CharityTeams Superhero 17 and
+            the CharityTeams Hop21 themed runs
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            Access to incentive prizes for fundraising
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />
+            Discounts on running gear
+          </li>
+          <li>
+            <i className="fas fa-angle-right mr-2 font-red" />A private team bus
+            to the starting line on Marathon Monday and much more!
+          </li>
+        </ul>
+        <a
+          href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-block btn-danger btn-lg border"
+        >
+          Fill out the application here
+        </a>
+      </section>
     </section>
   );
 }
