@@ -31,12 +31,7 @@ export default class Card extends Component {
             <i className={`text-danger ${icon}`} />
           </div>
           <br />
-          <h5
-            className="card-title text-center text-center transition"
-            style={{
-              opacity: this.state.show ? 0 : 1
-            }}
-          >
+          <h5 className="card-title text-center text-center transition">
             <strong>{title}</strong>
           </h5>
           <p
