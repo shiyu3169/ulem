@@ -196,10 +196,9 @@ html {
 }
 
 .sub-sticky {
-  position: -webkit-sticky;
   position: sticky;
-  top: 5%;
-  z-index: 20;
+  top: 4.9%;
+  z-index: 10;
 }
 
 .sticky-side {

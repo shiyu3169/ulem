@@ -91,7 +91,7 @@ export default function MarathonAbout() {
         href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
         target="_blank"
         rel="noopener noreferrer"
-        className="btn btn-block btn-danger btn-lg"
+        className="btn btn-block btn-danger btn-lg border"
       >
         Fill out the application here
       </a>

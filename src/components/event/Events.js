@@ -111,6 +111,7 @@ export default class Events extends Component {
                   onChange={this.onChange}
                   value={this.state.date}
                   tileClassName={this.tileClassName}
+                  className="border"
                 />
                 <p className="mt-2">
                   <i className="far fa-square" /> = Date with Event

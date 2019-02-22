@@ -120,7 +120,7 @@ export default class EventSlides extends Component {
         )}
         <br />
         <Link
-          className="btn btn-block btn-lg btn-danger link-white"
+          className="btn btn-block btn-lg btn-danger link-white border"
           to="/events"
         >
           Event Calendar

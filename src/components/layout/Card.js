@@ -22,9 +22,10 @@ export default class Card extends Component {
     return (
       <Link
         to={link}
-        className="card link-no-style"
+        className="card link-no-style border"
         onMouseOver={this.mouseOver}
-        onMouseOut={this.mouseOut}>
+        onMouseOut={this.mouseOut}
+      >
         <div className="card-body">
           <div className="text-center">
             <i className={`text-danger ${icon}`} />
@@ -34,12 +35,14 @@ export default class Card extends Component {
             className="card-title text-center text-center transition"
             style={{
               opacity: this.state.show ? 0 : 1
-            }}>
+            }}
+          >
             <strong>{title}</strong>
           </h5>
           <p
             className="card-text transition text-center"
-            style={{ opacity: this.state.show ? 1 : 0 }}>
+            style={{ opacity: this.state.show ? 1 : 0 }}
+          >
             {text}
           </p>
         </div>

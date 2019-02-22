@@ -16,7 +16,7 @@ export default class Donate extends Component {
           under- and unemployed at no cost to them.
         </p>
         <p>lease take a moment to view our impact video:​</p>
-        <div className="embed-responsive embed-responsive-16by9">
+        <div className="embed-responsive embed-responsive-16by9 border">
           <iframe
             title="donate"
             className="embed-responsive-item"
@@ -29,7 +29,11 @@ export default class Donate extends Component {
           the image below:​
         </p>
         <a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=ulem&id=1">
-          <img className="center img-fluid" src={Donating} alt="donate" />
+          <img
+            className="center img-fluid border"
+            src={Donating}
+            alt="donate"
+          />
         </a>
         <p>
           In addition to donations of any amount, ULEM also accepts planned
@@ -40,7 +44,7 @@ export default class Donate extends Component {
         </p>
         <p>Thank you in advance!</p>
         <a href="https://smile.amazon.com/ch/23-7349132">
-          <img className="center img-fluid" src={Amazon} alt="amazon" />
+          <img className="center img-fluid border" src={Amazon} alt="amazon" />
         </a>
       </div>
     );
