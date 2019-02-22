@@ -28,7 +28,7 @@ export default class Instagram extends Component {
             <i className="fab fa-instagram fa-lg float-right" />
           </h3>
         </a>
-        <div id="curator-feed" className="border" />
+        <div id="curator-feed" />
       </div>
     );
   }

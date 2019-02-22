@@ -6,6 +6,7 @@
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
+  font-size: 18px;
 }
 
 :required {
@@ -181,6 +182,10 @@ html {
   }
 }
 
+#apply-button {
+  border-radius: 50%;
+}
+
 .transition {
   transition: opacity 1s;
 }
@@ -197,7 +202,7 @@ html {
 
 .sub-sticky {
   position: sticky;
-  top: 4.9%;
+  top: 6%;
   z-index: 10;
 }
 

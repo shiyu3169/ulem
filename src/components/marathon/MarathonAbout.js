@@ -1,6 +1,5 @@
 import React from "react";
 import charity from "../../img/charity.jpg";
-import johnHack from "../../img/jh_sig_blk.jpg";
 import ulem from "../../img/ULEM Logo.jpg";
 export default function MarathonAbout() {
   return (
@@ -18,9 +17,20 @@ export default function MarathonAbout() {
         for the foundation. Qualified runners that already have a bib are
         welcome to join our team and are asked to raise a minimum of $2,000.
       </p>
+      <div className="text-center">
+        <a
+          href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
+          className="btn btn-danger btn-lg border"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="apply-button"
+        >
+          Apply Now
+        </a>
+      </div>
+
       <section id="sponsors">
         <h1 className="font-red mt-4">Sponsors</h1>
-        <img src={johnHack} alt="johnHack" className="img-fluid" />
         <img
           src={charity}
           alt="charity"
