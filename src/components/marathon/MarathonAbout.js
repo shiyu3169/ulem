@@ -4,7 +4,7 @@ import johnHack from "../../img/jh_sig_blk.jpg";
 import ulem from "../../img/ULEM Logo.jpg";
 export default function MarathonAbout() {
   return (
-    <div id="about">
+    <section id="about">
       <h1 className="font-red mt-4">About Us</h1>
       <p>
         Run for The Urban League of Eastern Massachusetts Team in the 2019
@@ -18,14 +18,14 @@ export default function MarathonAbout() {
         for the foundation. Qualified runners that already have a bib are
         welcome to join our team and are asked to raise a minimum of $2,000.
       </p>
-      <div id="sponsors">
+      <section id="sponsors">
         <img src={johnHack} alt="johnHack" className="img-fluid" />
         <img
           src={charity}
           alt="charity"
           className="img-fluid  mx-auto d-block"
         />
-      </div>
+      </section>
 
       <p>Some of the advantages of being a part of the team include:</p>
       <ul className="list-no-style">
@@ -95,6 +95,6 @@ export default function MarathonAbout() {
       >
         Fill out the application here
       </a>
-    </div>
+    </section>
   );
 }

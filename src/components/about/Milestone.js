@@ -77,7 +77,6 @@ export default class Milestone extends Component {
                 text="May 16, 1919"
                 title="t1919"
               />
-              {/* end */}
             </div>
           </div>
         </div>

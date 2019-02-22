@@ -100,6 +100,7 @@ body {
     margin: 0 40px;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -173,6 +174,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 @media (min-width: 992px) {
   .fixed-pos {
     position: fixed;
@@ -187,21 +189,21 @@ html {
 }
 
 .sticky {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 20;
 }
 
 .sub-sticky {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 5%;
   z-index: 20;
 }
 
 .sticky-side {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 8%;
   z-index: 1;
@@ -215,47 +217,62 @@ html {
   list-style-type: none;
 }
 
+footer a:hover,
+footer link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+section[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
+
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+@media (min-width: 768px) {
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.animated.fadeInLeft {
-  animation-name: fadeInLeft;
-}
-
-.animated.fadeInLeftBig {
-  animation-name: fadeInLeftBig;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
+  .animated.fadeInLeft {
+    animation-name: fadeInLeft;
   }
 
-  to {
-    opacity: 1;
-    transform: none;
+  .animated.fadeInLeftBig {
+    animation-name: fadeInLeftBig;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .animated.fadeInRight {
+    animation-name: fadeInRight;
   }
 }
-
-.animated.fadeInRight {
-  animation-name: fadeInRight;
-}
-
 #timeline {
   list-style: none;
   position: relative;
@@ -271,6 +288,7 @@ html {
   background-color: #c40000;
   left: 50%;
   margin-left: -1.5px;
+  z-index: 1000;
 }
 
 #timeline .timeline-badge {
@@ -403,19 +421,4 @@ html {
   color: #e2001a;
   font-size: 1.3em;
   font-weight: 600;
-}
-
-footer a:hover,
-footer link:hover {
-  text-decoration: none;
-  color: black;
-}
-
-section[id]:before,
-div[id]:before {
-  display: block;
-  content: " ";
-  margin-top: -75px;
-  height: 75px;
-  visibility: hidden;
 }
