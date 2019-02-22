@@ -22,7 +22,7 @@ export default class Card extends Component {
     return (
       <Link
         to={link}
-        className="card link-no-style border"
+        className="card link-no-style border mb-2"
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOut}
       >

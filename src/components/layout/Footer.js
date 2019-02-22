@@ -10,7 +10,7 @@ export default class Footer extends Component {
             <Link to="/centennial">
               <img
                 src={ulem100}
-                className="img-fluid"
+                className="img-fluid border"
                 id="footer-img-height"
                 alt=""
               />
@@ -83,7 +83,7 @@ export default class Footer extends Component {
           </div>
           <div className="col-md-1" />
           <div className="col-md-2 text-center">
-            <h5 className="font-weight-bold text-uppercase mb-4 font-white">
+            <h5 className="font-weight-bold text-uppercase mb-4 font-white d-none d-md-block">
               Follow Us
             </h5>
             <div className="row">
@@ -92,7 +92,8 @@ export default class Footer extends Component {
                   href="https://www.facebook.com/theulem/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-white">
+                  className="font-white"
+                >
                   <i className="fab fa-facebook fa-3x" />
                 </a>
               </div>
@@ -101,7 +102,8 @@ export default class Footer extends Component {
                   href="https://twitter.com/theULEM"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-white">
+                  className="font-white"
+                >
                   <i className="fab fa-twitter-square fa-3x" />
                 </a>
               </div>
@@ -112,7 +114,8 @@ export default class Footer extends Component {
                   href="https://www.linkedin.com/company/urban-league-of-eastern-massachusetts/about/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-white">
+                  className="font-white"
+                >
                   <i className="fab fa-linkedin fa-3x" />
                 </a>
               </div>
@@ -121,7 +124,8 @@ export default class Footer extends Component {
                   href="https://www.instagram.com/theulem/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-white">
+                  className="font-white"
+                >
                   <i className="fab fa-instagram fa-3x" />
                 </a>
               </div>
