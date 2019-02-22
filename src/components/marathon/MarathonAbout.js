@@ -19,6 +19,7 @@ export default function MarathonAbout() {
         welcome to join our team and are asked to raise a minimum of $2,000.
       </p>
       <section id="sponsors">
+        <h1 className="font-red mt-4">Sponsors</h1>
         <img src={johnHack} alt="johnHack" className="img-fluid" />
         <img
           src={charity}
