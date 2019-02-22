@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class EventCard extends Component {
   render() {
     return (
-      <div className="card mb-2">
+      <div className="card mb-2 border">
         <h5 className="card-title text-center font-red mt-4">
           <strong>{this.props.event.title}</strong>
         </h5>
