@@ -28,7 +28,7 @@ export default function MarathonAbout() {
         />
       </section>
       <section id="application">
-        <h1 className="font-red mt-4">Become a runner</h1>
+        <h1 className="font-red mt-4">Become a Runner</h1>
         <p>Some of the advantages of being a part of the team include:</p>
         <ul className="list-no-style">
           <li>
