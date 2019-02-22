@@ -30,11 +30,11 @@ export default class Home extends Component {
         <TopSlides />
         <div className="container">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-7 mb-2">
               <EventSlides events={events} />
             </div>
-            <div className="col-1 d-block d-sm-none" />
-            <div className="col-md-4 col-10 border">
+            <div className="col-1 d-md-none" />
+            <div className="col-md-5 col-10">
               <a
                 href="https://twitter.com/theULEM"
                 className="link"
@@ -46,13 +46,15 @@ export default class Home extends Component {
                   <i className="fab fa-twitter float-right" />
                 </h3>
               </a>
-              <TwitterTimelineEmbed
-                sourceType="profile"
-                screenName="theULEM"
-                noHeader
-                noFooter
-                options={{ height: 700 }}
-              />
+              <div className="border">
+                <TwitterTimelineEmbed
+                  sourceType="profile"
+                  screenName="theULEM"
+                  noHeader
+                  noFooter
+                  options={{ height: 700 }}
+                />
+              </div>
             </div>
           </div>
         </div>
