@@ -82,7 +82,7 @@ export default class Home extends Component {
                 icon="fas fa-thumbs-up fa-2x"
               />
             </div>
-            <br />
+
             <div className="card-deck">
               <Card
                 title="Our Auxiliaries"
