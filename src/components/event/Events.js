@@ -4,6 +4,7 @@ import EventDes from "./EventDes";
 import Axios from "axios";
 import EventToday from "./EventToday";
 import loading from "../../img/loading.gif";
+import EventAll from "./EventAll";
 
 export default class Events extends Component {
   constructor(props) {
@@ -13,7 +14,8 @@ export default class Events extends Component {
         ? this.makeDate(this.props.location.state.date)
         : new Date(),
       events: [],
-      dates: []
+      dates: [],
+      showAll: false
     };
   }
 
@@ -28,6 +30,12 @@ export default class Events extends Component {
 
   onChange = date => {
     this.setState({ date });
+  };
+
+  onSelect = e => {
+    this.setState({
+      [e.target.name]: e.target.checked
+    });
   };
 
   getEvents = () => {
@@ -105,18 +113,27 @@ export default class Events extends Component {
                   tileClassName={this.tileClassName}
                 />
                 <p className="mt-2">
-                  <i class="far fa-square" /> = Date with Event
+                  <i className="far fa-square" /> = Date with Event
                 </p>
+                <input
+                  type="checkbox"
+                  name="showAll"
+                  onChange={this.onSelect}
+                />{" "}
+                Show all events
               </div>
             ) : (
               <img className="center" src={loading} alt="loading" />
             )}
           </div>
           <div className="col-lg-4">
-            <EventToday
-              date={this.state.date}
-              events={this.filterEvents(this.state.events, this.state.date)}
-            />
+            {this.state.showAll && <EventAll events={this.state.events} />}
+            {!this.state.showAll && (
+              <EventToday
+                date={this.state.date}
+                events={this.filterEvents(this.state.events, this.state.date)}
+              />
+            )}
           </div>
           <div className="col-lg-4 ">
             <EventDes />

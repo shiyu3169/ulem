@@ -3,7 +3,7 @@ import React from "react";
 export default function EventDes() {
   return (
     <React.Fragment>
-      <h2 className="font-red mt-4">Events</h2>
+      <h2 className="font-red mt-4">Annual Events</h2>
       <p>
         Annually, ULEM honors its mission by hosting 3 signature events, our
         Annual Meeting, Gala, and Jobs Rebuild Boston Community Conference and
