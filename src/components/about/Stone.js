@@ -77,7 +77,8 @@ export default class Stone extends Component {
           id={this.props.title}
           role="dialog"
           aria-labelledby="myLargeModalLabel"
-          aria-hidden="true">
+          aria-hidden="true"
+        >
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="container-fluid">
