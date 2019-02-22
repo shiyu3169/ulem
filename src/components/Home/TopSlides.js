@@ -36,7 +36,7 @@ export default class TopSlides extends Component {
                     style={{
                       paddingTop: "23%",
                       color: "white",
-                      textShadow: "2px 2px #ff0000"
+                      textShadow: "2px 2px 5px red"
                     }}
                   >
                     <strong>Empowering Communities. Changing Lives.</strong>
