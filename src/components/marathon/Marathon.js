@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MarathonNav from "./MarathonNav";
 import MarathonAbout from "./MarathonAbout";
-import MarathonBanner from "../../img/ULEM-MarathonBanner.png";
+import MarathonBanner from "../../img/ULEM-MarathonBanner2.png";
 export default class Marathon extends Component {
   render() {
     return (
