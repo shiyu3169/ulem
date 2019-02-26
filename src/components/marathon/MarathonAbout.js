@@ -20,10 +20,9 @@ export default function MarathonAbout() {
       <div className="text-center">
         <a
           href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
-          className="btn btn-danger btn-lg border"
+          className="btn btn-danger btn-lg btn-block border"
           target="_blank"
           rel="noopener noreferrer"
-          id="apply-button"
         >
           Apply Now
         </a>

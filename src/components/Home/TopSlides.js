@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import msimbo from "../../img/MSIMBOFlyer.png";
 import digiul from "../../img/DigiUL.png";
 import ulemBuilding from "../../img/ulemBuilding.JPG";
-
+import marathonBanner from "../../img/ULEM-MarathonBanner.png";
 export default class TopSlides extends Component {
   componentDidMount() {
     window.$(".top-carousel").carousel({
@@ -69,6 +69,19 @@ export default class TopSlides extends Component {
               <div
                 style={{
                   background: `url(${msimbo}) no-repeat top center/cover`,
+                  height: "70vh",
+                  backgroundPosition: "center TOP",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "100% 100%"
+                }}
+              />
+            </Link>
+          </div>
+          <div className="carousel-item">
+            <Link to="/marathon">
+              <div
+                style={{
+                  background: `url(${marathonBanner}) no-repeat top center/cover`,
                   height: "70vh",
                   backgroundPosition: "center TOP",
                   backgroundRepeat: "no-repeat",
