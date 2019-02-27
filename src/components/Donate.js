@@ -7,7 +7,16 @@ export default class Donate extends Component {
     return (
       <div className="container">
         <h1 className="font-red mt-4">Donate</h1>
-        <p>
+        <div className="embed-responsive embed-responsive-16by9 border">
+          <iframe
+            title="donate"
+            className="embed-responsive-item"
+            src="https://www.youtube.com/embed/6kxMIPWEKF8?autoplay=1"
+            allowFullScreen
+            allow="autoplay"
+          />
+        </div>
+        <p className="mt-4">
           ULEM operates by the grace of a combination of grants, contracts, and
           donations. Every dollar donated to the Urban League of Eastern
           Massachusetts is used to support programs, overhead, and salaries. In
@@ -15,18 +24,8 @@ export default class Donate extends Component {
           annually. That is how we provide workforce development training to the
           under- and unemployed at no cost to them.
         </p>
-        <p>lease take a moment to view our impact video:​</p>
-        <div className="embed-responsive embed-responsive-16by9 border">
-          <iframe
-            title="donate"
-            className="embed-responsive-item"
-            src="https://www.youtube.com/embed/6kxMIPWEKF8"
-            allowfullscreen
-          />
-        </div>
         <p>
-          After watching it, you may be inclined to make a donation by clicking
-          the image below:​
+          You may be inclined to make a donation by clicking the image below:​
         </p>
         <a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=ulem&id=1">
           <img
