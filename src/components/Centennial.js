@@ -11,7 +11,7 @@ export default class Centennial extends Component {
           className="img-fluid cursor center"
         />
         <Milestone />
-        <h2>More Info Comming Soon</h2>
+        <h2>More Info is Coming Soon</h2>
       </div>
     );
   }
