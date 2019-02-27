@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Card from "../layout/Card";
 import Youtube from "../layout/Youtube";
 import Axios from "axios";
 import TopSlides from "./TopSlides";
 import EventSlides from "./EventSlides";
 import Instagram from "./Instagram";
+import Twitter from "./Twitter";
 
 export default class Home extends Component {
   state = {
@@ -46,15 +46,7 @@ export default class Home extends Component {
                   <i className="fab fa-twitter float-right" />
                 </h3>
               </a>
-              <div className="border">
-                <TwitterTimelineEmbed
-                  sourceType="profile"
-                  screenName="theULEM"
-                  noHeader
-                  noFooter
-                  options={{ height: 700 }}
-                />
-              </div>
+              <Twitter />
             </div>
           </div>
         </div>

@@ -18,11 +18,11 @@ export default class TopSlides extends Component {
         className="carousel slide top-carousel mb-3"
         data-ride="carousel"
       >
-        <ol class="carousel-indicators">
+        <ol className="carousel-indicators">
           <li
             data-target="#carouselExampleControls"
             data-slide-to="0"
-            class="active"
+            className="active"
           />
           <li data-target="#carouselExampleControls" data-slide-to="1" />
           <li data-target="#carouselExampleControls" data-slide-to="2" />
