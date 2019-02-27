@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import InputGroup from "./layout/InputGroup";
+import $ from "jquery";
+import datepickerFactory from "jquery-datepicker";
+import datepickerJAFactory from "jquery-datepicker/i18n/jquery.ui.datepicker-ja";
+import "bootstrap-select";
 
 export default class Member extends Component {
   state = {
@@ -33,7 +37,7 @@ export default class Member extends Component {
   };
 
   showTransportation = e => {
-    var values = window.$("#00N5000000AZDL3").val();
+    var values = $("#00N5000000AZDL3").val();
     if (values.includes("Other")) {
       this.setState({
         transportation: true
@@ -46,9 +50,9 @@ export default class Member extends Component {
   };
 
   componentDidMount() {
-    window.$("select[multiple]").selectpicker();
-    window.$(function() {
-      window.$(".datePicker").datepicker({
+    $("select[multiple]").selectpicker();
+    $(function() {
+      $(".datePicker").datepicker({
         showButtonPanel: true,
         changeMonth: true,
         changeYear: true,
@@ -58,12 +62,15 @@ export default class Member extends Component {
   }
 
   render() {
+    datepickerFactory($);
+    datepickerJAFactory($);
     return (
       <div className="container">
         <h1 className="font-red mt-4">Become a Member</h1>
         <form
           action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
-          method="POST">
+          method="POST"
+        >
           <input type="hidden" name="oid" value="00D50000000cxiS" />
           <input
             type="hidden"
@@ -109,7 +116,8 @@ export default class Member extends Component {
               id="00N5000000AZD2Q"
               name="00N5000000AZD2Q"
               required
-              className="form-control">
+              className="form-control"
+            >
               <option />
               <option value="Under 21">Under 21</option>
               <option value="21-35">21-35</option>
@@ -186,7 +194,8 @@ export default class Member extends Component {
               className="form-control"
               id="00N5000000AZDIn"
               name="00N5000000AZDIn"
-              required>
+              required
+            >
               <option />
               <option value="Male">Male</option>
               <option value="Female">Female</option>
@@ -214,7 +223,8 @@ export default class Member extends Component {
               name="00N5000000AZDJ2"
               required
               className="form-control"
-              onChange={this.showOther.bind(this, "hear")}>
+              onChange={this.showOther.bind(this, "hear")}
+            >
               <option />
               <option value="Walk-in">Walk-in</option>
               <option value="Massachusetts Rehabilitation Commission (MRC)">
@@ -257,7 +267,8 @@ export default class Member extends Component {
                 id="00N5000000AZDJC"
                 className="form-control"
                 multiple
-                name="00N5000000AZDJC">
+                name="00N5000000AZDJC"
+              >
                 <option value="Employment Resource Center">
                   Employment Resource Center
                 </option>
@@ -287,7 +298,8 @@ export default class Member extends Component {
               onChange={this.showOther.bind(this, "ethnicity")}
               id="00N5000000AZDJH"
               name="00N5000000AZDJH"
-              className="form-control">
+              className="form-control"
+            >
               <option />
               <option value="Black/African American">
                 Black/African American
@@ -325,7 +337,8 @@ export default class Member extends Component {
               required
               id="00N5000000AZDJR"
               name="00N5000000AZDJR"
-              className="form-control">
+              className="form-control"
+            >
               <option />
               <option value="English">English</option>
               <option value="Spanish">Spanish</option>
@@ -356,7 +369,8 @@ export default class Member extends Component {
               id="00N5000000AZDJl"
               name="00N5000000AZDJl"
               className="form-control"
-              required>
+              required
+            >
               <option />
               <option value="Below 9th Grade">Below 9th Grade</option>
               <option value="9-12 Grade">9-12 Grade</option>
@@ -379,7 +393,8 @@ export default class Member extends Component {
               onChange={this.showOther.bind(this, "housing")}
               name="00N5000000AZDJq"
               className="form-control"
-              required>
+              required
+            >
               <option />
               <option value="Rent">Rent</option>
               <option value="Own">Own</option>
@@ -410,7 +425,8 @@ export default class Member extends Component {
               name="00N5000000AZDK0"
               className="form-control"
               onChange={this.showOther.bind(this, "houseHold")}
-              required>
+              required
+            >
               <option />
               <option value="1 Person">1 Person</option>
               <option value="2 Persons">2 Persons</option>
@@ -438,7 +454,8 @@ export default class Member extends Component {
               id="00N5000000AZDKA"
               name="00N5000000AZDKA"
               className="form-control"
-              required>
+              required
+            >
               <option />
               <option value="Below $5,000">Below $5,000</option>
               <option value="$5,001 - $20,000">$5,001 - $20,000</option>
@@ -456,7 +473,8 @@ export default class Member extends Component {
               name="00N5000000AZDKF"
               className="form-control"
               onChange={this.showOther.bind(this, "supplements")}
-              required>
+              required
+            >
               <option />
               <option value="TAFDC/EAEDC">TAFDC/EAEDC</option>
               <option value="TANF/Food Stamps">TANF/Food Stamps</option>
@@ -490,7 +508,8 @@ export default class Member extends Component {
               id="00N5000000AZDKP"
               name="00N5000000AZDKP"
               className="form-control"
-              required>
+              required
+            >
               <option />
               <option value="Yes">Yes</option>
               <option value="No">No</option>
@@ -505,7 +524,8 @@ export default class Member extends Component {
               id="00N5000000AZDKU"
               name="00N5000000AZDKU"
               className="form-control"
-              required>
+              required
+            >
               <option />
               <option value="Unemployed">Unemployed</option>
               <option value="Work Part Time">Work Part Time</option>
@@ -526,7 +546,8 @@ export default class Member extends Component {
               name="00N5000000AZDKZ"
               className="form-control"
               required
-              onChange={this.showOther.bind(this, "children")}>
+              onChange={this.showOther.bind(this, "children")}
+            >
               <option />
               <option value="No Children">No Children</option>
               <option value="1 Child">1 Child</option>
@@ -556,7 +577,8 @@ export default class Member extends Component {
               name="00N5000000AZDKj"
               className="form-control"
               required
-              onChange={this.showOther.bind(this, "childCare")}>
+              onChange={this.showOther.bind(this, "childCare")}
+            >
               <option />
               <option value="Child Care Voucher (Child Care Choices)">
                 Child Care Voucher (Child Care Choices)
@@ -589,7 +611,8 @@ export default class Member extends Component {
               name="00N5000000AZDKt"
               className="form-control"
               required
-              onChange={this.showOther.bind(this, "marital")}>
+              onChange={this.showOther.bind(this, "marital")}
+            >
               <option />
               <option value="Single">Single</option>
               <option value="Divorced">Divorced</option>
@@ -620,7 +643,8 @@ export default class Member extends Component {
                 name="00N5000000AZDL3"
                 className="form-control"
                 required
-                onChange={this.showTransportation}>
+                onChange={this.showTransportation}
+              >
                 <option value="Own Vehicle">Own Vehicle</option>
                 <option value="The Ride">The Ride</option>
                 <option value="Public Transportation">
