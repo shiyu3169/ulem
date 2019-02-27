@@ -427,3 +427,13 @@ section[id]:before {
   font-size: 1.3em;
   font-weight: 600;
 }
+
+.top-slide {
+  height: 70vh;
+}
+
+@media (max-width: 992px) {
+  .top-slide {
+    height: 50vh;
+  }
+}

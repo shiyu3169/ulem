@@ -32,9 +32,10 @@ export default class TopSlides extends Component {
           <div className="carousel-item active">
             <Link to="/about" className="link-white">
               <div
+                className="top-slide"
                 style={{
                   background: `url(${ulemBuilding}) no-repeat top center/cover`,
-                  height: "70vh",
+
                   backgroundPosition: "center TOP",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover"
@@ -64,9 +65,9 @@ export default class TopSlides extends Component {
           <div className="carousel-item">
             <Link to="/program">
               <div
+                className="top-slide"
                 style={{
                   backgroundImage: `url(${digiul})`,
-                  height: "70vh",
                   backgroundPosition: "center TOP",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover"
@@ -77,9 +78,9 @@ export default class TopSlides extends Component {
           <div className="carousel-item">
             <Link to="/program">
               <div
+                className="top-slide"
                 style={{
                   background: `url(${msimbo}) no-repeat top center/cover`,
-                  height: "70vh",
                   backgroundPosition: "center TOP",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "100% 100%"
@@ -90,9 +91,9 @@ export default class TopSlides extends Component {
           <div className="carousel-item">
             <Link to="/marathon">
               <div
+                className="top-slide"
                 style={{
                   background: `url(${marathonBanner}) no-repeat top center/cover`,
-                  height: "70vh",
                   backgroundPosition: "center TOP",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "100% 100%"
