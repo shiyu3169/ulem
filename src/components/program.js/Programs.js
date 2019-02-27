@@ -4,6 +4,16 @@ export default class Programs extends Component {
   render() {
     return (
       <section id="program">
+        {/* <div className="embed-responsive embed-responsive-16by9 ">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/NdxADLogYqU?controls=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div> */}
         <h1 className="font-red mt-4 mb-4">
           Workforce Development Training Programs
         </h1>
@@ -73,7 +83,8 @@ export default class Programs extends Component {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="http://msimbo.herokuapp.com">
+            href="http://msimbo.herokuapp.com"
+          >
             http://www.msimbo.com
           </a>
         </p>
