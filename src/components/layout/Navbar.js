@@ -67,6 +67,11 @@ export default class Navbar extends Component {
                   ULEM Marathon Team
                 </Link>
               </li>
+              <li className="nav-item" onClick={this.collapse}>
+                <Link className="nav-link" to="/centennial">
+                  Centennial Celebration
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
