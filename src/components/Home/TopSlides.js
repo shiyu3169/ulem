@@ -4,9 +4,13 @@ import msimbo from "../../img/MSIMBOFlyer.png";
 import digiul from "../../img/DigiUL.png";
 import ulemBuilding from "../../img/ulemBuilding.JPG";
 import marathonBanner from "../../img/ULEM-MarathonBanner.png";
+import $ from "jquery";
+import "popper.js";
+import "bootstrap";
+
 export default class TopSlides extends Component {
   componentDidMount() {
-    window.$(".top-carousel").carousel({
+    $(".top-carousel").carousel({
       interval: 2400
     });
   }

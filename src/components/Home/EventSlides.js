@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import loading from "../../img/loading.gif";
+import $ from "jquery";
+import "popper.js";
+import "bootstrap";
 
 export default class EventSlides extends Component {
   componentDidUpdate(prevProps) {
     // Typical usage (don't forget to compare props):
     if (this.props.events !== prevProps.events) {
-      window.$("#carousel-2").carousel({
+      $("#carousel-2").carousel({
         interval: 2400
       });
     }

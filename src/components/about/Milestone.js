@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import $ from "jquery";
+
 import Stone from "./Stone";
 import beyond from "../../img/beyond.jpg";
 import digiul from "../../img/DigiUL.png";
@@ -14,16 +16,16 @@ import t1929 from "../../img/1929.png";
 import t1919 from "../../img/1919.png";
 export default class Milestone extends Component {
   componentDidMount() {
-    var $animation_elements = window.$(".anim");
-    var $window = window.$(window);
+    var $animation_elements = $(".anim");
+    var $window = $(window);
 
     function check_if_in_view() {
       var window_height = $window.height();
       var window_top_position = $window.scrollTop();
       var window_bottom_position = window_top_position + window_height;
 
-      window.$.each($animation_elements, function() {
-        var $element = window.$(this);
+      $.each($animation_elements, function() {
+        var $element = $(this);
         var element_height = $element.outerHeight();
         var element_top_position = $element.offset().top;
         var element_bottom_position = element_top_position + element_height;

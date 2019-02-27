@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ulem from "../../img/ulem.png";
+import $ from "jquery";
+
 export default class Navbar extends Component {
   collapse() {
-    window.$(".collapse").collapse("hide");
+    $(".collapse").collapse("hide");
   }
   render() {
     return (
