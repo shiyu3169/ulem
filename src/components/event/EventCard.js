@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import moment from "moment";
 
 export default class EventCard extends Component {
   render() {
@@ -10,9 +11,19 @@ export default class EventCard extends Component {
         <div className="card-body">
           <div className="row">
             <div className="col-6">
-              <p>Start Time: {this.props.event.start.replace("T", " @ ")}</p>
+              <p>
+                Start Time:{" "}
+                {moment(this.props.event.start)
+                  .format("YYYY-MM-DDTkk:mm")
+                  .replace("T", "@")}
+              </p>
               {this.props.event.end && (
-                <p>End Time: {this.props.event.end.replace("T", " @ ")}</p>
+                <p>
+                  End Time:{" "}
+                  {moment(this.props.event.end)
+                    .format("YYYY-MM-DDTkk:mm")
+                    .replace("T", "@")}
+                </p>
               )}
             </div>
             <div className="col-6">

@@ -13,8 +13,9 @@ EventModel.findAllEvents = () =>
     .exec();
 
 // Find latest 3 events
+const today = new Date();
 EventModel.findTopEvents = () =>
-  EventModel.find({ img: { $exists: true } })
+  EventModel.find({ img: { $exists: true }, start: { $gte: today } })
     .sort({ start: -1 })
     .limit(3)
     .populate("img")

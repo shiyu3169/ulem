@@ -3,6 +3,7 @@ import Axios from "axios";
 import Pages from "../layout/Pages";
 import DeleteModal from "../layout/DeleteModal";
 import UploadModal from "../layout/UploadModal";
+import moment from "moment";
 
 export default class EventList extends Component {
   state = {
@@ -74,8 +75,14 @@ export default class EventList extends Component {
                   >
                     {event.title}
                   </td>
-                  <td>{event.start}</td>
-                  <td>{event.end}</td>
+                  {console.log(event.start.toLocaleString())}
+                  <td>{moment(event.start).format("YYYY-MM-DDTkk:mm")}</td>
+
+                  <td>
+                    {event.end
+                      ? moment(event.end).format("YYYY-MM-DDTkk:mm")
+                      : "N/A"}
+                  </td>
 
                   <td>
                     {event.img ? (

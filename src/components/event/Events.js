@@ -103,7 +103,7 @@ export default class Events extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-3">
+          <div className="col-xl-3">
             {this.state.dates.length ? (
               <div className="fixed-pos">
                 <h2 className="font-red mt-4">Events Calendar</h2>
@@ -127,7 +127,7 @@ export default class Events extends Component {
               <img className="center" src={loading} alt="loading" />
             )}
           </div>
-          <div className="col-lg-5">
+          <div className="col-xl-5">
             {this.state.showAll && <EventAll events={this.state.events} />}
             {!this.state.showAll && (
               <EventToday
@@ -136,7 +136,7 @@ export default class Events extends Component {
               />
             )}
           </div>
-          <div className="col-lg-4 ">
+          <div className="col-xl-4 ">
             <EventDes />
           </div>
         </div>
