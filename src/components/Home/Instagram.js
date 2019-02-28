@@ -19,7 +19,7 @@ export default class Instagram extends Component {
           src="//lightwidget.com/widgets/b5fa1f3fa9ca5bfbb0000608b4fa4962.html"
           scrolling="no"
           allowtransparency="true"
-          className="lightwidget-widget border"
+          className="lightwidget-widget "
           title="instagram"
           style={{ width: "100%", border: 0, overflow: "hidden" }}
         />
