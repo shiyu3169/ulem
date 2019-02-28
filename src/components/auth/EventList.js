@@ -75,7 +75,6 @@ export default class EventList extends Component {
                   >
                     {event.title}
                   </td>
-                  {console.log(event.start.toLocaleString())}
                   <td>{moment(event.start).format("YYYY-MM-DDTkk:mm")}</td>
 
                   <td>
@@ -116,6 +115,7 @@ export default class EventList extends Component {
             </tbody>
           </table>
         </div>
+
         <Pages
           length={this.state.length}
           page={this.state.page}

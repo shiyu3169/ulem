@@ -1,15 +1,25 @@
 import React, { Component } from "react";
 
 export default class Pages extends Component {
-  state = {
-    pages: 10
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      pages: 10
+    };
+  }
 
-  countPages = () => {
-    this.setState({
+  countPages = async () => {
+    await this.setState({
       pages: Math.ceil(this.props.length / 20)
     });
+    console.log(this.props.length);
   };
+
+  componentDidUpdate(prevProps) {
+    if (this.props.length !== prevProps.length) {
+      this.countPages();
+    }
+  }
 
   componentDidMount() {
     this.countPages();
@@ -40,14 +50,16 @@ export default class Pages extends Component {
           <li className="list-inline-item">
             <span
               className="cursor"
-              onClick={this.handleClick.bind(this, this.props.page - 2)}>
+              onClick={this.handleClick.bind(this, this.props.page - 2)}
+            >
               {this.props.page - 2}
             </span>
           </li>
           <li className="list-inline-item">
             <span
               className="cursor"
-              onClick={this.handleClick.bind(this, this.props.page - 1)}>
+              onClick={this.handleClick.bind(this, this.props.page - 1)}
+            >
               {this.props.page - 1}
             </span>
           </li>
@@ -58,7 +70,8 @@ export default class Pages extends Component {
         <li key={this.props.page - 1} className="list-inline-item">
           <span
             className="cursor"
-            onClick={this.handleClick.bind(this, this.props.page - 1)}>
+            onClick={this.handleClick.bind(this, this.props.page - 1)}
+          >
             {this.props.page - 1}
           </span>
         </li>
@@ -69,7 +82,8 @@ export default class Pages extends Component {
       <li key={this.props.page} className="list-inline-item">
         <span
           className="cursor"
-          onClick={this.handleClick.bind(this, this.props.page)}>
+          onClick={this.handleClick.bind(this, this.props.page)}
+        >
           <strong>{this.props.page}</strong>
         </span>
       </li>
@@ -80,7 +94,8 @@ export default class Pages extends Component {
         <li key={this.props.page + 1} className="list-inline-item">
           <span
             className="cursor"
-            onClick={this.handleClick.bind(this, this.props.page + 1)}>
+            onClick={this.handleClick.bind(this, this.props.page + 1)}
+          >
             {this.props.page + 1}
           </span>
         </li>
@@ -91,7 +106,8 @@ export default class Pages extends Component {
         <li key={this.props.page + 2} className="list-inline-item">
           <span
             className="cursor"
-            onClick={this.handleClick.bind(this, this.props.page + 2)}>
+            onClick={this.handleClick.bind(this, this.props.page + 2)}
+          >
             {this.props.page + 2}
           </span>
         </li>
@@ -104,7 +120,8 @@ export default class Pages extends Component {
           <li key={this.state.pages} className="list-inline-item">
             <span
               className="cursor"
-              onClick={this.handleClick.bind(this, this.state.pages)}>
+              onClick={this.handleClick.bind(this, this.state.pages)}
+            >
               {this.state.pages}
             </span>
           </li>
