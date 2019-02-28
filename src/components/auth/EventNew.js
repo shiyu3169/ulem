@@ -19,7 +19,7 @@ export default class EventNew extends Component {
     });
   };
 
-  onSubmit = e => {
+  onSubmit = async e => {
     e.preventDefault();
     const { title, start, end, venue, address, noEndTime } = this.state;
     const updatedBy = this.props.user._id;
@@ -35,20 +35,16 @@ export default class EventNew extends Component {
     if (event.noEndTime) {
       event.end = "";
     }
-    this.createEvent(event)
-      .then(() => {
-        this.setState({
-          noEndTime: false,
-          title: "",
-          start: "",
-          end: "",
-          venue: "",
-          address: ""
-        });
-      })
-      .then(() => {
-        this.props.showList();
-      });
+    await this.createEvent(event);
+    await this.setState({
+      noEndTime: false,
+      title: "",
+      start: "",
+      end: "",
+      venue: "",
+      address: ""
+    });
+    this.props.showList();
   };
 
   onCancel = () => {

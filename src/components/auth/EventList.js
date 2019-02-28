@@ -109,7 +109,7 @@ export default class EventList extends Component {
                   </td>
                   <td>
                     Last updated by {event.updatedBy.username} @{" "}
-                    {new Date(event.dateModified).toLocaleString()}
+                    {moment(event.dateModified).format("YYYY-MM-DDTkk:mm")}
                   </td>
                 </tr>
               ))}
