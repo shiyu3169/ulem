@@ -467,7 +467,7 @@ section[id]:before {
 }
 
 .top-slide {
-  height: 70vh;
+  height: 65vh;
 }
 
 @media (max-width: 992px) {
