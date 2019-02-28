@@ -12,7 +12,6 @@ export default class Pages extends Component {
     await this.setState({
       pages: Math.ceil(this.props.length / 20)
     });
-    console.log(this.props.length);
   };
 
   componentDidUpdate(prevProps) {
