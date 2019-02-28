@@ -6,7 +6,8 @@ export default class EventToday extends Component {
     return (
       <React.Fragment>
         <h2 className="font-red mt-4">
-          Events on {this.props.date.toDateString()}
+          {this.props.events.length} Event(s) on{" "}
+          {this.props.date.toDateString()}
         </h2>
         {this.props.events.map(event => (
           <EventCard key={event._id} id={event._id} />

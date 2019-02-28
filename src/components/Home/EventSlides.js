@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import loading from "../../img/loading.gif";
 import $ from "jquery";
 import "popper.js";
