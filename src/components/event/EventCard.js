@@ -28,47 +28,53 @@ export default class EventCard extends Component {
   }
 
   render() {
-    return this.state.event ? (
-      <div className="card mb-2 border">
-        <h5 className="card-title text-center font-red mt-4">
-          <strong>{this.state.event.title}</strong>
-        </h5>
-        <div className="card-body">
-          <div className="row">
-            <div className="col-6">
-              <p>
-                Start Time:{" "}
-                {moment(this.state.event.start)
-                  .format("YYYY-MM-DDTkk:mm")
-                  .replace("T", "@")}
-              </p>
-              {this.state.event.end && (
-                <p>
-                  End Time:{" "}
-                  {moment(this.state.event.end)
-                    .format("YYYY-MM-DDTkk:mm")
-                    .replace("T", "@")}
-                </p>
-              )}
+    return (
+      <div>
+        {this.state.event ? (
+          <div className="card mb-2 border">
+            <h3 className="card-title text-center font-red mt-4">
+              <strong>{this.state.event.title}</strong>
+            </h3>
+            <div className="card-body">
+              <div className="row">
+                <div className="col-6">
+                  <p>
+                    Start Time:{" "}
+                    {moment(this.state.event.start)
+                      .format("YYYY-MM-DDTkk:mm")
+                      .replace("T", "@")}
+                  </p>
+                  {this.state.event.end && (
+                    <p>
+                      End Time:{" "}
+                      {moment(this.state.event.end)
+                        .format("YYYY-MM-DDTkk:mm")
+                        .replace("T", "@")}
+                    </p>
+                  )}
+                </div>
+                <div className="col-6">
+                  {this.state.event.venue && (
+                    <p>Venue: {this.state.event.venue}</p>
+                  )}
+                  <p>Address: {this.state.event.address}</p>
+                </div>
+              </div>
             </div>
-            <div className="col-6">
-              {this.state.event.venue && <p>Venue: {this.state.event.venue}</p>}
-              <p>Address: {this.state.event.address}</p>
-            </div>
+            {this.state.event.img && (
+              <img
+                className="card-img-bottom"
+                src={`data:${this.state.event.img.mimeType};base64,${new Buffer(
+                  this.state.event.img.data
+                ).toString("base64")}`}
+                alt="event"
+              />
+            )}
           </div>
-        </div>
-        {this.state.event.img && (
-          <img
-            className="card-img-bottom"
-            src={`data:${this.state.event.img.mimeType};base64,${new Buffer(
-              this.state.event.img.data
-            ).toString("base64")}`}
-            alt="event"
-          />
+        ) : (
+          <img className="center" src={loading} alt="loading" />
         )}
       </div>
-    ) : (
-      <img className="center" src={loading} alt="loading" />
     );
   }
 }
