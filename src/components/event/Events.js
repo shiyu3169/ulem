@@ -4,7 +4,6 @@ import EventDes from "./EventDes";
 import Axios from "axios";
 import EventToday from "./EventToday";
 import loading from "../../img/loading.gif";
-import EventAll from "./EventAll";
 
 export default class Events extends Component {
   constructor(props) {
@@ -14,8 +13,7 @@ export default class Events extends Component {
         ? this.makeDate(this.props.location.state.date)
         : new Date(),
       events: [],
-      dates: [],
-      showAll: false
+      dates: []
     };
   }
 
@@ -99,6 +97,10 @@ export default class Events extends Component {
     });
   };
 
+  // onCheck = ({ activeStartDate, view }) => {
+  //   console.log(activeStartDate);
+  // };
+
   render() {
     return (
       <div className="container-fluid">
@@ -112,29 +114,24 @@ export default class Events extends Component {
                   value={this.state.date}
                   tileClassName={this.tileClassName}
                   className="border"
+                  // onClickMonth={this.onCheck}
+                  // onActiveDateChange={this.onCheck}
                 />
                 <p className="mt-2">
                   <i className="far fa-square" /> = Date with Event
                 </p>
-                <input
-                  type="checkbox"
-                  name="showAll"
-                  onChange={this.onSelect}
-                />{" "}
-                Show all events
               </div>
             ) : (
               <img className="center" src={loading} alt="loading" />
             )}
           </div>
           <div className="col-xl-5">
-            {this.state.showAll && <EventAll events={this.state.events} />}
-            {!this.state.showAll && (
+            {
               <EventToday
                 date={this.state.date}
                 events={this.filterEvents(this.state.events, this.state.date)}
               />
-            )}
+            }
           </div>
           <div className="col-xl-4 ">
             <EventDes />

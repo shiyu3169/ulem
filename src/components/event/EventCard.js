@@ -1,47 +1,74 @@
 import React, { Component } from "react";
 import moment from "moment";
+import Axios from "axios";
+import loading from "../../img/loading.gif";
 
 export default class EventCard extends Component {
+  state = {
+    event: ""
+  };
+
+  getEvent = async id => {
+    const res = await Axios.get(`/api/event/${id}`);
+    this.setState({
+      event: res.data
+    });
+  };
+
+  componentDidMount() {
+    if (this.props.id) {
+      this.getEvent(this.props.id);
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.id !== prevProps.id) {
+      this.getEvent(this.props.id);
+    }
+  }
+
   render() {
-    return (
+    return this.state.event ? (
       <div className="card mb-2 border">
         <h5 className="card-title text-center font-red mt-4">
-          <strong>{this.props.event.title}</strong>
+          <strong>{this.state.event.title}</strong>
         </h5>
         <div className="card-body">
           <div className="row">
             <div className="col-6">
               <p>
                 Start Time:{" "}
-                {moment(this.props.event.start)
+                {moment(this.state.event.start)
                   .format("YYYY-MM-DDTkk:mm")
                   .replace("T", "@")}
               </p>
-              {this.props.event.end && (
+              {this.state.event.end && (
                 <p>
                   End Time:{" "}
-                  {moment(this.props.event.end)
+                  {moment(this.state.event.end)
                     .format("YYYY-MM-DDTkk:mm")
                     .replace("T", "@")}
                 </p>
               )}
             </div>
             <div className="col-6">
-              {this.props.event.venue && <p>Venue: {this.props.event.venue}</p>}
-              <p>Address: {this.props.event.address}</p>
+              {this.state.event.venue && <p>Venue: {this.state.event.venue}</p>}
+              <p>Address: {this.state.event.address}</p>
             </div>
           </div>
         </div>
-        {this.props.event.img && (
+        {this.state.event.img && (
           <img
             className="card-img-bottom"
-            src={`data:${this.props.event.img.mimeType};base64,${new Buffer(
-              this.props.event.img.data
+            src={`data:${this.state.event.img.mimeType};base64,${new Buffer(
+              this.state.event.img.data
             ).toString("base64")}`}
             alt="event"
           />
         )}
       </div>
+    ) : (
+      <img className="center" src={loading} alt="loading" />
     );
   }
 }

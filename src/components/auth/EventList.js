@@ -115,7 +115,6 @@ export default class EventList extends Component {
             </tbody>
           </table>
         </div>
-
         <Pages
           length={this.state.length}
           page={this.state.page}

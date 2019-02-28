@@ -6,11 +6,12 @@ var EventModel = mongoose.model("EventModel", EventSchema);
 EventModel.createEvent = event => EventModel.create(event);
 
 // Find all events
-EventModel.findAllEvents = () =>
-  EventModel.find()
-    .sort({ start: -1 })
-    .populate("img")
-    .exec();
+EventModel.findAllEvents = () => EventModel.find().sort({ start: -1 });
+// .populate("img")
+// .exec();
+
+// Find events in this month
+// EventModel.findMonthEvents = (month) => EventModel.find()
 
 // Find latest 3 events
 const today = new Date();
