@@ -37,6 +37,16 @@ body {
   padding: 1rem;
 }
 
+@media (max-width: 768px) {
+  .vid-info {
+    top: 10%;
+  }
+
+  .vid-info h2 {
+    font-size: 20px;
+  }
+}
+
 :required {
   border: 1px solid #c40000;
 }
