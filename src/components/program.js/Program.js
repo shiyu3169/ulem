@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Programs from "./Programs";
 import Services from "./Services";
 import Certification from "./Certification";
+import BgVideo from "./BgVideo";
 
 export default class Program extends Component {
   render() {
@@ -32,13 +33,7 @@ export default class Program extends Component {
           </aside>
           <main className="col-md-10">
             <section>
-              <p>
-                All of ULEM’s workforce development programs are at no cost to
-                participants. Brief descriptions are below, but for details, we
-                encourage you to attend an information session. Information
-                sessions are held every Tuesday and Wednesday at 1pm. No RSVP is
-                required.
-              </p>
+              <BgVideo />
             </section>
             <Programs />
             <Services />
