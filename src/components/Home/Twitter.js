@@ -4,7 +4,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 export default class Twitter extends Component {
   render() {
     return (
-      <div className="border">
+      <div>
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="theULEM"
