@@ -10,7 +10,7 @@ export default class Footer extends Component {
             <Link to="/centennial">
               <img
                 src={ulem100}
-                className="img-fluid border"
+                className="img-fluid"
                 id="footer-img-height"
                 alt=""
               />
