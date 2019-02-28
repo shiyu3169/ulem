@@ -47,8 +47,8 @@ export default class EventUpdate extends Component {
     const updatedBy = this.props.user._id;
     const event = {
       title,
-      start,
-      end,
+      start: start.toUTCString(),
+      end: end ? end.toUTCString() : "",
       venue,
       address,
       noEndTime,
