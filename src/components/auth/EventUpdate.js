@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import InputGroup from "../layout/InputGroup";
 import Axios from "axios";
-
+import moment from "moment";
 export default class EventUpdate extends Component {
   state = {
     noEndTime: false,
@@ -111,7 +111,7 @@ export default class EventUpdate extends Component {
               name="start"
               onChange={this.onChange}
               type="datetime-local"
-              value={this.state.start}
+              value={moment(this.state.start).format("YYYY-MM-DDTkk:mm")}
             />
             {!this.state.noEndTime && (
               <InputGroup
@@ -121,7 +121,7 @@ export default class EventUpdate extends Component {
                 onChange={this.onChange}
                 name="end"
                 type="datetime-local"
-                value={this.state.end}
+                value={moment(this.state.end).format("YYYY-MM-DDTkk:mm")}
               />
             )}
             <InputGroup

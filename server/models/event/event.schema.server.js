@@ -3,8 +3,8 @@ var mongoose = require("mongoose");
 var EventSchema = mongoose.Schema(
   {
     title: { type: String, required: true },
-    start: String,
-    end: String,
+    start: Date,
+    end: Date,
     venue: String,
     address: String,
     noEndTime: Boolean,

@@ -215,7 +215,7 @@ html {
   opacity: 0.7;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1140px) {
   .fixed-pos {
     position: fixed;
   }

@@ -32,72 +32,80 @@ export default class EventSlides extends Component {
             data-ride="carousel"
           >
             <ol className="carousel-indicators">
-              <li
-                data-target="#carousel-2"
-                data-slide-to="0"
-                className="active"
-              />
-              <li data-target="#carousel-2" data-slide-to="1" />
-              <li data-target="#carousel-2" data-slide-to="2" />
+              {events[0] && (
+                <li
+                  data-target="#carousel-2"
+                  data-slide-to="0"
+                  className="active"
+                />
+              )}
+              {events[1] && <li data-target="#carousel-2" data-slide-to="1" />}
+              {events[2] && <li data-target="#carousel-2" data-slide-to="2" />}
             </ol>
             <div className="carousel-inner">
-              <div className="carousel-item active">
-                <Link
-                  to={{
-                    pathname: "/events",
-                    state: { date: events[0].start }
-                  }}
-                >
-                  <div
-                    style={{
-                      background: `url(data:${
-                        events[0].img.mimeType
-                      };base64,${new Buffer(events[0].img.data).toString(
-                        "base64"
-                      )}) no-repeat top center/cover`,
-                      height: "600px"
+              {events[0] && (
+                <div className="carousel-item active">
+                  <Link
+                    to={{
+                      pathname: "/events",
+                      state: { date: events[0].start }
                     }}
-                  />
-                </Link>
-              </div>
-              <div className="carousel-item ">
-                <Link
-                  to={{
-                    pathname: "/events",
-                    state: { date: events[1].start }
-                  }}
-                >
-                  <div
-                    style={{
-                      background: `url(data:${
-                        events[1].img.mimeType
-                      };base64,${new Buffer(events[1].img.data).toString(
-                        "base64"
-                      )}) no-repeat top center/cover`,
-                      height: "600px"
+                  >
+                    <div
+                      style={{
+                        background: `url(data:${
+                          events[0].img.mimeType
+                        };base64,${new Buffer(events[0].img.data).toString(
+                          "base64"
+                        )}) no-repeat top center/cover`,
+                        height: "600px"
+                      }}
+                    />
+                  </Link>
+                </div>
+              )}
+              {events[1] && (
+                <div className="carousel-item ">
+                  <Link
+                    to={{
+                      pathname: "/events",
+                      state: { date: events[1].start }
                     }}
-                  />
-                </Link>
-              </div>
-              <div className="carousel-item ">
-                <Link
-                  to={{
-                    pathname: "/events",
-                    state: { date: events[2].start }
-                  }}
-                >
-                  <div
-                    style={{
-                      background: `url(data:${
-                        events[2].img.mimeType
-                      };base64,${new Buffer(events[2].img.data).toString(
-                        "base64"
-                      )}) no-repeat top center/cover`,
-                      height: "600px"
+                  >
+                    <div
+                      style={{
+                        background: `url(data:${
+                          events[1].img.mimeType
+                        };base64,${new Buffer(events[1].img.data).toString(
+                          "base64"
+                        )}) no-repeat top center/cover`,
+                        height: "600px"
+                      }}
+                    />
+                  </Link>
+                </div>
+              )}
+              {events[2] && (
+                <div className="carousel-item ">
+                  <Link
+                    to={{
+                      pathname: "/events",
+                      state: { date: events[2].start }
                     }}
-                  />
-                </Link>
-              </div>
+                  >
+                    <div
+                      style={{
+                        background: `url(data:${
+                          events[2].img.mimeType
+                        };base64,${new Buffer(events[2].img.data).toString(
+                          "base64"
+                        )}) no-repeat top center/cover`,
+                        height: "600px"
+                      }}
+                    />
+                  </Link>
+                </div>
+              )}
             </div>
             <a
               className="carousel-control-prev"
