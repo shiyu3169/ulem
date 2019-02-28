@@ -11,6 +11,7 @@ export default class BgVideo extends Component {
               frameBorder="0"
               allowFullScreen
               allow="autoplay"
+              title="program"
             />
           </div>
         </div>

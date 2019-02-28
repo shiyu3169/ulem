@@ -7,7 +7,7 @@ export default class Donate extends Component {
     return (
       <div className="container">
         <h1 className="font-red mt-4">Donate</h1>
-        <div className="embed-responsive embed-responsive-16by9 border">
+        <div className="embed-responsive embed-responsive-16by9">
           <iframe
             title="donate"
             className="embed-responsive-item"
