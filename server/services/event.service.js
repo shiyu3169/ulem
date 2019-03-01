@@ -62,4 +62,12 @@ module.exports = function(app) {
       res.json(data);
     });
   });
+
+  //Remove event image by event id
+  app.get("/api/event/removeImg/:id", (req, res) => {
+    const id = req.params["id"];
+    eventModel.removeEventImg(id).then(data => {
+      res.json(data);
+    });
+  });
 };

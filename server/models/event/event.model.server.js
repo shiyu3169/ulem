@@ -49,4 +49,8 @@ EventModel.countEvents = () => EventModel.countDocuments();
 // Delete events
 EventModel.deleteEvent = id => EventModel.deleteOne({ _id: id });
 
+// Remove event image
+EventModel.removeEventImg = id =>
+  EventModel.updateOne({ _id: id }, { $unset: { img: 1 } });
+
 module.exports = EventModel;

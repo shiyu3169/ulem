@@ -42,7 +42,7 @@ export default class EventUpdate extends Component {
   // handle form submit event
   onSubmit = e => {
     e.preventDefault();
-    const { title, start, end, venue, address, noEndTime } = this.state;
+    const { title, start, end, venue, address } = this.state;
     const dateModified = new Date();
     const updatedBy = this.props.user._id;
     const event = {
@@ -51,7 +51,6 @@ export default class EventUpdate extends Component {
       end: end ? new Date(end) : "",
       venue,
       address,
-      noEndTime,
       dateModified,
       updatedBy
     };
