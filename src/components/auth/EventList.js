@@ -4,6 +4,7 @@ import Pages from "../layout/Pages";
 import DeleteModal from "../layout/DeleteModal";
 import UploadModal from "../layout/UploadModal";
 import moment from "moment";
+import $ from "jquery";
 
 export default class EventList extends Component {
   state = {
@@ -11,6 +12,13 @@ export default class EventList extends Component {
     events: [],
     page: 1
   };
+
+  removeEventImg = async id => {
+    await Axios.get(`/api/event/removeImg/${id}`);
+    $(`#delete${id}`).modal("hide");
+    this.getEvents(this.state.page);
+  };
+
   countEvents = () => {
     Axios.get("/api/event/length").then(res => {
       this.setState({
@@ -103,7 +111,11 @@ export default class EventList extends Component {
                         Upload
                       </button>
                     )}
-                    <DeleteModal _id={event._id} title={event.title} />
+                    <DeleteModal
+                      event={event}
+                      user={this.props.user}
+                      removeEventImg={this.removeEventImg}
+                    />
                     <UploadModal _id={event._id} title={event.title} />
                   </td>
                   <td>

@@ -43,6 +43,7 @@ export default class Event extends Component {
           <EventList
             showAdding={this.showAdding}
             showEditing={this.showEditing}
+            user={this.props.user}
           />
         )}
         {this.state.showAdding && (

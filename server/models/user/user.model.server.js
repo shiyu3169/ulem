@@ -9,6 +9,7 @@ UserModel.findUsers = findUsers;
 UserModel.findUserByUsername = findUserByUsername;
 UserModel.updateUser = updateUser;
 UserModel.deleteUser = deleteUser;
+UserModel.delete;
 
 function createUser(user) {
   return UserModel.create(user);

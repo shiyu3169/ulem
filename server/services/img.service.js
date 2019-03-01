@@ -9,7 +9,6 @@ module.exports = function(app) {
   // Upload image
   app.post("/api/img/upload", upload.single("image"), (req, res) => {
     const event = req.query["event"];
-    const news = req.query["news"];
 
     const image = req.file;
     const callbackUrl = req.headers.origin + "/admin";

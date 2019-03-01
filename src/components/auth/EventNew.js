@@ -21,7 +21,7 @@ export default class EventNew extends Component {
 
   onSubmit = async e => {
     e.preventDefault();
-    const { title, start, end, venue, address, noEndTime } = this.state;
+    const { title, start, end, venue, address } = this.state;
     const updatedBy = this.props.user._id;
     const event = {
       title,
@@ -29,7 +29,6 @@ export default class EventNew extends Component {
       end: end ? new Date(end) : "",
       venue,
       address,
-      noEndTime,
       updatedBy
     };
     if (event.noEndTime) {

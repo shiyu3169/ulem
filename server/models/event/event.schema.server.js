@@ -7,7 +7,6 @@ var EventSchema = mongoose.Schema(
     end: Date,
     venue: String,
     address: String,
-    noEndTime: Boolean,
     img: { type: mongoose.Schema.Types.ObjectId, ref: "ImgModel" },
     dateCreated: { type: Date, default: Date.now },
     dateModified: { type: Date, default: Date.now },
