@@ -66,7 +66,7 @@ export default class Member extends Component {
     datepickerJAFactory($);
     return (
       <div className="container">
-        <h1 className="font-red mt-4">Become a Member</h1>
+        <h1 className="font-red mt-4">Interest in Job Training</h1>
         <form
           action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
           method="POST"
