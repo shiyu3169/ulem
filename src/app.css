@@ -15,6 +15,22 @@ body {
 .ulem-text-primary {
     color: red;
 }
+
+.nav-link {
+  color: white;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* Nav bar */
+.dropdown-menu {
+  min-width: 15rem;
+}
+
 /* Home */
 
 
@@ -153,15 +169,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.nav-link:hover {
-  cursor: pointer;
-  color: black;
-}
 
-.nav-link {
-  color: white;
-  font-weight: 600;
-}
+
+
 
 .jumbotron-p {
   font-weight: 700;
