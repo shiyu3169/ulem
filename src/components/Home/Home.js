@@ -83,7 +83,7 @@ export default class Home extends Component {
                 icon="fas fa-building fa-2x"
               />
               <Card
-                title="Become a Member"
+                title="Interest in Job Training"
                 text="Interested in joining the Urban League of Eastern Massachusetts?"
                 link="/member"
                 icon="fas fa-users fa-2x"
