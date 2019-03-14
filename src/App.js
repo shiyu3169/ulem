@@ -21,6 +21,7 @@ import Thank from "./components/Thank";
 import Login from "./components/auth/Login";
 import Admin from "./components/auth/Admin";
 import Marathon from "./components/marathon/Marathon";
+import Membership from "./components/membership/Membership"
 
 class App extends Component {
   render() {
@@ -43,6 +44,7 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           <Route exact path="/admin" component={Admin} />
           <Route exact path="/marathon" component={Marathon} />
+          <Route exact path="/membership" component={Membership} />
           <Footer />
         </ScrollToTop>
       </Router>
