@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ulem100 from "../../img/ulem100.png";
+import united_way from "../../img/united_way.jpg"
 import { HashLink as Link } from "react-router-hash-link";
 export default class Footer extends Component {
   render() {
@@ -16,8 +17,8 @@ export default class Footer extends Component {
               />
             </Link>
           </div>
-          <div className="col-md-1" />
-          <div className="col-md-3">
+          <div className="col-md-1"></div>
+          <div className="col-md-2">
             <h5 className="font-weight-bold text-uppercase mb-4 font-white">
               About
             </h5>
@@ -81,7 +82,14 @@ export default class Footer extends Component {
               </li>
             </ul>
           </div>
-          <div className="col-md-1" />
+          <div className="col-md-2">
+          <img
+                src={united_way}
+                className="img-fluid py-5"
+                id="footer-img-height"
+                alt="united way"
+              />
+          </div>
           <div className="col-md-2 text-center">
             <h5 className="font-weight-bold text-uppercase mb-4 font-white d-none d-md-block">
               Follow Us
