@@ -28,7 +28,7 @@ export default class Card extends Component {
       >
         <div className="card-body">
           <div className="text-center">
-            <i className={`text-danger ${icon}`} />
+            <i className={`ulem-text-primary ${icon}`} />
           </div>
           <br />
           <h5 className="card-title text-center text-center transition">
