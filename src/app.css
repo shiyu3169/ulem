@@ -1,13 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+/* Reset */
 * {
   box-sizing: border-box;
 }
 
+/* General */
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
+
+/* Utility */
+.ulem-text-primary {
+    color: red;
+}
+/* Home */
+
 
 .video-background {
   background: rgba(0, 0, 0, 0.3);
@@ -475,3 +484,4 @@ section[id]:before {
     height: 50vh;
   }
 }
+
