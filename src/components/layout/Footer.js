@@ -66,7 +66,7 @@ export default class Footer extends Component {
                     </ul>
                 </div>
 
-                <div className="col-md-3">
+                <div className="col-md-2">
                     <h5 className="font-weight-bold text-uppercase mb-4 font-white">
                         Address
                     </h5>
@@ -97,7 +97,7 @@ export default class Footer extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="col-md-2">
+                <div className="col-md-3 text-center">
                     <img
                         src={united_way}
                         className="img-fluid py-5"
@@ -156,7 +156,7 @@ export default class Footer extends Component {
                 </div>
             </div>
             <div className="text-center font-white">
-                © 2019 Copyright: ULEM
+                &copy; 2019 Copyright: ULEM
             </div>
         </footer>
     );
