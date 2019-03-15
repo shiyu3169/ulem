@@ -87,7 +87,7 @@ export default class Events extends Component {
   tileClassName = ({ date, view }) => {
     return view === "month" && this.state.dates.includes(this.dateToStr(date))
       ? "strong"
-      : null;
+      : "date-border";
   };
 
   filterEvents = (events, date) => {
