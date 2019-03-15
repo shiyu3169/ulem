@@ -89,9 +89,9 @@ export default class Navbar extends Component {
                                 </Link>
                                 <Link
                                     className="nav-link text-dark"
-                                    to="/membership"
+                                    to="/"
                                 >
-                                    Become A Member
+                                    Become A Member (Coming Soon)
                                 </Link>
                             </div>
                         </li>
@@ -116,9 +116,9 @@ export default class Navbar extends Component {
                             >
                                 <Link
                                     className="nav-link text-dark"
-                                    to="/centennial"
+                                    to="/"
                                 >
-                                    Celebration
+                                    Celebration (Coming Soon)
                                 </Link>
                                 <Link
                                     className="nav-link text-dark"
@@ -128,9 +128,9 @@ export default class Navbar extends Component {
                                 </Link>
                                 <Link
                                     className="nav-link text-dark"
-                                    to="/centennialMembership"
+                                    to="/"
                                 >
-                                    Centennial Membership
+                                    Centennial Membership (Coming Soon)
                                 </Link>
                             </div>
                         </li>
