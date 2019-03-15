@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ulem from "../../img/ulem.png";
 import $ from "jquery";
+import Milestone from './../about/Milestone';
 
 export default class Navbar extends Component {
   collapse() {
@@ -66,11 +67,6 @@ export default class Navbar extends Component {
                                 Events
                             </Link>
                         </li>
-                        {/* <li className="nav-item" onClick={this.collapse}>
-                <Link className="nav-link" to="/donate">
-                  Donate
-                </Link>
-              </li> */}
                         <li className="nav-item dropdown">
                             <span
                                 className="nav-link dropdown-toggle"
@@ -104,10 +100,39 @@ export default class Navbar extends Component {
                                 ULEM Marathon Team
                             </Link>
                         </li>
-                        <li className="nav-item" onClick={this.collapse}>
-                            <Link className="nav-link" to="/centennial">
-                                Centennial Celebration
-                            </Link>
+                         <li className="nav-item dropdown">
+                            <span
+                                className="nav-link dropdown-toggle"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Centennial
+                            </span>
+                            <div
+                                className="dropdown-menu"
+                                onClick={this.collapse}
+                            >
+                                <Link
+                                    className="nav-link text-dark"
+                                    to="/centennial"
+                                >
+                                    Celebration
+                                </Link>
+                                <Link
+                                    className="nav-link text-dark"
+                                    to="/centennial"
+                                >
+                                    Milestone
+                                </Link>
+                                <Link
+                                    className="nav-link text-dark"
+                                    to="/centennialMembership"
+                                >
+                                    Centennial Membership
+                                </Link>
+                            </div>
                         </li>
                     </ul>
                 </div>
