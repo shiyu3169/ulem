@@ -8,12 +8,26 @@
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
-  font-size: 18px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Utility */
 .ulem-text-primary {
-    color: red;
+    color: #cb0129;
+}
+
+.ulem-bg-primary {
+  background: #cb0129;
+  color: #f4f4f4;
+}
+
+.ulem-bg-dark {
+  background: #303030;
+  color: #f4f4f4;
 }
 
 .nav-link {
@@ -26,12 +40,35 @@ body {
   color: black;
 }
 
-/* Nav bar */
+.font-tiny {
+  font-size: 0.9rem;
+}
+
+.btn-ulem-primary {
+  background: #cb0129;
+  color: #f4f4f4;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.btn-round {
+  border-radius: 20px
+}
+
+/* Navbar */
 .dropdown-menu {
   min-width: 15rem;
 }
 
-/* Home */
+/* Membership */
+.card-number-lg {
+  font-size: 4.0em;
+}
+
+.p-2 li {
+  padding-bottom: 10px;
+}
+
 
 
 .video-background {
