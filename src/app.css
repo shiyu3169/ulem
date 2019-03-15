@@ -55,6 +55,10 @@ ul {
   border-radius: 20px
 }
 
+.mt-lg {
+  margin-top: 200px;
+}
+
 /* Navbar */
 .dropdown-menu {
   min-width: 15rem;
