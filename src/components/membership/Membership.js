@@ -33,7 +33,7 @@ export default class Membership extends Component {
                     </strong>
                 </p>
             </div>
-            <div className="row">
+            <div className="row membership-1st-row">
                 <div className="col-md-3">
                     <MembershipCard
                         header="Platinum"
@@ -92,7 +92,7 @@ export default class Membership extends Component {
                     />
                 </div>
             </div>
-            <div className="row mt-lg">
+            <div className="row my-5 membership-2nd-row">
                 <div className="col-md-4">
                     <MembershipCard
                         header="Our basic membership"

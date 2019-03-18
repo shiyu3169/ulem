@@ -55,10 +55,6 @@ ul {
   border-radius: 20px
 }
 
-.mt-lg {
-  margin-top: 200px;
-}
-
 /* Navbar */
 .dropdown-menu {
   min-width: 20rem;
@@ -73,9 +69,24 @@ ul {
   padding-bottom: 10px;
 }
 
-.card-content {
+.membership-1st-row .card-content {
   min-height: 450px;
 }
+
+
+.membership-2nd-row .card-content {
+  min-height: 350px;
+}
+
+/* Centennial */
+.centennial-membership-1st-row .card-content {
+  min-height: 400px;
+}
+
+.centennial-membership-2nd-row .card-content {
+  min-height: 350px;
+}
+
 
 /* Event */
 
