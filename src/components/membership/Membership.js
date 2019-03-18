@@ -60,6 +60,7 @@ export default class Membership extends Component {
                         li3="&bull; Annual Meeting and event program listing"
                         li4="&bull; ULEM commemorative gift"
                         li5="&bull; NUL lapel pin"
+                        purchase="https://squareup.com/store/theulem/item/gold-legacy-circle-of-believers"
                     />
                 </div>
                 <div className="col-md-3">
@@ -72,6 +73,7 @@ export default class Membership extends Component {
                         li2="&bull; (2) evenings or 1/2 Saturday meetings per year"
                         li3="&bull; Event discounts"
                         li4="&bull; Quarterly newsletter"
+                        purchase="https://squareup.com/store/theulem/item/silver-church-small-business-memberships"
                     />
                 </div>
                 <div className="col-md-3">
@@ -86,6 +88,7 @@ export default class Membership extends Component {
                         li4="&bull; NUL lapel pin"
                         li5="&bull; Event discounts"
                         li6="&bull; Quarterly newsletter"
+                        purchase="https://squareup.com/store/theulem/item/bronze"
                     />
                 </div>
             </div>
@@ -100,6 +103,7 @@ export default class Membership extends Component {
                         li2="&bull; Member listing"
                         li3="&bull; UL ink pen and magnet"
                         li4="&bull; Quarterly newsletter"
+                        purchase="https://squareup.com/store/theulem/item/our-basic-membership-individual-member"
                     />
                 </div>
                 <div className="col-md-4">
@@ -111,6 +115,7 @@ export default class Membership extends Component {
                         li1="&bull; Membership card"
                         li2="&bull; Member listing"
                         li3="&bull; Quarterly newsletter"
+                        purchase="https://squareup.com/store/theulem/item/for-our-senior-members-senior-member"
                     />
                 </div>
                 <div className="col-md-4">
@@ -122,6 +127,7 @@ export default class Membership extends Component {
                         li1="&bull; Membership card"
                         li2="&bull; Member listing"
                         li3="&bull; Quarterly newsletter"
+                        purchase="https://squareup.com/store/theulem/item/for-high-school-and-college-students-student-member"
                     />
                 </div>
             </div>
