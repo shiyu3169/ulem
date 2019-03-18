@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AdminMenu from './../auth/AdminMenu';
 
 export default class MembershipCard extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class MembershipCard extends Component {
                 <li>{this.props.li6}</li>
                 <li>{this.props.li7}</li>
             </ul>
-            <button className="btn btn-ulem-primary btn-round mb-3">Purchase</button>
+            <a target="_blank" rel="noopener noreferrer" className="btn btn-ulem-primary btn-round mb-3" href={this.props.purchase}>Purchase</a>
         </div>
       </div>
     )

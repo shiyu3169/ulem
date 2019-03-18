@@ -89,9 +89,9 @@ export default class Navbar extends Component {
                                 </Link>
                                 <Link
                                     className="nav-link text-dark"
-                                    to="/"
+                                    to="/membership"
                                 >
-                                    Become A Member (Coming Soon)
+                                    Become A Member
                                 </Link>
                             </div>
                         </li>
