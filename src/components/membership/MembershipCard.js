@@ -6,7 +6,7 @@ export default class MembershipCard extends Component {
     return (
       <div className="text-center">
         <header className="ulem-bg-primary py-1">{this.props.header}</header>
-        <div className="ulem-bg-dark">
+        <div className="ulem-bg-dark card-content">
             <p className="pt-3 m-0"><strong>{this.props.title}</strong></p>
             <div>$<span className="card-number-lg">{this.props.price}</span>{this.props.year}</div>
             <p><strong>{this.props.renewal}</strong></p>
@@ -19,7 +19,9 @@ export default class MembershipCard extends Component {
                 <li>{this.props.li6}</li>
                 <li>{this.props.li7}</li>
             </ul>
-            <a target="_blank" rel="noopener noreferrer" className="btn btn-ulem-primary btn-round mb-3" href={this.props.purchase}>Purchase</a>
+        </div>
+        <div className="ulem-bg-dark">
+          <a target="_blank" rel="noopener noreferrer" className="btn btn-ulem-primary btn-round mb-3" href={this.props.purchase}>Purchase</a>
         </div>
       </div>
     )
