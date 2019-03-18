@@ -128,9 +128,9 @@ export default class Navbar extends Component {
                                 </Link>
                                 <Link
                                     className="nav-link text-dark"
-                                    to="/"
+                                    to="/centennialMembership"
                                 >
-                                    Centennial Membership (Coming Soon)
+                                    Centennial Membership
                                 </Link>
                             </div>
                         </li>
