@@ -47,6 +47,7 @@ export default class Membership extends Component {
                         li5="&bull; NUL lapel pin"
                         li6="&bull; Event discounts"
                         li7="&bull; Quarterly newsletter"
+                        purchase="https://squareup.com/store/theulem/item/platinum"
                     />
                 </div>
                 <div className="col-md-3">
