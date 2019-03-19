@@ -17,7 +17,7 @@ ul {
 
 /* Utility */
 .ulem-text-primary {
-    color: #cb0129;
+  color: #cb0129;
 }
 
 .ulem-bg-primary {
@@ -52,7 +52,7 @@ ul {
 }
 
 .btn-round {
-  border-radius: 20px
+  border-radius: 20px;
 }
 
 /* Navbar */
@@ -73,7 +73,6 @@ ul {
   min-height: 450px;
 }
 
-
 .membership-2nd-row .card-content {
   min-height: 350px;
 }
@@ -84,9 +83,8 @@ ul {
 }
 
 .centennial-membership-2nd-row .card-content {
-  min-height: 350px;
+  min-height: 400px;
 }
-
 
 /* Event */
 
@@ -97,7 +95,7 @@ ul {
   background: #f4f4f4;
 }
 
-.date-border{
+.date-border {
   border-radius: 5px;
 }
 
@@ -236,10 +234,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-
-
 .jumbotron-p {
   font-weight: 700;
 }
@@ -285,9 +279,6 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
 
 .fixed-bg {
   background: url("./img/msimbo_class.jpg");
@@ -559,4 +550,3 @@ section[id]:before {
     height: 50vh;
   }
 }
-

@@ -9,14 +9,14 @@ export default class Membership extends Component {
         <p>
           The Urban League of Eastern MA received support from individuals and
           corporations in the community through our membership program. Our
-          members are invited to events such as our Anual Equal Opportunity Day
-          Luncheon and Black History Month Celebrations. Platinum Lifetime
-          Members are listed on our website and acknowledged at ULEM events. All
-          membership contributions are 100% tax-deductible.
+          members are invited to events such as our Anual Equal Opportunity
+          breakfast. Platinum and Lifetime Members are listed on our website and
+          acknowledged at ULEM events. All membership contributions are 100%
+          tax-deductible.
         </p>
         <p>
           You can become a member by making a secure online payment through
-          Square
+          Square.
         </p>
         <div className="text-center">
           <h3 className="ulem-text-primary pt-5">MEMBERSHIP LEVELS</h3>
