@@ -28,7 +28,7 @@ export default class CentennialMembership extends Component {
           </div>
           <div className="col-md-4">
             <MembershipCard
-              title="LIFETIME CENTENNIAL MEMBER"
+              title="LIFETIME MEMBER"
               price="1,000"
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/lifetime-centennial-member"
@@ -45,7 +45,7 @@ export default class CentennialMembership extends Component {
           </div>
           <div className="col-md-4">
             <MembershipCard
-              title="SUPPORTING CENTENNIAL MEMBER"
+              title="SUPPORTING MEMBER"
               price="500"
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/supporting-centennial-member"
@@ -64,7 +64,7 @@ export default class CentennialMembership extends Component {
         <div className="row my-5 centennial-membership-2nd-row">
           <div className="col-md-4">
             <MembershipCard
-              title="ULEM 'FRIEND' CENTENNIAL MEMBER"
+              title="ULEM 'FRIEND' MEMBER"
               price="250"
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/friend-centennial-member"
@@ -75,7 +75,7 @@ export default class CentennialMembership extends Component {
           </div>
           <div className="col-md-4">
             <MembershipCard
-              title="CENTENNIAL COMMUNITY MEMBER"
+              title="COMMUNITY MEMBER"
               price="125"
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/centennial-community-member"
@@ -86,7 +86,7 @@ export default class CentennialMembership extends Component {
           </div>
           <div className="col-md-4">
             <MembershipCard
-              title="CENTENNIAL PATRON"
+              title="PATRON"
               price="75"
               year="/YR"
               purshase="https://squareup.com/store/theulem/item/centennial-patron"
