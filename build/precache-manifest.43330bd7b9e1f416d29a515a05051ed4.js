@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/ulem100.68adf498.png"
   },
   {
-    "revision": "ccf7bf89fff9e7e25f98",
-    "url": "/static/css/main.1a6d5eea.chunk.css"
+    "revision": "52dfccbdbb5e4acf33aa",
+    "url": "/static/css/main.f55d979f.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/msimbo_class.ad6cae62.jpg"
   },
   {
-    "revision": "390ef098130d3ea3f96b",
-    "url": "/static/js/2.390ef098.chunk.js"
+    "revision": "0f0bac616effa035c8d6",
+    "url": "/static/js/2.0f0bac61.chunk.js"
   },
   {
     "revision": "fcd8d05ca2a2981b7680f6b1b322c80e",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/static/media/career.e78b5879.png"
   },
   {
-    "revision": "ccf7bf89fff9e7e25f98",
-    "url": "/static/js/main.ccf7bf89.chunk.js"
+    "revision": "52dfccbdbb5e4acf33aa",
+    "url": "/static/js/main.52dfccbd.chunk.js"
   },
   {
     "revision": "8f78e42bb7114e2c2c0a50b3a8859c0b",
@@ -148,11 +148,11 @@ self.__precacheManifest = [
     "url": "/static/media/Darnell.3e66345b.jpg"
   },
   {
-    "revision": "390ef098130d3ea3f96b",
+    "revision": "0f0bac616effa035c8d6",
     "url": "/static/css/2.de0d1355.chunk.css"
   },
   {
-    "revision": "18ac1b9db430806044f2c333bc5b42ce",
+    "revision": "aabfcf26372d00cbadd1bbaecf058edf",
     "url": "/index.html"
   }
 ];
