@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/ulem100.68adf498.png"
   },
   {
-    "revision": "c077f863f4460484359c",
-    "url": "/static/css/main.3a518aba.chunk.css"
+    "revision": "7eaaae1d625883d93f7d",
+    "url": "/static/css/main.1a6d5eea.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/msimbo_class.ad6cae62.jpg"
   },
   {
-    "revision": "7333e42b2066f4f21c5a",
-    "url": "/static/js/2.7333e42b.chunk.js"
+    "revision": "390ef098130d3ea3f96b",
+    "url": "/static/js/2.390ef098.chunk.js"
   },
   {
     "revision": "fcd8d05ca2a2981b7680f6b1b322c80e",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/static/media/career.e78b5879.png"
   },
   {
-    "revision": "c077f863f4460484359c",
-    "url": "/static/js/main.c077f863.chunk.js"
+    "revision": "7eaaae1d625883d93f7d",
+    "url": "/static/js/main.7eaaae1d.chunk.js"
   },
   {
     "revision": "8f78e42bb7114e2c2c0a50b3a8859c0b",
@@ -144,11 +144,15 @@ self.__precacheManifest = [
     "url": "/static/media/ULEM-MarathonBanner2.69bdd6cf.png"
   },
   {
-    "revision": "7333e42b2066f4f21c5a",
+    "revision": "3e66345b69c2dd9d9d82bee805de7050",
+    "url": "/static/media/Darnell.3e66345b.jpg"
+  },
+  {
+    "revision": "390ef098130d3ea3f96b",
     "url": "/static/css/2.de0d1355.chunk.css"
   },
   {
-    "revision": "2c9eaec4b01b159440ec99a6d7e00999",
+    "revision": "fc2a19278071fc11ee53eb7dc19e4fa4",
     "url": "/index.html"
   }
 ];
