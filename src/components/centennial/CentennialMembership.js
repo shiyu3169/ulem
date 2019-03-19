@@ -9,8 +9,7 @@ export default class CentennialMembership extends Component {
           <strong>
             CENTENNIAL MEMBERSHIP LEVELS SUPPORTS THE BUILDING OF RESERVE FUNDS
             AND INFRASTRUCTURE OF THE URBAN LEAGUE AND ALL OF ITS PROGRAMAS AND
-            ALSO INCLUDE TICKETS OUR 100TH ANNIVERSARY BENEFIT CONCERT FEATURING
-            JEFFERY OSBORNE
+            ALSO INCLUDE TICKETS TO OUR 100TH ANNIVERSARY GALA.
           </strong>
         </p>
         <div className="row centennial-membership-1st-row">
@@ -22,7 +21,7 @@ export default class CentennialMembership extends Component {
               purchase="https://squareup.com/store/theulem/item/legacy-vip-centennial-member"
               li1="&bull; Centennial Membership for 2019-2020"
               li2="&bull; (2) VIP Reception Tickets"
-              li3="&bull; (2) Premier Level Tickets"
+              li3="&bull; (2) Premier Gala Tickets"
               li4="&bull; Name recognition as VIP Legacy Centennial Member"
             />
           </div>
@@ -33,8 +32,8 @@ export default class CentennialMembership extends Component {
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/lifetime-centennial-member"
               li1="&bull; Centennial Membership for 2019-2020"
-              li2="&bull; (4) Premier Level Tickets"
-              li3="&bull; Name recognition as Lifetime Centennial Member"
+              li2="&bull; (4) Centennial Gala Tickets"
+              li3="&bull; Name recognition as Lifetime Member"
               li4={
                 <strong>
                   Current ULEM Platinum Lifetime Members will receive two (2)
@@ -50,8 +49,8 @@ export default class CentennialMembership extends Component {
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/supporting-centennial-member"
               li1="&bull; Centennial Membership for 2019-2020"
-              li2="&bull; (2) Premier Level Tickets"
-              li3="&bull; Name recognition as Supporting Centennial Member"
+              li2="&bull; (2) Centennial Gala Tickets"
+              li3="&bull; Name recognition as Supporting Member"
               li4={
                 <strong>
                   Upgrade membership to VIP for $150 and receive one (1) ticket
@@ -69,8 +68,8 @@ export default class CentennialMembership extends Component {
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/friend-centennial-member"
               li1="&bull; Centennial Membership for 2019-2020"
-              li2="&bull; (2) Prime Level Tickets"
-              li3="&bull; Name recognition as 'Friend' Centennial Member"
+              li2="&bull; (2) Centennial Gala Tickets"
+              li3="&bull; Name recognition as 'Friend' Member"
             />
           </div>
           <div className="col-md-4">
@@ -80,7 +79,7 @@ export default class CentennialMembership extends Component {
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/centennial-community-member"
               li1="&bull; Centennial Membership for 2019-2020"
-              li2="&bull; (1) Prime Level Tickets"
+              li2="&bull; (1) Centennial Gala Tickets"
               li3="&bull; Name recognition as Centennial Community Member"
             />
           </div>
@@ -100,8 +99,7 @@ export default class CentennialMembership extends Component {
         <p>
           This is a benefit concert which means that every ticket sold benefits
           the Urban Leage of Easten MA directly. General admission tickets begin
-          at $35 and can be purchased at Hard Rock Rocksino in Northfield Park
-          box office
+          at $200 and can be purchased at Urban League of Eastern MA.
         </p>
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AboutMenu from "./AboutMenu";
 import Missions from "./Missions";
-import Milestone from "./Milestone";
+// import Milestone from "./Milestone";
 import Leadership from "./Leadership";
 import Board from "./Board";
 
@@ -15,7 +15,7 @@ export default class About extends Component {
           </aside>
           <main className="col-md-10">
             <Missions />
-            <Milestone />
+            {/* <Milestone /> */}
             <Leadership />
             <Board />
           </main>
