@@ -39,7 +39,7 @@ export default class Membership extends Component {
               li4="&bull; ULEM commemorative gift"
               li5="&bull; NUL lapel pin"
               li6="&bull; Event discounts"
-              li7="&bull; Quarterly newsletter"
+              li7="&bull; ULEM newsletter"
               purchase="https://squareup.com/store/theulem/item/platinum"
             />
           </div>
@@ -64,9 +64,8 @@ export default class Membership extends Component {
               price="350"
               year="/YR"
               li1="&bull; Name ULEM as a partner in bulletins and company publications"
-              li2="&bull; (2) evenings or 1/2 Saturday meetings per year"
-              li3="&bull; Event discounts"
-              li4="&bull; Quarterly newsletter"
+              li2="&bull; Event discounts"
+              li3="&bull; ULEM newsletter"
               purchase="https://squareup.com/store/theulem/item/silver-church-small-business-memberships"
             />
           </div>
@@ -83,7 +82,7 @@ export default class Membership extends Component {
               li3="&bull; ULEM commemorative gift"
               li4="&bull; NUL lapel pin"
               li5="&bull; Event discounts"
-              li6="&bull; Quarterly newsletter"
+              li6="&bull; ULEM newsletter"
               purchase="https://squareup.com/store/theulem/item/bronze"
             />
           </div>
@@ -96,7 +95,7 @@ export default class Membership extends Component {
               li1="&bull; Membership card"
               li2="&bull; Member listing"
               li3="&bull; UL ink pen and magnet"
-              li4="&bull; Quarterly newsletter"
+              li4="&bull; ULEM newsletter"
               purchase="https://squareup.com/store/theulem/item/our-basic-membership-individual-member"
             />
           </div>
@@ -108,7 +107,7 @@ export default class Membership extends Component {
               year="/YR"
               li1="&bull; Membership card"
               li2="&bull; Member listing"
-              li3="&bull; Quarterly newsletter"
+              li3="&bull; ULEM newsletter"
               purchase="https://squareup.com/store/theulem/item/for-our-senior-members-senior-member"
             />
           </div>
