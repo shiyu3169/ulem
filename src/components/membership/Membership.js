@@ -60,7 +60,7 @@ export default class Membership extends Component {
           <div className="col-md-4">
             <MembershipCard
               header="Silver"
-              title="CHURCH & SMALL BUSINESS Membership"
+              title="Church & Small Business Membership"
               price="350"
               year="/YR"
               li1="&bull; Name ULEM as a partner in bulletins and company publications"
