@@ -10,11 +10,11 @@ export default function AboutMenu() {
             Missions & Overview
           </a>
         </li>
-        <li className="list-group-item">
+        {/* <li className="list-group-item">
           <a href="#milestone" className="nav-link-red">
             Our Milestones
           </a>
-        </li>
+        </li> */}
         <li className="list-group-item">
           <a href="#leadership" className="nav-link-red">
             Leadership
