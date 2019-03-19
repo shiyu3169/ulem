@@ -21,7 +21,7 @@ export default class CentennialMembership extends Component {
               purchase="https://squareup.com/store/theulem/item/legacy-vip-centennial-member"
               li1="&bull; Centennial Membership for 2019-2020"
               li2="&bull; (2) VIP Reception Tickets"
-              li3="&bull; (2) Premier Gala Tickets"
+              li3="&bull; (2) Centennial Gala Tickets"
               li4="&bull; Name recognition as VIP Legacy Centennial Member"
             />
           </div>
@@ -32,12 +32,18 @@ export default class CentennialMembership extends Component {
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/lifetime-centennial-member"
               li1="&bull; Centennial Membership for 2019-2020"
-              li2="&bull; (4) Centennial Gala Tickets"
+              li2="&bull; (2) Centennial Gala Tickets"
               li3="&bull; Name recognition as Lifetime Member"
               li4={
                 <strong>
-                  Current ULEM Platinum Lifetime Members will receive two (2)
-                  VIP Reception tickets upon renewal of membership
+                  Upgrade membership for $150 to receive one (1) ticket to VIP
+                  reception
+                </strong>
+              }
+              li5={
+                <strong>
+                  Upgrade membership for $300 to receive two (2) tickets to VIP
+                  reception
                 </strong>
               }
             />
@@ -49,12 +55,12 @@ export default class CentennialMembership extends Component {
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/supporting-centennial-member"
               li1="&bull; Centennial Membership for 2019-2020"
-              li2="&bull; (2) Centennial Gala Tickets"
+              li2="&bull; (1) Centennial Gala Ticket"
               li3="&bull; Name recognition as Supporting Member"
               li4={
                 <strong>
-                  Upgrade membership to VIP for $150 and receive one (1) ticket
-                  to VIP reception.
+                  Upgrade membership for $150 to receive one (1) ticket to VIP
+                  reception
                 </strong>
               }
             />
@@ -68,19 +74,30 @@ export default class CentennialMembership extends Component {
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/friend-centennial-member"
               li1="&bull; Centennial Membership for 2019-2020"
-              li2="&bull; (2) Centennial Gala Tickets"
+              li2="&bull; (1) Centennial Gala Tickets"
               li3="&bull; Name recognition as 'Friend' Member"
+              li4={
+                <strong>
+                  Upgrade membership for $200 to receive one (1) ticket to VIP
+                  reception
+                </strong>
+              }
             />
           </div>
           <div className="col-md-4">
             <MembershipCard
               title="COMMUNITY MEMBER"
-              price="125"
+              price="119"
               year="/YR"
               purchase="https://squareup.com/store/theulem/item/centennial-community-member"
               li1="&bull; Centennial Membership for 2019-2020"
-              li2="&bull; (1) Centennial Gala Tickets"
-              li3="&bull; Name recognition as Centennial Community Member"
+              li2="&bull; Name recognition as Centennial Community Member"
+              li3={
+                <strong>
+                  Upgrade membership for $100 to receive one (1) Centennial Gala
+                  Ticket
+                </strong>
+              }
             />
           </div>
           <div className="col-md-4">
