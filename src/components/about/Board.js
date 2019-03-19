@@ -2,185 +2,116 @@ import React from "react";
 
 export default function Board() {
   return (
-    <section id="board">
-      <h1 className="font-red mt-4">Board of Directors</h1>
-      <table className="table">
-        <thead>
-          <tr>
-            <th>BOARD</th>
-            <th>Sal</th>
-            <th>First</th>
-            <th>M</th>
-            <th>Last</th>
-            <th>Job Title</th>
-            <th>Organization</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mr. </td>
-            <td>Donnie</td>
-            <td>&nbsp;</td>
-            <td>Bedney</td>
-            <td>Regional Director</td>
-            <td>Press Ganey</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Mr. </td>
-            <td>Derek</td>
-            <td>E.</td>
-            <td>Brooks </td>
-            <td>Lead, GBR Market Development</td>
-            <td>Comcast</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Mr.</td>
-            <td>Gary</td>
-            <td>&nbsp;</td>
-            <td>Carroway</td>
-            <td>Senior Executive</td>
-            <td>UPS</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Ms.</td>
-            <td>Petrina</td>
-            <td>&nbsp;</td>
-            <td>Cherry</td>
-            <td>Vice President</td>
-            <td>BMC Healthnet Plan/Well Sense Health Plan</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Ms.</td>
-            <td>Brenda</td>
-            <td>&nbsp;</td>
-            <td>Cole</td>
-            <td>Vice President</td>
-            <td>Harvard Pilgrim Health Care</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Mr.</td>
-            <td>Steve</td>
-            <td>&nbsp;</td>
-            <td>Duncan</td>
-            <td>Senior Vice President</td>
-            <td>State Street Corporation</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Mr.</td>
-            <td>Joseph</td>
-            <td>&nbsp;</td>
-            <td>Feaster Jr.</td>
-            <td>Counselor at Law</td>
-            <td>Feaster Enterprises, c/o McKenzie & Assoc., P.C.</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Mr. </td>
-            <td>Johnny</td>
-            <td>&nbsp;</td>
-            <td>Green</td>
-            <td>News Director</td>
-            <td>CBS-TV4</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>Ms.</td>
-            <td>Marian</td>
-            <td>A.</td>
-            <td>Green-Robinson</td>
-            <td>Branch Manager, Bank Officer</td>
-            <td>Eastern Bank</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Ms.</td>
-            <td>Dorothea</td>
-            <td>&nbsp;</td>
-            <td>Jones</td>
-            <td>Guild -National</td>
-            <td>Urban League Guild</td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>Ms. </td>
-            <td>Andrea</td>
-            <td>&nbsp;</td>
-            <td>Kershaw</td>
-            <td>Regional Vice President</td>
-            <td>Enterprise Holdings</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>Ms.</td>
-            <td>Deloris </td>
-            <td>&nbsp;</td>
-            <td>Pettis</td>
-            <td>Risk & Audit Consultant</td>
-            <td>Consultant</td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>Mr.</td>
-            <td>Malik</td>
-            <td>A.</td>
-            <td>Smith</td>
-            <td>Wealth Advisor</td>
-            <td>Alex Brown</td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>Mr. </td>
-            <td>Charles</td>
-            <td>D.</td>
-            <td>Stewart</td>
-            <td>President & Owner</td>
-            <td>M & S Communications Group</td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>Ms.</td>
-            <td>Rachelle</td>
-            <td>&nbsp;</td>
-            <td>Villarson</td>
-            <td>&nbsp;</td>
-            <td>Suffolk County Sheriff's Department</td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>Mr.</td>
-            <td>Mark</td>
-            <td>&nbsp;</td>
-            <td>Walker</td>
-            <td>Sr. VP, Credit Product Manager</td>
-            <td>Citizens Bank</td>
-          </tr>
-          <tr>
-            <td>17</td>
-            <td>Mr.</td>
-            <td>Marques</td>
-            <td>A.</td>
-            <td>Williams</td>
-            <td>Sr. Mgr, Business Development</td>
-            <td>Aramark</td>
-          </tr>
-          <tr>
-            <td>18</td>
-            <td>Ms.</td>
-            <td>Ericka</td>
-            <td>&nbsp;</td>
-            <td>Wilson-Kerr</td>
-            <td>Regional Sales Director</td>
-            <td>CVS</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <div className="container">
+      <h1 className="ulem-text-primary mt-4">Board of Directors</h1>
+      <section className="my-5">
+        <p>
+          <strong className="ulem-text-primary">Executive Committee:</strong>
+        </p>
+        <p>
+          <strong>Joseph D. Feaster, Jr.</strong>., Chairman; Counselor at Law
+          Feaster Enterprises, c/o McKenzie & Assoc., P.C.
+        </p>
+        <p>
+          <strong>Mark Walker</strong>, Vice Chair; Sr. VP, Credit Product
+          Manager, Citizens Bank
+        </p>
+        <p>
+          <strong>Derek Brooks</strong>, Secretary; Lead, GBR Market
+          Development, Comcast
+        </p>
+        <p>
+          <strong>Gary Calloway</strong>, Centennial Chair; Senior Executive,
+          UPS
+        </p>
+        <p>
+          <strong>Petrina Martin Cherry</strong>, Development Chair; Vice
+          President, BMC Healthnet Plan/Well Sense Health Plan
+        </p>
+        <p>
+          <strong>Rachelle Villarson</strong>, Strategic Planning Chair; Human
+          Resources, Suffolk County Sherriff’s Office
+        </p>
+      </section>
+      <section className="mb-5">
+        <p>
+          <strong className="ulem-text-primary">Members of the Board:</strong>
+        </p>
+        <p>
+          <strong>Scott Baker</strong>, President, SkyCom Courier
+        </p>
+        <p>
+          <strong>Donnie Bedney</strong>, Regional Director, Press Ganey
+        </p>
+        <p>
+          <strong>Steve Duncan</strong>, Senior Vice President, State Street
+          Corporation
+        </p>
+        <p>
+          <strong>Marian Green-Robinson</strong>, Vice President, Eastern Bank
+        </p>
+        <p>
+          <strong>Johnny Green</strong>, News Director, CBS-TV4
+        </p>
+        <p>
+          <strong>Dorthea Jones</strong>, Secretary, National Council of Urban
+          League Guilds
+        </p>
+        <p>
+          <strong>Andrea Kershaw</strong>, Regional Vice President, Enterprise
+          Holdings
+        </p>
+        <p>
+          <strong>Deloris Pettis</strong>, Risk & Audit Consultant, Pettis
+          Consulting
+        </p>
+        <p>
+          <strong>Malik A. Smith</strong>, Wealth Advisor, Alex Brown
+        </p>
+        <p>
+          <strong>Nadine Spriggs</strong>, President, Urban League Guild
+        </p>
+        <p>
+          <strong>Charles Stewart</strong>, President & Owner, M & S
+          Communications Group
+        </p>
+        <p>
+          <strong>Liz Walker, President</strong>, Young Professionals Network
+        </p>
+        <p>
+          <strong>Marques A. Williams</strong>, Sr. Mgr, Business Development,
+          Aramark
+        </p>
+        <p>
+          <strong>Ericka Wilson-Kerr</strong>, Regional Sales Director, CVS
+        </p>
+      </section>
+      <section className="mb-5">
+        <p>
+          <strong className="ulem-text-primary">Board Chairs Emeritus:</strong>
+        </p>
+        <p>
+          <strong>Hon. Joyce London Alexander</strong>, Chief Magistrate Judge,
+          US District Court
+        </p>
+        <p>
+          <strong>Samuel J. Gerson</strong>, Chairman and Chief executive,
+          Filene’s Basement (deceased)
+        </p>
+        <p>
+          <strong>Quincy Miller</strong>, President, Eastern Bank
+        </p>
+        <p>
+          <strong>Jeff Musman</strong>, Esq., Managing Partner, Seyfarth Shaw
+        </p>
+        <p>
+          <strong>George A. Russell, Jr.</strong>, Executive Vice President,
+          State Street Corporation
+        </p>
+        <p>
+          <strong>Richard Taylor</strong>, Chairman, Taylor Smith Group
+        </p>
+      </section>
+    </div>
   );
 }

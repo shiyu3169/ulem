@@ -21,8 +21,10 @@ import Thank from "./components/Thank";
 import Login from "./components/auth/Login";
 import Admin from "./components/auth/Admin";
 import Marathon from "./components/marathon/Marathon";
-import Membership from "./components/membership/Membership"
-import CentennialMembership from './components/centennial/CentennialMembership';
+import Membership from "./components/membership/Membership";
+import CentennialMembership from "./components/centennial/CentennialMembership";
+import Leadership from "./components/about/Leadership";
+import Board from "./components/about/Board";
 
 class App extends Component {
   render() {
@@ -32,6 +34,8 @@ class App extends Component {
           <Navbar />
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/leadership" component={Leadership} />
+          <Route exact path="/board" component={Board} />
           <Route exact path="/program" component={Program} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/donate" component={Donate} />
@@ -46,7 +50,11 @@ class App extends Component {
           <Route exact path="/admin" component={Admin} />
           <Route exact path="/marathon" component={Marathon} />
           <Route exact path="/membership" component={Membership} />
-          <Route exact path="/centennialMembership" component={CentennialMembership} />
+          <Route
+            exact
+            path="/centennialMembership"
+            component={CentennialMembership}
+          />
           <Footer />
         </ScrollToTop>
       </Router>

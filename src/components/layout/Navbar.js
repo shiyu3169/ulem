@@ -44,10 +44,32 @@ export default class Navbar extends Component {
                   Home
                 </Link>
               </li>
-              <li className="nav-item" onClick={this.collapse}>
+              {/* <li className="nav-item" onClick={this.collapse}>
                 <Link className="nav-link" to="/about">
                   About
                 </Link>
+              </li> */}
+              <li className="nav-item dropdown">
+                <span
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  About
+                </span>
+                <div className="dropdown-menu" onClick={this.collapse}>
+                  <Link className="nav-link text-dark" to="/about">
+                    About ULEM
+                  </Link>
+                  <Link className="nav-link text-dark" to="/leadership">
+                    Leadership
+                  </Link>
+                  <Link className="nav-link text-dark" to="/board">
+                    Board of Directors
+                  </Link>
+                </div>
               </li>
               <li className="nav-item" onClick={this.collapse}>
                 <Link className="nav-link" to="/program">
