@@ -60,7 +60,7 @@ export default class Membership extends Component {
           <div className="col-md-4">
             <MembershipCard
               header="Silver"
-              title="Heritage Club"
+              title="CHURCH & SMALL BUSINESS Membership"
               price="350"
               year="/YR"
               li1="&bull; Name ULEM as a partner in bulletins and company publications"
@@ -75,7 +75,7 @@ export default class Membership extends Component {
           <div className="col-md-4">
             <MembershipCard
               header="Bronze"
-              title="Legacy"
+              title="Heritage Club"
               price="100"
               year="/YR"
               li1="&bull; Certificate of Membership"
@@ -89,9 +89,9 @@ export default class Membership extends Component {
           </div>
           <div className="col-md-4">
             <MembershipCard
-              header="Our basic membership"
-              title="INDIVIDUAL MEMBER"
-              price="35"
+              header="Basic"
+              title="Legacy"
+              price="45"
               year="/YR"
               li1="&bull; Membership card"
               li2="&bull; Member listing"
@@ -102,8 +102,8 @@ export default class Membership extends Component {
           </div>
           <div className="col-md-4">
             <MembershipCard
-              header="Student / Senior members 60+"
-              title="SENIOR MEMBER"
+              header="Students & Senior"
+              title="STUDENTS & SENIOR MEMBER 60+"
               price="25"
               year="/YR"
               li1="&bull; Membership card"
