@@ -25,6 +25,7 @@ import Membership from "./components/membership/Membership";
 import CentennialMembership from "./components/centennial/CentennialMembership";
 import Leadership from "./components/about/Leadership";
 import Board from "./components/about/Board";
+import HowToDonate from "./components/support/HowToDonate";
 
 class App extends Component {
   render() {
@@ -49,6 +50,7 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           <Route exact path="/admin" component={Admin} />
           <Route exact path="/marathon" component={Marathon} />
+          <Route exact path="/howToDonate" component={HowToDonate} />
           <Route exact path="/membership" component={Membership} />
           <Route
             exact
