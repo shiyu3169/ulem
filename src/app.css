@@ -60,6 +60,16 @@ ul {
   min-width: 20rem;
 }
 
+.dropdown-menu .dropdown-menu {
+  margin-left: 3rem;
+  min-width: 17rem;
+}
+
+.dropdown-menu .text-dark:hover {
+  background: #cb0129;
+  color: #f4f4f4 !important;
+}
+
 /* Membership */
 .card-number-lg {
   font-size: 4.0em;
@@ -74,7 +84,7 @@ ul {
 }
 
 .membership-2nd-row .card-content {
-  min-height: 350px;
+  min-height: 400px;
 }
 
 /* Centennial */
