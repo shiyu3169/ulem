@@ -16,6 +16,15 @@ ul {
 }
 
 /* Utility */
+.border {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
 .ulem-text-primary {
   color: #cb0129;
 }
@@ -188,10 +197,6 @@ ul {
 .link-white {
   color: white;
   text-decoration: none;
-}
-
-.border {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .link-white:hover {
