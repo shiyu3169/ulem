@@ -1,8 +1,7 @@
 module.exports = function(app) {
   // Mailgun config
-  var API_KEY = "048ce0c30501216db6066076474ea1c7-9ce9335e-7a63dfd1";
-  var DOMAIN =
-    "https://api.mailgun.net/v3/sandbox9077a9ad9cce4de2a098087e6c7eb683.mailgun.org";
+  var API_KEY = "";
+  var DOMAIN = "";
   var mailgun = require("mailgun-js")({ apiKey: API_KEY, domain: DOMAIN });
   // Send a contact email via mailgun
   app.post("/api/contact", (req, res) => {
