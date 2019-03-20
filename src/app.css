@@ -16,9 +16,6 @@ ul {
 }
 
 /* Utility */
-.border {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .full-wdith {
   width: 100%;
@@ -44,8 +41,8 @@ ul {
 }
 
 .ulem-btn-primary:hover {
-  background: #c00026;
   color: #f4f4f4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ulem-bg-dark {
