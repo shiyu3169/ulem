@@ -49,16 +49,14 @@ export default class Contact extends Component {
     return (
       <div className="container mt-5">
         <h1 className="font-red mt-4">Contact Us</h1>
-        {error && (
+        {error &&
           <div className="alert alert-danger">
             Something goes wrong, please check your input and try it again.
-          </div>
-        )}
-        {success && (
+          </div>}
+        {success &&
           <div className="alert alert-success">
             Thank you for your email, we will contact you as soon as possible.
-          </div>
-        )}
+          </div>}
         <form onSubmit={this.onSubmit}>
           <InputGroup
             label="Name"
