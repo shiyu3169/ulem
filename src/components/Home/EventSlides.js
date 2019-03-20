@@ -118,7 +118,7 @@ export default class EventSlides extends Component {
           : <img className="center" src={loading} alt="loading" />}
         <br />
         <Link
-          className="btn btn-block btn-lg ulem-btn-primaryg link-white border"
+          className="btn btn-block btn-lg ulem-btn-primary link-white"
           id="apply-button"
           to="/events"
         >
