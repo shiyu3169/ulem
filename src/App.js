@@ -27,6 +27,7 @@ import Leadership from "./components/about/Leadership";
 import Board from "./components/about/Board";
 import HowToDonate from "./components/support/HowToDonate";
 import CentennialIntro from "./components/centennial/CentennialIntro";
+import Staff from "./components/about/Staff";
 
 class App extends Component {
   render() {
@@ -38,6 +39,7 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/leadership" component={Leadership} />
           <Route exact path="/board" component={Board} />
+          <Route exact path="/staff" component={Staff} />
           <Route exact path="/program" component={Program} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/donate" component={Donate} />

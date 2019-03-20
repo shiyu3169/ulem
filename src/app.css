@@ -93,6 +93,19 @@ ul {
     margin-bottom: 10px;
   }
 }
+
+td {
+  padding-right: 50px;
+}
+
+#table-1 td {
+  padding-right: 85px;
+}
+
+#table-3 td {
+  padding-right: 55px;
+}
+
 /* Membership */
 .card-number-lg {
   font-size: 4.0em;
