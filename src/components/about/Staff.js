@@ -5,8 +5,10 @@ export default class Staff extends Component {
     return (
       <div className="container">
         <h1 className="ulem-text-primary my-4">Our Staff</h1>
-        <section className="mb-5">
-          <h5 className="ulem-text-primary">Executive Office</h5>
+        <section className="mb-4">
+          <h5 className="ulem-text-primary">
+            <strong>Executive Office</strong>
+          </h5>
           <table id="table-1">
             <tbody>
               <tr>
@@ -28,9 +30,9 @@ export default class Staff extends Component {
             </tbody>
           </table>
         </section>
-        <section className="mb-5">
+        <section className="mb-4">
           <h5 className="ulem-text-primary">
-            Workforce Development Department
+            <strong>Workforce Development Department</strong>
           </h5>
           <table>
             <tbody>
@@ -81,9 +83,11 @@ export default class Staff extends Component {
             </tbody>
           </table>
         </section>
-        <section className="staff-width mb-5">
+        <section className="staff-width mb-4">
           <h5 className="ulem-text-primary">
-            Office of Violence Against Woman Domestic/Sexual Violence Program
+            <strong>
+              Office of Violence Against Woman Domestic/Sexual Violence Program
+            </strong>
           </h5>
           <table id="table-3">
             <tbody>
