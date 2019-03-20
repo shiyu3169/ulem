@@ -89,7 +89,7 @@ export default class Home extends Component {
                 icon="fas fa-users fa-2x"
               />
               <Card
-                title="Stay in Touch"
+                title="Contact Us"
                 text="Socialize and stay updated on what we are doing through social media!"
                 link="/contact"
                 icon="fas fa-envelope fa-2x"
