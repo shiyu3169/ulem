@@ -17,18 +17,16 @@ export default function MarathonAbout() {
         for the foundation. Qualified runners that already have a bib are
         welcome to join our team and are asked to raise a minimum of $2,000.
       </p>
-      <div className="text-center">
-        <a
-          href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
-          className="btn btn-danger btn-lg btn-block border"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Apply Now
-        </a>
-      </div>
 
       <section id="sponsors">
+        <a
+          href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-block ulem-bg-primary btn-lg"
+        >
+          Fill out the application here
+        </a>
         <h1 className="font-red mt-4">Sponsors</h1>
         <img
           src={charity}
@@ -102,7 +100,7 @@ export default function MarathonAbout() {
           href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-block btn-danger btn-lg border"
+          className="btn btn-block ulem-bg-primary btn-lg"
         >
           Fill out the application here
         </a>
