@@ -29,8 +29,10 @@ export default class Donate extends Component {
               the under- and unemployed at no cost to them.
             </p>
             <p>
-              You may be inclined to make a donation by clicking the image
-              below:​
+              <strong>
+                You may be inclined to make a donation by clicking the image
+                below:​
+              </strong>
             </p>
             <a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=ulem&id=1">
               <img

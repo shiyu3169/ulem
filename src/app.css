@@ -79,6 +79,20 @@ ul {
   color: #f4f4f4 !important;
 }
 
+/* About */
+@media (min-width: 768px) {
+  #leader-img {
+    float: left;
+    margin-right: 10px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #leader-img {
+    margin-bottom: 10px;
+  }
+}
 /* Membership */
 .card-number-lg {
   font-size: 4.0em;
