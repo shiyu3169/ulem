@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "68adf498a40828f4a873b5f12b7fe9b3",
-    "url": "/static/media/ulem100.68adf498.png"
+    "revision": "e78b5879d4f65bf42d2337dc0bd3d63a",
+    "url": "/static/media/career.e78b5879.png"
   },
   {
-    "revision": "52dfccbdbb5e4acf33aa",
-    "url": "/static/css/main.f55d979f.chunk.css"
+    "revision": "a98349f98ccd3e1cd940",
+    "url": "/static/css/main.c8cef6f5.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/msimbo_class.ad6cae62.jpg"
   },
   {
-    "revision": "0f0bac616effa035c8d6",
-    "url": "/static/js/2.0f0bac61.chunk.js"
+    "revision": "e9ed6a4f094b9ed4de68",
+    "url": "/static/js/2.e9ed6a4f.chunk.js"
   },
   {
     "revision": "fcd8d05ca2a2981b7680f6b1b322c80e",
@@ -26,6 +26,10 @@ self.__precacheManifest = [
   {
     "revision": "c9bab0a6b5ed42a57073f5c62c052f8c",
     "url": "/static/media/DigiUL.c9bab0a6.png"
+  },
+  {
+    "revision": "0eb2c0f6418342f272af4b392929696b",
+    "url": "/static/media/logo.0eb2c0f6.PNG"
   },
   {
     "revision": "e7531e5c411b4e55d1f47ad26ff24ed6",
@@ -72,12 +76,12 @@ self.__precacheManifest = [
     "url": "/static/media/gala.bbd861ff.png"
   },
   {
-    "revision": "e78b5879d4f65bf42d2337dc0bd3d63a",
-    "url": "/static/media/career.e78b5879.png"
+    "revision": "a98349f98ccd3e1cd940",
+    "url": "/static/js/main.a98349f9.chunk.js"
   },
   {
-    "revision": "52dfccbdbb5e4acf33aa",
-    "url": "/static/js/main.52dfccbd.chunk.js"
+    "revision": "68adf498a40828f4a873b5f12b7fe9b3",
+    "url": "/static/media/ulem100.68adf498.png"
   },
   {
     "revision": "8f78e42bb7114e2c2c0a50b3a8859c0b",
@@ -128,10 +132,6 @@ self.__precacheManifest = [
     "url": "/static/media/1919.49671a34.png"
   },
   {
-    "revision": "0eb2c0f6418342f272af4b392929696b",
-    "url": "/static/media/logo.0eb2c0f6.PNG"
-  },
-  {
     "revision": "f21dc3f18e06c368e08d7676350a8414",
     "url": "/static/media/charity.f21dc3f1.jpg"
   },
@@ -148,11 +148,11 @@ self.__precacheManifest = [
     "url": "/static/media/Darnell.3e66345b.jpg"
   },
   {
-    "revision": "0f0bac616effa035c8d6",
+    "revision": "e9ed6a4f094b9ed4de68",
     "url": "/static/css/2.de0d1355.chunk.css"
   },
   {
-    "revision": "aabfcf26372d00cbadd1bbaecf058edf",
+    "revision": "6b845b10895dad1f9489f46abe3e4b5a",
     "url": "/index.html"
   }
 ];
