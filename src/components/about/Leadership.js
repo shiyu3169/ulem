@@ -79,7 +79,7 @@ export default function Leadership() {
         </p>
       </div>
       <article>
-        <h2 className="ulem-text-primary">A Message from President/CEO</h2>
+        <h2 className="ulem-text-primary mt-4">A Message from President/CEO</h2>
         <p>
           The history of the Boston Urban League now known as the Urban League
           of Eastern Massachusetts from 1919 to 2019 with excerpts from our

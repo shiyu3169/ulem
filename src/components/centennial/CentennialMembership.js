@@ -36,12 +36,6 @@ export default class CentennialMembership extends Component {
               li3="&bull; Name recognition as Lifetime Member"
               li4={
                 <strong>
-                  Upgrade membership for $150 to receive one (1) ticket to VIP
-                  reception
-                </strong>
-              }
-              li5={
-                <strong>
                   Upgrade membership for $300 to receive two (2) tickets to VIP
                   reception
                 </strong>
