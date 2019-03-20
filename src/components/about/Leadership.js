@@ -4,7 +4,7 @@ export default function Leadership() {
   return (
     <section className="container">
       <h1 className="ulem-text-primary my-4">
-        <strong>Darnell L. Williams</strong>, President / CEO
+        <strong>Darnell L. Williams, President / CEO</strong>
       </h1>
       <div>
         <img
