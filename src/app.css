@@ -38,8 +38,13 @@ ul {
   color: #f4f4f4;
 }
 
-.ulem-bg-primary:hover {
-  background: #bd0026;
+.ulem-btn-primary {
+  background: #cb0129;
+  color: #f4f4f4;
+}
+
+.ulem-btn-primary:hover {
+  background: #c00026;
   color: #f4f4f4;
 }
 

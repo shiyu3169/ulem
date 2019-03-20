@@ -23,7 +23,7 @@ export default function MarathonAbout() {
           href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-block ulem-bg-primary btn-lg"
+          className="btn btn-block ulem-btn-primary btn-lg"
         >
           Fill out the application here
         </a>
@@ -100,7 +100,7 @@ export default function MarathonAbout() {
           href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-block ulem-bg-primary btn-lg"
+          className="btn btn-block ulem-btn-primary btn-lg"
         >
           Fill out the application here
         </a>
