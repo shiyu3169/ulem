@@ -50,7 +50,7 @@ export default class MembershipCard extends Component {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-ulem-primary btn-round mb-3"
+            className="btn ulem-btn-primary btn-round mb-3"
             href={this.props.purchase}
           >
             Purchase

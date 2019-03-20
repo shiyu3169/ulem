@@ -4,7 +4,7 @@ export default class HowToDonate extends Component {
   render() {
     return (
       <div className="container my-5">
-        <Link className="btn btn-ulem-primary btn-block btn-lg" to="/donate">
+        <Link className="btn ulem-btn-primary btn-block btn-lg" to="/donate">
           <strong>DONATE NOW</strong>
         </Link>
         <hr />
