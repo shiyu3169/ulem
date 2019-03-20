@@ -3,7 +3,9 @@ import React from "react";
 export default function Board() {
   return (
     <div className="container">
-      <h1 className="ulem-text-primary mt-4">Board of Directors</h1>
+      <h1 className="ulem-text-primary mt-4">
+        <strong>Board of Directors</strong>
+      </h1>
       <section className="my-5">
         <p>
           <strong className="ulem-text-primary">Executive Committee:</strong>

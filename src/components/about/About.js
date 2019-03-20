@@ -8,13 +8,12 @@ export default class About extends Component {
         <p>
           Founded in 1917 and affiliated in 1919, the Urban League of Eastern
           Massachusetts (ULEM) is a 501c3 nonprofit organization and one of the
-          oldest affiliates within the National Urban League (can “National
-          Urban League” be a link to their webpage:
-          http://nul.iamempowered.com/) movement. From the time that our doors
-          opened to the at-large Boston community and surrounding metropolitan
-          area residents, ULEM has been employing a multi-point strategy to
-          deliver services and programs which aim to increase self-reliance,
-          specifically in the area of workforce development.
+          oldest affiliates within the National Urban League movement. From the
+          time that our doors opened to the at-large Boston community and
+          surrounding metropolitan area residents, ULEM has been employing a
+          multi-point strategy to deliver services and programs which aim to
+          increase self-reliance, specifically in the area of workforce
+          development.
         </p>
         <p>
           The mission of the Urban League of Eastern Massachusetts is to be a
@@ -48,11 +47,9 @@ export default class About extends Component {
           and (2) the State of Black Boston report. Additional to the
           aforementioned programs, the Urban League of Eastern Massachusetts
           offers two auxiliary groups: the Urban League of Eastern MA Guild and
-          the Young Professionals Network of the Urban League of Eastern MA (can
-          “Young Professionals Network of the Urban League of Eastern MA” point
-          to their website: www.ypnulem.org). Both groups have open membership,
-          facilitate events and workshops and serve the community in alignment
-          with ULEM’s mission and strategic goals.
+          the Young Professionals Network of the Urban League of Eastern MA Both
+          groups have open membership, facilitate events and workshops and serve
+          the community in alignment with ULEM’s mission and strategic goals.
         </p>
         <p>
           Holistically, through the 3 channels, the ULEM – along with its
