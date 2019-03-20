@@ -38,6 +38,11 @@ ul {
   color: #f4f4f4;
 }
 
+.ulem-bg-primary:hover {
+  background: #bd0026;
+  color: #f4f4f4;
+}
+
 .ulem-bg-dark {
   background: #303030;
   color: #f4f4f4;
