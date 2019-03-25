@@ -5,7 +5,7 @@ import datepickerFactory from "jquery-datepicker";
 import datepickerJAFactory from "jquery-datepicker/i18n/jquery.ui.datepicker-ja";
 import "bootstrap-select";
 
-export default class Member extends Component {
+export default class Interest extends Component {
   state = {
     hear: false,
     ethnicity: false,
@@ -249,14 +249,13 @@ export default class Member extends Component {
           </div>
 
           <div className="ml-2">
-            {this.state.hear && (
+            {this.state.hear &&
               <InputGroup
                 required
                 label="Location, Name, Ad Paper or Other"
                 name="00N5000000AZDJ7"
                 id="00N5000000AZDJ7"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDJC">
@@ -318,14 +317,13 @@ export default class Member extends Component {
           </div>
 
           <div className="ml-2">
-            {this.state.ethnicity && (
+            {this.state.ethnicity &&
               <InputGroup
                 label="Other"
                 required
                 name="00N5000000AZDJM"
                 id="00N5000000AZDJM"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDJH">
@@ -352,14 +350,13 @@ export default class Member extends Component {
           </div>
 
           <div className="ml-2">
-            {this.state.language && (
+            {this.state.language &&
               <InputGroup
                 label="Other"
                 required
                 name="00N5000000AZDJW"
                 id="00N5000000AZDJW"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDJl">
@@ -407,14 +404,13 @@ export default class Member extends Component {
             </select>
           </div>
           <div className="ml-2">
-            {this.state.housing && (
+            {this.state.housing &&
               <InputGroup
                 label="BHA Resident"
                 required
                 name="00N5000000AZDJv"
                 id="00N5000000AZDJv"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDK0">
@@ -437,14 +433,13 @@ export default class Member extends Component {
             </select>
           </div>
           <div className="ml-2">
-            {this.state.houseHold && (
+            {this.state.houseHold &&
               <InputGroup
                 label="Other Household Size"
                 required
                 name="00N5000000AZDK5"
                 id="00N5000000AZDK5"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDKA">
@@ -491,14 +486,13 @@ export default class Member extends Component {
             </select>
           </div>
           <div className="ml-2">
-            {this.state.supplements && (
+            {this.state.supplements &&
               <InputGroup
                 label="Other Income Supplements"
                 required
                 name="00N5000000AZDKK"
                 id="00N5000000AZDKK"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDKP">
@@ -559,14 +553,13 @@ export default class Member extends Component {
             </select>
           </div>
           <div className="ml-2">
-            {this.state.children && (
+            {this.state.children &&
               <InputGroup
                 label="Other Dependent Children"
                 required
                 name="00N5000000AZDKe"
                 id="00N5000000AZDKe"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDKj">
@@ -593,14 +586,13 @@ export default class Member extends Component {
             </select>
           </div>
           <div className="ml-2">
-            {this.state.childCare && (
+            {this.state.childCare &&
               <InputGroup
                 label="Other Childcare"
                 required
                 name="00N5000000AZDKo"
                 id="00N5000000AZDKo"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDKt">
@@ -623,14 +615,13 @@ export default class Member extends Component {
             </select>
           </div>
           <div className="ml-2">
-            {this.state.marital && (
+            {this.state.marital &&
               <InputGroup
                 label="Other Marital Status"
                 required
                 name="00N5000000AZDKy"
                 id="00N5000000AZDKy"
-              />
-            )}
+              />}
           </div>
           <div className="form-group">
             <label htmlFor="00N5000000AZDL3">
@@ -655,14 +646,13 @@ export default class Member extends Component {
             </div>
           </div>
           <div className="ml-2">
-            {this.state.transportation && (
+            {this.state.transportation &&
               <InputGroup
                 label=" Other Transporation"
                 required
                 name="00N5000000AZDL8"
                 id="00N5000000AZDL8"
-              />
-            )}
+              />}
           </div>
           <input
             type="submit"
