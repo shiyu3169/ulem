@@ -129,7 +129,7 @@ export default class Navbar extends Component {
                 </span>
                 <div className="dropdown-menu" onClick={this.collapse}>
                   <Link className="nav-link text-dark" to="/centennialIntro">
-                    Celebration (Coming Soon)
+                    Celebration
                   </Link>
                   <Link className="nav-link text-dark" to="/centennial">
                     Milestone
