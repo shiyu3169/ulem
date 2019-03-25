@@ -33,7 +33,7 @@
     "test": "react-scripts start",
     "eject": "react-scripts eject",
     "dev": "nodemon server.js",
-    "push": "npm run build && git add . && git commit -m build && git push"
+    "push": "npm run build & git add . & git commit -m build && git push"
   },
   "proxy": "http://localhost:3100",
   "eslintConfig": {
