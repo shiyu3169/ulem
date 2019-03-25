@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/ulem100.68adf498.png"
   },
   {
-    "revision": "13b901c81a44635e2948",
-    "url": "/static/css/main.24307c31.chunk.css"
+    "revision": "7250f7bd9739bc3201fb",
+    "url": "/static/css/main.db4829ef.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/msimbo_class.ad6cae62.jpg"
   },
   {
-    "revision": "f04fb289bcd6b3fab3a1",
-    "url": "/static/js/2.f04fb289.chunk.js"
+    "revision": "333c9360cfd0a880203a",
+    "url": "/static/js/2.333c9360.chunk.js"
   },
   {
     "revision": "fcd8d05ca2a2981b7680f6b1b322c80e",
@@ -42,6 +42,10 @@ self.__precacheManifest = [
   {
     "revision": "ba8f846673e518c2c887ec7da30d31aa",
     "url": "/static/media/ULEM-MarathonBanner.ba8f8466.png"
+  },
+  {
+    "revision": "d7f9b5fe61698ceab425b77431f4ddbf",
+    "url": "/static/media/about.d7f9b5fe.png"
   },
   {
     "revision": "1919320d922a6827fc9b4b641438f59f",
@@ -80,8 +84,8 @@ self.__precacheManifest = [
     "url": "/static/media/career.e78b5879.png"
   },
   {
-    "revision": "13b901c81a44635e2948",
-    "url": "/static/js/main.13b901c8.chunk.js"
+    "revision": "7250f7bd9739bc3201fb",
+    "url": "/static/js/main.7250f7bd.chunk.js"
   },
   {
     "revision": "8f78e42bb7114e2c2c0a50b3a8859c0b",
@@ -144,6 +148,10 @@ self.__precacheManifest = [
     "url": "/static/media/ULEM-MarathonBanner2.69bdd6cf.png"
   },
   {
+    "revision": "4a0a9e094f3de6e7bce965d81f96f2c7",
+    "url": "/static/media/member.4a0a9e09.png"
+  },
+  {
     "revision": "3e66345b69c2dd9d9d82bee805de7050",
     "url": "/static/media/Darnell.3e66345b.jpg"
   },
@@ -156,11 +164,11 @@ self.__precacheManifest = [
     "url": "/static/media/Meeting_Boardroom-Leaderboard.8cedc4d4.png"
   },
   {
-    "revision": "f04fb289bcd6b3fab3a1",
+    "revision": "333c9360cfd0a880203a",
     "url": "/static/css/2.de0d1355.chunk.css"
   },
   {
-    "revision": "1dd48c921a9071074c960ff5ba126eb6",
+    "revision": "7940bcf3a5f6ee39bbd446afc9d78410",
     "url": "/index.html"
   }
 ];
