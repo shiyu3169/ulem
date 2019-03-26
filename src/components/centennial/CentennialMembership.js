@@ -6,7 +6,6 @@ export default class CentennialMembership extends Component {
     return (
       <div>
         <img src={banner} alt="banner" className="full-width" />
-
         <div className="container text-center">
           <h2 className="ulem-text-primary mt-5">CENTENNIAL MEMBERSHIP</h2>
           <p>
