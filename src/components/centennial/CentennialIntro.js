@@ -32,7 +32,7 @@ export default class CentennialIntro extends Component {
             diversity and inclusion today.
           </p>
           <p>For more information download the sponsorship packet below:</p>
-          <a href={centennialForm} download>
+          <a className="btn ulem-btn-primary" href={centennialForm} download>
             Download
           </a>
         </section>
