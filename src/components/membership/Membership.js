@@ -57,6 +57,7 @@ export default class Membership extends Component {
                 li3="&bull; Annual Meeting and event program listing"
                 li4="&bull; ULEM commemorative gift"
                 li5="&bull; NUL lapel pin"
+                li6="&bull; Event Discounts"
                 purchase="https://squareup.com/store/theulem/item/gold-legacy-circle-of-believers"
               />
             </div>
@@ -93,7 +94,7 @@ export default class Membership extends Component {
               <MembershipCard
                 header="Basic"
                 title="Legacy"
-                price="45"
+                price="50"
                 year="/YR"
                 li1="&bull; Membership card"
                 li2="&bull; Member listing"
@@ -106,7 +107,7 @@ export default class Membership extends Component {
               <MembershipCard
                 header="Students & Senior"
                 title="STUDENTS & SENIOR MEMBER 60+"
-                price="25"
+                price="30"
                 year="/YR"
                 li1="&bull; Membership card"
                 li2="&bull; Member listing"
