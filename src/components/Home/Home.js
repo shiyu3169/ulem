@@ -6,8 +6,7 @@ import TopSlides from "./TopSlides";
 import EventSlides from "./EventSlides";
 import Instagram from "./Instagram";
 import Twitter from "./Twitter";
-import banner from "../../img/Banner100.jpg";
-import { Link } from "react-router-dom";
+
 export default class Home extends Component {
   state = {
     events: []
@@ -28,9 +27,6 @@ export default class Home extends Component {
     const { events } = this.state;
     return (
       <div>
-        <Link to="/centennialIntro">
-          <img src={banner} alt="100banner" className="full-width" />
-        </Link>
         <TopSlides />
         <div className="container">
           <div className="row">

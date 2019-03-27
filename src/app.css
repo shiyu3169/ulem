@@ -153,6 +153,11 @@ td {
   border-radius: 5px;
 }
 
+/* Home */
+.top-slide {
+  height: 65vh;
+}
+
 .video-background {
   background: rgba(0, 0, 0, 0.3);
   z-index: -99;
@@ -589,10 +594,6 @@ section[id]:before {
   color: #e2001a;
   font-size: 1.3em;
   font-weight: 600;
-}
-
-.top-slide {
-  height: 65vh;
 }
 
 @media (max-width: 992px) {
