@@ -4,6 +4,7 @@ import msimbo from "../../img/MSIMBOFlyer.png";
 import digiul from "../../img/DigiUL.png";
 import ulemBuilding from "../../img/ulemBuilding.JPG";
 import marathonBanner from "../../img/ULEM-MarathonBanner.png";
+import banner100 from "../../img/Banner100.jpg";
 import $ from "jquery";
 import "popper.js";
 import "bootstrap";
@@ -31,6 +32,7 @@ export default class TopSlides extends Component {
           <li data-target="#carouselExampleControls" data-slide-to="1" />
           <li data-target="#carouselExampleControls" data-slide-to="2" />
           <li data-target="#carouselExampleControls" data-slide-to="3" />
+          <li data-target="#carouselExampleControls" data-slide-to="4" />
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -38,11 +40,7 @@ export default class TopSlides extends Component {
               <div
                 className="top-slide"
                 style={{
-                  background: `url(${ulemBuilding}) no-repeat top center/cover`,
-
-                  backgroundPosition: "center TOP",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover"
+                  background: `url(${ulemBuilding}) no-repeat top center/cover`
                 }}
               >
                 <div className="text-center">
@@ -67,14 +65,14 @@ export default class TopSlides extends Component {
             </Link>
           </div>
           <div className="carousel-item">
-            <Link to="/program">
+            <Link to="/centennialIntro">
+              <div className="top-slide d-none d-lg-block">
+                <img src={banner100} alt="100th" width="100%" height="100%" />
+              </div>
               <div
-                className="top-slide"
+                className="top-slide d-lg-none"
                 style={{
-                  backgroundImage: `url(${digiul})`,
-                  backgroundPosition: "center TOP",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover"
+                  background: `url(${banner100}) no-repeat top center/cover`
                 }}
               />
             </Link>
@@ -84,10 +82,17 @@ export default class TopSlides extends Component {
               <div
                 className="top-slide"
                 style={{
-                  background: `url(${msimbo}) no-repeat top center/cover`,
-                  backgroundPosition: "center TOP",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "100% 100%"
+                  background: `url(${digiul}) no-repeat top center/cover`
+                }}
+              />
+            </Link>
+          </div>
+          <div className="carousel-item">
+            <Link to="/program">
+              <div
+                className="top-slide"
+                style={{
+                  background: `url(${msimbo}) no-repeat top center/cover`
                 }}
               />
             </Link>
@@ -97,10 +102,7 @@ export default class TopSlides extends Component {
               <div
                 className="top-slide"
                 style={{
-                  background: `url(${marathonBanner}) no-repeat top center/cover`,
-                  backgroundPosition: "center TOP",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "100% 100%"
+                  background: `url(${marathonBanner}) no-repeat top center/cover`
                 }}
               />
             </Link>
