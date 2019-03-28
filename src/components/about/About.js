@@ -45,7 +45,7 @@ export default class About extends Component {
           <p>
             The programs and services offered are supported by two annual
             projects: (1) Jobs Rebuild Boston Community Conference and Career
-            Fair and (2) the State of Black Boston report. Additional to the
+            Fair and (2) the Diversity & Inclusion Breakfast. Additional to the
             programs mentioned above, the League offers two auxiliary groups:
             the Urban League of Eastern MA Guild and the Young Professionals
             Network of the Urban League of Eastern MA, both groups have open

@@ -67,7 +67,7 @@ export default class Staff extends Component {
                   <td>Case Manager, Mature Worker Skills Program</td>
                 </tr>
                 <tr>
-                  <td>Othneil Utter</td>
+                  <td>Othneil Uter</td>
                   <td>IT Manager</td>
                 </tr>
                 <tr>
