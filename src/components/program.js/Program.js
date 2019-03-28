@@ -36,8 +36,9 @@ export default class Program extends Component {
               <BgVideo />
             </section>
             <Programs />
-            <div className="fixed-job " />
+            <div className="fixed-job my-5" />
             <Services />
+            <div className="fixed-training my-5" />
             <Certification />
           </main>
         </div>
