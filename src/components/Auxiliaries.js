@@ -33,7 +33,7 @@ export default class Auxiliaries extends Component {
             </a>.
           </p>
         </section>
-        <div className="fixed-ypn" />
+        <div className="fixed-ypn my-5" />
         <section className="container">
           <h4>
             Young Professionals Network of the Urban League of Eastern
