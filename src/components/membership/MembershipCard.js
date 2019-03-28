@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class MembershipCard extends Component {
   render() {
     return (
-      <div className="text-center">
+      <div className="text-center mt-5">
         <header className="ulem-bg-primary py-1">
           {this.props.header}
         </header>
