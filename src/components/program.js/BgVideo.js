@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 export default class BgVideo extends Component {
   render() {
     return (
@@ -17,13 +17,16 @@ export default class BgVideo extends Component {
         </div>
         <div id="vidtop-content">
           <div className="vid-info">
-            <h2>
+            <h2 className="vid-text">
               All of ULEM’s workforce development programs are at no cost to
               participants. Brief descriptions are below, but for details, we
               encourage you to attend an information session. Information
               sessions are held every Tuesday and Wednesday at 1pm. No RSVP is
               required.
             </h2>
+            <Link to="/interest" className="btn ulem-btn-primary btn-lg mt-5">
+              Interest in Job Training
+            </Link>
           </div>
         </div>
       </div>

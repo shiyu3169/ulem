@@ -67,6 +67,12 @@ export default class Navbar extends Component {
                   <Link className="nav-link text-dark" to="/staff">
                     Our Staff
                   </Link>
+                  <Link className="nav-link text-dark" to="/impact">
+                    Our Impact
+                  </Link>
+                  <Link className="nav-link text-dark" to="/contact">
+                    Contact Us
+                  </Link>
                 </div>
               </li>
               <li className="nav-item" onClick={this.collapse}>
@@ -92,6 +98,12 @@ export default class Navbar extends Component {
                 <div className="dropdown-menu" onClick={this.collapse}>
                   <Link className="nav-link text-dark" to="/membership">
                     Become A Member
+                  </Link>
+                  <Link className="nav-link text-dark" to="/sponsor">
+                    Sponsor
+                  </Link>
+                  <Link className="nav-link text-dark" to="/auxiliaries">
+                    Our Auxiliaries
                   </Link>
                   <span
                     className="nav-link dropdown-toggle text-dark"

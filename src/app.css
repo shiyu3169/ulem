@@ -164,6 +164,7 @@ td {
   height: 65vh;
 }
 
+/* Program */
 .video-background {
   background: rgba(0, 0, 0, 0.3);
   z-index: -99;
@@ -187,9 +188,12 @@ td {
   position: absolute;
   top: 30%;
   text-align: center;
+  padding: 1rem;
+}
+
+.vid-text {
   color: #ffffff;
   text-shadow: 1px 3px 0 #969696, 1px 1px 5px #aba8a8;
-  padding: 1rem;
 }
 
 @media (max-width: 768px) {
