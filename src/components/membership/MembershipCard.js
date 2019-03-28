@@ -44,6 +44,12 @@ export default class MembershipCard extends Component {
             <li>
               {this.props.li7}
             </li>
+            <li>
+              {this.props.li8}
+            </li>
+            <li>
+              {this.props.li9}
+            </li>
           </ul>
         </div>
         <div className="ulem-bg-dark">
