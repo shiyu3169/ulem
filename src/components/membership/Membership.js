@@ -78,7 +78,7 @@ export default class Membership extends Component {
               />
             </div>
           </div>
-          <div className="row my-5 membership-2nd-row">
+          <div className="row membership-2nd-row">
             <div className="col-md-4">
               <MembershipCard
                 header="Bronze"
