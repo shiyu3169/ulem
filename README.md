@@ -2,10 +2,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- fixed link in footer
-- Bold in red and center align “100th Centennial Honorary Committee”
-- 50 level has two membership cards remove one of them
-
+- made corrections to the honorary list of names
 ## Available Scripts
 
 In the project directory, you can run:

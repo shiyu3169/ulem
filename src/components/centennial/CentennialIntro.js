@@ -255,7 +255,7 @@ export default class CentennialIntro extends Component {
                 Vincent G. Lorporchio, Senior Vice President Corporate
                 Communications, Fidelity Investments
               </li>
-              <li>4vMary Jo Meisner, Senior Executive and Community Leader</li>
+              <li>Mary Jo Meisner, Senior Executive and Community Leader</li>
               <li>
                 Dr. Larry Dunham, Director, Diversity & Multicultural Affairs,
                 Boston University
@@ -277,28 +277,30 @@ export default class CentennialIntro extends Component {
                   <td>President and Chief Executive Officer</td>
                 </tr>
                 <tr>
-                  <td>Traci, Jackson Antoine</td>
-                  <td>Director, OVW Domestic/Sexual Violence Program</td>
+                  <td>Traci Jackson Antoine</td>
+                  <td>
+                    Executive Director, OVW Domestic/Sexual Violence Program
+                  </td>
                 </tr>
                 <tr>
                   <td>Jacquie George</td>
-                  <td>Director of Finance</td>
+                  <td>Vice President of Finance</td>
                 </tr>
                 <tr>
                   <td>Rick Iacobucci</td>
-                  <td>Director of Development</td>
+                  <td>Vice President of Development</td>
                 </tr>
                 <tr>
                   <td>William Watkins</td>
-                  <td>Director of Work Force Development</td>
+                  <td>Director of Workforce Development</td>
                 </tr>
                 <tr>
                   <td>Debra Ames</td>
                   <td>Front Desk Receptionist</td>
                 </tr>
                 <tr>
-                  <td>Bezaida Guzman</td>
-                  <td>Workforce Development Coordinator/Data</td>
+                  <td>Betzaida Guzman</td>
+                  <td>Workforce Development Coordinator/Data Specialist</td>
                 </tr>
                 <tr>
                   <td>Sydney Janey</td>
@@ -323,10 +325,6 @@ export default class CentennialIntro extends Component {
                   <td>Case Manager, Mature Worker Skills Program</td>
                 </tr>
                 <tr>
-                  <td>Denise Turner</td>
-                  <td>Development Associate/Executive Office</td>
-                </tr>
-                <tr>
                   <td>Granger Williams</td>
                   <td>Case Manager, Workforce Development</td>
                 </tr>
@@ -335,7 +333,7 @@ export default class CentennialIntro extends Component {
                   <td>Program Coordinator, Mature Workers Skills Program</td>
                 </tr>
                 <tr>
-                  <td>Othneil Utter</td>
+                  <td>Othneil Uter</td>
                   <td>IT Manager</td>
                 </tr>
                 <tr>
