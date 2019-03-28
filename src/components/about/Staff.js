@@ -19,15 +19,11 @@ export default class Staff extends Component {
                 </tr>
                 <tr>
                   <td>Jacquie George</td>
-                  <td>VP of Finance</td>
+                  <td>Vice President of Finance</td>
                 </tr>
                 <tr>
                   <td>Rick Iacobucci</td>
-                  <td>Director of Development</td>
-                </tr>
-                <tr>
-                  <td>Denise Turner</td>
-                  <td>Development Associate</td>
+                  <td>Vice President of Development</td>
                 </tr>
               </tbody>
             </table>
@@ -40,7 +36,7 @@ export default class Staff extends Component {
               <tbody>
                 <tr>
                   <td>William Watkins</td>
-                  <td>Director of Worforce Development</td>
+                  <td>Director of Workforce Development</td>
                 </tr>
                 <tr>
                   <td>Debra Ames</td>
@@ -51,8 +47,8 @@ export default class Staff extends Component {
                   <td>Program Coordinator, Mature Workers Skills Program</td>
                 </tr>
                 <tr>
-                  <td>Bezaida Guzman</td>
-                  <td>Workforce Development Coordinator/Data</td>
+                  <td>Betzaida Guzman</td>
+                  <td>Workforce Development Coordinator/Data Specialist</td>
                 </tr>
                 <tr>
                   <td>Sydney Janey</td>
@@ -95,8 +91,10 @@ export default class Staff extends Component {
             <table id="table-3">
               <tbody>
                 <tr>
-                  <td>Traci, Jackson Antoine</td>
-                  <td>Director, OVW Domestic/Sexual Violence Program</td>
+                  <td>Traci Jackson Antoine</td>
+                  <td>
+                    Executive Director, OVW Domestic/Sexual Violence Program
+                  </td>
                 </tr>
                 <tr>
                   <td>Tonya Kibbe</td>
