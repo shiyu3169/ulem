@@ -43,6 +43,8 @@ export default class Membership extends Component {
                 li5="&bull; NUL lapel pin"
                 li6="&bull; Event discounts"
                 li7="&bull; ULEM newsletter"
+                li8="&bull; Membership Card"
+                li9="&bull; Enterprise Rent-A-Car Discount"
                 purchase="https://squareup.com/store/theulem/item/platinum"
               />
             </div>
@@ -58,6 +60,8 @@ export default class Membership extends Component {
                 li4="&bull; ULEM commemorative gift"
                 li5="&bull; NUL lapel pin"
                 li6="&bull; Event Discounts"
+                li7="&bull; Membership Card"
+                li8="&bull; Enterprise Rent-A-Car Discount"
                 purchase="https://squareup.com/store/theulem/item/gold-legacy-circle-of-believers"
               />
             </div>
@@ -87,6 +91,8 @@ export default class Membership extends Component {
                 li4="&bull; NUL lapel pin"
                 li5="&bull; Event discounts"
                 li6="&bull; ULEM newsletter"
+                li7="&bull; Membership Card"
+                li8="&bull; Enterprise Rent-A-Car Discount"
                 purchase="https://squareup.com/store/theulem/item/bronze"
               />
             </div>
@@ -100,6 +106,8 @@ export default class Membership extends Component {
                 li2="&bull; Member listing"
                 li3="&bull; UL ink pen and magnet"
                 li4="&bull; ULEM newsletter"
+                li5="&bull; Membership Card"
+                li6="&bull; Enterprise Rent-A-Car Discount"
                 purchase="https://squareup.com/store/theulem/item/our-basic-membership-individual-member"
               />
             </div>
