@@ -53,7 +53,9 @@ export default class CentennialIntro extends Component {
           </p>
         </section>
         <section class="mb-5">
-          <h3>2019 100th Centennial Honorary Committee Final List</h3>
+          <h3 className="text-center ulem-text-primary">
+            100th Centennial Honorary Committee
+          </h3>
           <div className="my-4">
             <h5 className="text-center">
               ULEM 100th Honorary Committee Co-Chairs{" "}

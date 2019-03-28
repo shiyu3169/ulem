@@ -25,28 +25,28 @@ export default class Footer extends Component {
             <ul className="list-unstyled">
               <li>
                 <p>
-                  <Link className="font-white" to="/about#mission">
+                  <Link className="font-white" to="/about">
                     Missions & Overview
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className="font-white" to="/about#milestone">
+                  <Link className="font-white" to="/centennial">
                     Our Milestones
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className="font-white" to="/about#leadership">
+                  <Link className="font-white" to="/leadership">
                     Leadership
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className="font-white" to="/about#board">
+                  <Link className="font-white" to="/board">
                     Board of Directors
                   </Link>
                 </p>

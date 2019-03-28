@@ -106,8 +106,7 @@ export default class Membership extends Component {
                 li2="&bull; Member listing"
                 li3="&bull; UL ink pen and magnet"
                 li4="&bull; ULEM newsletter"
-                li5="&bull; Membership Card"
-                li6="&bull; Enterprise Rent-A-Car Discount"
+                li5="&bull; Enterprise Rent-A-Car Discount"
                 purchase="https://squareup.com/store/theulem/item/our-basic-membership-individual-member"
               />
             </div>
