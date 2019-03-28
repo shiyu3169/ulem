@@ -36,6 +36,7 @@ export default class Program extends Component {
               <BgVideo />
             </section>
             <Programs />
+            <div className="fixed-job " />
             <Services />
             <Certification />
           </main>

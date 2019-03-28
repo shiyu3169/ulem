@@ -164,7 +164,41 @@ td {
   height: 65vh;
 }
 
+/* Support */
+.fixed-ypn {
+  background: url("./img/YPN.JPG");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  height: 400px;
+}
+
 /* Program */
+.fixed-job {
+  background: url("./img/JobFair.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  height: 400px;
+}
+
+.fixed-job {
+  background: url("./img/JobFair.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  height: 400px;
+}
+
 .video-background {
   background: rgba(0, 0, 0, 0.3);
   z-index: -99;
