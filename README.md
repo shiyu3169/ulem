@@ -1,8 +1,11 @@
 #ULEM website: http://www.ulem.org/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- reorganize the files for easier future maintainance. 
+
+- reorganize the files for easier future maintainance. (no content change)
+- Adding sponsor banner
 
 ## Available Scripts
 
