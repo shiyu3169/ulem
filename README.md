@@ -2,7 +2,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- made corrections to the honorary list of names
+- corrected “League”
+- Add link to online donation.
+- Make "100th Centennial Honorary Committee" larger
+- fix the list in 100th Centennial Honorary Committee
+- remove (as of this writing)
+- move give online to the top
+- remove the space in address
 ## Available Scripts
 
 In the project directory, you can run:
