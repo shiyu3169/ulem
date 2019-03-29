@@ -53,9 +53,9 @@ export default class CentennialIntro extends Component {
           </p>
         </section>
         <section class="mb-5">
-          <h3 className="text-center ulem-text-primary">
+          <h1 className="text-center ulem-text-primary">
             100th Centennial Honorary Committee
-          </h3>
+          </h1>
           <div className="my-4">
             <h5 className="text-center">
               ULEM 100th Honorary Committee Co-Chairs{" "}
@@ -76,7 +76,7 @@ export default class CentennialIntro extends Component {
           </div>
           <div className="mb-4">
             <h5 className="text-center">
-              ULEM 100th Honorary Committee Members (as of this writing)
+              ULEM 100th Honorary Committee Members
             </h5>
             <ul>
               <li>Honorable Robert DeLeo, Massachusetts House Speaker</li>
@@ -136,13 +136,27 @@ export default class CentennialIntro extends Component {
             <h5 className="text-center">
               ULEM 100th Centennial Board of Directors{" "}
             </h5>
-            <p>
-              Joseph D. Feaster, Jr., Esq. Chairman, Counselor at Law, McKenzie
-              & Associates, P.C. Brenda Cole, Immediate Past Vice-Chair, Vice
-              President, Harvard Pilgrim Health Care Mark Walker, Vice Chair,
-              Sr. Vice President, Credit Product Manager, Citizens Bank Derek
-              Brooks, Secretary, Lead, GRB, Market Development, Comcast
-            </p>
+            <div>
+              <ul>
+                <li>
+                  Joseph D. Feaster, Jr., Esq. Chairman, Counselor at Law,
+                  McKenzie & Associates, P.C.
+                </li>
+                <li>
+                  Brenda Cole, Immediate Past Vice-Chair, Vice President,
+                  Harvard Pilgrim Health Care
+                </li>
+                <li>
+                  Mark Walker, Vice Chair, Sr. Vice President, Credit Product
+                  Manager, Citizens Bank
+                </li>
+                <li>
+                  Derek Brooks, Secretary, Lead, GRB, Market Development,
+                  Comcast
+                </li>
+              </ul>
+            </div>
+
             <table>
               <tbody>
                 <tr>

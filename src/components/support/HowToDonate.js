@@ -13,6 +13,21 @@ export default class HowToDonate extends Component {
           <div class="box">
             <div className="row py-5 px-5">
               <div className="col-md-2 text-center">
+                <i class="fab fa-internet-explorer fa-3x" />
+              </div>
+              <div className="col-md-10">
+                <h5>
+                  <strong>GIVE ONLINE</strong>
+                </h5>
+                <p>
+                  Donors may make an online pledge or gift via credit card on
+                  our Online Giving page. The best and simplest way to give.{" "}
+                  <Link to="/donate">Donate Now</Link>
+                </p>
+              </div>
+            </div>
+            <div className="row pb-5 px-5">
+              <div className="col-md-2 text-center">
                 <i class="fas fa-gift fa-3x" />
               </div>
               <div className="col-md-10">
@@ -76,20 +91,7 @@ export default class HowToDonate extends Component {
                 </p>
               </div>
             </div>
-            <div className="row pb-5 px-5">
-              <div className="col-md-2 text-center">
-                <i class="fab fa-internet-explorer fa-3x" />
-              </div>
-              <div className="col-md-10">
-                <h5>
-                  <strong>GIVE ONLINE</strong>
-                </h5>
-                <p>
-                  Donors may make an online pledge or gift via credit card on
-                  our Online Giving page. The best and simplest way to give.
-                </p>
-              </div>
-            </div>
+
             <div className="row pb-5 px-5">
               <div className="col-md-2 text-center">
                 <i class="fas fa-money-check-alt fa-3x" />
@@ -101,11 +103,11 @@ export default class HowToDonate extends Component {
                 <p>
                   Donors can mail a check donation to the school. Checks should
                   be payable to "Urban League of Eastern MA" and mailed to Urban
-                  Leage of Eastern MA
+                  League of Eastern MA
                 </p>
                 <div className="pl-4">
-                  <p>ULEM, 88 Warren St.</p>
-                  <p>Boston, MA 02119</p>
+                  <p className="my-0">ULEM, 88 Warren St.</p>
+                  <p className="my-0">Boston, MA 02119</p>
                 </div>
               </div>
             </div>
