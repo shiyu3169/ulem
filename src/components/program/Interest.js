@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import InputGroup from "./layout/InputGroup";
+import InputGroup from "../layout/InputGroup";
 import $ from "jquery";
 import datepickerFactory from "jquery-datepicker";
 import datepickerJAFactory from "jquery-datepicker/i18n/jquery.ui.datepicker-ja";

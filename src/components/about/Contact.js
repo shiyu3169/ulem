@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import InputGroup from "./layout/InputGroup";
+import InputGroup from "../layout/InputGroup";
 import Axios from "axios";
 export default class Contact extends Component {
   state = {

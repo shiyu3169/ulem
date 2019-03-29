@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Milestone from "./about/Milestone";
-import centennial from "../img/logo.PNG";
+import Milestone from "../about/Milestone";
+import centennial from "../../img/logo.PNG";
 export default class Centennial extends Component {
   render() {
     return (
