@@ -3,11 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
+- update the config file in AWS to produce production view (no content change) 
 
-- reorganize the files for easier future maintainance. (no content change)
-- Adding sponsor banner
-- Improve algorithms to get top 3 slides. (no text content change)
-- Adding events list in events page
 ## Available Scripts
 
 In the project directory, you can run:
