@@ -15,9 +15,10 @@ EventModel.findAllEvents = () => EventModel.find().sort({ start: -1 });
 
 // Find latest 3 events
 const today = new Date();
+today.setHours(0, 0, 0, 0);
+
 EventModel.findTopEvents = () =>
   EventModel.find({ img: { $exists: true }, start: { $gte: today } })
-    .sort({ start: -1 })
     .limit(3)
     .populate("img")
     .exec();
@@ -38,10 +39,7 @@ EventModel.updateEvent = (id, event) =>
   EventModel.updateOne({ _id: id }, event);
 
 // Find event by id
-EventModel.findEventById = id =>
-  EventModel.findById(id)
-    .populate("img")
-    .exec();
+EventModel.findEventById = id => EventModel.findById(id).populate("img").exec();
 
 // Count events
 EventModel.countEvents = () => EventModel.countDocuments();
