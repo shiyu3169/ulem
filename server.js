@@ -84,10 +84,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "build", "index.html"));
-});
-
 // server.listen(port);
 server.listen(port, function() {
   console.log("Running on " + app.get("port"));
