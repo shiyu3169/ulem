@@ -27,6 +27,10 @@ h6 {
 
 /* Utility */
 
+.cursor {
+  cursor: pointer;
+}
+
 .full-wdith {
   width: 100%;
 }
@@ -362,10 +366,6 @@ html {
 
 .nav-link-dark:hover {
   color: black;
-  cursor: pointer;
-}
-
-.cursor {
   cursor: pointer;
 }
 

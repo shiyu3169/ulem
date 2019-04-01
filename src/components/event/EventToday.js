@@ -9,9 +9,9 @@ export default class EventToday extends Component {
           {this.props.events.length} Event(s) on{" "}
           {this.props.date.toDateString()}
         </h2>
-        {this.props.events.map(event => (
+        {this.props.events.map(event =>
           <EventCard key={event._id} id={event._id} />
-        ))}
+        )}
       </React.Fragment>
     );
   }
