@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- update the config file in AWS to produce production view (no content change) 
+- update the config file in AWS for security reason(no content change) 
 
 ## Available Scripts
 
