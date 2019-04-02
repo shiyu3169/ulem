@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 - update the config file in AWS for security reason(no content change) 
+- HTTPS redirect middleware (redirect users to use HTTPS)
+- Seperate dev database and production database (no content change)
 
 ## Available Scripts
 
