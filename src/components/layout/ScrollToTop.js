@@ -9,9 +9,9 @@ class ScrollToTop extends Component {
     ) {
       $("html, body").animate(
         { scrollTop: $(document).height() - $(window).height() },
-        1000,
+        1500,
         function() {
-          $(this).animate({ scrollTop: 0 }, 1000);
+          $(this).animate({ scrollTop: 0 }, 1500);
         }
       );
     } else if (this.props.location !== prevProps.location) {
