@@ -25,6 +25,10 @@ h6 {
   font-weight: 700;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* Utility */
 
 .cursor {
@@ -166,6 +170,15 @@ td {
 /* Home */
 .top-slide {
   height: 65vh;
+}
+
+.top-slide .hoverToShow {
+  opacity: 0;
+}
+
+.top-slide:hover .hoverToShow {
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 /* Support */

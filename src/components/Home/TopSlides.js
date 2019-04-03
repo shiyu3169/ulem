@@ -8,6 +8,7 @@ import banner100 from "../../img/Banner100.jpg";
 import $ from "jquery";
 import "popper.js";
 import "bootstrap";
+import TopSlide from "./TopSlide";
 
 export default class TopSlides extends Component {
   componentDidMount() {
@@ -35,78 +36,18 @@ export default class TopSlides extends Component {
           <li data-target="#carouselExampleControls" data-slide-to="4" />
         </ol>
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <Link to="/about" className="link-white">
-              <div
-                className="top-slide"
-                style={{
-                  background: `url(${ulemBuilding}) no-repeat top center/cover`
-                }}
-              >
-                <div className="text-center">
-                  <h1
-                    className="link-white"
-                    style={{
-                      paddingTop: "23%",
-                      color: "white",
-                      textShadow: "2px 2px 5px red"
-                    }}
-                  >
-                    <strong>Empowering Communities. Changing Lives.</strong>
-                  </h1>
-                  <h3
-                    className="font-white"
-                    style={{ textShadow: "2px 2px #ff0000" }}
-                  >
-                    From Experiment. To Experience. To Exposure.
-                  </h3>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="carousel-item">
-            <Link to="/centennialIntro">
-              <div className="top-slide d-none d-lg-block">
-                <img src={banner100} alt="100th" width="100%" height="100%" />
-              </div>
-              <div
-                className="top-slide d-lg-none"
-                style={{
-                  background: `url(${banner100}) no-repeat top center/cover`
-                }}
-              />
-            </Link>
-          </div>
-          <div className="carousel-item">
-            <Link to="/program">
-              <div
-                className="top-slide"
-                style={{
-                  background: `url(${digiul}) no-repeat top center/cover`
-                }}
-              />
-            </Link>
-          </div>
-          <div className="carousel-item">
-            <Link to="/program">
-              <div
-                className="top-slide"
-                style={{
-                  background: `url(${msimbo}) no-repeat top center/cover`
-                }}
-              />
-            </Link>
-          </div>
-          <div className="carousel-item">
-            <Link to="/marathon">
-              <div
-                className="top-slide"
-                style={{
-                  background: `url(${marathonBanner}) no-repeat top center/cover`
-                }}
-              />
-            </Link>
-          </div>
+          <TopSlide
+            img={ulemBuilding}
+            to="/about"
+            active="active"
+            h1=" Empowering Communities. Changing Lives."
+            h3="From Experiment. To Experience. To Exposure."
+            x="center"
+          />
+          <TopSlide img={banner100} to="/program" x="left" />
+          <TopSlide img={digiul} to="/program" x="center" />
+          <TopSlide img={msimbo} to="/program" x="center" />
+          <TopSlide img={marathonBanner} to="/marathon" x="center" />
         </div>
         <a
           className="carousel-control-prev"
