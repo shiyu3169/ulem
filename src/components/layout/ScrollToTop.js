@@ -1,10 +1,25 @@
 import { Component } from "react";
 import { withRouter } from "react-router-dom";
-
+import $ from "jquery";
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      window.scrollTo(0, 0);
+    if (
+      this.props.location !== prevProps.location &&
+      this.props.location.pathname === "/centennial"
+    ) {
+      $("html, body").animate(
+        { scrollTop: $(document).height() - $(window).height() },
+        1000,
+        function() {
+          $(this).animate({ scrollTop: 0 }, 1000);
+        }
+      );
+    } else if (this.props.location !== prevProps.location) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
     }
   }
 

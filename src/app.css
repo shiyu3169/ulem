@@ -333,10 +333,6 @@ td {
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .jumbotron-p {
   font-weight: 700;
 }

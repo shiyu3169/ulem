@@ -6,7 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - update the config file in AWS for security reason(no content change) 
 - HTTPS redirect middleware (redirect users to use HTTPS)
 - Seperate dev database and production database (no content change)
-- Upgrade Instagram Widget
+- Upgrade Instagram Widget (Enable HTTPS)
+- fix class warning and structure warning in centennial intro (no content change)
+- Scroll effect for milestone
 ## Available Scripts
 
 In the project directory, you can run:

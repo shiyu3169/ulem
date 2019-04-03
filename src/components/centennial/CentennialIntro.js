@@ -45,14 +45,14 @@ export default class CentennialIntro extends Component {
             we’ve accomplished together.
           </p>
         </section>
-        <section class="mb-5">
+        <section className="mb-5">
           <h3>CELEBRATE WITH US</h3>
           <p>
             We have a lot of reasons to celebrate this year!{" "}
             <Link to="/events">Click here</Link> to see our all our events.
           </p>
         </section>
-        <section class="mb-5">
+        <section className="mb-5">
           <h1 className="text-center ulem-text-primary">
             100th Centennial Honorary Committee
           </h1>
@@ -189,7 +189,7 @@ export default class CentennialIntro extends Component {
                 </tr>
                 <tr>
                   <td>Deloris Pettis</td>
-                  <table>Risk & Audit Consultant</table>
+                  <td>Risk & Audit Consultant</td>
                 </tr>
                 <tr>
                   <td>Marian Green-Robinson</td>
