@@ -31,7 +31,7 @@ export default class Home extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-7 mb-2">
-              {events && <EventSlides events={events} />}
+              <EventSlides events={events} />
             </div>
             <div className="col-1 d-md-none" />
             <div className="col-md-5 col-10">
