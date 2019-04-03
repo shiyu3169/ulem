@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 - Showing a button when hover over the slides
+- Update structure of code (no content change)
 
 ## Available Scripts
 
