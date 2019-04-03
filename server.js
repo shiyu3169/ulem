@@ -5,21 +5,21 @@ const bodyParser = require("body-parser");
 const app = express();
 
 //HTTPS redirect middleware
-// function ensureSecure(req, res, next) {
-//   //Heroku stores the origin protocol in a header variable. The app itself is isolated within the dyno and all request objects have an HTTP protocol.
-//   if (req.get("X-Forwarded-Proto") == "https" || req.hostname == "localhost") {
-//     // Don't do anything if the req is comming from https or localhost
-//     next();
-//   } else if (
-//     req.get("X-Forwarded-Proto") != "https" &&
-//     req.get("X-Forwarded-Port") != "443"
-//   ) {
-//     //Redirect if not HTTP with original request URL
-//     res.redirect("https://" + req.hostname + req.url);
-//   }
-// }
+function ensureSecure(req, res, next) {
+  //Heroku stores the origin protocol in a header variable. The app itself is isolated within the dyno and all request objects have an HTTP protocol.
+  if (req.get("X-Forwarded-Proto") == "https" || req.hostname == "localhost") {
+    // Don't do anything if the req is comming from https or localhost
+    next();
+  } else if (
+    req.get("X-Forwarded-Proto") != "https" &&
+    req.get("X-Forwarded-Port") != "443"
+  ) {
+    //Redirect if not HTTP with original request URL
+    res.redirect("https://" + req.hostname + req.url);
+  }
+}
 
-// app.use("/", ensureSecure);
+app.use("/", ensureSecure);
 
 const cookieParser = require("cookie-parser");
 const session = require("cookie-session");
@@ -68,25 +68,6 @@ app.use(function(req, res, next) {
 
 const port = process.env.PORT || "3100";
 app.set("port", port);
-
-// HTTPS redirect middleware
-function ensureSecure(req, res, next) {
-  //Heroku stores the origin protocol in a header variable. The app itself is isolated within the dyno and all request objects have an HTTP protocol.
-  if (req.get("X-Forwarded-Proto") == "https" || req.hostname == "localhost") {
-    // Don't do anything if the req is comming from https or localhost
-    console.log(1);
-    next();
-  } else if (
-    req.get("X-Forwarded-Proto") != "https" &&
-    req.get("X-Forwarded-Port") != "443"
-  ) {
-    console.log(2);
-    //Redirect if not HTTP with original request URL
-    res.redirect("https://" + req.hostname + req.url);
-  }
-}
-
-app.use("/", ensureSecure);
 
 // Create HTTP server
 const server = http.createServer(app);
