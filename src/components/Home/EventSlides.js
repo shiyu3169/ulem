@@ -21,7 +21,7 @@ export default class EventSlides extends Component {
       <React.Fragment>
         <Link to="/events" className="text-decoration">
           <h3 className="btn-outline-danger rounded p-2 cursor">
-            New Events
+            Recent Events
             <i className="fas fa-calendar-alt float-right" />
           </h3>
         </Link>

@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 - compress large images to improve performance
+- fix the problem of event slides when there is no upcoming events
 
 ## Available Scripts
 
