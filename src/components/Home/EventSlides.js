@@ -21,7 +21,7 @@ export default class EventSlides extends Component {
       <React.Fragment>
         <Link to="/events" className="text-decoration">
           <h3 className="btn-outline-danger rounded p-2 cursor">
-            Upcoming Events
+            New Events
             <i className="fas fa-calendar-alt float-right" />
           </h3>
         </Link>
@@ -117,13 +117,15 @@ export default class EventSlides extends Component {
             </div>
           : <img className="center" src={loading} alt="loading" />}
         <br />
-        <Link
-          className="btn btn-block btn-lg ulem-btn-primary link-white"
-          id="apply-button"
-          to="/events"
-        >
-          Event Calendar
-        </Link>
+        <div className="text-center">
+          <Link
+            className="btn btn-lg ulem-btn-primary link-white"
+            id="apply-button"
+            to="/events"
+          >
+            Event Calendar
+          </Link>
+        </div>
       </React.Fragment>
     );
   }

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import msimbo from "../../img/MSIMBOFlyer.png";
 import digiul from "../../img/DigiUL.png";
 import ulemBuilding from "../../img/ulemBuilding.JPG";

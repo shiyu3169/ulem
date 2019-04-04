@@ -18,7 +18,8 @@ const today = new Date();
 today.setHours(0, 0, 0, 0);
 
 EventModel.findTopEvents = () =>
-  EventModel.find({ img: { $exists: true }, start: { $gte: today } })
+  EventModel.find({ img: { $exists: true } })
+    .sort({ start: -1 })
     .limit(3)
     .populate("img")
     .exec();
