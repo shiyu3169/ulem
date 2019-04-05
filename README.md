@@ -3,8 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- compress large images to improve performance
-- fix the problem of event slides when there is no upcoming events
+- fix the centennial slide size
 
 ## Available Scripts
 
