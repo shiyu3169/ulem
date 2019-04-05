@@ -17,10 +17,12 @@ module.exports = function(app) {
   });
 
   // Get Top Events
-  app.get("/api/events/top", (req, res) => {
-    eventModel.findTopEvents().then(data => {
-      res.json(data);
-    });
+  app.get("/api/events/top", async (req, res) => {
+    let data = await eventModel.findTopEvents();
+    if (!data.length) {
+      data = await eventModel.findNewEvents();
+    }
+    res.json(data);
   });
 
   // Count Number of Events

@@ -17,9 +17,18 @@ EventModel.findAllEvents = () => EventModel.find().sort({ start: -1 });
 const today = new Date();
 today.setHours(0, 0, 0, 0);
 
-EventModel.findTopEvents = () =>
-  EventModel.find({ img: { $exists: true } })
+// Looking for newest 3 events
+EventModel.findNewEvents = () => {
+  return EventModel.find({ img: { $exists: true } })
     .sort({ start: -1 })
+    .limit(3)
+    .populate("img")
+    .exec();
+};
+
+// Looking for 3 upcoming events
+EventModel.findTopEvents = () =>
+  EventModel.find({ img: { $exists: true }, start: { $gte: today } })
     .limit(3)
     .populate("img")
     .exec();
