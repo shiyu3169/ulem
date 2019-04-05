@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- fix the centennial slide size
+- fixed a potential error of event slides (no content change)
+
 
 ## Available Scripts
 
