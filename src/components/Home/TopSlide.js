@@ -9,8 +9,8 @@ export default class TopSlide extends Component {
           <div
             className="top-slide"
             style={{
-              background: `url(${this.props.img}) no-repeat top ${this.props
-                .x}/cover`
+              background: `url(${this.props.img}) no-repeat ${this.props
+                .y} ${this.props.x}/cover`
             }}
           >
             <div className="text-center">

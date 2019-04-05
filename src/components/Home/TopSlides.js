@@ -3,7 +3,7 @@ import msimbo from "../../img/MSIMBOFlyer.png";
 import digiul from "../../img/DigiUL.png";
 import ulemBuilding from "../../img/ulemBuilding.JPG";
 import marathonBanner from "../../img/ULEM-MarathonBanner.png";
-import banner100 from "../../img/Banner100.jpg";
+import banner100 from "../../img/Banner100.png";
 import $ from "jquery";
 import "popper.js";
 import "bootstrap";
@@ -42,11 +42,12 @@ export default class TopSlides extends Component {
             h1=" Empowering Communities. Changing Lives."
             h3="From Experiment. To Experience. To Exposure."
             x="center"
+            y="top"
           />
-          <TopSlide img={banner100} to="/program" x="left" />
-          <TopSlide img={digiul} to="/program" x="center" />
-          <TopSlide img={msimbo} to="/program" x="center" />
-          <TopSlide img={marathonBanner} to="/marathon" x="center" />
+          <TopSlide img={banner100} to="/program" x="center" y="center" />
+          <TopSlide img={digiul} to="/program" x="center" y="top" />
+          <TopSlide img={msimbo} to="/program" x="center" y="top" />
+          <TopSlide img={marathonBanner} to="/marathon" x="center" y="center" />
         </div>
         <a
           className="carousel-control-prev"
