@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- fixed a potential error of event slides (no content change)
-
+- Fixed a potential error of event slides (no content change)
+- Added google analytics to tracking number of users (no content change)
 
 ## Available Scripts
 
