@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import jobcase from "../../img/jobcase.png";
 
 export default class Services extends Component {
   render() {
@@ -30,6 +31,36 @@ export default class Services extends Component {
           </li>
         </ul>
         <p>In general, the ERC serves 600+ people annually.</p>
+        <hr />
+        <h4>Online Local Jobs Portal</h4>
+        <p>ULEM provides a resource for:</p>
+        <ul>
+          <li>
+            <strong>- job seekers</strong> to find local jobs, to apply online,
+            & get answers to work questions
+          </li>
+          <li>
+            <strong>- residents</strong> to share help, support, and tips as a
+            community
+          </li>
+          <li>
+            <strong>- employers</strong> to connect with local prospective
+            applicants and to build awareness of their jobs
+          </li>
+        </ul>
+        <p>
+          Follow this link to search jobs or browse the community, to ask a
+          question, and more:
+        </p>
+        <p>
+          <a target="_blank" href="www.jobcase.com/ulem">
+            www.jobcase.com/ulem
+          </a>
+        </p>
+        <p>
+          This portal is provided by a generous donation from Jobcase{" "}
+          <img src={jobcase} height="40px" alt="jobcse" />
+        </p>
         <hr />
         <h4>Job Placement</h4>
         <p>
