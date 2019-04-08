@@ -95,14 +95,26 @@ export default class Navbar extends Component {
                 >
                   Support
                 </span>
-                <div className="dropdown-menu" onClick={this.collapse}>
-                  <Link className="nav-link text-dark" to="/membership">
+                <div className="dropdown-menu">
+                  <Link
+                    className="nav-link text-dark"
+                    to="/membership"
+                    onClick={this.collapse}
+                  >
                     Become A Member
                   </Link>
-                  <Link className="nav-link text-dark" to="/sponsor">
+                  <Link
+                    className="nav-link text-dark"
+                    to="/sponsor"
+                    onClick={this.collapse}
+                  >
                     Sponsor
                   </Link>
-                  <Link className="nav-link text-dark" to="/auxiliaries">
+                  <Link
+                    className="nav-link text-dark"
+                    to="/auxiliaries"
+                    onClick={this.collapse}
+                  >
                     Our Auxiliaries
                   </Link>
                   <span
@@ -115,10 +127,18 @@ export default class Navbar extends Component {
                     Donate
                   </span>
                   <div className="dropdown-menu">
-                    <Link className="nav-link text-dark" to="/howToDonate">
+                    <Link
+                      className="nav-link text-dark"
+                      to="/howToDonate"
+                      onClick={this.collapse}
+                    >
                       How to Donate
                     </Link>
-                    <Link className="nav-link text-dark" to="/donate">
+                    <Link
+                      className="nav-link text-dark"
+                      to="/donate"
+                      onClick={this.collapse}
+                    >
                       Donate Now
                     </Link>
                   </div>
@@ -152,6 +172,43 @@ export default class Navbar extends Component {
                   >
                     Centennial Membership
                   </Link>
+                </div>
+              </li>
+              <li className="nav-item dropdown">
+                <span
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Employment Opportunities
+                </span>
+                <div className="dropdown-menu" onClick={this.collapse}>
+                  <a
+                    className="nav-link text-dark"
+                    href="https://www.jobcase.com/ulem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Opportunities
+                  </a>
+                  <a
+                    className="nav-link text-dark"
+                    href="https://www.jobcase.com/ulem_signup?"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Jobseekers
+                  </a>
+                  <a
+                    className="nav-link text-dark"
+                    href="https://www.jobcase.com/ulem_featured_employer?"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Corporate Partners
+                  </a>
                 </div>
               </li>
             </ul>

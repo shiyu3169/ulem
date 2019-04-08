@@ -53,7 +53,11 @@ export default class Services extends Component {
           question, and more:
         </p>
         <p>
-          <a target="_blank" href="www.jobcase.com/ulem">
+          <a
+            target="_blank"
+            href="www.jobcase.com/ulem"
+            rel="noopener noreferrer"
+          >
             www.jobcase.com/ulem
           </a>
         </p>
