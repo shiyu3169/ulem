@@ -4,7 +4,7 @@ import digiul from "../../img/DigiUL.png";
 import ulemBuilding from "../../img/ulemBuilding.JPG";
 import marathonBanner from "../../img/ULEM-MarathonBanner.png";
 import banner100 from "../../img/Banner100.png";
-import jobBanner from "../../img/jobBanner.jpg";
+import jobBanner from "../../img/jobBanner.png";
 import $ from "jquery";
 import "popper.js";
 import "bootstrap";
