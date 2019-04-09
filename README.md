@@ -7,7 +7,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Added google analytics to tracking number of users (no content change)
 - Adding job portal to services
 - Fix the error of sub navbar in support which causes it to close when clicking on donate
-- 
+- Adding new navigation dropdown
+- Adding new top slides banner
+- Fix "From Experiment To Experience To Exposure"
 
 ## Available Scripts
 

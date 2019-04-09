@@ -4,6 +4,7 @@ import digiul from "../../img/DigiUL.png";
 import ulemBuilding from "../../img/ulemBuilding.JPG";
 import marathonBanner from "../../img/ULEM-MarathonBanner.png";
 import banner100 from "../../img/Banner100.png";
+import jobBanner from "../../img/jobBanner.jpg";
 import $ from "jquery";
 import "popper.js";
 import "bootstrap";
@@ -33,6 +34,7 @@ export default class TopSlides extends Component {
           <li data-target="#carouselExampleControls" data-slide-to="2" />
           <li data-target="#carouselExampleControls" data-slide-to="3" />
           <li data-target="#carouselExampleControls" data-slide-to="4" />
+          <li data-target="#carouselExampleControls" data-slide-to="5" />
         </ol>
         <div className="carousel-inner">
           <TopSlide
@@ -40,7 +42,7 @@ export default class TopSlides extends Component {
             to="/about"
             active="active"
             h1=" Empowering Communities. Changing Lives."
-            h3="From Experiment. To Experience. To Exposure."
+            h3="From Experiment To Experience To Exposure"
             x="center"
             y="top"
           />
@@ -48,6 +50,12 @@ export default class TopSlides extends Component {
           <TopSlide img={digiul} to="/program" x="center" y="top" />
           <TopSlide img={msimbo} to="/program" x="center" y="top" />
           <TopSlide img={marathonBanner} to="/marathon" x="center" y="center" />
+          <TopSlide
+            img={jobBanner}
+            href="https://www.jobcase.com/ulem"
+            x="center"
+            y="bottom"
+          />
         </div>
         <a
           className="carousel-control-prev"
