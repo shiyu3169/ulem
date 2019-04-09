@@ -3,13 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- Fixed a potential error of event slides (no content change)
-- Added google analytics to tracking number of users (no content change)
-- Adding job portal to services
-- Fix the error of sub navbar in support which causes it to close when clicking on donate
-- Adding new navigation dropdown
-- Adding new top slides banner
-- Fix "From Experiment To Experience To Exposure"
+- Corrections under "ULEM 100th Centennial Advisory Committee Membersl": Capitalize president, workforce.
+
 
 ## Available Scripts
 

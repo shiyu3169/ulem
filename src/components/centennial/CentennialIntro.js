@@ -257,7 +257,7 @@ export default class CentennialIntro extends Component {
               <li>Gary Carroway, Chair, Centennial Committee</li>
               <li>Scott Baker, President, SkyCom Couriers</li>
               <li>
-                David Casey, Vice president, workforce Strategies and Chief
+                David Casey, Vice President, Workforce Strategies and Chief
                 Diversity Officer, CVS
               </li>
               <li>
