@@ -191,14 +191,6 @@ export default class Navbar extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Opportunities
-                  </a>
-                  <a
-                    className="nav-link text-dark"
-                    href="https://www.jobcase.com/ulem"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
                     Jobseekers
                   </a>
                   <a

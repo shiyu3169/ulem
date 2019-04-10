@@ -3,9 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- On programs page change it from https://www.ulem.org/www.jobcase.com/ulem and change to www.jobcase.com/ulem
-- Jobseekers link ( https://www.jobcase.com/ulem_signup? ) to www.jobcase.com/ulem
-
+- Deleted “opportunities”
 
 ## Available Scripts
 
