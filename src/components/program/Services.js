@@ -55,7 +55,7 @@ export default class Services extends Component {
         <p>
           <a
             target="_blank"
-            href="www.jobcase.com/ulem"
+            href="https://www.jobcase.com/ulem"
             rel="noopener noreferrer"
           >
             www.jobcase.com/ulem
