@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Latest updates
-- Fix contact us potential error (no content change)
-- delete Jacalyn Shelton-Wallace and replace with Nadine Poindexter Riggs
+
+-- Tranfer donate from DonorPerfect to Square
 
 ## Available Scripts
 
