@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
--- Tranfer donate from DonorPerfect to Square
+-- Update 1929, 1939 and 1969 newspaper images
 
 ## Available Scripts
 
