@@ -1,52 +1,53 @@
-import React, { Component } from "react";
-import ulem100 from "../../img/ulem100.png";
-import united_way from "../../img/united_way.jpg";
-import { HashLink as Link } from "react-router-hash-link";
+import React, { Component } from 'react';
+import ulem100 from '../../img/ulem100.png';
+import united_way from '../../img/united_way.jpg';
+import { HashLink as Link } from 'react-router-hash-link';
+import tsn from '../../img/tsn.jpg';
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="container-fluid ulem-bg-primary mt-5 pt-4">
-        <div className="row">
-          <div className="col-md-2 text-center">
-            <Link to="/centennial">
+      <footer className='container-fluid ulem-bg-primary mt-5 pt-4'>
+        <div className='row'>
+          <div className='col-lg-2 text-center mt-5 m-lg-0'>
+            <Link to='/centennial'>
               <img
                 src={ulem100}
-                className="img-fluid"
-                id="footer-img-height"
-                alt=""
+                className='img-fluid'
+                id='footer-img-height'
+                alt=''
               />
             </Link>
           </div>
-          <div className="col-md-1" />
-          <div className="col-md-2">
-            <h5 className="font-weight-bold text-uppercase mb-4 font-white">
+          <div className='col-lg-1' />
+          <div className='col-lg-2 text-center text-lg-left my-5 m-lg-0'>
+            <h5 className='font-weight-bold text-uppercase mb-4 font-white '>
               About
             </h5>
-            <ul className="list-unstyled">
+            <ul className='list-unstyled'>
               <li>
                 <p>
-                  <Link className="font-white" to="/about">
+                  <Link className='font-white' to='/about'>
                     Missions & Overview
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className="font-white" to="/centennial">
+                  <Link className='font-white' to='/centennial'>
                     Our Milestones
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className="font-white" to="/leadership">
+                  <Link className='font-white' to='/leadership'>
                     Leadership
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className="font-white" to="/board">
+                  <Link className='font-white' to='/board'>
                     Board of Directors
                   </Link>
                 </p>
@@ -54,93 +55,117 @@ export default class Footer extends Component {
             </ul>
           </div>
 
-          <div className="col-md-2">
-            <h5 className="font-weight-bold text-uppercase mb-4 font-white">
+          <div className='col-lg-2 text-center text-lg-left mb-5 mb-lg-0'>
+            <h5 className='font-weight-bold text-uppercase mb-4 font-white'>
               Address
             </h5>
-            <ul className="list-unstyled">
+            <ul className='list-unstyled'>
               <li>
-                <p className="font-white">
-                  <i className="fas fa-home mr-3" /> 88 Warren Street, Roxbury,
+                <p className='font-white'>
+                  <i className='fas fa-home mr-3' /> 88 Warren Street, Roxbury,
                   MA 02119
                 </p>
               </li>
               <li>
-                <p className="font-white">
-                  <i className="fas fa-envelope mr-3" /> info@ulem.org
+                <p className='font-white'>
+                  <i className='fas fa-envelope mr-3' /> info@ulem.org
                 </p>
               </li>
               <li>
-                <p className="font-white">
-                  <i className="fas fa-phone mr-3" /> 617 442 4519
+                <p className='font-white'>
+                  <i className='fas fa-phone mr-3' /> 617 442 4519
                 </p>
               </li>
               <li>
-                <p className="font-white">
-                  <i className="fas fa-print mr-3" /> 617 442 0562
+                <p className='font-white'>
+                  <i className='fas fa-print mr-3' /> 617 442 0562
                 </p>
               </li>
             </ul>
           </div>
-          <div className="col-md-3 text-center">
-            <img
-              src={united_way}
-              className="img-fluid py-5"
-              id="footer-img-height"
-              alt="united way"
-            />
+          <div className='col-lg-3 text-center mb-5 mb-lg-0'>
+            <h5 className='font-weight-bold text-uppercase mb-4 font-white'>
+              Community Sponsor
+            </h5>
+            <div className='logos'>
+              <a
+                target='_blank'
+                href='https://www.unitedway.org/local/united-states/massachusetts'
+                rel='noopener noreferrer'
+              >
+                <img
+                  src={united_way}
+                  className='img-fluid'
+                  id='footer-img-height'
+                  alt='united way'
+                />
+              </a>
+
+              <a
+                target='_blank'
+                href='https://www.timothysmithnetwork.org/'
+                rel='noopener noreferrer'
+              >
+                <img
+                  src={tsn}
+                  className='img-fluid'
+                  id='footer-img-height'
+                  alt='united way'
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-md-2 text-center">
-            <h5 className="font-weight-bold text-uppercase mb-4 font-white d-none d-md-block">
+          <div className='col-lg-2 text-center'>
+            <h5 className='font-weight-bold text-uppercase mb-4 font-white'>
               Follow Us
             </h5>
-            <div className="row">
-              <div className="col-md-6 text-center mb-5">
+            <div className='row'>
+              <div className='col-lg-6 text-center mb-5'>
                 <a
-                  href="https://www.facebook.com/theulem/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-white"
+                  href='https://www.facebook.com/theulem/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='font-white'
                 >
-                  <i className="fab fa-facebook fa-3x" />
+                  <i className='fab fa-facebook fa-3x' />
                 </a>
               </div>
-              <div className="col-md-6 text-center mb-5">
+              <div className='col-lg-6 text-center mb-5'>
                 <a
-                  href="https://twitter.com/theULEM"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-white"
+                  href='https://twitter.com/theULEM'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='font-white'
                 >
-                  <i className="fab fa-twitter-square fa-3x" />
+                  <i className='fab fa-twitter-square fa-3x' />
                 </a>
               </div>
             </div>
-            <div className="row">
-              <div className="col-md-6 text-center mb-5">
+            <div className='row'>
+              <div className='col-lg-6 text-center mb-5'>
                 <a
-                  href="https://www.linkedin.com/company/urban-league-of-eastern-massachusetts/about/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-white"
+                  href='https://www.linkedin.com/company/urban-league-of-eastern-massachusetts/about/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='font-white'
                 >
-                  <i className="fab fa-linkedin fa-3x" />
+                  <i className='fab fa-linkedin fa-3x' />
                 </a>
               </div>
-              <div className="col-md-6 text-center mb-5">
+              <div className='col-lg-6 text-center mb-5'>
                 <a
-                  href="https://www.instagram.com/theulem/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-white"
+                  href='https://www.instagram.com/theulem/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='font-white'
                 >
-                  <i className="fab fa-instagram fa-3x" />
+                  <i className='fab fa-instagram fa-3x' />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="text-center font-white">
+        <div className='text-center font-white'>
           &copy; 2019 Copyright: ULEM
         </div>
       </footer>

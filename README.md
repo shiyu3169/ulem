@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
--- Update 1929, 1939 and 1969 newspaper images
+- Add community sponsor section in footer
 
 ## Available Scripts
 

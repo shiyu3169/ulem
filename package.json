@@ -30,9 +30,8 @@
   "scripts": {
     "start": "node server.js",
     "build": "react-scripts build",
-    "test": "react-scripts start",
     "eject": "react-scripts eject",
-    "dev": "nodemon server.js",
+    "dev": "concurrently \"nodemon server.js\" \"react-scripts start\" ",
     "push": "react-scripts build & git add . & git commit -m build & git push"
   },
   "proxy": "http://localhost:3100",
@@ -46,6 +45,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "nodemon": "^1.19.0"
   }
 }

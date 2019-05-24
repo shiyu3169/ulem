@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
 /* Reset */
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 /* General */
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   color: #333;
 }
@@ -130,7 +130,7 @@ td {
 
 /* Membership */
 .card-number-lg {
-  font-size: 4.0em;
+  font-size: 4em;
 }
 
 .p-2 li {
@@ -183,7 +183,7 @@ td {
 
 /* Support */
 .fixed-ypn {
-  background: url("./img/YPN.JPG");
+  background: url('./img/YPN.JPG');
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: top center;
@@ -195,7 +195,7 @@ td {
 
 /* Program */
 .fixed-job {
-  background: url("./img/JobFair.jpg");
+  background: url('./img/JobFair.jpg');
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: top center;
@@ -206,7 +206,7 @@ td {
 }
 
 .fixed-training {
-  background: url("./img/Training.JPG");
+  background: url('./img/Training.JPG');
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: top center;
@@ -389,7 +389,7 @@ td {
 }
 
 .fixed-bg {
-  background: url("./img/msimbo_class.jpg");
+  background: url('./img/msimbo_class.jpg');
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -449,9 +449,18 @@ footer link:hover {
   color: black;
 }
 
+footer .logos a {
+  display: block;
+}
+
+footer .logos img {
+  height: 80px;
+  margin: 0.5rem;
+}
+
 section[id]:before {
   display: block;
-  content: " ";
+  content: ' ';
   margin-top: -75px;
   height: 75px;
   visibility: hidden;
@@ -509,7 +518,7 @@ section[id]:before {
   top: 0;
   bottom: 0;
   position: absolute;
-  content: " ";
+  content: ' ';
   width: 2px;
   background-color: #c40000;
   left: 50%;
