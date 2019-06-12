@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Add community sponsor section in footer
+- Replace downloaded form
 
 ## Available Scripts
 
