@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "bootstrap-select": "^1.13.5",
     "cookie-parser": "^1.4.3",
@@ -24,8 +24,10 @@
     "react-dom": "^16.8.0",
     "react-router-dom": "^4.3.1",
     "react-router-hash-link": "^1.2.1",
-    "react-scripts": "^2.1.8",
-    "react-twitter-embed": "^2.0.4"
+    "react-scripts": "^3.0.1",
+    "react-square-payment-form": "^0.1.8",
+    "react-twitter-embed": "^2.0.4",
+    "square-connect": "^2.20190612.0"
   },
   "scripts": {
     "start": "node server.js",
