@@ -7,6 +7,7 @@ import SquarePaymentForm, {
   CreditCardSubmitButton
 } from 'react-square-payment-form';
 import 'react-square-payment-form/lib/default.css';
+import Axios from 'axios';
 
 export default class Payment extends Component {
   constructor(props) {
@@ -22,7 +23,8 @@ export default class Payment extends Component {
       return;
     }
     this.setState({ errorMessages: [] });
-    alert('nonce created: ' + nonce);
+    // alert('nonce created: ' + nonce);
+    Axios.post('/api/payments', { nonce: nonce });
   };
 
   render() {
