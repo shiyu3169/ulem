@@ -4,7 +4,8 @@ import SquarePaymentForm, {
   CreditCardExpirationDateInput,
   CreditCardPostalCodeInput,
   CreditCardCVVInput,
-  CreditCardSubmitButton
+  CreditCardSubmitButton,
+  MasterpassButton
 } from 'react-square-payment-form';
 import 'react-square-payment-form/lib/default.css';
 import Axios from 'axios';
@@ -14,6 +15,27 @@ export default class Payment extends Component {
     super(props);
     this.state = {
       errorMessages: []
+    };
+  }
+
+  createPaymentRequest() {
+    return {
+      requestShippingAddress: false,
+      requestBillingInfo: true,
+      currencyCode: 'USD',
+      countryCode: 'US',
+      total: {
+        label: 'MERCHANT NAME',
+        amount: '1',
+        pending: false
+      },
+      lineItems: [
+        {
+          label: 'Subtotal',
+          amount: '1',
+          pending: false
+        }
+      ]
     };
   }
 
@@ -28,13 +50,18 @@ export default class Payment extends Component {
   };
 
   render() {
+    const loadingView = <div className='sq-wallet-loading' />;
+    const unavailableView = (
+      <div className='sq-wallet-unavailable'>Unavailable</div>
+    );
     return (
-      <div>
+      <div className='container'>
         <h1>Payment Page</h1>
         <SquarePaymentForm
           applicationId='sandbox-sq0idp-OfqC0M7Zle4IW-veWzvVlQ'
           locationId='CBASEMKYs1pNXgCZcvdmuOUXd_MgAQ'
           cardNonceResponseReceived={this.cardNonceResponseReceived}
+          createPaymentRequest={this.createPaymentRequest}
         >
           <fieldset className='sq-fieldset'>
             <CreditCardNumberInput />
@@ -51,7 +78,12 @@ export default class Payment extends Component {
             </div>
           </fieldset>
 
-          <CreditCardSubmitButton>Pay $1.00</CreditCardSubmitButton>
+          <CreditCardSubmitButton>Pay with Credit Card</CreditCardSubmitButton>
+          <br />
+          <MasterpassButton
+            loadingView={loadingView}
+            unavailableView={unavailableView}
+          />
         </SquarePaymentForm>
         <div className='sq-error-message'>
           {this.state.errorMessages.map(errorMessage => (
