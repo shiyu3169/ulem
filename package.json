@@ -22,11 +22,15 @@
     "react": "^16.8.0",
     "react-calendar": "^2.18.1",
     "react-dom": "^16.8.0",
+    "react-redux": "^7.1.0",
     "react-router-dom": "^4.3.1",
     "react-router-hash-link": "^1.2.1",
     "react-scripts": "^3.0.1",
     "react-square-payment-form": "^0.1.8",
     "react-twitter-embed": "^2.0.4",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
     "square-connect": "^2.20190612.0"
   },
   "scripts": {
