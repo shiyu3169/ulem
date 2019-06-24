@@ -1,22 +1,22 @@
-import React, { Component } from "react";
-import InputGroup from "../layout/InputGroup";
-import Axios from "axios";
+import React, { Component } from 'react';
+import InputGroup from '../layout/InputGroup';
+import Axios from 'axios';
 export default class Contact extends Component {
   state = {
-    name: "",
-    email: "",
-    subject: "",
-    content: "",
+    name: '',
+    email: '',
+    subject: '',
+    content: '',
     error: false,
     success: false
   };
 
   componentDidMount() {
     this.setState({
-      name: "",
-      email: "",
-      subject: "",
-      content: "",
+      name: '',
+      email: '',
+      subject: '',
+      content: '',
       error: false,
       success: false
     });
@@ -33,12 +33,12 @@ export default class Contact extends Component {
     e.preventDefault();
     const { name, email, subject, content } = this.state;
     const contact = { name, email, subject, content };
-    Axios.post("/api/contact", contact).then(
+    Axios.post('/api/contact', contact).then(
       this.setState({
-        name: "",
-        email: "",
-        subject: "",
-        content: "",
+        name: '',
+        email: '',
+        subject: '',
+        content: '',
         error: false,
         success: true
       })
@@ -48,52 +48,54 @@ export default class Contact extends Component {
   render() {
     const { name, email, subject, content, error, success } = this.state;
     return (
-      <div className="container mt-5">
-        <h1 className="font-red mt-4">Contact Us</h1>
-        {error &&
-          <div className="alert alert-danger">
+      <div className='container mt-5'>
+        <h1 className='font-red mt-4'>Contact Us</h1>
+        {error && (
+          <div className='alert alert-danger'>
             Something goes wrong, please check your input and try it again.
-          </div>}
-        {success &&
-          <div className="alert alert-success">
+          </div>
+        )}
+        {success && (
+          <div className='alert alert-success'>
             Thank you for your email, we will contact you as soon as possible.
-          </div>}
+          </div>
+        )}
         <form onSubmit={this.onSubmit}>
           <InputGroup
-            label="Name"
-            name="name"
+            label='Name'
+            name='name'
             onChange={this.onChange}
             required
-            placeholder="enter your name..."
+            placeholder='enter your name...'
             value={name}
           />
           <InputGroup
-            label="Email"
-            type="email"
-            name="email"
-            placeholder="email that you want to be reached..."
+            label='Email'
+            type='email'
+            name='email'
+            placeholder='email that you want to be reached...'
             value={email}
             required
             onChange={this.onChange}
           />
           <InputGroup
-            label="Subject"
-            name="subject"
+            label='Subject'
+            name='subject'
             value={subject}
             required
             onChange={this.onChange}
           />
           <InputGroup
-            label="Content"
-            rows="5"
-            name="content"
+            label='Content'
+            rows='5'
+            name='content'
             value={content}
             required
             onChange={this.onChange}
           />
           <button
-            type="submit"
-            className="btn btn-outline-danger btn-lg float-right"
+            type='submit'
+            className='btn btn-outline-danger btn-lg float-right'
           >
             Send
           </button>

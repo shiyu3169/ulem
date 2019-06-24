@@ -1,12 +1,14 @@
-import React, { Component } from "react";
-import Axios from "axios";
-import { Redirect } from "react-router-dom";
-import AdminMenu from "./AdminMenu";
-import Event from "./Event";
+import React, { Component } from 'react';
+import Axios from 'axios';
+import { Redirect } from 'react-router-dom';
+import AdminMenu from './AdminMenu';
+import Event from './Event';
+import { connect } from 'react-redux';
+import { loggedIn } from '../../actions/userActions';
 
-export default class Admin extends Component {
+class Admin extends Component {
   state = {
-    user: "",
+    user: '',
     showEvents: true,
     showNews: false
   };
@@ -18,31 +20,25 @@ export default class Admin extends Component {
   };
 
   componentDidMount() {
-    this.loggedIn();
+    this.props.loggedIn();
   }
-
-  loggedIn = async () => {
-    const res = await Axios.post("/api/loggedIn");
-    this.setState({
-      user: res.data
-    });
-  };
 
   render() {
     return (
       <React.Fragment>
-        {(this.state.user === 0 || this.state.user.admin === false) && (
-          <Redirect to="/login" />
-        )}
-        {this.state.user.admin === true && (
-          <div className="container-fluid">
-            <h1 className="font-red mt-4 text-center">Admin Panel</h1>
-            <div className="row">
-              <div className="col-md-2">
+        {(this.props.currentUser === 0 ||
+          this.props.currentUser.admin === false) && <Redirect to='/login' />}
+        {this.props.currentUser.admin === true && (
+          <div className='container-fluid'>
+            <h1 className='font-red mt-4 text-center'>Admin Panel</h1>
+            <div className='row'>
+              <div className='col-md-2'>
                 <AdminMenu changeBol={this.changeBol} />
               </div>
-              <div className="col-md-10">
-                {this.state.showEvents && <Event user={this.state.user} />}
+              <div className='col-md-10'>
+                {this.state.showEvents && (
+                  <Event user={this.props.currentUser} />
+                )}
               </div>
             </div>
           </div>
@@ -51,3 +47,12 @@ export default class Admin extends Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser
+});
+
+export default connect(
+  mapStateToProps,
+  { loggedIn }
+)(Admin);
