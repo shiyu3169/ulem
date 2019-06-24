@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Axios from 'axios';
+
 import { Redirect } from 'react-router-dom';
 import AdminMenu from './AdminMenu';
 import Event from './Event';
