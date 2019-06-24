@@ -1,6 +1,11 @@
 // Dependencies
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  withRouter
+} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 // CSS
@@ -57,8 +62,8 @@ class App extends Component {
               <Route exact path='/contact' component={Contact} />
               <Route exact path='/interest' component={Interest} />
               <Route exact path='/thank' component={Thank} />
-              <Route exact path='/login' component={Login} />
-              <Route exact path='/admin' component={Admin} />
+              <Route exact path='/login' component={withRouter(Login)} />
+              <Route exact path='/admin' component={withRouter(Admin)} />
               <Route exact path='/marathon' component={Marathon} />
               <Route exact path='/howToDonate' component={HowToDonate} />
               <Route
