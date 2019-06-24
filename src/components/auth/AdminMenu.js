@@ -1,16 +1,15 @@
 import React from 'react';
-import Axios from 'axios';
+import { connect } from 'react-redux';
+import { logout } from '../../actions/userActions';
 
-export default function AdminMenu({ changeBol }) {
+function AdminMenu(props) {
   const logout = () => {
-    Axios.post('/api/logout').then(() => {
-      this.props.history.push('/');
-    });
+    props.logout();
   };
 
   const onEvents = () => {
-    changeBol('showEvents', true);
-    changeBol('showNews', false);
+    props.changeBol('showEvents', true);
+    props.changeBol('showNews', false);
   };
 
   return (
@@ -28,3 +27,8 @@ export default function AdminMenu({ changeBol }) {
     </div>
   );
 }
+
+export default connect(
+  null,
+  { logout }
+)(AdminMenu);
