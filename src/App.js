@@ -1,8 +1,12 @@
+// Dependencies
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store';
+// CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
-
+// Components
 import Home from './components/Home/Home';
 import About from './components/about/About';
 import Navbar from './components/layout/Navbar';
@@ -33,39 +37,47 @@ import Payment from './components/layout/Payment';
 class App extends Component {
   render() {
     return (
-      <Router>
-        <ScrollToTop>
-          <Navbar />
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/leadership' component={Leadership} />
-          <Route exact path='/board' component={Board} />
-          <Route exact path='/staff' component={Staff} />
-          <Route exact path='/program' component={Program} />
-          <Route exact path='/events' component={Events} />
-          <Route exact path='/donate' component={Donate} />
-          <Route exact path='/sponsor' component={Sponsor} />
-          <Route exact path='/impact' component={Impact} />
-          <Route exact path='/auxiliaries' component={Auxiliaries} />
-          <Route exact path='/centennial' component={Centennial} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path='/interest' component={Interest} />
-          <Route exact path='/thank' component={Thank} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/admin' component={Admin} />
-          <Route exact path='/marathon' component={Marathon} />
-          <Route exact path='/howToDonate' component={HowToDonate} />
-          <Route exact path='/centennialIntro' component={CentennialIntro} />
-          <Route exact path='/membership' component={Membership} />
-          <Route exact path='/payment' component={Payment} />
-          <Route
-            exact
-            path='/centennialMembership'
-            component={CentennialMembership}
-          />
-          <Footer />
-        </ScrollToTop>
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <ScrollToTop>
+            <Navbar />
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/leadership' component={Leadership} />
+              <Route exact path='/board' component={Board} />
+              <Route exact path='/staff' component={Staff} />
+              <Route exact path='/program' component={Program} />
+              <Route exact path='/events' component={Events} />
+              <Route exact path='/donate' component={Donate} />
+              <Route exact path='/sponsor' component={Sponsor} />
+              <Route exact path='/impact' component={Impact} />
+              <Route exact path='/auxiliaries' component={Auxiliaries} />
+              <Route exact path='/centennial' component={Centennial} />
+              <Route exact path='/contact' component={Contact} />
+              <Route exact path='/interest' component={Interest} />
+              <Route exact path='/thank' component={Thank} />
+              <Route exact path='/login' component={Login} />
+              <Route exact path='/admin' component={Admin} />
+              <Route exact path='/marathon' component={Marathon} />
+              <Route exact path='/howToDonate' component={HowToDonate} />
+              <Route
+                exact
+                path='/centennialIntro'
+                component={CentennialIntro}
+              />
+              <Route exact path='/membership' component={Membership} />
+              <Route exact path='/payment' component={Payment} />
+              <Route
+                exact
+                path='/centennialMembership'
+                component={CentennialMembership}
+              />
+            </Switch>
+            <Footer />
+          </ScrollToTop>
+        </Router>
+      </Provider>
     );
   }
 }
