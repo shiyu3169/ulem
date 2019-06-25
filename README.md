@@ -4,7 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Replace downloaded form
+- Add Redux for state management
+- Encrypt password
+- Add login button
+- add payment page at "/payment" (testing)
 
 ## Available Scripts
 

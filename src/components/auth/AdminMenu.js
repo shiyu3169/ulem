@@ -9,7 +9,6 @@ function AdminMenu(props) {
 
   const onEvents = () => {
     props.changeBol('showEvents', true);
-    props.changeBol('showNews', false);
   };
 
   return (

@@ -9,8 +9,7 @@ import { loggedIn } from '../../actions/userActions';
 class Admin extends Component {
   state = {
     user: '',
-    showEvents: true,
-    showNews: false
+    showEvents: true
   };
 
   changeBol = (state, bol) => {
@@ -25,7 +24,7 @@ class Admin extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         {(this.props.currentUser === 0 ||
           this.props.currentUser.admin === false) && <Redirect to='/login' />}
         {this.props.currentUser.admin === true && (
@@ -43,7 +42,7 @@ class Admin extends Component {
             </div>
           </div>
         )}
-      </React.Fragment>
+      </>
     );
   }
 }
