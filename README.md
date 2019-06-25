@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Encrypt password
 - Add login button
 - add payment page at "/payment" (testing)
+- rewrite event image upload with jsx form
 
 ## Available Scripts
 

@@ -1,21 +1,28 @@
-import React, { Component } from "react";
-import InputGroup from "../layout/InputGroup";
-import Axios from "axios";
+import React, { Component } from 'react';
+import InputGroup from '../layout/InputGroup';
+import Axios from 'axios';
 
 export default class EventNew extends Component {
   state = {
     noEndTime: false,
-    title: "",
-    start: "",
-    end: "",
-    venue: "",
-    address: "",
-    img: ""
+    title: '',
+    start: '',
+    end: '',
+    venue: '',
+    address: '',
+    img: ''
   };
 
   onChange = e => {
     this.setState({
       [e.target.name]: e.target.value
+    });
+  };
+
+  onUpload = e => {
+    // console.log(e.target.files[0]);
+    this.setState({
+      img: e.target.files[0]
     });
   };
 
@@ -26,34 +33,46 @@ export default class EventNew extends Component {
     const event = {
       title,
       start: new Date(start),
-      end: end ? new Date(end) : "",
+      end: end ? new Date(end) : '',
       venue,
       address,
       updatedBy
     };
     if (event.noEndTime) {
-      event.end = "";
+      event.end = '';
     }
-    await this.createEvent(event);
+    const res = await this.createEvent(event);
+    await this.uploadFile(res.data._id);
     await this.setState({
       noEndTime: false,
-      title: "",
-      start: "",
-      end: "",
-      venue: "",
-      address: ""
+      title: '',
+      start: '',
+      end: '',
+      venue: '',
+      address: '',
+      img: ''
     });
     this.props.showList();
+  };
+
+  uploadFile = async id => {
+    const formData = new FormData();
+    formData.append('file', this.state.img);
+    await Axios.post(`/api/img/upload?event=${id}`, formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    });
   };
 
   onCancel = () => {
     this.setState({
       noEndTime: false,
-      title: "",
-      start: "",
-      end: "",
-      venue: "",
-      address: ""
+      title: '',
+      start: '',
+      end: '',
+      venue: '',
+      address: ''
     });
     this.props.showList();
   };
@@ -65,82 +84,88 @@ export default class EventNew extends Component {
   };
 
   // Create new event
-  createEvent = event => {
-    Axios.post("/api/event", event);
+  createEvent = async event => {
+    const res = await Axios.post('/api/event', event);
+    return res;
   };
-
-  // upload new image
-  onUpload = () => {};
 
   render() {
     return (
       <React.Fragment>
         <h4>Adding New Event</h4>
-        <div className="container mt-4">
+        <div className='container mt-4'>
           <form onSubmit={this.onSubmit}>
             <InputGroup
-              label="Title"
-              placeholder="Enter title here"
+              label='Title'
+              placeholder='Enter title here'
               required
-              id="title"
-              name="title"
+              id='title'
+              name='title'
               value={this.state.title}
               onChange={this.onChange}
             />
-            <div className="input-group">
+            <div className='input-group'>
               <input
-                id="noEndTime"
-                name="noEndTime"
-                type="checkbox"
+                id='noEndTime'
+                name='noEndTime'
+                type='checkbox'
                 onChange={this.onCheckBox}
               />
-              <label htmlFor="noEndTime">No End Time</label>
+              <label htmlFor='noEndTime'>No End Time</label>
             </div>
             <InputGroup
-              label="Start date / time"
+              label='Start date / time'
               required
-              id="start"
-              name="start"
+              id='start'
+              name='start'
               onChange={this.onChange}
-              type="datetime-local"
+              type='datetime-local'
               value={this.state.start}
             />
             {!this.state.noEndTime && (
               <InputGroup
-                label="End date / time"
+                label='End date / time'
                 required
-                id="end"
+                id='end'
                 onChange={this.onChange}
-                name="end"
-                type="datetime-local"
+                name='end'
+                type='datetime-local'
                 value={this.state.end}
               />
             )}
             <InputGroup
-              label="Venue name"
-              id="venue"
-              name="venue"
+              label='Venue name'
+              id='venue'
+              name='venue'
               onChange={this.onChange}
               value={this.state.venue}
             />
             <InputGroup
-              label="Address"
-              id="address"
-              name="address"
+              label='Address'
+              id='address'
+              name='address'
               required
               value={this.state.address}
               onChange={this.onChange}
             />
+            <InputGroup
+              type='file'
+              label='Media File'
+              id='img'
+              name='img'
+              required
+              onChange={this.onUpload}
+            />
             <button
-              type="button"
+              type='button'
               onClick={this.onCancel}
-              className="btn btn-lg btn-outline-danger"
+              className='btn btn-lg btn-outline-danger'
             >
               Cancel
             </button>
             <button
-              type="submit"
-              className="btn btn-lg btn-outline-success float-right"
+              type='submit'
+              className='btn btn-lg btn-outline-success float-right'
             >
               Submit
             </button>
