@@ -37,6 +37,7 @@ export default class TopSlides extends Component {
           <li data-target="#carouselExampleControls" data-slide-to="3" />
           <li data-target="#carouselExampleControls" data-slide-to="4" />
           <li data-target="#carouselExampleControls" data-slide-to="5" />
+          <li data-target="#carouselExampleControls" data-slide-to="6" />
         </ol>
         <div className="carousel-inner">
           <TopSlide
@@ -48,8 +49,8 @@ export default class TopSlides extends Component {
             x="center"
             y="top"
           />
-          <TopSlide img={logoBanner} to="/sponsor" x="center" y="center" />
           <TopSlide img={banner100} to="/program" x="center" y="center" />
+          <TopSlide img={logoBanner} to="/sponsor" x="center" y="center" />
           <TopSlide img={digiul} to="/program" x="center" y="top" />
           <TopSlide img={msimbo} to="/program" x="center" y="top" />
           <TopSlide img={marathonBanner} to="/marathon" x="center" y="center" />

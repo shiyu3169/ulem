@@ -9,6 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Add login button
 - add payment page at "/payment" (testing)
 - rewrite event image upload with jsx form
+- add logo banner
 
 ## Available Scripts
 
