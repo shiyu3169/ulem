@@ -5,6 +5,8 @@ import ulemBuilding from "../../img/ulemBuilding.JPG";
 import marathonBanner from "../../img/ULEM-MarathonBanner.png";
 import banner100 from "../../img/Banner100.png";
 import jobBanner from "../../img/jobBanner.png";
+import logoBanner from "../../img/logoBanner.jpg";
+
 import $ from "jquery";
 import "popper.js";
 import "bootstrap";
@@ -46,6 +48,7 @@ export default class TopSlides extends Component {
             x="center"
             y="top"
           />
+          <TopSlide img={logoBanner} to="/sponsor" x="center" y="center" />
           <TopSlide img={banner100} to="/program" x="center" y="center" />
           <TopSlide img={digiul} to="/program" x="center" y="top" />
           <TopSlide img={msimbo} to="/program" x="center" y="top" />
