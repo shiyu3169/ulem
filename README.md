@@ -4,13 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Add Redux for state management
-- Encrypt password
-- Add login button
-- Add payment page at "/payment" (testing)
-- Rewrite event image upload with jsx form
-- Add logo banner
-- Add 2019 sponsor image
+- remove 2019 sponsor logos
 
 ## Available Scripts
 
