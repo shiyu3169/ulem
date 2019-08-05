@@ -50,7 +50,7 @@ export default class TopSlides extends Component {
             y="top"
           />
           <TopSlide img={banner100} to="/program" x="center" y="center" />
-          <TopSlide img={logoBanner} to="/sponsor" x="center" y="center" />
+          {/* <TopSlide img={logoBanner} to="/sponsor" x="center" y="center" /> */}
           <TopSlide img={digiul} to="/program" x="center" y="top" />
           <TopSlide img={msimbo} to="/program" x="center" y="top" />
           <TopSlide img={marathonBanner} to="/marathon" x="center" y="center" />

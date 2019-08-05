@@ -24,7 +24,7 @@ export default class Sponsor extends Component {
             interested in sponsoring a ULEM program or event, please send an
             email to development@ulem.org.
           </p>
-          <h4>
+          {/* <h4>
             2019 Equal Opportunity & Diversity Breakfast & Centennial Gala
             Sponsors
           </h4>
@@ -34,7 +34,7 @@ export default class Sponsor extends Component {
             alt="sponsor2019"
           />
           <h4>2019 Career Fair Sponsors</h4>
-          <img src={careerSponser2019} alt="2019 career fair sponsors" />
+          <img src={careerSponser2019} alt="2019 career fair sponsors" /> */}
           <h4>2018 Equal Opportunity & Diversity Breakfast</h4>
           <img src={sponsorPng} className="center img-fluid" alt="sponsor1" />
           <img src={sponsorPng2} className="center img-fluid" alt="sponsor2" />
