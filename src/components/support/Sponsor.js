@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import sponsorPng from "../../img/sponsor.png";
 import sponsorPng2 from "../../img/sponsor2.png";
 import sponsorPng3 from "../../img/sponsor3.png";
+import sponsor2019 from "../../img/ulem_sponsors_2019.jpg";
 import donor from "../../img/major-donors.png";
 import gala from "../../img/gala.png";
 import career from "../../img/career.png";
@@ -22,6 +23,15 @@ export default class Sponsor extends Component {
             interested in sponsoring a ULEM program or event, please send an
             email to development@ulem.org.
           </p>
+          <h4>
+            2019 Equal Opportunity & Diversity Breakfast & Centennial Gala
+            Sponsors
+          </h4>
+          <img
+            src={sponsor2019}
+            className="center img-fluid"
+            alt="sponsor2019"
+          />
           <h4>2018 Equal Opportunity & Diversity Breakfast</h4>
           <img src={sponsorPng} className="center img-fluid" alt="sponsor1" />
           <img src={sponsorPng2} className="center img-fluid" alt="sponsor2" />

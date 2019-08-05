@@ -5,7 +5,7 @@ import ulemBuilding from "../../img/ulemBuilding.JPG";
 import marathonBanner from "../../img/ULEM-MarathonBanner.png";
 import banner100 from "../../img/Banner100.png";
 import jobBanner from "../../img/jobBanner.png";
-import logoBanner from "../../img/logoBanner.jpg";
+import logoBanner from "../../img/sponser_banner.jpg";
 
 import $ from "jquery";
 import "popper.js";
