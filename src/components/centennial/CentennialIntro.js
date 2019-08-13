@@ -3,6 +3,7 @@ import centennial from '../../img/logo.PNG';
 import { Link } from 'react-router-dom';
 import centennialForm from '../../download/Centennial_SponsorshipOpportunities+ReplyForm-toFill.pdf';
 import calendar from '../../img/calendar.jpg';
+import southwest from '../../img/southwest.png';
 
 export default class CentennialIntro extends Component {
   render() {
@@ -13,9 +14,24 @@ export default class CentennialIntro extends Component {
           alt='centennial'
           className='img-fluid cursor center'
         />
+
         <div className='row'>
-          <div className='col-lg-2'>
-            <img src={calendar} alt='Calender' />
+          <div className='col-lg-2 text-center'>
+            <img
+              src={calendar}
+              alt='Calender'
+              className='img-fluid d-block m-auto'
+            />
+            <img
+              id='southwest-logo'
+              src={southwest}
+              alt='Southwest'
+              className='img-fluid d-block m-auto py-5 px-3'
+            />
+
+            <h4 className='text-center'>
+              Official Airline for Urban League of Eastern MA
+            </h4>
           </div>
           <div className='col-lg-1' />
           <div className='col-lg-7'>

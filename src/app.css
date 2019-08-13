@@ -155,6 +155,10 @@ td {
   min-height: 400px;
 }
 
+#southwest-logo {
+  min-width: 1in !important;
+}
+
 /* Event */
 
 .strong {
