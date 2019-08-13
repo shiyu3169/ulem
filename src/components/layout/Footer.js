@@ -8,7 +8,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <div className='ulem-bg-primary' id='footer-line' />
+        <div className='ulem-bg-primary mt-5' id='footer-line' />
         <div className='container-fluid'>
           <div className='row mt-4'>
             <div className='col-lg-2 text-center mt-5 m-lg-0'>
@@ -108,7 +108,7 @@ export default class Footer extends Component {
                     <img src={tsn} className='img-fluid' alt='TSN' />
                   </a>
                 </div>
-                <h5 className='font-weight-bold text-uppercase my-4 '>
+                <h5 className='font-weight-bold text-uppercase mt-4 '>
                   Official Airline
                 </h5>
                 <a
@@ -118,7 +118,7 @@ export default class Footer extends Component {
                 >
                   <img
                     src={southwest}
-                    className='img-fluid px-3 pb-3'
+                    className='img-fluid p-3 mb-3'
                     alt='Southwest'
                   />
                 </a>
@@ -171,7 +171,9 @@ export default class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className='text-center'>&copy; 2019 Copyright: ULEM</div>
+        <div className='text-center ulem-bg-primary'>
+          &copy; 2019 Copyright: ULEM
+        </div>
       </footer>
     );
   }
