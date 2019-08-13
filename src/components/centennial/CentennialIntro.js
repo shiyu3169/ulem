@@ -29,9 +29,9 @@ export default class CentennialIntro extends Component {
               className='img-fluid d-block m-auto py-5 px-3'
             />
 
-            <h4 className='text-center'>
+            <h5 className='text-center'>
               Official Airline for Urban League of Eastern MA
-            </h4>
+            </h5>
           </div>
           <div className='col-lg-7'>
             <h1 className='ulem-text-primary my-5 text-center'>
