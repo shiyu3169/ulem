@@ -7,14 +7,14 @@ import tsn from '../../img/tsn.jpg';
 export default class Footer extends Component {
   render() {
     return (
-      <footer className='container-fluid  mt-5 pt-4'>
+      <footer className='container-fluid  '>
         <div className='ulem-bg-primary' id='footer-line' />
-        <div className='row'>
+        <div className='row mt-4'>
           <div className='col-lg-2 text-center mt-5 m-lg-0'>
             <Link to='/centennial'>
               <img
                 src={ulem100}
-                className='img-fluid mt-4'
+                className='img-fluid p-4'
                 id='footer-img-height'
                 alt=''
               />
@@ -22,9 +22,7 @@ export default class Footer extends Component {
           </div>
           <div className='col-lg-1' />
           <div className='col-lg-2 text-center text-lg-left my-5 m-lg-0'>
-            <h5 className='font-weight-bold text-uppercase mb-4 font-white '>
-              About
-            </h5>
+            <h5 className='font-weight-bold text-uppercase my-4  '>About</h5>
             <ul className='list-unstyled'>
               <li>
                 <p>
@@ -58,9 +56,7 @@ export default class Footer extends Component {
           </div>
 
           <div className='col-lg-2 text-center text-lg-left mb-5 mb-lg-0'>
-            <h5 className='font-weight-bold text-uppercase mb-4 font-white'>
-              Address
-            </h5>
+            <h5 className='font-weight-bold text-uppercase my-4 '>Address</h5>
             <ul className='list-unstyled'>
               <li>
                 <p>
@@ -119,7 +115,7 @@ export default class Footer extends Component {
             </div>
           </div>
           <div className='col-lg-2 text-center'>
-            <h5 className='font-weight-bold text-uppercase my-5'>Follow Us</h5>
+            <h5 className='font-weight-bold text-uppercase my-4'>Follow Us</h5>
             <div className='row'>
               <div className='col-lg-6 text-center mb-5'>
                 <a
