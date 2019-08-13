@@ -98,9 +98,7 @@ export default class CentennialIntro extends Component {
                   <li>
                     Honorable Maura T. Healey, Massachusetts Attorney General
                   </li>
-                  <li>
-                    Honorable Elizabeth Warren, Massachusetts U.S. Senator
-                  </li>
+                  <li>Elizabeth Warren, Massachusetts U.S. Senator</li>
                   <li>
                     Honorable Katherine Clark, Massachusetts, U.S. Congresswoman
                   </li>
