@@ -82,7 +82,7 @@ export default class Footer extends Component {
             </ul>
           </div>
           <div className='col-lg-3 text-center mb-5 mb-lg-0'>
-            <h5 className='font-weight-bold text-uppercase mb-4 font-white'>
+            <h5 className='font-weight-bold text-uppercase my-4 '>
               Community Sponsor
             </h5>
             <div className='logos'>
