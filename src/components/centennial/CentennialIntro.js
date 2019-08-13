@@ -107,7 +107,7 @@ export default class CentennialIntro extends Component {
                   </li>
                   <li>Honorable Nick Collins, Massachusetts State Senator</li>
                   <li>
-                    Honorable, Carolos Gonzalez, Massachusetts State
+                    Honorable, Carlos Gonzalez, Massachusetts State
                     Representative & Chairman of the Black & Latino Caucus
                   </li>
                   <li>

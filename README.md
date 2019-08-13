@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- remove 2019 sponsor logos
+- Updated packages version
+- Removed "honorable" from centennial page
+- Fixed typo in Carlos
 
 ## Available Scripts
 
