@@ -93,16 +93,14 @@ export default class CentennialIntro extends Component {
                 </h5>
                 <ul>
                   <li>
-                    Co-Chair: Honorable Marc H. Morial, President and CEO,
-                    National Urban League
+                    Co-Chair: Marc H. Morial, President and CEO, National Urban
+                    League
                   </li>
                   <li>
-                    Co-Chair: Honorable Charlie D. Baker, Governor, Commonwealth
-                    of Massachusetts
+                    Co-Chair: Charlie D. Baker, Governor, Commonwealth of
+                    Massachusetts
                   </li>
-                  <li>
-                    Co-Chair: Honorable Martin J. Walsh, Mayor, City of Boston
-                  </li>
+                  <li>Co-Chair: Martin J. Walsh, Mayor, City of Boston</li>
                 </ul>
               </div>
               <div className='mb-4'>
@@ -110,42 +108,23 @@ export default class CentennialIntro extends Component {
                   ULEM 100th Honorary Committee Members
                 </h5>
                 <ul>
-                  <li>Honorable Robert DeLeo, Massachusetts House Speaker</li>
-                  <li>
-                    Honorable Maura T. Healey, Massachusetts Attorney General
-                  </li>
+                  <li>Robert DeLeo, Massachusetts House Speaker</li>
+                  <li>Maura T. Healey, Massachusetts Attorney General</li>
                   <li>Elizabeth Warren, Massachusetts U.S. Senator</li>
-                  <li>
-                    Honorable Katherine Clark, Massachusetts, U.S. Congresswoman
-                  </li>
-                  <li>
-                    Honorable Joseph Kennedy, Massachusetts, US Congressman
-                  </li>
-                  <li>Honorable Nick Collins, Massachusetts State Senator</li>
+                  <li>Katherine Clark, Massachusetts, U.S. Congresswoman</li>
+                  <li>Joseph Kennedy, Massachusetts, US Congressman</li>
+                  <li>Nick Collins, Massachusetts State Senator</li>
                   <li>
                     Honorable, Carlos Gonzalez, Massachusetts State
                     Representative & Chairman of the Black & Latino Caucus
                   </li>
-                  <li>
-                    Honorable Russell Holmes, Massachusetts State Representative
-                  </li>
-                  <li>
-                    Honorable Liz Miranda, Massachusetts State Representative
-                  </li>
-                  <li>
-                    Honorable Chynah Tyler, Massachusetts State Representative
-                  </li>
-                  <li>
-                    Honorable Bud L. Williams, Massachusetts State
-                    Representative
-                  </li>
-                  <li>
-                    Honorable Andrea Campbell, President, Boston City Councilor
-                  </li>
-                  <li>Honorable Kim Janey, Boston City Councilor</li>
-                  <li>
-                    Honorable Michelle Wu, At-Large, Boston City Councilor
-                  </li>
+                  <li>Russell Holmes, Massachusetts State Representative</li>
+                  <li>Liz Miranda, Massachusetts State Representative</li>
+                  <li>Chynah Tyler, Massachusetts State Representative</li>
+                  <li>Bud L. Williams, Massachusetts State Representative</li>
+                  <li>Andrea Campbell, President, Boston City Councilor</li>
+                  <li>Kim Janey, Boston City Councilor</li>
+                  <li>Michelle Wu, At-Large, Boston City Councilor</li>
                   <li>
                     Bishop William E. Dickerson, II, Greater Love Tabernacle
                   </li>
@@ -159,10 +138,7 @@ export default class CentennialIntro extends Component {
                     Jim Rooney, President, Greater Boston Chamber of Commerce
                   </li>
                   <li>Kenneth Green, Chief of Police, MBTA</li>
-                  <li>
-                    Honorable Steve Grossman, former Massachusetts State
-                    Treasurer
-                  </li>
+                  <li>Steve Grossman, former Massachusetts State Treasurer</li>
                   <li>
                     William G. Gross, Commissioner, Boston Police Department
                   </li>
