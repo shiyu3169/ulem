@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import ulem100 from '../../img/ulem100.png';
 import united_way from '../../img/united_way.jpg';
+import southwest from '../../img/southwest.png';
 import { HashLink as Link } from 'react-router-hash-link';
 import tsn from '../../img/tsn.jpg';
 export default class Footer extends Component {
   render() {
     return (
-      <footer className='container-fluid ulem-bg-primary mt-5 pt-4'>
+      <footer className='container-fluid  mt-5 pt-4'>
+        <div className='ulem-bg-primary' id='footer-line' />
         <div className='row'>
           <div className='col-lg-2 text-center mt-5 m-lg-0'>
             <Link to='/centennial'>
               <img
                 src={ulem100}
-                className='img-fluid'
+                className='img-fluid mt-4'
                 id='footer-img-height'
                 alt=''
               />
@@ -26,28 +28,28 @@ export default class Footer extends Component {
             <ul className='list-unstyled'>
               <li>
                 <p>
-                  <Link className='font-white' to='/about'>
+                  <Link className='text-dark' to='/about'>
                     Missions & Overview
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className='font-white' to='/centennial'>
+                  <Link className='text-dark' to='/centennial'>
                     Our Milestones
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className='font-white' to='/leadership'>
+                  <Link className='text-dark' to='/leadership'>
                     Leadership
                   </Link>
                 </p>
               </li>
               <li>
                 <p>
-                  <Link className='font-white' to='/board'>
+                  <Link className='text-dark' to='/board'>
                     Board of Directors
                   </Link>
                 </p>
@@ -61,23 +63,23 @@ export default class Footer extends Component {
             </h5>
             <ul className='list-unstyled'>
               <li>
-                <p className='font-white'>
+                <p>
                   <i className='fas fa-home mr-3' /> 88 Warren Street, Roxbury,
                   MA 02119
                 </p>
               </li>
               <li>
-                <p className='font-white'>
+                <p>
                   <i className='fas fa-envelope mr-3' /> info@ulem.org
                 </p>
               </li>
               <li>
-                <p className='font-white'>
+                <p>
                   <i className='fas fa-phone mr-3' /> 617 442 4519
                 </p>
               </li>
               <li>
-                <p className='font-white'>
+                <p>
                   <i className='fas fa-print mr-3' /> 617 442 0562
                 </p>
               </li>
@@ -90,15 +92,21 @@ export default class Footer extends Component {
             <div className='logos'>
               <a
                 target='_blank'
-                href='https://www.unitedway.org/local/united-states/massachusetts'
+                href='https://www.southwest.com/'
                 rel='noopener noreferrer'
               >
                 <img
-                  src={united_way}
-                  className='img-fluid'
-                  id='footer-img-height'
-                  alt='united way'
+                  src={southwest}
+                  className='img-fluid px-3 pb-3'
+                  alt='Southwest'
                 />
+              </a>
+              <a
+                target='_blank'
+                href='https://www.unitedway.org/local/united-states/massachusetts'
+                rel='noopener noreferrer'
+              >
+                <img src={united_way} className='img-fluid' alt='United Way' />
               </a>
 
               <a
@@ -106,28 +114,20 @@ export default class Footer extends Component {
                 href='https://www.timothysmithnetwork.org/'
                 rel='noopener noreferrer'
               >
-                <img
-                  src={tsn}
-                  className='img-fluid'
-                  id='footer-img-height'
-                  alt='united way'
-                />
+                <img src={tsn} className='img-fluid' alt='TSN' />
               </a>
             </div>
           </div>
           <div className='col-lg-2 text-center'>
-            <h5 className='font-weight-bold text-uppercase mb-4 font-white'>
-              Follow Us
-            </h5>
+            <h5 className='font-weight-bold text-uppercase my-5'>Follow Us</h5>
             <div className='row'>
               <div className='col-lg-6 text-center mb-5'>
                 <a
                   href='https://www.facebook.com/theulem/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='font-white'
                 >
-                  <i className='fab fa-facebook fa-3x' />
+                  <i className='fab fa-facebook fa-3x text-dark' />
                 </a>
               </div>
               <div className='col-lg-6 text-center mb-5'>
@@ -135,9 +135,8 @@ export default class Footer extends Component {
                   href='https://twitter.com/theULEM'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='font-white'
                 >
-                  <i className='fab fa-twitter-square fa-3x' />
+                  <i className='fab fa-twitter-square fa-3x text-dark' />
                 </a>
               </div>
             </div>
@@ -147,9 +146,8 @@ export default class Footer extends Component {
                   href='https://www.linkedin.com/company/urban-league-of-eastern-massachusetts/about/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='font-white'
                 >
-                  <i className='fab fa-linkedin fa-3x' />
+                  <i className='fab fa-linkedin fa-3x text-dark' />
                 </a>
               </div>
               <div className='col-lg-6 text-center mb-5'>
@@ -157,17 +155,14 @@ export default class Footer extends Component {
                   href='https://www.instagram.com/theulem/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='font-white'
                 >
-                  <i className='fab fa-instagram fa-3x' />
+                  <i className='fab fa-instagram fa-3x text-dark' />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className='text-center font-white'>
-          &copy; 2019 Copyright: ULEM
-        </div>
+        <div className='text-center'>&copy; 2019 Copyright: ULEM</div>
       </footer>
     );
   }

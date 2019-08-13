@@ -285,9 +285,10 @@ td {
   color: grey;
 }
 
-#footer-img-height {
-  max-height: 25vh;
+#footer-line {
+  height: 2rem;
 }
+
 .carousel-indicators li {
   background-color: black;
 }
