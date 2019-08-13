@@ -16,7 +16,7 @@ export default class CentennialIntro extends Component {
         />
 
         <div className='row'>
-          <div className='col-lg-2 text-center'>
+          <div className='col-lg-3 text-center'>
             <img
               src={calendar}
               alt='Calender'
@@ -33,7 +33,6 @@ export default class CentennialIntro extends Component {
               Official Airline for Urban League of Eastern MA
             </h4>
           </div>
-          <div className='col-lg-1' />
           <div className='col-lg-7'>
             <h1 className='ulem-text-primary my-5 text-center'>
               100 YEARS IN THE MAKING
