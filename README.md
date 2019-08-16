@@ -4,10 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Updated packages version
-- Removed "honorable" from centennial page
-- Fixed typo in Carlos
-- Added southwest logo to centennial page
+- Fix centennial slide link
 
 ## Available Scripts
 
