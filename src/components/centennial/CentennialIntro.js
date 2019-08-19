@@ -178,6 +178,11 @@ export default class CentennialIntro extends Component {
                       Derek Brooks, Secretary, Lead, GRB, Market Development,
                       Comcast
                     </li>
+                    <li>
+                      Malik A. Smith, CSNA, CLTC, Treasure; First Vice
+                      President, Private Wealth Advisor Commons Capital
+                      Advisors, LLC
+                    </li>
                   </ul>
                 </div>
 
@@ -221,10 +226,7 @@ export default class CentennialIntro extends Component {
                       <td>Marian Green-Robinson</td>
                       <td>Branch Manager, Branch Officer, Eastern Bank</td>
                     </tr>
-                    <tr>
-                      <td>Malik A. Smith</td>
-                      <td>Wealth Advisor, Alex Brown</td>
-                    </tr>
+
                     <tr>
                       <td>Nadine Spriggs</td>
                       <td>

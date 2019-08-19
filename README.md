@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Latest updates
 
 - Fix centennial slide link
+- Update board list on website and book
 
 ## Available Scripts
 

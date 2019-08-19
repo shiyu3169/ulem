@@ -1,16 +1,16 @@
-import React from "react";
-import meeting from "../../img/Meeting_Boardroom-Leaderboard.png";
+import React from 'react';
+import meeting from '../../img/Meeting_Boardroom-Leaderboard.png';
 export default function Board() {
   return (
     <div>
-      <img src={meeting} alt="meeting" className="full-width" />
-      <div className="container">
-        <h1 className="ulem-text-primary mt-4">
+      <img src={meeting} alt='meeting' className='full-width' />
+      <div className='container'>
+        <h1 className='ulem-text-primary mt-4'>
           <strong>Board of Directors</strong>
         </h1>
-        <section className="my-5">
+        <section className='my-5'>
           <p>
-            <strong className="ulem-text-primary">Executive Committee:</strong>
+            <strong className='ulem-text-primary'>Executive Committee:</strong>
           </p>
           <p>
             <strong>Joseph D. Feaster, Jr.</strong>., Chairman; Counselor at Law
@@ -25,6 +25,10 @@ export default function Board() {
             Development, Comcast
           </p>
           <p>
+            <strong>Malik A. Smith</strong>, CSNA, CLTC, Treasure; First Vice
+            President, Private Wealth Advisor Commons Capital Advisors, LLC
+          </p>
+          <p>
             <strong>Gary Calloway</strong>, Centennial Chair; Senior Executive,
             UPS
           </p>
@@ -37,9 +41,9 @@ export default function Board() {
             Resources, Suffolk County Sherriff’s Office
           </p>
         </section>
-        <section className="mb-5">
+        <section className='mb-5'>
           <p>
-            <strong className="ulem-text-primary">Members of the Board:</strong>
+            <strong className='ulem-text-primary'>Members of the Board:</strong>
           </p>
           <p>
             <strong>Scott Baker</strong>, President, SkyCom Courier
@@ -69,9 +73,7 @@ export default function Board() {
             <strong>Deloris Pettis</strong>, Risk & Audit Consultant, Pettis
             Consulting
           </p>
-          <p>
-            <strong>Malik A. Smith</strong>, Wealth Advisor, Alex Brown
-          </p>
+
           <p>
             <strong>Nadine Spriggs</strong>, President, Urban League Guild
           </p>
@@ -90,9 +92,9 @@ export default function Board() {
             <strong>Ericka Wilson-Kerr</strong>, Regional Sales Director, CVS
           </p>
         </section>
-        <section className="mb-5">
+        <section className='mb-5'>
           <p>
-            <strong className="ulem-text-primary">
+            <strong className='ulem-text-primary'>
               Board Chairs Emeritus:
             </strong>
           </p>
