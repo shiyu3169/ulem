@@ -21,12 +21,12 @@ export default function Board() {
             Manager, Citizens Bank
           </p>
           <p>
-            <strong>Derek Brooks</strong>, Secretary; Lead, GBR Market
-            Development, Comcast
+            <strong>Malik A. Smith</strong>, CSNA, CLTC, Treasuer; First Vice
+            President, Private Wealth Advisor Commons Capital Advisors, LLC
           </p>
           <p>
-            <strong>Malik A. Smith</strong>, CSNA, CLTC, Treasure; First Vice
-            President, Private Wealth Advisor Commons Capital Advisors, LLC
+            <strong>Derek Brooks</strong>, Secretary; Lead, GBR Market
+            Development, Comcast
           </p>
           <p>
             <strong>Gary Calloway</strong>, Centennial Chair; Senior Executive,
