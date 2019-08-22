@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Fix centennial slide link
 - Update board list on website and book
 - Fix typo for Malik
+- Adding home popup for centennial gala
 
 ## Available Scripts
 
