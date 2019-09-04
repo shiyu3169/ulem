@@ -175,9 +175,8 @@ export default class CentennialIntro extends Component {
                       Product Manager, Citizens Bank
                     </li>
                     <li>
-                      Malik A. Smith, CSNA, CLTC, Treasuer; First Vice
-                      President, Private Wealth Advisor Commons Capital
-                      Advisors, LLC
+                      Malik A. Smith, Treasurer, First Vice President, Commons
+                      Capital Advisors
                     </li>
                     <li>
                       Derek Brooks, Secretary, Lead, GRB, Market Development,

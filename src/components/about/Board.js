@@ -21,8 +21,8 @@ export default function Board() {
             Manager, Citizens Bank
           </p>
           <p>
-            <strong>Malik A. Smith</strong>, CSNA, CLTC, Treasuer; First Vice
-            President, Private Wealth Advisor Commons Capital Advisors, LLC
+            <strong>Malik A. Smith</strong>, Treasurer, First Vice President,
+            Commons Capital Advisors
           </p>
           <p>
             <strong>Derek Brooks</strong>, Secretary; Lead, GBR Market
