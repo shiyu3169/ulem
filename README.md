@@ -4,10 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Fix centennial slide link
-- Update board list on website and book
-- Fix typo for Malik
-- Adding home popup for centennial gala
+- Removed centennial gala flyer on the landing page
+- Removed the Centennial Membership page
+- Deleted info under Centennial tab
+- Removed the leadership page
+- Updated Auxiliaries Page
+- Updated Staff page
+- Updated Program/Service page
 
 ## Available Scripts
 

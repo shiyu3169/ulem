@@ -123,7 +123,7 @@ export default class Programs extends Component {
           Chromebook.
         </p>
         <hr />
-        <h3>Mature Worker Skills Program (MWSP)</h3>
+        {/* <h3>Mature Worker Skills Program (MWSP)</h3>
         <p>
           In partnership with the Brigham & Women Hospital, the MWSP program is
           for individuals 45 or older who are unemployed and seeking a way to
@@ -133,7 +133,7 @@ export default class Programs extends Component {
           (PCA), or Home Health Aide. Learn about healthy living and a stress
           free life. Enroll Today!
         </p>
-        <hr />
+        <hr /> */}
         <h3>Customer Service Sales Training (CSST)</h3>
         <p>
           This training prepares participants for work through classroom

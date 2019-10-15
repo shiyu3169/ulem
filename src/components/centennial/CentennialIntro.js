@@ -1,43 +1,43 @@
-import React, { Component } from 'react';
-import centennial from '../../img/logo.PNG';
-import { Link } from 'react-router-dom';
-import centennialForm from '../../download/Centennial_SponsorshipOpportunities+ReplyForm-toFill.pdf';
-import calendar from '../../img/calendar.jpg';
-import southwest from '../../img/southwest.png';
+import React, { Component } from "react";
+import centennial from "../../img/logo.PNG";
+import { Link } from "react-router-dom";
+// import centennialForm from "../../download/Centennial_SponsorshipOpportunities+ReplyForm-toFill.pdf";
+import calendar from "../../img/calendar.jpg";
+import southwest from "../../img/southwest.png";
 
 export default class CentennialIntro extends Component {
   render() {
     return (
-      <div className='container-fluid'>
+      <div className="container-fluid">
         <img
           src={centennial}
-          alt='centennial'
-          className='img-fluid cursor center'
+          alt="centennial"
+          className="img-fluid cursor center"
         />
 
-        <div className='row'>
-          <div className='col-lg-3 text-center'>
+        <div className="row">
+          <div className="col-lg-3 text-center">
             <img
               src={calendar}
-              alt='Calender'
-              className='img-fluid d-block m-auto'
+              alt="Calender"
+              className="img-fluid d-block m-auto"
             />
             <img
-              id='southwest-logo'
+              id="southwest-logo"
               src={southwest}
-              alt='Southwest'
-              className='img-fluid d-block m-auto py-5 px-3'
+              alt="Southwest"
+              className="img-fluid d-block m-auto py-5 px-3"
             />
 
-            <h5 className='text-center'>
+            <h5 className="text-center">
               Official Airline for Urban League of Eastern MA
             </h5>
           </div>
-          <div className='col-lg-7'>
-            <h1 className='ulem-text-primary my-5 text-center'>
+          <div className="col-lg-7">
+            <h1 className="ulem-text-primary my-5 text-center">
               100 YEARS IN THE MAKING
             </h1>
-            <section className='mb-5'>
+            <section className="mb-5">
               <h3>
                 THE URBAN LEAGUE OF EASTERN MA IS CELEBRATING 100 YEARS OF
                 SERVING METROPOLITIAN BOSTON
@@ -57,38 +57,38 @@ export default class CentennialIntro extends Component {
                 movement and to explore its relevance to the issues of diversity
                 and inclusion today.
               </p>
-              <p>For more information download the sponsorship packet below:</p>
+              {/* <p>For more information download the sponsorship packet below:</p>
               <a
                 className='btn ulem-btn-primary'
                 href={centennialForm}
                 download
               >
                 Download
-              </a>
+              </a> */}
             </section>
-            <section className='mb-5'>
+            <section className="mb-5">
               <h3>OUR HISTORY</h3>
               <p>
                 A lot has happened at Urban League of Eastern MA and in our
-                community over the past 100 years.{' '}
-                <Link to='/centennial'>Click here</Link> to see a timeline of
+                community over the past 100 years.{" "}
+                <Link to="/centennial">Click here</Link> to see a timeline of
                 what we’ve accomplished together.
               </p>
             </section>
-            <section className='mb-5'>
+            {/* <section className="mb-5">
               <h3>CELEBRATE WITH US</h3>
               <p>
-                We have a lot of reasons to celebrate this year!{' '}
-                <Link to='/events'>Click here</Link> to see our all our events.
+                We have a lot of reasons to celebrate this year!{" "}
+                <Link to="/events">Click here</Link> to see our all our events.
               </p>
-            </section>
-            <section className='mb-5'>
-              <h1 className='text-center ulem-text-primary'>
+            </section> */}
+            <section className="mb-5">
+              <h1 className="text-center ulem-text-primary">
                 100th Centennial Honorary Committee
               </h1>
-              <div className='my-4'>
-                <h5 className='text-center'>
-                  ULEM 100th Honorary Committee Co-Chairs{' '}
+              <div className="my-4">
+                <h5 className="text-center">
+                  ULEM 100th Honorary Committee Co-Chairs{" "}
                 </h5>
                 <ul>
                   <li>
@@ -102,8 +102,8 @@ export default class CentennialIntro extends Component {
                   <li>Co-Chair: Martin J. Walsh, Mayor, City of Boston</li>
                 </ul>
               </div>
-              <div className='mb-4'>
-                <h5 className='text-center'>
+              <div className="mb-4">
+                <h5 className="text-center">
                   ULEM 100th Honorary Committee Members
                 </h5>
                 <ul>
@@ -143,8 +143,8 @@ export default class CentennialIntro extends Component {
                   </li>
                 </ul>
               </div>
-              <div className='mb-4'>
-                <h5 className='text-center'>
+              <div className="mb-4">
+                <h5 className="text-center">
                   ULEM 100th Centennial Former President’s and Chief Executive
                   Officers
                 </h5>
@@ -156,9 +156,9 @@ export default class CentennialIntro extends Component {
                   <li>Emory Jackson</li>
                 </ul>
               </div>
-              <div className='mb-4'>
-                <h5 className='text-center'>
-                  ULEM 100th Centennial Board of Directors{' '}
+              <div className="mb-4">
+                <h5 className="text-center">
+                  ULEM 100th Centennial Board of Directors{" "}
                 </h5>
                 <div>
                   <ul>
@@ -257,8 +257,8 @@ export default class CentennialIntro extends Component {
                   </tbody>
                 </table>
               </div>
-              <div className='mb-4'>
-                <h5 className='text-center'>
+              <div className="mb-4">
+                <h5 className="text-center">
                   ULEM 100th Centennial Board Chairs Emeritus
                 </h5>
                 <ul>
@@ -281,8 +281,8 @@ export default class CentennialIntro extends Component {
                   <li>Richard Taylor, Chairman, Taylor Smith Group</li>
                 </ul>
               </div>
-              <div className='mb-4'>
-                <h5 className='text-center'>
+              <div className="mb-4">
+                <h5 className="text-center">
                   ULEM 100th Centennial Advisory Committee Members
                 </h5>
                 <ul>
@@ -315,7 +315,7 @@ export default class CentennialIntro extends Component {
                 </ul>
               </div>
               <div>
-                <h4 className='text-center'>
+                <h4 className="text-center">
                   ULEM 100th Centennial Planning Staff
                 </h4>
                 <table>
@@ -398,7 +398,7 @@ export default class CentennialIntro extends Component {
               </div>
             </section>
           </div>
-          <div className='col-lg-2' />
+          <div className="col-lg-2" />
         </div>
       </div>
     );

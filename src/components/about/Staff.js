@@ -14,8 +14,8 @@ export default class Staff extends Component {
             <table id="table-1">
               <tbody>
                 <tr>
-                  <td>Darnell L. Williams</td>
-                  <td>President and Chief Executive Officer</td>
+                  <td>Dr. J. Keith Motley,</td>
+                  <td>Consultant</td>
                 </tr>
                 <tr>
                   <td>Jacquie George</td>
@@ -24,6 +24,10 @@ export default class Staff extends Component {
                 <tr>
                   <td>Rick Iacobucci</td>
                   <td>Vice President of Development</td>
+                </tr>
+                <tr>
+                  <td>Natalie Haywood</td>
+                  <td>Executive Assistant</td>
                 </tr>
               </tbody>
             </table>
@@ -43,10 +47,6 @@ export default class Staff extends Component {
                   <td>Front Desk Receptionist</td>
                 </tr>
                 <tr>
-                  <td>JacQuie Cairo-Williams</td>
-                  <td>Program Coordinator, Mature Workers Skills Program</td>
-                </tr>
-                <tr>
                   <td>Betzaida Guzman</td>
                   <td>Workforce Development Coordinator/Data Specialist</td>
                 </tr>
@@ -63,20 +63,12 @@ export default class Staff extends Component {
                   <td>Social Media Specialist</td>
                 </tr>
                 <tr>
-                  <td>Lynette Reid</td>
-                  <td>Case Manager, Mature Worker Skills Program</td>
-                </tr>
-                <tr>
                   <td>Othneil Uter</td>
                   <td>IT Manager</td>
                 </tr>
                 <tr>
                   <td>Shiyu Wang</td>
                   <td>Workforce Development Instructor - MSIMBO</td>
-                </tr>
-                <tr>
-                  <td>Granger Williams</td>
-                  <td>Case Manager, Workforce Development</td>
                 </tr>
               </tbody>
             </table>
