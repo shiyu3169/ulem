@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import ulem from "../../img/ulem.png";
-import $ from "jquery";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import ulem from '../../img/ulem.png';
+import $ from 'jquery';
 
 export default class Navbar extends Component {
   collapse() {
-    $(".collapse").collapse("hide");
+    $('.collapse').collapse('hide');
   }
   render() {
     return (
@@ -206,6 +206,16 @@ export default class Navbar extends Component {
                     Corporate Partners
                   </a>
                 </div>
+              </li>
+              <li className="nav-item" onClick={this.collapse}>
+                <a
+                  className="nav-link"
+                  href="https://www.bonfire.com/store/ulem/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ULEM Store
+                </a>
               </li>
             </ul>
           </div>
