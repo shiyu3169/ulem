@@ -4,13 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Removed centennial gala flyer on the landing page
-- Removed the Centennial Membership page
-- Deleted info under Centennial tab
-- Removed the leadership page
-- Updated Auxiliaries Page
-- Updated Staff page
-- Updated Program/Service page
+- Adding 2019 sponsor logos
 
 ## Available Scripts
 
