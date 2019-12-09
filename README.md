@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Adding 2019 sponsor logos
+- Adding centennial anniversary sponsors
 
 ## Available Scripts
 

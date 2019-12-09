@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import sponsorPng from "../../img/sponsor.png";
 import sponsorPng2 from "../../img/sponsor2.png";
 import sponsorPng3 from "../../img/sponsor3.png";
+
 import sponsor2019 from "../../img/ulem_sponsors_2019.jpg";
 import careerSponsor2019 from "../../img/career_sponsor_2019.jpg";
+import centinentialSponsers2019 from "../../img/ULEM-Centinential-Gala-Sponsors.jpg";
+
 import donor from "../../img/major-donors.png";
 import gala from "../../img/gala.png";
 import career from "../../img/career.png";
@@ -26,11 +29,17 @@ export default class Sponsor extends Component {
           </p>
 
           <img
+            src={centinentialSponsers2019}
+            className="center img-fluid"
+            alt="Centennial Anniversary Sponsors"
+          />
+          <img
             src={sponsor2019}
             className="center img-fluid"
             alt="sponsor2019"
           />
           <img src={careerSponsor2019} alt="2019 career fair sponsors" />
+
           <h4>2018 Equal Opportunity & Diversity Breakfast</h4>
           <img src={sponsorPng} className="center img-fluid" alt="sponsor1" />
           <img src={sponsorPng2} className="center img-fluid" alt="sponsor2" />
