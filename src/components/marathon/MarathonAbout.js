@@ -20,7 +20,7 @@ export default function MarathonAbout() {
 
       <section id="sponsors">
         <a
-          href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
+          href="https://charityteamsruns.wufoo.com/forms/z9j4g8b0kmy29y/"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-block ulem-btn-primary btn-lg"
@@ -97,7 +97,7 @@ export default function MarathonAbout() {
           </li>
         </ul>
         <a
-          href="https://charityteamsruns.wufoo.com/forms/zmft5wr102cuhb/"
+          href="https://charityteamsruns.wufoo.com/forms/z9j4g8b0kmy29y/"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-block ulem-btn-primary btn-lg"
