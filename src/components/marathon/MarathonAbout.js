@@ -6,8 +6,8 @@ export default function MarathonAbout() {
     <section id="about">
       <h1 className="font-red mt-4">About Us</h1>
       <p>
-        Run for The Urban League of Eastern Massachusetts Team in the 2019
-        Boston Marathon(r) on April 15th, 2019
+        Run for The Urban League of Eastern Massachusetts Team in the 2020
+        Boston Marathon(r) on Monday, April 20, 2020
       </p>
       <img src={ulem} alt="ulem" className="img-fluid" />
 
@@ -40,7 +40,7 @@ export default function MarathonAbout() {
         <ul className="list-no-style">
           <li>
             <i className="fas fa-angle-right mr-2 font-red" />
-            An official bib into the 2019 Boston Marathon(r)
+            An official bib into the 2020 Boston Marathon(r)
           </li>
           <li>
             <i className="fas fa-angle-right mr-2 font-red" />A team singlet and

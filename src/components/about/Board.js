@@ -1,16 +1,16 @@
-import React from 'react';
-import meeting from '../../img/Meeting_Boardroom-Leaderboard.png';
+import React from "react";
+import meeting from "../../img/Meeting_Boardroom-Leaderboard.png";
 export default function Board() {
   return (
     <div>
-      <img src={meeting} alt='meeting' className='full-width' />
-      <div className='container'>
-        <h1 className='ulem-text-primary mt-4'>
+      <img src={meeting} alt="meeting" className="full-width" />
+      <div className="container">
+        <h1 className="ulem-text-primary mt-4">
           <strong>Board of Directors</strong>
         </h1>
-        <section className='my-5'>
+        <section className="my-5">
           <p>
-            <strong className='ulem-text-primary'>Executive Committee:</strong>
+            <strong className="ulem-text-primary">Executive Committee:</strong>
           </p>
           <p>
             <strong>Joseph D. Feaster, Jr.</strong>., Chairman; Counselor at Law
@@ -25,11 +25,11 @@ export default function Board() {
             Commons Capital Advisors
           </p>
           <p>
-            <strong>Derek Brooks</strong>, Secretary; Lead, GBR Market
-            Development, Comcast
+            <strong>Derek Brooks</strong>, Secretary; Entrepreneur and Business
+            Professional
           </p>
           <p>
-            <strong>Gary Calloway</strong>, Centennial Chair; Senior Executive,
+            <strong>Gary Carroway</strong>, Centennial Chair; Senior Executive,
             UPS
           </p>
           <p>
@@ -41,19 +41,12 @@ export default function Board() {
             Resources, Suffolk County Sherriff’s Office
           </p>
         </section>
-        <section className='mb-5'>
+        <section className="mb-5">
           <p>
-            <strong className='ulem-text-primary'>Members of the Board:</strong>
-          </p>
-          <p>
-            <strong>Scott Baker</strong>, President, SkyCom Courier
+            <strong className="ulem-text-primary">Members of the Board:</strong>
           </p>
           <p>
             <strong>Donnie Bedney</strong>, Regional Director, Press Ganey
-          </p>
-          <p>
-            <strong>Steve Duncan</strong>, Senior Vice President, State Street
-            Corporation
           </p>
           <p>
             <strong>Marian Green-Robinson</strong>, Vice President, Eastern Bank
@@ -62,8 +55,8 @@ export default function Board() {
             <strong>Johnny Green</strong>, News Director, CBS-TV4
           </p>
           <p>
-            <strong>Dorthea Jones</strong>, Secretary, National Council of Urban
-            League Guilds
+            <strong>Dorothea Jones</strong>, Secretary, National Council of
+            Urban League Guilds
           </p>
           <p>
             <strong>Andrea Kershaw</strong>, Regional Vice President, Enterprise
@@ -73,28 +66,17 @@ export default function Board() {
             <strong>Deloris Pettis</strong>, Risk & Audit Consultant, Pettis
             Consulting
           </p>
-
           <p>
-            <strong>Nadine Spriggs</strong>, President, Urban League Guild
+            <strong>L. Kim Amisial</strong>, President, Urban League Guild
           </p>
           <p>
-            <strong>Charles Stewart</strong>, President & Owner, M & S
-            Communications Group
-          </p>
-          <p>
-            <strong>Liz Walker, President</strong>, Young Professionals Network
-          </p>
-          <p>
-            <strong>Marques A. Williams</strong>, Sr. Mgr, Business Development,
-            Aramark
-          </p>
-          <p>
-            <strong>Ericka Wilson-Kerr</strong>, Regional Sales Director, CVS
+            <strong>Kristen Halbert</strong>, President, Young Professionals
+            Network
           </p>
         </section>
-        <section className='mb-5'>
+        <section className="mb-5">
           <p>
-            <strong className='ulem-text-primary'>
+            <strong className="ulem-text-primary">
               Board Chairs Emeritus:
             </strong>
           </p>

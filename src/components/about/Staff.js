@@ -15,15 +15,15 @@ export default class Staff extends Component {
               <tbody>
                 <tr>
                   <td>Dr. J. Keith Motley,</td>
-                  <td>Consultant</td>
+                  <td>Consultant President/CEO</td>
                 </tr>
                 <tr>
                   <td>Jacquie George</td>
                   <td>Vice President of Finance</td>
                 </tr>
                 <tr>
-                  <td>Rick Iacobucci</td>
-                  <td>Vice President of Development</td>
+                  <td>Charles Stewart</td>
+                  <td>Vice President Digital Strategy and Partnerships</td>
                 </tr>
                 <tr>
                   <td>Natalie Haywood</td>
@@ -59,16 +59,12 @@ export default class Staff extends Component {
                   <td>Workforce Development, Outreach Worker</td>
                 </tr>
                 <tr>
-                  <td>Alvin Peters</td>
-                  <td>Social Media Specialist</td>
+                  <td>Shiyu Wang</td>
+                  <td>Workforce Development Instructor - MSIMBO</td>
                 </tr>
                 <tr>
                   <td>Othneil Uter</td>
                   <td>IT Manager</td>
-                </tr>
-                <tr>
-                  <td>Shiyu Wang</td>
-                  <td>Workforce Development Instructor - MSIMBO</td>
                 </tr>
               </tbody>
             </table>

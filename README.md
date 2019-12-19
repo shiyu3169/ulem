@@ -4,7 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Adding centennial anniversary sponsors
+- Board of Directors
+- Our Staff
+- Annual Events
+- Marathon Text
 
 ## Available Scripts
 
