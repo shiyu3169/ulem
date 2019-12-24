@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Marathon application link
+- Update marathon banners into 2020
 
 ## Available Scripts
 
