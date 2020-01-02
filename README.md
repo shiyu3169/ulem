@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Update marathon banners into 2020
+- Update program description
+- Pass option { useUnifiedTopology: true } to the MongoClient constructor.
 
 ## Available Scripts
 

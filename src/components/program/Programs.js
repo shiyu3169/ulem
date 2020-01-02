@@ -4,16 +4,6 @@ export default class Programs extends Component {
   render() {
     return (
       <section id="program">
-        {/* <div className="embed-responsive embed-responsive-16by9 ">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/NdxADLogYqU?controls=0"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div> */}
         <h1 className="font-red mt-4 mb-4">
           Workforce Development Training Programs
         </h1>
@@ -72,11 +62,12 @@ export default class Programs extends Component {
           </li>
         </ul>
         <p>
-          Those who successfully complete program will eligible for internships
-          with various tech companies in the area. Throughout the program case
+          Those who successfully complete the program will be eligible for
+          recommendation for employment, internships or apprenticeships with
+          various Tech companies in the area. Throughout the program case
           management and job placement services are available. Those who are not
-          placed receive job placement assistance from ULEM.{" "}
-          <strong>SECTION 30 APPROVED.</strong>
+          placed receive job placement assistance from ULEM. Stipend based
+          program.<strong>SECTION 30 APPROVED.</strong>
         </p>
         <p>
           For more information visit:{" "}
@@ -99,14 +90,12 @@ export default class Programs extends Component {
           professional, you will have a professional level portfolio – both
           print and online that will have been vetted by working professionals
           in the field and you will have had some working experience in said
-          field. We have a stipend for our students while in the program and
-          job/internship placement at the end for those who complete the
-          program.
-        </p>
-        <p>
-          lass sizes is limited. Please bring a photo ID with you to fill out
-          the application and give yourself 20-30 min for the interview process.
-          Stipend based program . <strong>SECTION 30 APPROVED.</strong>
+          field. Those who successfully complete program will be eligible for
+          recommendation for employment, internships or apprenticeships with
+          various ad agencies and marketing companies in the area. Throughout
+          the program case management and job placement services are available.
+          Those who are not placed receive job placement assistance from ULEM.
+          Stipend based program. <strong>SECTION 30 APPROVED.</strong>
         </p>
         <hr />
         <h3>Computer Literacy and Internet Knowledge Program</h3>

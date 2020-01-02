@@ -8,7 +8,8 @@ if (process.env.CONNECTION_STRING) {
 var mongoose = require("mongoose");
 var db = mongoose.connect(connectionString, {
   useNewUrlParser: true,
-  useCreateIndex: true
+  useCreateIndex: true,
+  useUnifiedTopology: true
 });
 
 module.exports = db;
