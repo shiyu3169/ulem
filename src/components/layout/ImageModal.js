@@ -29,14 +29,14 @@ const ImageModal = ({ id, title, img }) => {
           <div className='modal-body'>
             <img src={img} alt='Centennial Gala' className='img-fluid' />
           </div>
-          <div className='modal-footer'>
+          {/* <div className='modal-footer'>
             <a
               className='btn btn-lg ulem-btn-primary link-white m-auto'
               href='https://ul100.eventbrite.com/'
             >
               Purchase Ticket Now
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
