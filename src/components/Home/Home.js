@@ -126,11 +126,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        <ImageModal
-          id='home'
-          title='ULEM CENTENNIAL ANNIVERSARY GALA'
-          img={Annual2020}
-        />
+        <ImageModal id='home' title='ULEM Annual Meeting' img={Annual2020} />
       </>
     );
   }
