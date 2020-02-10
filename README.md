@@ -4,8 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Update program description
-- Pass option { useUnifiedTopology: true } to the MongoClient constructor.
+- Update Facebook link in footer
+- Update LinkedIn link in footer
 
 ## Available Scripts
 

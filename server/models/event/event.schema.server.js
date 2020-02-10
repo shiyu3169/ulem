@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+var mongoose = require('mongoose');
 
 var EventSchema = mongoose.Schema(
   {
@@ -7,12 +7,13 @@ var EventSchema = mongoose.Schema(
     end: Date,
     venue: String,
     address: String,
-    img: { type: mongoose.Schema.Types.ObjectId, ref: "ImgModel" },
+    img: { type: mongoose.Schema.Types.ObjectId, ref: 'ImgModel' },
     dateCreated: { type: Date, default: Date.now },
     dateModified: { type: Date, default: Date.now },
-    updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "UserModel" }
+    updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'UserModel' },
+    featured: Boolean
   },
-  { collection: "event" }
+  { collection: 'event' }
 );
 
 module.exports = EventSchema;

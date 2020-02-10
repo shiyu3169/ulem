@@ -1,6 +1,6 @@
-var mongoose = require("mongoose");
-var EventSchema = require("./event.schema.server");
-var EventModel = mongoose.model("EventModel", EventSchema);
+var mongoose = require('mongoose');
+var EventSchema = require('./event.schema.server');
+var EventModel = mongoose.model('EventModel', EventSchema);
 
 // Insert new event
 EventModel.createEvent = event => EventModel.create(event);
@@ -18,19 +18,18 @@ const today = new Date();
 today.setHours(0, 0, 0, 0);
 
 // Looking for newest 3 events
-EventModel.findNewEvents = () => {
-  return EventModel.find({ img: { $exists: true } })
-    .sort({ start: -1 })
-    .limit(3)
-    .populate("img")
-    .exec();
-};
+// EventModel.findNewEvents = () => {
+//   return EventModel.find({ img: { $exists: true } })
+//     .sort({ start: -1 })
+//     .limit(3)
+//     .populate('img')
+//     .exec();
+// };
 
 // Looking for 3 upcoming events
 EventModel.findTopEvents = () =>
-  EventModel.find({ img: { $exists: true }, start: { $gte: today } })
-    .limit(3)
-    .populate("img")
+  EventModel.find({ featured: true })
+    .populate('img')
     .exec();
 
 // Find events in this page
@@ -40,7 +39,7 @@ EventModel.findEvents = page => {
     .sort({ start: -1 })
     .skip(skip)
     .limit(20)
-    .populate("updatedBy", "username")
+    .populate('updatedBy', 'username')
     .exec();
 };
 
@@ -49,7 +48,10 @@ EventModel.updateEvent = (id, event) =>
   EventModel.updateOne({ _id: id }, event);
 
 // Find event by id
-EventModel.findEventById = id => EventModel.findById(id).populate("img").exec();
+EventModel.findEventById = id =>
+  EventModel.findById(id)
+    .populate('img')
+    .exec();
 
 // Count events
 EventModel.countEvents = () => EventModel.countDocuments();
