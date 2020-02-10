@@ -131,7 +131,7 @@ export default class Footer extends Component {
               <div className='row'>
                 <div className='col-lg-6 text-center mb-5'>
                   <a
-                    href='https://www.facebook.com/theulem/'
+                    href='https://www.facebook.com/ULEMORG/'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -151,7 +151,7 @@ export default class Footer extends Component {
               <div className='row'>
                 <div className='col-lg-6 text-center mb-5'>
                   <a
-                    href='https://www.linkedin.com/company/urban-league-of-eastern-massachusetts/about/'
+                    href='https://www.linkedin.com/in/theulem/'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
