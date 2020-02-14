@@ -4,8 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Latest updates
 
-- Update Facebook link in footer
-- Update LinkedIn link in footer
+- Refactored the board pages to make it more maintainable
+- Updated Board of Directors information
 
 ## Available Scripts
 

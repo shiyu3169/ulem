@@ -1,16 +1,17 @@
-import React from "react";
-import meeting from "../../img/Meeting_Boardroom-Leaderboard.png";
+import React from 'react';
+import meeting from '../../img/Meeting_Boardroom-Leaderboard.png';
+
 export default function Board() {
   return (
     <div>
-      <img src={meeting} alt="meeting" className="full-width" />
-      <div className="container">
-        <h1 className="ulem-text-primary mt-4">
+      <img src={meeting} alt='meeting' className='full-width' />
+      <div className='container'>
+        <h1 className='ulem-text-primary mt-4'>
           <strong>Board of Directors</strong>
         </h1>
-        <section className="my-5">
+        <section className='my-5'>
           <p>
-            <strong className="ulem-text-primary">Executive Committee:</strong>
+            <strong className='ulem-text-primary'>Executive Committee:</strong>
           </p>
           <p>
             <strong>Joseph D. Feaster, Jr.</strong>., Chairman; Counselor at Law
@@ -41,9 +42,9 @@ export default function Board() {
             Resources, Suffolk County Sherriff’s Office
           </p>
         </section>
-        <section className="mb-5">
+        <section className='mb-5'>
           <p>
-            <strong className="ulem-text-primary">Members of the Board:</strong>
+            <strong className='ulem-text-primary'>Members of the Board:</strong>
           </p>
           <p>
             <strong>Donnie Bedney</strong>, Regional Director, Press Ganey
@@ -74,9 +75,9 @@ export default function Board() {
             Network
           </p>
         </section>
-        <section className="mb-5">
+        <section className='mb-5'>
           <p>
-            <strong className="ulem-text-primary">
+            <strong className='ulem-text-primary'>
               Board Chairs Emeritus:
             </strong>
           </p>
