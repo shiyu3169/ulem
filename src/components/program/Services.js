@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import jobcase from "../../img/jobcase.png";
+import React, { Component } from 'react';
+import jobcase from '../../img/jobcase.png';
 
 export default class Services extends Component {
   render() {
     return (
-      <section id="service">
-        <h1 className="font-red mt-4 mb-4">Support Services</h1>
+      <section id='service'>
+        <h1 className='font-red mt-4 mb-4'>Support Services</h1>
         <h4>Employment Resource Center</h4>
         <p>
           The Employment Resource Center (ERC) is open Monday through Friday
@@ -13,19 +13,19 @@ export default class Services extends Component {
           purposes only. Within the ERC, additional support is available to not
           just enrolled program participants, but anyone who visits ULEM for
           support. Everyone who utilizes the ERC must complete an intake form.
-          The ERC provides:{" "}
+          The ERC provides:{' '}
         </p>
-        <ul className="list-no-style">
+        <ul className='list-no-style'>
           <li>
-            <i className="fas fa-headset mr-2 font-red" />
+            <i className='fas fa-headset mr-2 font-red' />
             Assistance with basic online job searching
           </li>
           <li>
-            <i className="fas fa-headset mr-2 font-red" />
+            <i className='fas fa-headset mr-2 font-red' />
             Support for additional cover letter and resume changes
           </li>
           <li>
-            <i className="fas fa-headset mr-2 font-red" />
+            <i className='fas fa-headset mr-2 font-red' />
             Information on any newly listed positions by posting them on the job
             board
           </li>
@@ -54,16 +54,16 @@ export default class Services extends Component {
         </p>
         <p>
           <a
-            target="_blank"
-            href="https://www.jobcase.com/ulem"
-            rel="noopener noreferrer"
+            target='_blank'
+            href='https://www.jobcase.com/ulem'
+            rel='noopener noreferrer'
           >
             www.jobcase.com/ulem
           </a>
         </p>
         <p>
-          This portal is provided by a generous donation from Jobcase{" "}
-          <img src={jobcase} height="40px" alt="jobcse" />
+          This portal is provided by a generous donation from Jobcase{' '}
+          <img src={jobcase} height='40px' alt='jobcse' />
         </p>
         <hr />
         <h4>Job Placement</h4>
@@ -97,60 +97,30 @@ export default class Services extends Component {
         <hr />
         <h4>Domestic/Sexual Violence Support</h4>
         <p>
-          Domestic/Sexual Abuse and Violence support is available to anyone
-          seeking support. This culturally sensitive service is offered in
-          direct response to the need for information, resources, and support
-          regarding domestic and sexual violence in the heart of the African
-          American/people of color community. Led by Reverend Traci Jackson
-          Antoine, this service is in collaboration with the following service
-          providers: Casa Myrna, Center for Hope and Healing, and Safe Havens
-          Interfaith Partnership. The collaboration also includes 2 Boston
-          Police Officers and consultants.{" "}
+          Support for victims and survivors of domestic and sexual violence is
+          made available at the Urban League of Eastern Massachusetts through
+          the Domestic and Sexual Violence Project. This culturally specific
+          project is offered in direct response to address the need for equal
+          access to direct services, information and resources, vital in the
+          support of victims and survivors of trauma. Founder, Reverend Traci
+          Jackson Antoine; along with her team work in collaboration with faith
+          leaders and law enforcement to provide training that enhance the
+          quality and response that victims of color receive from first
+          responders. Additionally, the project works alongside Northeastern
+          University Law Students to provide cultural sensitivity training as it
+          relates specifically to victims of trauma of color. Trainings have
+          garnered positive response from counsel and client; impacting how
+          victims of color are perceived and thus represented within the legal
+          system. The success and national recognition of the project is
+          directly tied to its committed effort to provide victims and survivors
+          of Boston’s inner city communities of color with a coordinated
+          community response that addresses the individualized needs of victims
+          and survivors through a spectrum of quality services, specialized
+          training, and support throughout its network of partners, supporters
+          and community leaders.
         </p>
         <p>
-          In serving victims, perpetrators, and anyone else who enters the ULEM
-          doors, ULEM addresses the issue of violence prevention in our
-          communities in significant ways. Of note:
-        </p>
-        <ul className="list-no-style">
-          <li>
-            <i className="fas fa-info-circle  mr-2 font-red" />
-            Getting a job boosts self-esteem, while also elevating someone's
-            financial status. Poverty and a lack of income are major
-            contributors towards violence.
-          </li>
-          <li>
-            <i className="fas fa-info-circle mr-2 font-red" />
-            Those who seek to remove themselves from violent
-            environments/situations by way of getting a job are getting the
-            necessary pre-employment skills and certifications at ULEM.
-            Obtaining those skills help people to gain independence, while
-            assisting in breaking the cycle of violence.
-          </li>
-          <li>
-            <i className="fas fa-info-circle  mr-2 font-red" />
-            ULEM will soon become a vital access point for information, support,
-            and referrals.​
-          </li>
-          <li>
-            <i className="fas fa-info-circle  mr-2 font-red" />
-            Victims will see ULEM, a trusted, culturally specific institution
-            take a leadership role in speaking out against violence.
-          </li>
-          <li>
-            <i className="fas fa-info-circle  mr-2 font-red" />
-            Victims will know more about violence and prevention, will recognize
-            red flags and warning signs, and will seek help earlier.
-          </li>
-          <li>
-            <i className="fas fa-info-circle  mr-2 font-red" />
-            Victims will experience a more coherent and coordinated community
-            response to violence as stronger relationships among ULEM and our
-            partners
-          </li>
-        </ul>
-        <p>
-          <strong>THIS SERVICE IS COMPLETELY CONFIDENTIAL.</strong>
+          <strong>CONFIDENTIAL SERVICES OFFERED.</strong>
         </p>
       </section>
     );
