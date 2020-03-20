@@ -8,9 +8,10 @@ import TopSlides from './TopSlides';
 import EventSlides from './EventSlides';
 import Instagram from './Instagram';
 import Twitter from './Twitter';
-// import ImageModal from '../layout/ImageModal';
+import ImageModal from '../layout/ImageModal';
 // Image
-// import Annual2020 from '../../img/Annual_2020.jpg';
+import covid1 from '../../img/covid1.jpg';
+import covid2 from '../../img/covid2.jpg';
 
 export default class Home extends Component {
   state = {
@@ -126,7 +127,12 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        {/* <ImageModal id='home' title='ULEM Annual Meeting' img={Annual2020} /> */}
+        <ImageModal
+          id='home'
+          title='ULEM Annual Meeting'
+          img1={covid1}
+          img2={covid2}
+        />
       </>
     );
   }

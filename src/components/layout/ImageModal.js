@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ImageModal = ({ id, title, img }) => {
+const ImageModal = ({ id, title, img1, img2 }) => {
   return (
     <div
       className='modal fade bd-example-modal-lg'
@@ -27,7 +27,8 @@ const ImageModal = ({ id, title, img }) => {
             </button>
           </div>
           <div className='modal-body'>
-            <img src={img} alt='Centennial Gala' className='img-fluid' />
+            <img src={img1} alt='Centennial Gala' className='img-fluid' />
+            <img src={img2} alt='Centennial Gala' className='img-fluid' />
           </div>
           {/* <div className='modal-footer'>
             <a
