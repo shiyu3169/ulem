@@ -112,6 +112,14 @@ export default function MarathonAbout() {
         >
           Fill out the application here
         </a>
+        <a
+          href='https://charity.gofundme.com/o/en/campaign/urbanleague2020'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='btn btn-block btn-dark btn-lg'
+        >
+          Donate Here
+        </a>
       </section>
     </section>
   );
