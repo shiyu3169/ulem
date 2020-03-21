@@ -39,13 +39,13 @@ export default class Footer extends Component {
                     </Link>
                   </p>
                 </li>
-                <li>
+                {/* <li>
                   <p>
                     <Link className='text-dark' to='/leadership'>
                       Leadership
                     </Link>
                   </p>
-                </li>
+                </li> */}
                 <li>
                   <p>
                     <Link className='text-dark' to='/board'>

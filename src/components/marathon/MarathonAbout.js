@@ -18,7 +18,7 @@ export default function MarathonAbout() {
         are welcome to join our team and are asked to raise a minimum of $2,000.
       </p>
       <p>
-        We appreciate all donations to our Marathon Team. Fund received support
+        We appreciate all donations to our Marathon Team. Funds received support
         the services and programs provided by The Urban League of Eastern
         Massachusetts.
       </p>
