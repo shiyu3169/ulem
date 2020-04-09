@@ -26,7 +26,7 @@ const ImageModal = ({ id, title, img }) => {
               <span aria-hidden="true">×</span>
             </button>
           </div>
-          <div className="modal-body">
+          <div className="modal-body text-center">
             <img src={img} alt="Announcement" className="img-fluid" />
           </div>
           {/* <div className='modal-footer'>
