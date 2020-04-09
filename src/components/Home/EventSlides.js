@@ -10,7 +10,7 @@ export default class EventSlides extends Component {
     // Typical usage (don't forget to compare props):
     if (this.props.events !== prevProps.events) {
       $("#carousel-2").carousel({
-        interval: 2400
+        interval: 2400,
       });
     }
   }
@@ -25,97 +25,99 @@ export default class EventSlides extends Component {
             <i className="fas fa-calendar-alt float-right" />
           </h3>
         </Link>
-        {events.length
-          ? <div
-              id="carousel-2"
-              className="carousel slide event-carousel"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner">
-                {events[0] &&
-                  <div className="carousel-item active">
-                    <Link
-                      to={{
-                        pathname: "/events",
-                        state: { date: events[0].start }
+        {events.length ? (
+          <div
+            id="carousel-2"
+            className="carousel slide event-carousel"
+            data-ride="carousel"
+          >
+            <div className="carousel-inner">
+              {events[0] && (
+                <div className="carousel-item active">
+                  <Link
+                    to={{
+                      pathname: "/events",
+                      state: { date: events[0].start },
+                    }}
+                  >
+                    <div
+                      style={{
+                        background: `url(data:${
+                          events[0].img.mimeType
+                        };base64,${new Buffer(events[0].img.data).toString(
+                          "base64"
+                        )}) no-repeat top center/cover`,
+                        height: "600px",
                       }}
-                    >
-                      <div
-                        style={{
-                          background: `url(data:${events[0].img
-                            .mimeType};base64,${new Buffer(
-                            events[0].img.data
-                          ).toString("base64")}) no-repeat top center/cover`,
-                          height: "600px"
-                        }}
-                      />
-                    </Link>
-                  </div>}
-                {events[1] &&
-                  <div className="carousel-item ">
-                    <Link
-                      to={{
-                        pathname: "/events",
-                        state: { date: events[1].start }
+                    />
+                  </Link>
+                </div>
+              )}
+              {events[1] && (
+                <div className="carousel-item ">
+                  <Link
+                    to={{
+                      pathname: "/events",
+                      state: { date: events[1].start },
+                    }}
+                  >
+                    <div
+                      style={{
+                        background: `url(data:${
+                          events[1].img.mimeType
+                        };base64,${new Buffer(events[1].img.data).toString(
+                          "base64"
+                        )}) no-repeat top center/cover`,
+                        height: "600px",
                       }}
-                    >
-                      <div
-                        style={{
-                          background: `url(data:${events[1].img
-                            .mimeType};base64,${new Buffer(
-                            events[1].img.data
-                          ).toString("base64")}) no-repeat top center/cover`,
-                          height: "600px"
-                        }}
-                      />
-                    </Link>
-                  </div>}
-                {events[2] &&
-                  <div className="carousel-item ">
-                    <Link
-                      to={{
-                        pathname: "/events",
-                        state: { date: events[2].start }
+                    />
+                  </Link>
+                </div>
+              )}
+              {events[2] && (
+                <div className="carousel-item ">
+                  <Link
+                    to={{
+                      pathname: "/events",
+                      state: { date: events[2].start },
+                    }}
+                  >
+                    <div
+                      style={{
+                        background: `url(data:${
+                          events[2].img.mimeType
+                        };base64,${new Buffer(events[2].img.data).toString(
+                          "base64"
+                        )}) no-repeat top center/cover`,
+                        height: "600px",
                       }}
-                    >
-                      <div
-                        style={{
-                          background: `url(data:${events[2].img
-                            .mimeType};base64,${new Buffer(
-                            events[2].img.data
-                          ).toString("base64")}) no-repeat top center/cover`,
-                          height: "600px"
-                        }}
-                      />
-                    </Link>
-                  </div>}
-              </div>
-              <a
-                className="carousel-control-prev"
-                href="#carousel-2"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                />
-                <span className="sr-only">Previous</span>
-              </a>
-              <a
-                className="carousel-control-next"
-                href="#carousel-2"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                />
-                <span className="sr-only">Next</span>
-              </a>
+                    />
+                  </Link>
+                </div>
+              )}
             </div>
-          : <img className="center" src={loading} alt="loading" />}
+            <a
+              className="carousel-control-prev"
+              href="#carousel-2"
+              role="button"
+              data-slide="prev"
+            >
+              <span className="carousel-control-prev-icon" aria-hidden="true" />
+              <span className="sr-only">Previous</span>
+            </a>
+            <a
+              className="carousel-control-next"
+              href="#carousel-2"
+              role="button"
+              data-slide="next"
+            >
+              <span className="carousel-control-next-icon" aria-hidden="true" />
+              <span className="sr-only">Next</span>
+            </a>
+          </div>
+        ) : (
+          <img className="center" src={loading} alt="loading" />
+        )}
         <br />
         <div className="text-center">
           <Link
