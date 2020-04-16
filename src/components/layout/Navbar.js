@@ -13,7 +13,12 @@ export default class Navbar extends Component {
         <div className='container-fluid'>
           <header className='blog-header py-3'>
             <div className='row flex-nowrap justify-content-between align-items-center'>
-              <div className='col-md-4' />
+              <div className='col-md-4 text-center'>
+                <div className="ovw-banner">
+                  DOMESTIC VIOLENCE OR SEXUAL ASSAULT? Call (617)459–2420 
+                </div>
+              <span></span> 
+              </div>
               <div className='col-md-4 text-center'>
                 <Link to='/'>
                   <img src={ulem} alt='ulem' className='img-fluid' />

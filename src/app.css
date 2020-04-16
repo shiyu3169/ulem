@@ -1,6 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 
 /* modal temporary style */
+
+.ovw-banner {
+  background-color: turquoise;
+  font-size: 0.5rem;
+  border-radius: 5px;
+  color: #333;
+}
+
+@media only screen and (min-width: 768px) {
+  .ovw-banner {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ovw-banner {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+}
+
 .modal-p {
   font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;
   font-size: 18px;
