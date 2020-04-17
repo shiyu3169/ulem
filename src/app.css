@@ -9,6 +9,10 @@
   color: #333;
 }
 
+.ovw-banner p {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .ovw-banner {
     font-size: 1rem;

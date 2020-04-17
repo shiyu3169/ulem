@@ -1,31 +1,33 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import ulem from '../../img/ulem.png';
-import $ from 'jquery';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import ulem from "../../img/ulem.png";
+import $ from "jquery";
 
 export default class Navbar extends Component {
   collapse() {
-    $('.collapse').collapse('hide');
+    $(".collapse").collapse("hide");
   }
   render() {
     return (
       <React.Fragment>
-        <div className='container-fluid'>
-          <header className='blog-header py-3'>
-            <div className='row flex-nowrap justify-content-between align-items-center'>
-              <div className='col-md-4 text-center'>
+        <div className="container-fluid">
+          <header className="blog-header py-3">
+            <div className="row flex-nowrap justify-content-between align-items-center">
+              <div className="col-md-4 text-center">
                 <div className="ovw-banner">
-                  DOMESTIC VIOLENCE OR SEXUAL ASSAULT? Call (617)459–2420 
+                  <p>We can help!</p>
+                  <p>The domestic and sexual violence project</p>
+                  <p>(617)459-2420</p>
                 </div>
-              <span></span> 
+                <span></span>
               </div>
-              <div className='col-md-4 text-center'>
-                <Link to='/'>
-                  <img src={ulem} alt='ulem' className='img-fluid' />
+              <div className="col-md-4 text-center">
+                <Link to="/">
+                  <img src={ulem} alt="ulem" className="img-fluid" />
                 </Link>
               </div>
-              <div className='col-md-4 text-center'>
-                <Link className='btn ulem-btn-primary' to='/donate'>
+              <div className="col-md-4 text-center">
+                <Link className="btn ulem-btn-primary" to="/donate">
                   Donate Now
                 </Link>
               </div>
@@ -33,119 +35,119 @@ export default class Navbar extends Component {
           </header>
         </div>
         <div />
-        <nav className='navbar navbar-expand-lg sticky ulem-bg-primary'>
+        <nav className="navbar navbar-expand-lg sticky ulem-bg-primary">
           <button
-            className='navbar-toggler'
-            type='button'
-            data-toggle='collapse'
-            data-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <i className='fas fa-bars' />
+            <i className="fas fa-bars" />
           </button>
 
-          <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul className='navbar-nav nav-margin'>
-              <li className='nav-item' onClick={this.collapse}>
-                <Link className='nav-link' to='/'>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav nav-margin">
+              <li className="nav-item" onClick={this.collapse}>
+                <Link className="nav-link" to="/">
                   Home
                 </Link>
               </li>
-              <li className='nav-item dropdown'>
+              <li className="nav-item dropdown">
                 <span
-                  className='nav-link dropdown-toggle'
-                  data-toggle='dropdown'
-                  role='button'
-                  aria-haspopup='true'
-                  aria-expanded='false'
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   About
                 </span>
-                <div className='dropdown-menu' onClick={this.collapse}>
-                  <Link className='nav-link text-dark' to='/about'>
+                <div className="dropdown-menu" onClick={this.collapse}>
+                  <Link className="nav-link text-dark" to="/about">
                     About ULEM
                   </Link>
                   {/* <Link className="nav-link text-dark" to="/leadership">
                     Leadership
                   </Link> */}
-                  <Link className='nav-link text-dark' to='/board'>
+                  <Link className="nav-link text-dark" to="/board">
                     Board of Directors
                   </Link>
-                  <Link className='nav-link text-dark' to='/staff'>
+                  <Link className="nav-link text-dark" to="/staff">
                     Our Staff
                   </Link>
-                  <Link className='nav-link text-dark' to='/impact'>
+                  <Link className="nav-link text-dark" to="/impact">
                     Our Impact
                   </Link>
-                  <Link className='nav-link text-dark' to='/contact'>
+                  <Link className="nav-link text-dark" to="/contact">
                     Contact Us
                   </Link>
                 </div>
               </li>
-              <li className='nav-item' onClick={this.collapse}>
-                <Link className='nav-link' to='/program'>
+              <li className="nav-item" onClick={this.collapse}>
+                <Link className="nav-link" to="/program">
                   Programs & Services
                 </Link>
               </li>
-              <li className='nav-item' onClick={this.collapse}>
-                <Link className='nav-link' to='/events'>
+              <li className="nav-item" onClick={this.collapse}>
+                <Link className="nav-link" to="/events">
                   Events
                 </Link>
               </li>
-              <li className='nav-item dropdown'>
+              <li className="nav-item dropdown">
                 <span
-                  className='nav-link dropdown-toggle'
-                  data-toggle='dropdown'
-                  role='button'
-                  aria-haspopup='true'
-                  aria-expanded='false'
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   Support
                 </span>
-                <div className='dropdown-menu'>
+                <div className="dropdown-menu">
                   <Link
-                    className='nav-link text-dark'
-                    to='/membership'
+                    className="nav-link text-dark"
+                    to="/membership"
                     onClick={this.collapse}
                   >
                     Become A Member
                   </Link>
                   <Link
-                    className='nav-link text-dark'
-                    to='/sponsor'
+                    className="nav-link text-dark"
+                    to="/sponsor"
                     onClick={this.collapse}
                   >
                     Sponsor
                   </Link>
                   <Link
-                    className='nav-link text-dark'
-                    to='/auxiliaries'
+                    className="nav-link text-dark"
+                    to="/auxiliaries"
                     onClick={this.collapse}
                   >
                     Our Auxiliaries
                   </Link>
                   <span
-                    className='nav-link dropdown-toggle text-dark'
-                    data-toggle='dropdown'
-                    role='button'
-                    aria-haspopup='true'
-                    aria-expanded='false'
+                    className="nav-link dropdown-toggle text-dark"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
                   >
                     Donate
                   </span>
-                  <div className='dropdown-menu'>
+                  <div className="dropdown-menu">
                     <Link
-                      className='nav-link text-dark'
-                      to='/howToDonate'
+                      className="nav-link text-dark"
+                      to="/howToDonate"
                       onClick={this.collapse}
                     >
                       How to Donate
                     </Link>
                     <Link
-                      className='nav-link text-dark'
-                      to='/donate'
+                      className="nav-link text-dark"
+                      to="/donate"
                       onClick={this.collapse}
                     >
                       Donate Now
@@ -153,26 +155,26 @@ export default class Navbar extends Component {
                   </div>
                 </div>
               </li>
-              <li className='nav-item' onClick={this.collapse}>
-                <Link className='nav-link' to='/marathon'>
+              <li className="nav-item" onClick={this.collapse}>
+                <Link className="nav-link" to="/marathon">
                   ULEM Marathon Team
                 </Link>
               </li>
-              <li className='nav-item dropdown'>
+              <li className="nav-item dropdown">
                 <span
-                  className='nav-link dropdown-toggle'
-                  data-toggle='dropdown'
-                  role='button'
-                  aria-haspopup='true'
-                  aria-expanded='false'
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   Centennial
                 </span>
-                <div className='dropdown-menu' onClick={this.collapse}>
-                  <Link className='nav-link text-dark' to='/centennialIntro'>
+                <div className="dropdown-menu" onClick={this.collapse}>
+                  <Link className="nav-link text-dark" to="/centennialIntro">
                     Celebration
                   </Link>
-                  <Link className='nav-link text-dark' to='/centennial'>
+                  <Link className="nav-link text-dark" to="/centennial">
                     Milestone
                   </Link>
                   {/* <Link
@@ -183,41 +185,41 @@ export default class Navbar extends Component {
                   </Link> */}
                 </div>
               </li>
-              <li className='nav-item dropdown'>
+              <li className="nav-item dropdown">
                 <span
-                  className='nav-link dropdown-toggle'
-                  data-toggle='dropdown'
-                  role='button'
-                  aria-haspopup='true'
-                  aria-expanded='false'
+                  className="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   Employment Opportunities
                 </span>
-                <div className='dropdown-menu' onClick={this.collapse}>
+                <div className="dropdown-menu" onClick={this.collapse}>
                   <a
-                    className='nav-link text-dark'
-                    href='https://www.jobcase.com/ulem'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    className="nav-link text-dark"
+                    href="https://www.jobcase.com/ulem"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Jobseekers
                   </a>
                   <a
-                    className='nav-link text-dark'
-                    href='https://www.jobcase.com/ulem_featured_employer?'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    className="nav-link text-dark"
+                    href="https://www.jobcase.com/ulem_featured_employer?"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Corporate Partners
                   </a>
                 </div>
               </li>
-              <li className='nav-item' onClick={this.collapse}>
+              <li className="nav-item" onClick={this.collapse}>
                 <a
-                  className='nav-link'
-                  href='https://www.bonfire.com/store/ulem/'
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  className="nav-link"
+                  href="https://www.bonfire.com/store/ulem/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   ULEM Store
                 </a>
