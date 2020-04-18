@@ -15,9 +15,8 @@ export default class Navbar extends Component {
             <div className="row flex-nowrap justify-content-between align-items-center">
               <div className="col-md-4 text-center">
                 <div className="ovw-banner">
-                  <p>We can help!</p>
-                  <p>The domestic and sexual violence project</p>
-                  <p>(617)459-2420</p>
+                  <p><strong>Domestic Violence Victim?</strong></p>
+                  <p><strong>Call: (617) 459-2420</strong></p>
                 </div>
                 <span></span>
               </div>
