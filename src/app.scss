@@ -1,25 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap");
 
 /* modal temporary style */
-
 .ovw-banner {
   background-color: turquoise;
   font-size: 0.5rem;
   border-radius: 5px;
   color: #333;
 }
-
 .ovw-banner p {
   margin-bottom: 0;
 }
-
 @media only screen and (min-width: 768px) {
   .ovw-banner {
     font-size: 1rem;
     padding: 1rem 0;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .ovw-banner {
     font-size: 1rem;
@@ -27,27 +23,30 @@
   }
 }
 
-.modal-p {
-  font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;
-  font-size: 18px;
-}
-.modal-h1 {
-  font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;
-  font-size: 20px;
-  color: rgb(205, 0, 0);
-  font-weight: bold;
-}
-
-.modal-list {
-  list-style: disc;
-  margin-left: 2rem;
-}
-
-.modal-link {
-  font-family: Segoe UI, Lucida Grande, Tahoma, sans-serif;
-  font-size: 18px;
-  text-decoration: underline;
-  color: #000;
+.image-modal {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+  }
+  p {
+    span {
+      color: red;
+    }
+  }
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #cd0000;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
 }
 
 /* Reset */
