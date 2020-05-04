@@ -1,0 +1,49 @@
+.covid {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.covid .ticker-container {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+
+  margin: 0 auto;
+}
+
+.covid .ticker {
+  position: absolute;
+  animation: moveSlideshow 12s linear infinite;
+  top: 0;
+  left: 0;
+}
+
+.covid h1 {
+  font-size: 1.3rem;
+  color: #cd0000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.covid h2 {
+  font-size: 1.1rem;
+}
+
+.covid ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+.small-business {
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  min-height: 600px;
+}

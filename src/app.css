@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap");
-
+body {
+  overflow-x: hidden;
+}
 /* modal temporary style */
 .ovw-banner {
   background-color: turquoise;

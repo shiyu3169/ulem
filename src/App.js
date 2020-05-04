@@ -38,6 +38,7 @@ import HowToDonate from "./components/support/HowToDonate";
 import CentennialIntro from "./components/centennial/CentennialIntro";
 import Staff from "./components/about/Staff";
 import Payment from "./components/layout/Payment";
+import Covid from "./pages/Covid/covid";
 
 class App extends Component {
   render() {
@@ -77,6 +78,7 @@ class App extends Component {
                 path='/centennialMembership'
                 component={CentennialMembership}
               /> */}
+              <Route exact path="/covid19" component={Covid} />
               <Route path="/" component={Home} />
             </Switch>
             <Footer />

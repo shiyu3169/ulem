@@ -15,8 +15,12 @@ export default class Navbar extends Component {
             <div className="row flex-nowrap justify-content-between align-items-center">
               <div className="col-md-4 text-center">
                 <div className="ovw-banner">
-                  <p><strong>Domestic Violence Victim?</strong></p>
-                  <p><strong>Call: (617) 459-2420</strong></p>
+                  <p>
+                    <strong>Domestic Violence Victim?</strong>
+                  </p>
+                  <p>
+                    <strong>Call: (617) 459-2420</strong>
+                  </p>
                 </div>
                 <span></span>
               </div>
@@ -192,7 +196,7 @@ export default class Navbar extends Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Employment Opportunities
+                  Opportunities
                 </span>
                 <div className="dropdown-menu" onClick={this.collapse}>
                   <a
@@ -222,6 +226,11 @@ export default class Navbar extends Component {
                 >
                   ULEM Store
                 </a>
+              </li>
+              <li className="nav-item" onClick={this.collapse}>
+                <Link className="nav-link" to="/covid19">
+                  COVID-19
+                </Link>
               </li>
             </ul>
           </div>
