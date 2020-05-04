@@ -10,7 +10,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./app.scss";
+import "./app.css";
 // Components
 import Home from "./components/Home/Home";
 import About from "./components/about/About";

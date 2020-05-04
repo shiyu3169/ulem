@@ -28,25 +28,23 @@
   font-size: 1rem;
   padding-left: 40px;
   padding-right: 40px;
-  h2 {
-    font-size: 1.2rem;
-    text-align: center;
-    color: red;
-    margin-bottom: 20px;
-  }
-  p {
-    span {
-      color: red;
-    }
-  }
-  h1 {
-    font-size: 1.3rem;
-    text-align: center;
-    color: #cd0000;
-  }
-  h3 {
-    font-size: 1.1rem;
-  }
+}
+.image-modal h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+}
+.image-modal p span {
+  color: red;
+}
+.image-modal h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #cd0000;
+}
+.image-modal h3 {
+  font-size: 1.1rem;
 }
 
 /* Reset */

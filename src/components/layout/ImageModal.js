@@ -66,7 +66,9 @@ const ImageModal = ({ id, title, img }) => {
             </p>
             <p>
               To give Click:
-              <a href="">charity.gofundme./ulemgivingtuesdaynow</a>
+              <a href="https://charity.gofundme.com/o/en/campaign/ulemgivingtuesdaynow">
+                https://charity.gofundme.com/o/en/campaign/ulemgivingtuesdaynow
+              </a>
             </p>
             <p>
               <span>Grow With Google – May 6th</span> – Learn from Google how to
