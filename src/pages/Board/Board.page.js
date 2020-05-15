@@ -1,153 +1,194 @@
-import React from 'react';
-import meeting from '../../img/Meeting_Boardroom-Leaderboard.png';
-import BoardGroup from '../../components/BoardGroup/BoardGroup.component';
+import React from "react";
+import meeting from "../../img/Meeting_Boardroom-Leaderboard.png";
+import BoardGroup from "../../components/BoardGroup/BoardGroup.component";
 
 const Board = () => {
   const groups = [
     {
-      groupName: 'Executive Committee',
+      groupName: "Executive Committee",
       groupMembers: [
         {
-          name: 'Joseph D. Feaster, Jr. Esq.',
-          title: 'Chairman; President, Feaster Enterprises'
+          name: "Joseph D. Feaster Jr.",
+          title: "Chairman, President, Feaster Enterprises",
         },
         {
-          name: 'Mark Walker',
-          title: 'Vice Chair; Sr. VP, Credit Product Manager, Citizens Bank'
+          name: "Derek E. Brooks",
+          title: "Entrepreneur & Business Professional",
         },
         {
-          name: 'Malik A. Smith',
-          title: 'Treasurer, First Vice President, Commons Capital Advisors'
+          name: "Petrina Cherry",
+          title: "Vice President, BMC Healthnet Plan/Well Sense Health Plan",
         },
         {
-          name: 'Derek Brooks',
-          title: 'Secretary; Entrepreneur and Business Professional'
-        },
-        {
-          name: 'Petrina Martin Cherry',
+          name: "Malik A. Smith",
           title:
-            'Development Chair; Vice President, BMC Healthnet Plan/Well Sense Health Plan'
-        }
-      ]
+            "First Vice President, Private Wealth Advisor, Commons Capital Advisors",
+        },
+        {
+          name: "Mark Walker",
+          title: "Sr. VP, Credit Product Manager, Citizens Bank",
+        },
+      ],
     },
     {
-      groupName: 'Members of the Board',
+      groupName: "Members of the Board",
       groupMembers: [
         {
-          name: 'Donnie Bedney',
-          title: 'Regional Director, Press Ganey'
+          name: "Donnie Bedney III",
+          title: "Vice President, Chief of Staff, Press Ganey",
         },
         {
-          name: 'Marian Green-Robinson',
-          title: 'Vice President, Eastern Bank'
+          name: "Johnny Green",
+          title: "VP & News Director, CBS Corporation",
         },
         {
-          name: 'Johnny Green',
-          title: 'News Director, CBS-TV4'
-        },
-        {
-          name: 'Dorothea Jones',
-          title: 'Secretary, National Council of Urban League Guilds'
-        },
-        {
-          name: 'Deloris Pettis',
-          title: 'Risk & Audit Consultant, Pettis Consulting'
-        },
-        {
-          name: 'Rachelle Villarson',
+          name: "Marian A. Green-Robinson",
           title:
-            'Strategic Planning Chair; Human Resources, Suffolk County Sherriff’s Office'
-        }
-      ]
+            "Vice President ~ Branch Manager Stoughton Office, Eastern Bank",
+        },
+        {
+          name: "Dorothea Jones",
+          title: "Guild Secretary, National Urban League",
+        },
+        {
+          name: "Ron Mayorga",
+          title: "President - Northeast District, UPS",
+        },
+        {
+          name: "Deloris Pettis",
+          title: "Director of Internal Audit, Boston College",
+        },
+        {
+          name: "Joshua Schanck",
+          title: "District Manager - Boston MA, Starbucks",
+        },
+        {
+          name: "Rachelle Villarson",
+          title:
+            "Assistant Director of Personnel, Suffolk County Sheriff's Department",
+        },
+      ],
     },
     {
-      groupName: 'Affiliate Members',
+      groupName: "Affiliate Members",
       groupMembers: [
         {
-          name: 'L. Kim Amisial',
-          title: 'President, Urban League Guild'
+          name: "L. Kim Amisial",
+          title: "President of The GUILD, The Urban League of Eastern MA",
         },
         {
-          name: 'Kristen Halbert',
-          title: 'President, Young Professionals Network'
-        }
-      ]
+          name: "Kristen Halbert",
+          title: "President of YPN, The Urban League of Eastern MA",
+        },
+      ],
     },
     {
-      groupName: 'Board Chairs Emeritus',
+      groupName: "Board Chairs Emeritus",
       groupMembers: [
         {
-          name: 'Hon. Joyce London Alexander',
-          title: 'Chief Magistrate Judge, US District Court'
+          name: "Samuel J. Gerson",
+          title: "Chairman and Chief Execytive, Filene's Basement (Deceased)",
         },
         {
-          name: 'Samuel J. Gerson',
-          title: 'Chairman and Chief Executive, Filene’s Basement (deceased)'
+          name: "Hon. Joyce London Alexander",
+          title:
+            "Chief U.S. Magistrate Judge, United States District Courthouse",
         },
         {
-          name: 'Andrea Kershaw',
-          title: 'Regional Vice President, Enterprise Holdings'
+          name: "Andrea Kershaw",
+          title: "Regional Vice President, Enterprise Holdings",
         },
         {
-          name: 'Quincy Miller',
-          title: 'President, Eastern Bank'
+          name: "Andrea Kershaw",
+          title: "Regional Vice President, Enterprise Rent-A Car",
         },
         {
-          name: 'Jeff Musman, Esq.',
-          title: 'Managing Partner, Seyfarth Shaw'
+          name: "Quincy L. Miller",
+          title: "President, Eastern Bank",
         },
         {
-          name: 'George A. Russell, Jr.',
-          title: 'Executive Vice President, State Street Corporation (retired)'
+          name: "Jeffrey Musman",
+          title: "Managing Partner, Seyfarth Shaw",
         },
         {
-          name: 'Richard Taylor',
-          title: 'Chairman, Taylor Smith Group'
-        }
-      ]
+          name: "George A. Russell",
+          title: "Executive Vice President, State Street Corporaton",
+        },
+        {
+          name: "Richard Taylor",
+          title: "Proprietor, Taylor Smith Properties",
+        },
+      ],
     },
     {
-      groupName: 'Board Emeritus',
+      groupName: "Board Emeritus",
       groupMembers: [
         {
-          name: 'Greg Almeida',
-          title: 'Chief Executive Officer & Founder, Global View Communications'
+          name: "Greg Almeida",
+          title: "President, Globalview Communications",
         },
         {
-          name: 'Gary Carroway',
-          title: 'Director of Business Development, UPS'
+          name: "Gary Carroway",
+          title: "Director of Business Development, UPS",
         },
         {
-          name: 'Brenda Cole',
+          name: "Brenda Cole",
           title:
-            'Vice President of Marketplace Inclusion Development, Harvard Pilgrim Health Care (retired)'
+            "VP Marketplace Inclusion Development, Havard Pilgrim Health Care",
         },
         {
-          name: 'Bill Fenton',
-          title: 'Senior Vice President, Bank of America Corp'
+          name: "Bill Fenton",
+          title: "Senior Vice President, Bank of America",
         },
         {
-          name: 'Jacqueline Gadsden',
+          name: "Jacqueline Gadsden",
           title:
-            'Vice President Diversity & Inclusion & Customer Experience, Comcast'
+            "Vice President Diversity & Inclusion & Customer Experience, Comcast - Greater Boston Area",
         },
         {
-          name: 'Vince Loporchio',
+          name: "Vince Loporchio",
           title:
-            'Senior Vice President Corporate Communications, Fidelity Investments'
-        }
-      ]
-    }
+            "Senior Vice President Corporate Communications, Fidelity Investments",
+        },
+      ],
+    },
+    {
+      groupName: "Advisory Council",
+      groupMembers: [
+        {
+          name: "Scott Baker",
+          title: "President, SkyCom Courier",
+        },
+        {
+          name: "Larry Dunham",
+          title:
+            "Director of Diversity and Multicultural Affairs, Boston University/Dental School",
+        },
+        {
+          name: "Sam Kennedy",
+          title: "President, Boston Red Sox Foundation",
+        },
+        {
+          name: "Lisa Timberlake",
+          title: "Media Relations, City of Boston",
+        },
+        {
+          name: "David Gibbons",
+          title:
+            "Executive Director, Massachusetts Convention Center Authority (MCCA) ",
+        },
+      ],
+    },
   ];
 
   return (
     <div>
-      <img src={meeting} alt='meeting' className='full-width' />
-      <div className='container'>
-        <h1 className='ulem-text-primary mt-4'>
+      <img src={meeting} alt="meeting" className="full-width" />
+      <div className="container">
+        <h1 className="ulem-text-primary mt-4">
           <strong>Board of Directors</strong>
         </h1>
-        {groups.map(group => (
+        {groups.map((group) => (
           <BoardGroup group={group} />
         ))}
       </div>
