@@ -12,10 +12,10 @@ import "./covid.css";
 
 const covid = () => {
   return (
-    <div class="covid">
-      <img className="img-fluid" width="100%" src={covid19} alt />
+    <div className="covid">
+      <img className="img-fluid" width="100%" src={covid19} alt="covid19" />
       <div className="ticker-container">
-        <img className="ticker" src={ticker} alt />
+        <img className="ticker" src={ticker} alt="ticker" />
       </div>
       <div className="mt-5 container">
         <img src={facts} className="img-fluid" />

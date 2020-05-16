@@ -6,10 +6,12 @@ if (process.env.CONNECTION_STRING) {
 }
 
 var mongoose = require("mongoose");
-var db = mongoose.connect(connectionString, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true
-});
+var db = mongoose
+  .connect(connectionString, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+  })
+  .catch((error) => console.log("mongodb is not available"));
 
 module.exports = db;
