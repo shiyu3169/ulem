@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap");
+
 body {
   overflow-x: hidden;
 }
+
 /* modal temporary style */
 .ovw-banner {
   background-color: turquoise;
@@ -9,15 +11,18 @@ body {
   border-radius: 5px;
   color: #333;
 }
+
 .ovw-banner p {
   margin-bottom: 0;
 }
+
 @media only screen and (min-width: 768px) {
   .ovw-banner {
     font-size: 1rem;
     padding: 1rem 0;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .ovw-banner {
     font-size: 1rem;
@@ -31,20 +36,24 @@ body {
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .image-modal h2 {
   font-size: 1.2rem;
   text-align: center;
   color: red;
   margin-bottom: 20px;
 }
+
 .image-modal p span {
   color: red;
 }
+
 .image-modal h1 {
   font-size: 1.3rem;
   text-align: center;
   color: #cd0000;
 }
+
 .image-modal h3 {
   font-size: 1.1rem;
 }
@@ -285,10 +294,12 @@ td {
   height: 100%;
   pointer-events: none;
 }
+
 #vidtop-content {
   top: 0;
   color: #fff;
 }
+
 .vid-info {
   position: absolute;
   top: 30%;
@@ -341,6 +352,7 @@ td {
 .carousel-indicators li {
   background-color: black;
 }
+
 .font-dark {
   color: grey;
 }
@@ -395,6 +407,7 @@ td {
 .nav-margin {
   margin: auto;
 }
+
 @media (min-width: 992px) {
   .nav-margin li {
     margin: 0 40px;
@@ -466,6 +479,7 @@ td {
 .transition {
   transition: opacity 1s;
 }
+
 .dropdown-item:active {
   background: white;
 }
@@ -563,12 +577,14 @@ section[id]:before {
     animation-name: fadeInRight;
   }
 }
+
 #timeline {
   list-style: none;
   position: relative;
   margin: 50px auto;
   width: 90%;
 }
+
 #timeline:before {
   top: 0;
   bottom: 0;
@@ -623,18 +639,14 @@ section[id]:before {
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
+
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#timeline
-  .timeline-movement
-  .timeline-item
-  .timeline-panel.credits
-  .timeline-panel-ul
-  .lefting-wrap {
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul .lefting-wrap {
   float: right;
   width: 30%;
   height: 130px;
@@ -644,23 +656,15 @@ section[id]:before {
 .clear {
   clear: both;
 }
-#timeline
-  .timeline-movement
-  .timeline-item
-  .timeline-panel.debits
-  .timeline-panel-ul
-  .lefting-wrap {
+
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul .lefting-wrap {
   float: left;
   width: 30%;
   height: 130px;
   background-color: floralwhite;
 }
-#timeline
-  .timeline-movement
-  .timeline-item
-  .timeline-panel.debits
-  .timeline-panel-ul
-  .righting-wrap {
+
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul .righting-wrap {
   float: right;
   width: 70%;
   height: 130px;
@@ -670,44 +674,19 @@ section[id]:before {
   justify-content: space-between;
 }
 
-#timeline
-  .timeline-movement
-  .timeline-item
-  .timeline-panel.debits
-  .timeline-panel-ul
-  li.img-wraping
-  span
-  img,
-#timeline
-  .timeline-movement
-  .timeline-item
-  .timeline-panel.credits
-  .timeline-panel-ul
-  li.img-wraping
-  span
-  img {
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul li.img-wraping span img,
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li.img-wraping span img {
   width: 100%;
   height: 130px;
 }
 
-#timeline
-  .timeline-movement
-  .timeline-item
-  .timeline-panel.credits
-  .timeline-panel-ul
-  li
-  p.importo {
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li p.importo {
   color: #468c1f;
   font-size: 1.3em;
   font-weight: 600;
 }
 
-#timeline
-  .timeline-movement
-  .timeline-item
-  .timeline-panel.debits
-  .timeline-panel-ul
-  p.importo {
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul p.importo {
   color: #e2001a;
   font-size: 1.3em;
   font-weight: 600;

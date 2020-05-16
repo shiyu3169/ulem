@@ -47,3 +47,13 @@
   opacity: 0.8;
   min-height: 600px;
 }
+
+.covid-section-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.pointer {
+  cursor: pointer;
+}

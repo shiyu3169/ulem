@@ -5,7 +5,7 @@ import bosRecources from "../../img/BosResources-min.jpeg";
 
 const Resources = () => {
   return (
-    <div>
+    <div name="resources">
       <h1>Unemployment Assistance</h1>
       <h2>Unemployment Insurance</h2>
       <p>
