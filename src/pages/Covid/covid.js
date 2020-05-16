@@ -18,9 +18,9 @@ const covid = () => {
         <img className="ticker" src={ticker} alt="ticker" />
       </div>
       <div className="mt-5 container">
-        <img src={facts} className="img-fluid" />
+        <img src={facts} className="img-fluid" alt="facts" />
         <Resources />
-        <img src={impact} className="img-fluid" />
+        <img src={impact} className="img-fluid" alt="impact" />
         <Response />
       </div>
     </div>
