@@ -68,7 +68,7 @@ export default class TopSlides extends Component {
           />
           <TopSlide
             img={breakfast}
-            href="https://theulem.square.site/"
+            href="https://theulem.square.site/#OIVeXu"
             x="left"
             y="center"
           />
