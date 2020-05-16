@@ -26,10 +26,10 @@ const covid = () => {
         alt="covid19"
       />
       <div className="covid-section-buttons-container">
-        <Link to="facts" smooth={true} offset={-25} className="pointer">
+        <Link to="facts" smooth={true} offset={-85} className="pointer">
           <img src={factsImg} alt="facts" className="img-fluid" />
         </Link>
-        <Link to="resources" smooth={true} offset={-75} className="pointer">
+        <Link to="resources" smooth={true} offset={-85} className="pointer">
           <img src={resourcesImg} alt="resources" className="img-fluid" />
         </Link>
         <Link to="impact" smooth={true} offset={-75} className="pointer">
@@ -44,9 +44,16 @@ const covid = () => {
         <img className="ticker" src={ticker} alt="ticker" />
       </div>
       <div className="mt-5 container">
-        <img name="facts" src={facts} className="img-fluid" alt="facts" />
+        <br />
+        <h1 name="facts" className="section-title">
+          FACTS
+        </h1>
+        <img src={facts} className="img-fluid" alt="facts" />
         <Resources />
-        <img name="impact" src={impact} className="img-fluid" alt="impact" />
+        <h1 className="section-title" name="impact">
+          IMPACT
+        </h1>
+        <img src={impact} className="img-fluid" alt="impact" />
         <Response />
       </div>
     </div>

@@ -3,7 +3,10 @@ import NoHandShake from "../../download/NoHandShake.pdf";
 
 const Responce = () => {
   return (
-    <div name="response">
+    <div>
+      <h1 className="section-title" name="response">
+        RESPONSE
+      </h1>
       <p>Dear Urban League Family, Client-Guests, and Friends:</p>
       <p>
         Due to the spread of the coronavirus (COVID-19) and as health concerns
