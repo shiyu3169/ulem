@@ -29,7 +29,7 @@ const Responce = () => {
       <h2 style={{ color: "red" }}>
         Level 1- Preparedness (Sporadic Transmission Level)
       </h2>
-      <h2>ULWM Response: Monitoring and Education</h2>
+      <h2>ULEM Response: Monitoring and Education</h2>
       <ul>
         <li>
           Continue to inform staff and the general public regarding the level of
@@ -49,7 +49,7 @@ const Responce = () => {
       <h2 style={{ color: "red" }}>
         Level 2 - Minimal/Moderate (Cluster Transmission Level)
       </h2>
-      <h2>ULWM Response: Social Distancing</h2>
+      <h2>ULEM Response: Social Distancing</h2>
       <ul>
         <li>
           Implement a "social distancing" policy that will stop or slow the
