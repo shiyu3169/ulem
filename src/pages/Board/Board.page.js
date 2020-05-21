@@ -70,7 +70,7 @@ const Board = () => {
       ],
     },
     {
-      groupName: "Affiliate Members",
+      groupName: "Auxiliary Members",
       groupMembers: [
         {
           name: "L. Kim Amisial",
