@@ -5,6 +5,7 @@ import Resources from "../../components/covid/Resources";
 import Response from "../../components/covid/Response";
 
 import covid19 from "../../assets/image/Covid19.jpg";
+import downBtn from "../../assets/icons/covid-down.png";
 import factsImg from "../../assets/image/facts.jpg";
 import resourcesImg from "../../assets/image/resources.jpg";
 import impactImg from "../../assets/image/impact.jpg";
@@ -19,13 +20,13 @@ import "./covid.css";
 const covid = () => {
   return (
     <div className="covid">
-      <img
-        className="img-fluid mb-5"
-        width="100%"
-        src={covid19}
-        alt="covid19"
-      />
-      <div className="covid-section-buttons-container">
+      <div className="covid-top">
+        <img className="img-fluid" width="100%" src={covid19} alt="covid19" />
+        <Link to="container" smooth={true} offset={-85}>
+          <img className="down-btn" src={downBtn} alt="down" />
+        </Link>
+      </div>
+      <div name="container" className="covid-section-buttons-container">
         <Link to="facts" smooth={true} offset={-85} className="pointer">
           <img src={factsImg} alt="facts" className="img-fluid" />
         </Link>

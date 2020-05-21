@@ -3,10 +3,29 @@
   font-size: 1rem;
 }
 
+.covid .covid-top {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.covid .covid-top .down-btn {
+  position: absolute;
+  bottom: 10vw;
+  left: calc(50vw - 27px);
+  width: 4vw;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.covid .covid-top .down-btn:hover {
+  transform: translateY(-5px);
+}
+
 .covid .section-title {
   font-size: 4rem;
   margin-top: 1rem;
 }
+
 
 .covid .ticker-container {
   position: relative;

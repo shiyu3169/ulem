@@ -28,7 +28,11 @@ const ImageModal = ({ id, title, img }) => {
             </button>
           </div>
           <div className="modal-body image-modal">
-            <img src={breakfastGala} class="img-fluid" alt="breakfast gala" />
+            <img
+              src={breakfastGala}
+              className="img-fluid"
+              alt="breakfast gala"
+            />
           </div>
         </div>
       </div>
