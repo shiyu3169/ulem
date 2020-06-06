@@ -38,7 +38,7 @@ export default class TopSlides extends Component {
           <li data-target="#carouselExampleControls" data-slide-to="3" />
           <li data-target="#carouselExampleControls" data-slide-to="4" />
           <li data-target="#carouselExampleControls" data-slide-to="5" />
-          <li data-target="#carouselExampleControls" data-slide-to="6" />
+          {/* <li data-target="#carouselExampleControls" data-slide-to="6" /> */}
         </ol>
         <div className="carousel-inner">
           <TopSlide
@@ -66,12 +66,12 @@ export default class TopSlides extends Component {
             x="center"
             y="bottom"
           />
-          <TopSlide
+          {/* <TopSlide
             img={breakfast}
             href="https://theulem.square.site/#OIVeXu"
             x="left"
             y="center"
-          />
+          /> */}
         </div>
         <a
           className="carousel-control-prev"
