@@ -1,5 +1,5 @@
 import React from "react";
-import breakfastGala from "../../assets/image/Breakfast-Gala.png";
+
 
 const ImageModal = ({ id, title, img }) => {
   return (
@@ -30,7 +30,7 @@ const ImageModal = ({ id, title, img }) => {
           <div className="modal-body image-modal">
             <a target="__blank" href="https://theulem.square.site/">
               <img
-                src={breakfastGala}
+                src={img}
                 className="img-fluid"
                 alt="breakfast gala"
               />

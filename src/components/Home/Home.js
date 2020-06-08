@@ -10,7 +10,7 @@ import Instagram from "./Instagram";
 import Twitter from "./Twitter";
 import ImageModal from "../layout/ImageModal";
 // Image
-import covid1 from "../../img/modal-4-9-2020.png";
+import UNREST from "../../assets/image/UNREST.png"
 
 export default class Home extends Component {
   state = {
@@ -126,7 +126,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        {/* <ImageModal id="home" img={covid1} /> */}
+        <ImageModal id="home" img={UNREST} />
       </>
     );
   }
