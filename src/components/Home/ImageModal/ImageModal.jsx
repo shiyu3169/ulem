@@ -1,6 +1,6 @@
 import React from "react"
 
-import styles from "./ImageModal.module.scss"
+import styles from "./ImageModal.module.css"
 
 import logo from "../../../assets/image/ulem_logo.png"
 import signature from "../../../assets/image/signature.PNG"
