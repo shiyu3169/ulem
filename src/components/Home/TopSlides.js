@@ -5,7 +5,7 @@ import ulemBuilding from "../../img/ulemBuilding.JPG";
 import marathonBanner from "../../img/ULEM-MarathonBanner20202_A.jpg";
 import banner100 from "../../img/Banner100.png";
 import jobBanner from "../../img/jobBanner.png";
-import breakfast from "../../assets/image/breakfast-banner-1.png";
+// import breakfast from "../../assets/image/breakfast-banner-1.png";
 // import logoBanner from "../../img/sponser_banner.jpg";
 
 import $ from "jquery";

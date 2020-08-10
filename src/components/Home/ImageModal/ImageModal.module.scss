@@ -1,0 +1,21 @@
+.modalBody {
+  padding: 2rem;
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    .logo {
+      display: block;
+      width: 8rem;
+    }
+  }
+  .header {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .signature {
+    width: 10rem;
+  }
+  .ceoName {
+    font-size: 1.1rem;
+  }
+}

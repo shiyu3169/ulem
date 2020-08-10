@@ -8,7 +8,7 @@ import TopSlides from "./TopSlides";
 import EventSlides from "./EventSlides";
 import Instagram from "./Instagram";
 import Twitter from "./Twitter";
-import ImageModal from "../layout/ImageModal";
+import ImageModal from "../Home/ImageModal/ImageModal";
 // Image
 import july21 from "../../assets/image/july21.png"
 
