@@ -2,7 +2,7 @@ import React from "react"
 
 import styles from "./ImageModal.module.css"
 
-import modalImg from "../../../assets/image/Racism-Social Justice Summit Sign-FINAL 8920 1112p.png"
+import modalImg from "../../../assets/image/LOL_MMo.jpeg"
 
 const ImageModal = ({ id, title }) => {
   return (
@@ -19,7 +19,7 @@ const ImageModal = ({ id, title }) => {
         role="document"
       >
         <div className="modal-content">
-          {/* <div className="modal-header">
+          <div className="modal-header">
             <h5 className="modal-title">{title}</h5>
             <button
               type="button"
@@ -29,7 +29,7 @@ const ImageModal = ({ id, title }) => {
             >
               <span aria-hidden="true">×</span>
             </button>
-          </div> */}
+          </div>
           <div>
             <a
               href="https://bit.ly/2EjadoV"
