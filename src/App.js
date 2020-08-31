@@ -33,7 +33,7 @@ import Marathon from "./components/marathon/Marathon";
 import Membership from "./components/membership/Membership";
 // import CentennialMembership from "./components/centennial/CentennialMembership";
 import Leadership from "./components/about/Leadership";
-import Board from "./pages/Board/Board.page";
+import Board from "./pages/Board/Board";
 import HowToDonate from "./components/support/HowToDonate";
 import CentennialIntro from "./components/centennial/CentennialIntro";
 import Staff from "./components/about/Staff";
@@ -73,11 +73,6 @@ class App extends Component {
               />
               <Route exact path="/membership" component={Membership} />
               <Route exact path="/payment" component={Payment} />
-              {/* <Route
-                exact
-                path='/centennialMembership'
-                component={CentennialMembership}
-              /> */}
               <Route exact path="/covid19" component={Covid} />
               <Route path="/" component={Home} />
             </Switch>
