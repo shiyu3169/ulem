@@ -5,6 +5,11 @@ export const executiveCommittee = [
     organization: "McKenzie & Associates, P.C.",
   },
   {
+    name: "Donnie Bedney III",
+    job: "Vice President, Chief of Staff",
+    organization: "Press Ganey"
+  },
+  {
     name: "Derek E. Brooks",
     job: "Entrepreneur & Business Professional",
     organization: "",
@@ -13,6 +18,11 @@ export const executiveCommittee = [
     name: "Petrina Cherry",
     job: "Vice President",
     organization: "BMC Healthnet Plan/Well Sense Health Plan",
+  },
+  {
+    name: "Joshua Schanck",
+    job: "District Manager - Boston MA",
+    organization: "Starbucks"
   },
   {
     name: "Malik A. Smith",
@@ -27,11 +37,6 @@ export const executiveCommittee = [
 ]
 
 export const membersOfTheBoard = [
-  {
-    name: "Donnie Bedney III",
-    job: "Vice President, Chief of Staff",
-    organization: "Press Ganey"
-  },
   {
     name: "Peter Dulac",
     job: "Vice President/General Manager",
@@ -61,11 +66,6 @@ export const membersOfTheBoard = [
     name:"Deloris Pettis",
     job: "Director of Internal Audit",
     organization: "Boston College"
-  },
-  {
-    name: "Joshua Schanck",
-    job: "District Manager - Boston MA",
-    organization: "Starbucks"
   },
   {
     name: "Rachelle Villarson",

@@ -10,7 +10,7 @@ const BoardGroup = ({ members, title }) => {
       {members.map(({ name, job, organization }) => (
         <p>
           <strong>{name} </strong>
-          <span>{job}, </span>
+          {organization ? <span>{job}, </span> : <span>{job}</span>}
           <span>{organization}</span>
         </p>
       ))}
