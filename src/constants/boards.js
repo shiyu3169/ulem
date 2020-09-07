@@ -5,6 +5,11 @@ export const executiveCommittee = [
     organization: "McKenzie & Associates, P.C.",
   },
   {
+    name: "Donnie Bedney III",
+    job: "Chair of the ULEM Program Committee, Vice President, Chief of Staff",
+    organization: "Press Ganey"
+  },
+  {
     name: "Derek E. Brooks",
     job: "Entrepreneur & Business Professional",
     organization: "",
@@ -20,6 +25,11 @@ export const executiveCommittee = [
     organization: "Fidelity Investments"
   },
   {
+    name: "Joshua Schanck",
+    job: "Chair of the ULEM Strategic Planning Committee, District Manager - Boston MA",
+    organization: "Starbucks"
+  },
+  {
     name: "Malik A. Smith",
     job: "First Vice President",
     organization: "Private Wealth Advisor, Commons Capital Advisors",
@@ -32,11 +42,6 @@ export const executiveCommittee = [
 ]
 
 export const membersOfTheBoard = [
-  {
-    name: "Donnie Bedney III",
-    job: "Vice President, Chief of Staff",
-    organization: "Press Ganey"
-  },
   {
     name: "Peter Dulac",
     job: "Vice President/General Manager",
@@ -66,11 +71,6 @@ export const membersOfTheBoard = [
     name:"Deloris Pettis",
     job: "Director of Internal Audit",
     organization: "Boston College"
-  },
-  {
-    name: "Joshua Schanck",
-    job: "District Manager - Boston MA",
-    organization: "Starbucks"
   },
   {
     name: "Rachelle Villarson",
