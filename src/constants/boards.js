@@ -16,7 +16,7 @@ export const executiveCommittee = [
   },
   {
     name: "Vincent Loporchio",
-    job: "Chair of the ULEM Nominating Committee, Senior Vice President Corporate Communications",
+    job: "Chair of the ULEM Nominating Committee, Senior Vice President Corporate Communications,",
     organization: "Fidelity Investments"
   },
   {
