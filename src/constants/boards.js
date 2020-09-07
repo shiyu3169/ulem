@@ -15,6 +15,11 @@ export const executiveCommittee = [
     organization: "BMC Healthnet Plan/Well Sense Health Plan",
   },
   {
+    name: "Vincent Loporchio",
+    job: "Chair of the ULEM Nominating Committee, Senior Vice President Corporate Communications",
+    organization: "Fidelity Investments"
+  },
+  {
     name: "Malik A. Smith",
     job: "First Vice President",
     organization: "Private Wealth Advisor, Commons Capital Advisors",
@@ -138,11 +143,7 @@ export const boardEmeritus = [
     job: "VP of Diversity & Inclusion & Customer Experience",
     organization: "Comcast - Greater Boston Area"
   },
-  {
-    name: "Vincent Loporchio",
-    job: "Senior Vice President Corporate Communications",
-    organization: "Fidelity Investments"
-  },
+  
 ]
 
 export const advisoryCouncil = [
