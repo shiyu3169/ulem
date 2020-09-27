@@ -2,7 +2,7 @@ import React from "react"
 
 import styles from "./ImageModal.module.css"
 
-import modalImg from "../../../assets/image/LOL_MMo.jpeg"
+import modalImg from "../../../assets/image/1619.jpg"
 
 const ImageModal = ({ id, title }) => {
   return (
@@ -32,7 +32,7 @@ const ImageModal = ({ id, title }) => {
           </div>
           <div>
             <a
-              href="https://bit.ly/2EjadoV"
+              href="https://bit.ly/ULEM1619"
               target="_blank"
               rel="noopener noreferrer"
             >

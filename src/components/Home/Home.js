@@ -126,7 +126,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        {/* <ImageModal id="home" /> */}
+        <ImageModal id="home" />
       </>
     );
   }
